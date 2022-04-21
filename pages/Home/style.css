@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Open+Sans:ital,wght@0,300;1,300;1,600&family=Poppins:wght@100;200;300;500&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #161616 !important;
+}
+
+.top {
+  width: 100%;
+  position: relative;
+}
+.top .topLeftImg {
+  position: absolute;
+  top: -50px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.1;
+}
+.top .ellipse {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  opacity: 0.2;
+}
+.top .maskGroup {
+  z-index: -1;
+  position: absolute;
+  right: 0px;
+  bottom: 40px;
+  opacity: 0.2;
+}
+.top .header {
+  width: 96%;
+  max-width: 1160px;
+  margin: 36px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins";
+}
+.top .header .logoMenu {
+  display: flex;
+  align-items: center;
+}
+.top .header .logoMenu h1 {
+  margin-right: 40px;
+  color: #fff;
+  font-family: inherit;
+  font-size: calc(2rem + 1vw);
+  font-weight: 400;
+}
+.top .header .right {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.top .header .right .menu a {
+  padding: 0px 20px;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(0.2rem + 1vw);
+  line-height: 22px;
+  font-family: inherit;
+  color: #fff;
+  opacity: 0.6;
+}
+.top .header .right .menu a.feature {
+  padding-left: 50px;
+  border-left: 1px solid #fff;
+  opacity: 0.6;
+}
+.top .header .right .socialIcons {
+  display: flex;
+  align-items: center;
+}
+.top .header .right .socialIcons a {
+  text-decoration: none;
+  color: #ffbb54;
+  text-decoration: none;
+}
+.top .header .right .socialIcons a .icons {
+  border: 1px solid #ffbb54;
+  border-radius: 15px;
+  margin: 0px 10px;
+  width: calc(4 * 1vw);
+  height: calc(4 * 1vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffbb54;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.top .header .right .socialIcons a .icons:hover {
+  background-color: #ffbb54;
+  color: #000;
+}
+.top .header .openMobileMenu {
+  display: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #2d2d2d;
+}
+.top .header .openMobileMenu img {
+  vertical-align: middle;
+  padding: 7px;
+}
+
+.section1 {
+  display: flex;
+  justify-content: center;
+}
+.section1 .topHeading {
+  display: flex;
+  justify-content: center;
+  height: 35px;
+  background: #2c251a;
+  border-radius: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #FFBB54;
+  padding: 20px;
+}
+
+.section2 {
+  display: flex;
+  justify-content: center;
+}
+.section2 .paragraph {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 63px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 12px;
+}
+
+.section3 {
+  display: flex;
+  justify-content: center;
+}
+.section3 .paragraph3 {
+  margin-top: 18px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.section4 {
+  display: flex;
+  justify-content: center;
+}
+.section4 .learnMore {
+  margin-top: 34px;
+  background: #FFBB54;
+  border-radius: 14px;
+  border: none;
+  padding: 15px 34px;
+}
+
+@media screen and (max-width: 692px) {
+  .top .header .right {
+    display: none !important;
+  }
+  .top .header .openMobileMenu {
+    display: block;
+  }
+}
+@media screen and (max-width: 669px) {
+  .top .topLeftImg {
+    top: -120px;
+    left: -120px;
+  }
+  .top .login .socialLogin {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  .top .login .socialLogin button {
+    width: 100%;
+    margin: 10px 0px;
+    height: calc(2 * 20px);
+  }
+  .top .login .privacyCopyRight {
+    margin-top: 20px;
+  }
+  .top .login h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .top .login p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .top .login .notYetMember {
+    margin-bottom: 50px;
+  }
+  .top .login .loginCredentialTop input {
+    height: 40px;
+  }
+  .top .privacyCopyRight {
+    margin-top: calc(2 * 20px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

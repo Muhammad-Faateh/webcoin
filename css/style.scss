@@ -1,0 +1,449 @@
+// @import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Open+Sans:ital,wght@0,300;1,300;1,600&family=Poppins:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Open+Sans:ital,wght@0,300;1,300;1,600&family=Poppins:wght@100;200;300;500&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+$bgColor: #161616;
+$white: #fff;
+$textColor: #ffbb54;
+$fontfamily: "Poppins";
+$inputBg: #2d2d2d;
+// for increase button width for mobile ($buttonWidth* 24%) & for mobile ($buttonWidth * 50%) ========
+$buttonWidth: 2;
+// for styling button height every button like social link and submit button
+$buttonHeight: 2;
+// mpbile button height width will be 100%
+$mobileButtonHeight: 2;
+// social media icons size=====================
+$SocialIconSize: 4;
+// top header memu links sizes ==========
+$menuLink: 0.2rem;
+//for header text size ===============
+$textSize: 2rem;
+//for small paragraph size========
+$paraSize: 1rem;
+// for button text size ====================
+$buttonTextSize: 0.8rem;
+
+body {
+  background-color: $bgColor;
+}
+.top {
+  width: 100%;
+  position: relative;
+  // absolute images on left and right to show in background ===========================
+  .topLeftImg {
+    position: absolute;
+    top: -50px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.1;
+  }
+  .ellipse {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    opacity: 0.2;
+  }
+  .maskGroup {
+    z-index: -1;
+    position: absolute;
+    right: 0px;
+    bottom: 40px;
+    opacity: 0.2;
+  }
+  // end here ==========================================================================
+
+  // header section start here ===========================
+  .header {
+    width: 96%;
+    max-width: 1160px;
+    margin: 36px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins";
+    .logoMenu {
+      display: flex;
+      align-items: center;
+      h1 {
+        margin-right: 40px;
+        color: $white;
+        font-family: inherit;
+        font-size: calc(#{$textSize} + 1vw);
+        font-weight: 400;
+      }
+    }
+    // right section start here ====================
+    .right {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      .menu {
+        a {
+          padding: 0px 20px;
+          text-decoration: none;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: calc(#{$menuLink} + 1vw);
+          line-height: 22px;
+          font-family: inherit;
+          color: $white;
+          opacity: 0.6;
+          &.feature {
+            padding-left: 50px;
+            border-left: 1px solid $white;
+            opacity: 0.6;
+          }
+        }
+      }
+
+      // header left ic0ns===============
+      .socialIcons {
+        display: flex;
+        align-items: center;
+        a {
+          text-decoration: none;
+          color: #ffbb54;
+          text-decoration: none;
+          .icons {
+            border: 1px solid #ffbb54;
+            border-radius: 15px;
+            margin: 0px 10px;
+            width: calc(#{$SocialIconSize} * 1vw);
+            height: calc(#{$SocialIconSize} * 1vw);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffbb54;
+            cursor: pointer;
+            transition: 0.4s;
+
+            &:hover {
+              background-color: #ffbb54;
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+
+    // mobile menu start here ==================
+    .openMobileMenu {
+      display: none;
+      cursor: pointer;
+      border-radius: 5px;
+      background-color: #2d2d2d;
+      img {
+        vertical-align: middle;
+        padding: 7px;
+      }
+    }
+  }
+
+  //   login start here ==============================================
+  .login,
+  .resetTop .resetAccount,
+  .createAccount {
+    width: 96%;
+    max-width: 500px;
+    margin: 80px auto 20px auto;
+    color: $white;
+    h1 {
+      color: inherit;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 250;
+      font-size: calc(#{$textSize} + 0.1vw);
+      line-height: 41px;
+    }
+    p {
+      margin: 12px 0px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 200;
+      font-size: calc(#{$paraSize} + 0.1vw);
+      line-height: 28px;
+      /* identical to box height */
+      color: #ffffff;
+      opacity: 0.6;
+    }
+
+    // login with socail account ==========
+    .socialLogin,
+    .socialCreate {
+      display: flex;
+      justify-content: space-between;
+      button {
+        display: flex;
+        width: calc(#{$buttonWidth} * 24%);
+        height: calc(#{$buttonHeight} + 3vh);
+        background-color: transparent;
+        color: $textColor;
+        border: 1px solid #ffbb54;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        cursor: pointer;
+        margin: 20px 0px;
+
+        p {
+          color: #ffbb54;
+          opacity: 1;
+          font-size: calc(#{$buttonTextSize} + 0.1vw);
+        }
+        img {
+          width: 25px;
+          height: 25px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    // separatot line  here=====================
+
+    .separator {
+      display: flex;
+      align-items: center;
+      .line {
+        height: 1px;
+        flex: 1;
+        background-color: #fff;
+        opacity: 0.2;
+      }
+      h2 {
+        padding: 0 2rem;
+        font-family: $fontfamily;
+      }
+    }
+
+    //   login credentials start here ==============
+
+    .loginCredentialTop,
+    .resetCredentialTop,
+    .createCredentialTop {
+      margin-top: 20px;
+      input {
+        display: block;
+        width: 100%;
+        min-height: 40px;
+        padding:calc(#{$buttonHeight} * 3vh) ;
+        height: calc(#{$buttonHeight} * 3vh);
+        background-color: $inputBg;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        padding: 0px 32px;
+        margin-bottom: 10px;
+        &:focus {
+          color: #fff;
+          background-color: #2d2d2d;
+        }
+      }
+    }
+
+    // remeberForgotPass start here===========
+    .remeberForgotPass {
+      display: flex;
+      justify-content: space-between;
+      font-family: $fontfamily;
+      ul {
+        list-style: none;
+
+        .styled-checkbox {
+          position: absolute;
+          opacity: 0;
+          & + label {
+            font-size: calc(#{$paraSize} + 0.1vw);
+            font-weight: 200;
+            position: relative;
+            cursor: pointer;
+            padding: 0;
+          } // Box.
+          & + label:before {
+            content: "";
+            margin-right: 10px;
+            display: inline-block;
+            vertical-align: text-top;
+            width: 20px;
+            height: 20px;
+            background: #2d2d2d;
+            border-radius: 3px;
+          }
+          // Box hover
+          &:hover + label:before {
+            background: $textColor;
+          }
+          // Box focus
+          &:focus + label:before {
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+          }
+          // Box checked
+          &:checked + label:before {
+            background: $textColor;
+          }
+          // Checkmark. Could be replaced with an image
+          &:checked + label:after {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 9px;
+            background: black;
+            width: 2px;
+            height: 2px;
+            box-shadow: 2px 0 0 black, 4px 0 0 black, 4px -2px 0 black,
+              4px -4px 0 black, 4px -6px 0 black, 4px -8px 0 black;
+            transform: rotate(45deg);
+          }
+        }
+      }
+      a {
+        text-decoration: none;
+        color: $textColor;
+        font-size: calc(#{$paraSize} + 0.1vw);
+        font-weight: 200;
+      }
+    }
+
+    // loginToAccount button start here ==========
+    .loginToAccount,
+    .createToAccount {
+      width: 100%;
+      min-height: 35px;
+      height: calc(#{$buttonHeight} * 3vh);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffbb54;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+      margin-top: 30px;
+      cursor: pointer;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #08071b;
+      overflow: hidden;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #08071b;
+        z-index: 100;
+        opacity: 0.4;
+        left: 0px;
+        width: 0px;
+        border-radius: 20px 20px 20px 20px;
+        transition: 0.6s;
+      }
+      &:hover {
+        &::before {
+          width: 100%;
+          right: 0px;
+        }
+      }
+    }
+
+    // <!-- not a member yet start here ========= -->
+    .notYetMember {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      font-family: $fontfamily;
+      font-size: calc(#{$paraSize} + 0.1vw);
+      font-weight: 200;
+      a {
+        color: #ffbb54;
+        font-family: $fontfamily;
+        margin-left: 10px;
+
+        text-decoration: none;
+      }
+    }
+
+    // <!-- privacy copyright start here==================== -->
+    .privacyCopyRight {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 150px;
+      a {
+        text-decoration: none;
+        color: #ffbb54;
+        font-family: $fontfamily;
+        font-size: calc(#{$paraSize} + 0.1vw);
+        font-weight: 200;
+      }
+    }
+  }
+}
+
+// media query start here ================================================
+@media screen and (max-width: 992px) {
+  .top {
+    .header {
+      .right {
+        display: none !important;
+      }
+      .openMobileMenu {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 669px) {
+  .top {
+    .topLeftImg {
+      top: -120px;
+      left: -120px;
+    }
+    .login {
+      .socialLogin {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        button {
+          width: 100%;
+          margin: 10px 0px;
+          height: calc(#{$mobileButtonHeight} * 20px);
+        }
+      }
+      .privacyCopyRight {
+        margin-top: 20px;
+      }
+      h1 {
+        font-size: 24px;
+        line-height: 30px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      .notYetMember {
+        margin-bottom: 50px;
+      }
+
+      .loginCredentialTop {
+        input {
+          height: 40px;
+        }
+      }
+    }
+    .privacyCopyRight {
+      margin-top: calc(#{$mobileButtonHeight} * 20px);
+    }
+  }
+}
