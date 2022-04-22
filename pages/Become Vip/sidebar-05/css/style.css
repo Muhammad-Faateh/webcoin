@@ -8352,3 +8352,80 @@ a[data-toggle="collapse"] {
 
 .subscribe-form .form-control {
   background: #3b4ec6; }
+.mainregular{
+  /* height: 38px; */
+width: 95px;
+display: flex;
+justify-content: center;
+/* top: 357px; */
+border-radius: 10.166666030883789px;
+background-color: #FFBB54;
+Opacity :29%
+}
+.regular{font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  justify-content: center;
+  letter-spacing: 0.1em;
+  color: #FFBB54;
+  background-color: #737355 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 5px;
+  border-radius: 8px;
+  /* color: #FFFF; */
+  
+  }
+  .subs{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    justify-content: center;
+    letter-spacing: 0.1em;
+    color: #FFBB54;
+
+  }
+  .basic{
+    font-family: Poppins;
+font-size: 38px;
+font-weight: 400;
+line-height: 57px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+  }
+  .mo{
+ 
+font-size: 24px;
+
+
+color: grey !important;
+text-align: left;
+
+  }
+  .trial{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: rgba(255, 187, 84, 1);
+    border-radius: 14px;
+
+    
+  }
+  .li{
+    color: #ffbb54
+    
+  }
+  .lii{
+    color: grey !important;
+    padding-left: 10px;
+    
+  }
+  .a{
+    color: white !important;
+  }
