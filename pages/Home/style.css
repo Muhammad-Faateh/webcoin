@@ -782,6 +782,35 @@ body {
   }
 }
 @media screen and (max-width: 602px) {
+  .footer .mainFooterDiv .firstDiv {
+    padding-top: 20px;
+  }
+
+  .section5 .firstImageTwo {
+    margin-top: -100px;
+  }
+
+  .section6maincontainer {
+    margin-top: -200px;
+  }
+
+  .section6 {
+    margin-top: 70px;
+  }
+
+  .section2 {
+    height: 100px;
+  }
+
+  .section3subcontainer {
+    margin-top: -80px !important;
+    margin-bottom: 50px;
+  }
+
+  .section3subcontainer2 {
+    margin-bottom: 50px;
+  }
+
   .backgroundimage2 {
     height: 40%;
     width: 60%;
@@ -805,9 +834,17 @@ body {
     width: 230px !important;
   }
 
+  .imagesecondlast {
+    width: 70%;
+  }
+
   .imagesecondlasts {
     width: 90%;
     margin-top: -50px;
+  }
+
+  .imagesecondlastss {
+    display: none;
   }
 
   .top .topLeftImg {
