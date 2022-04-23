@@ -719,14 +719,19 @@ body {
         width: 100%;
       }
       .secondDiv {
+        
         .socialmainDiv {
+       
           .socialIcons {
+            
+            // border: 1px solid white;
             margin-top: 18px;
             position: absolute;
             left: 0;
+            bottom: 120px;
             display: flex;
             gap: 27px;
-            margin: 67px 0px 27px 0px !important;
+            // margin: 67px 0px 27px 0px !important;
             a{
               color: #fff;
             }
@@ -736,8 +741,7 @@ body {
           padding: 0px;
           padding-left: 15px;
           // padding-top: 1px;
-
-          margin-top: 55px;
+          margin-top: -85px;
           position: absolute;
           // bottom: -20px;
           display: block;

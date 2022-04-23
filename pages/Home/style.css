@@ -598,9 +598,9 @@ body {
     margin-top: 18px;
     position: absolute;
     left: 0;
+    bottom: 120px;
     display: flex;
     gap: 27px;
-    margin: 67px 0px 27px 0px !important;
   }
   .footer .mainFooterDiv .secondDiv .socialmainDiv .socialIcons a {
     color: #fff;
@@ -608,7 +608,7 @@ body {
   .footer .mainFooterDiv .secondDiv .termPolicies {
     padding: 0px;
     padding-left: 15px;
-    margin-top: 55px;
+    margin-top: -85px;
     position: absolute;
     display: block;
   }
