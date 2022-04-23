@@ -9987,4 +9987,19 @@ a[data-toggle=collapse] {
   justify-content: center;
 }
 
+.supportSec h1 {
+  position: absolute;
+  width: 234px;
+  height: 57px;
+  left: 549px;
+  top: 181px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 57px;
+  /* identical to box height */
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=style.css.map */
