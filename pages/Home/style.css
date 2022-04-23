@@ -410,21 +410,21 @@ body {
 .imagelast {
   position: absolute;
   right: 0;
+  margin-top: -200px;
   z-index: -1;
 }
 
 .imagelasts {
   position: absolute;
   left: 0;
+  margin-top: -200px;
 }
 
 .imagelastsss {
   position: absolute;
-  transform: rotate(180deg);
-  left: -100px;
-  opacity: 0.5;
+  left: 0px;
+  margin-top: -250px;
   z-index: -1;
-  margin-top: -200px;
 }
 
 .footer {
@@ -437,15 +437,19 @@ body {
 }
 .footer .mainFooterDiv {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 .footer .mainFooterDiv .firstDiv {
+  padding-left: 200px;
+  padding-top: 50px;
+  height: auto;
   width: 100%;
 }
 .footer .mainFooterDiv .firstDiv .content .menu {
   margin-top: 38px;
   margin-left: -16px;
+  width: 100%;
 }
 .footer .mainFooterDiv .firstDiv .content .menu a {
   padding: 0px 20px;
@@ -464,21 +468,9 @@ body {
   padding-left: 50px;
   opacity: 0.6;
 }
-.footer .mainFooterDiv .firstDiv .copyright {
-  margin-top: 60px;
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 20px;
-  letter-spacing: -0.204545px;
-  color: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.5;
-}
 .footer .mainFooterDiv .secondDiv .socialmainDiv {
   display: flex;
-  justify-content: flex-end;
+  margin-left: 250px;
 }
 .footer .mainFooterDiv .secondDiv .socialmainDiv .socialIcons {
   margin-top: 134px;
@@ -505,15 +497,15 @@ body {
   color: #ffbb54;
 }
 .footer .mainFooterDiv .secondDiv .termPolicies {
-  padding: 100px;
+  padding: 100px 100px 100px 100px;
   display: flex;
-  justify-content: space-between;
-  margin-left: -194;
+  position: relative;
 }
 .footer .mainFooterDiv .secondDiv .termPolicies .term {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
+  width: 110px;
   font-size: 15px;
   line-height: 20px;
   /* identical to box height */
@@ -795,6 +787,10 @@ body {
     width: 60%;
   }
 
+  .section5 {
+    margin-top: 72px;
+  }
+
   .section7 {
     display: flex !important;
     justify-content: center !important;
@@ -885,7 +881,6 @@ body {
 
   .top .topLeftImg {
     top: -120px;
-    left: -120px;
   }
   .top .login .socialLogin {
     margin-top: 40px;
@@ -943,6 +938,18 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .openMobileMenu {
+    display: block !important;
+  }
+
+  .menu {
+    display: none !important;
+  }
+
+  .socialIcons {
+    display: none !important;
+  }
+
   .carousel-inner .carousel-item > div:first-child {
     display: block;
   }
