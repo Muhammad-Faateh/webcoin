@@ -1076,12 +1076,15 @@ body {
 color: #fff;
 margin: 50px;
 padding: 50px 0px 50px 0px;
+// margin-bottom: 100px;
 display: flex;
 justify-content: center;
-
+.boll{
+  width: 90%;
+}
 .socialIconsTwo{
-  
- 
+  margin-top: 50px;
+ margin-bottom: 15px;
   display: flex;
   align-items: center;
   gap: 47px;
