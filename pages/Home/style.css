@@ -866,6 +866,19 @@ body {
   }
 }
 @media screen and (max-width: 602px) {
+  .section4 {
+    display: flex;
+    justify-content: center;
+  }
+  .section4 .learnMore {
+    margin-top: 50px;
+    background: #ffbb54;
+    border-radius: 14px;
+    border: none;
+    padding: 15px 34px;
+    outline: none;
+  }
+
   .footer .mainFooterDiv .firstDiv {
     padding-top: 20px;
   }
@@ -900,7 +913,7 @@ body {
     font-weight: 800;
     font-size: 23.35px;
     line-height: 35px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .section5 .firstImageTwo {
@@ -1058,10 +1071,20 @@ body {
     line-height: 150%;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 0.6;
   }
 }
+.sliderone {
+  margin-top: 100px;
+}
+
+.slidertwo {
+  margin-top: 20px;
+  position: relative;
+  left: -50px;
+}
+
 @media screen and (max-width: 669px) {
   .section1 {
     display: flex;
@@ -1149,29 +1172,6 @@ body {
     margin-top: calc(2 * 20px);
   }
 }
-@media (min-width: 768px) {
-  .carousel-inner .carousel-item-right.active,
-.carousel-inner .carousel-item-next {
-    transform: translateX(50%);
-  }
-
-  .carousel-inner .carousel-item-left.active,
-.carousel-inner .carousel-item-prev {
-    transform: translateX(-50%);
-  }
-}
-/* large - display 3 */
-@media (min-width: 992px) {
-  .carousel-inner .carousel-item-right.active,
-.carousel-inner .carousel-item-next {
-    transform: translateX(33%);
-  }
-
-  .carousel-inner .carousel-item-left.active,
-.carousel-inner .carousel-item-prev {
-    transform: translateX(-33%);
-  }
-}
 @media (max-width: 768px) {
   .openMobileMenu {
     display: block !important;
@@ -1180,20 +1180,6 @@ body {
   .navbarMenu {
     display: none !important;
   }
-
-  .carousel-inner .carousel-item > div:first-child {
-    display: block;
-  }
-}
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-  display: flex;
-}
-
-.carousel-inner .carousel-item-right,
-.carousel-inner .carousel-item-left {
-  transform: translateX(0);
 }
 
 /*# sourceMappingURL=style.css.map */
