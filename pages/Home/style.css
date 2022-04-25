@@ -174,6 +174,10 @@ body {
   margin-top: 12px;
 }
 
+.toggleText .toggleParagraph {
+  display: none;
+}
+
 .section3 {
   display: flex;
   justify-content: center;
@@ -201,6 +205,14 @@ body {
   border-radius: 14px;
   border: none;
   padding: 15px 34px;
+  outline: none;
+}
+.section4 .learnMore:hover {
+  cursor: pointer;
+  background-color: #2d2d2d;
+  color: #fff;
+  border: 1px solid #ffbb54;
+  outline: none;
 }
 
 .section5 {
@@ -315,6 +327,14 @@ body {
   letter-spacing: 0.02em;
   color: #ffffff;
   opacity: 0.4;
+}
+
+.sec3 {
+  margin-top: -54px;
+}
+
+.sec6 {
+  margin-top: -100px;
 }
 
 .section6 {
@@ -523,7 +543,7 @@ body {
   transition: 0.4s;
 }
 .footer .mainFooterDiv .secondDiv .socialmainDiv .socialIcons a .icons:hover {
-  color: #ffbb54;
+  color: #ffbb54 !important;
 }
 .footer .mainFooterDiv .secondDiv .termPolicies {
   padding: 100px 100px 100px 100px;
@@ -570,6 +590,10 @@ body {
     border-bottom-left-radius: 0px;
     overflow: visible;
     border-bottom-right-radius: 0px;
+  }
+
+  .sec6 {
+    margin-top: -10px;
   }
 
   .section7 .box {
@@ -1019,13 +1043,26 @@ body {
   .top .header .openMobileMenu {
     display: block;
   }
+
+  .toggleText {
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+  }
+  .toggleText .toggleParagraph {
+    display: block;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    opacity: 0.6;
+  }
 }
 @media screen and (max-width: 669px) {
-  br {
-    display: none;
-    white-space: pre-line;
-  }
-
   .section1 {
     display: flex;
     justify-content: center;
