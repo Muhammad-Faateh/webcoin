@@ -1,0 +1,397 @@
+<!-- https://www.w3schools.com/ai/tryit.asp?filename=tryai_chartjs_lines -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Portfolio </title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+
+  <body id="body-pd">
+    <header class="header" id="header">
+      <div class="header_toggle">
+        <i class="bx bxs-chevron-left" id="header-toggle"></i>
+      </div>
+      <div class="searchcontainer">
+        <div>
+          <input type="text" placeholder="Search..." class="searchinputfield" />
+        </div>
+        <div class="secondcontainer">
+          <div>
+            <img
+              class="avatar"
+              src="../../img/settings/avatar.svg"
+              alt="avatar"
+            />
+          </div>
+          <div class="lineclass">
+            <h6 class="userprofileheading">User Profile Name</h6>
+            <p class="verifiedheading">Verified</p>
+          </div>
+
+          <div class="dropd">
+            <img
+              class="dropDown"
+              src="../../img/settings/dropdown.svg"
+              alt="dropdown"
+            />
+          </div>
+        </div>
+              <div>
+                <img class="bellIcon" src="../../img/belliconimage.png" />
+              </div>
+      
+        </div>
+      </div>
+      <div class="openMobileMono">
+        <img src="../../img/menu.png" alt="" />
+      </div>
+    </header>
+
+    <div class="l-navbar" id="nav-bar">
+      <nav class="nav">
+        <div>
+          <span href="#" class="nav_logo">
+            <span class="nav_logo-name">LOGO</span>
+          </span>
+          <div class="nav_list">
+            <span href="#" class="nav_link active">
+              <i class=""><img src="../../img/frame.png" alt="" /></i>
+
+              <span class="nav_name">Dashboard</span>
+            </span>
+            <span href="#" class="nav_link">
+              <i class=""><img src="../../img/Vector.png" alt="" /></i>
+
+              <span class="nav_name">Article</span>
+            </span>
+
+            <span href="#" class="nav_link">
+              <i class="">
+                <img src="../../img/frame.png" alt="" />
+              </i>
+              <span class="nav_name">Crypto Suggest</span>
+            </span>
+
+            <span href="#" class="nav_link">
+              <i class="">
+                <img src="../../img/vid.png" alt="" />
+              </i>
+              <span class="nav_name">Video Lessons</span>
+            </span>
+
+            <span href="#" class="nav_link">
+              <i class="">
+                <img src="../../img/pres.png" alt="" />
+              </i>
+              <span class="nav_name">Auto-Trading Bot</span>
+            </span>
+
+            <span href="#" class="nav_link">
+              <i class="">
+                <img src="../../img/Vector1.png" alt="" />
+              </i>
+              <span class="nav_name">Setting</span>
+            </span>
+
+            <span href="#" class="nav_link">
+              <i class="">
+                <img src="../../img/Vector2.png" alt="" />
+              </i>
+              <span class="nav_name">Support</span>
+            </span>
+
+            <span href="#" class="nav_link">
+              <i class="">
+                <img src="../../img/profile.png" alt="" />
+              </i>
+              <span class="nav_name">Refer a friend</span>
+            </span>
+            <span href="#" class="nav_link">
+              <i class="">
+                <img src="../../img/Vector1.png" alt="" />
+              </i>
+              <span class="nav_name">Become VIP</span>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="topdiv">
+      <div class="headmain">
+        <h4 class="videolesson">Overview</h4>
+        <p class="parahead">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam
+          lorem
+        </p>
+      </div>
+    </div>
+
+
+<div class="container firstcontainer" >
+
+       <div class="mainContainer" >
+        <div class="container">
+                <div class="secondmaincontainer">
+                  <img src="../../img/Group95.png"  class="containerimage1" alt="">
+                  <img  src="../../img/Group96.png" class="containerimage2" alt="">
+                       <p class="paratext">Available Balance</p>
+                       <h1 class="parayellowtext"> 123,789,980</h1>
+                       <div class="thirdcontainer">
+
+                         <div class="thirdsubcontainer">
+                          <div class="thirdsubsubcontainer">
+                            <p  class="paratexttwo">Wallet</p>
+                            <h1 class="headertext">7</h1>
+                          </div>
+                          <div class="thirdsubsubcontainer transactions">
+                            <p  class="paratexttwo">Transactions</p>
+                            <h1  class="headertext">25,478</h1>
+                          </div>
+                        </div>
+                        <div>
+                          <p  class="paratexttwo">Last Activity at 09 Dec, 2021</p>
+                        </div>
+                       </div>
+                </div>
+          </div>
+          <div style="display: flex;">
+
+          
+       <div class="assetmaincontainer" style="width: 100%;">
+              <p class="assetsheading">Assets</p>
+              <div class="assetsfirstcontainer">
+                <div style="position: relative; left: 0; top: 30px;">
+                 
+                  <img style="position:absolute; left: 15px; top: 15px;" src="../../img/coinicon.png" alt="">
+                  <img style="position:absolute" src="../../img/rectangle.png" alt="">
+                </div>
+                <div class="assetsubfirstcontainer">
+                  <h1 class="bitcoinheading">Bitcoin</h1>
+                  <div style="display: flex;">
+                    <p class="BTCheading">BTC</p>
+                    <p class="sellheading">. Sell</p>
+                  </div>
+                  <h1 class="firstnumberheading">$8,765.32</h1>
+                </div>
+                <div style="width: 100%; margin-left: 30px; margin-right: 30px;">
+                  <div id="myChart" style="height: 160px;"> </div>
+                </div>
+                <div class="thirdassetcontainer">
+                  <p class="seconddateheading">10 Jan</p>
+                  <div style="display: flex; align-items: center; flex-direction: column; margin-top: 20px;">
+                     <p class="coinbaseheading">Coinbase</p>
+                     <h1 class="lastdateheading">+$1.94</h1>
+                  </div>
+                </div>
+              </div>
+         </div>
+
+          <div>
+
+                 <div class="tabscontainer">
+
+<!-- bootstrap tab contaienr will be here -->
+
+                </div>
+                   </div>
+
+                    </div>
+                   </div>
+
+
+
+
+    <div class="twocontainer" >
+      <div class="twosubcontainer">
+        <p class="paratexttwo">Activity</p>
+        <div class="dropdown dropdownmaincontainer">
+          <a class="btn btn-secondary dropdown-toggle dropdownbutton"  href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Bitcoin
+          </a>
+        <div  class="dropdown-menu dropdownshowcontainer" >
+         <div class="dropdownsecondcontainer">
+           <img src="../../img/eth.png" alt="">
+           <div class="dropdownthirdcontainer">
+             <p class="btcheading">ETH</p>
+             <p class="numberheading">+1,6%</p>
+           </div>
+           <input type="checkbox">
+         </div>
+
+         <div class="dropdownsecondcontainer">
+          <img src="../../img/ltc.png" alt="">
+          <div class="dropdownthirdcontainer">
+            <p class="btcheading">LTC</p>
+            <p class="numberheading">+1,6%</p>
+          </div>
+          <input type="checkbox">
+        </div>
+
+        <div class="dropdownsecondcontainer">
+          <img src="../../img/eth.png" alt="">
+          <div class="dropdownthirdcontainer">
+            <p class="btcheading">BTC</p>
+            <p class="numberheading">+1,6%</p>
+          </div>
+          <input type="checkbox">
+        </div>
+        </div>
+    
+
+        
+        </div>
+        
+       
+      </div>
+      <div class="twosubcontainervalue">
+        
+        <h1  class="headertext">25,478</h1>
+        <p class="greenrating">+ 4.67%</p>
+      </div>
+      <div style="width: 100%; height: 200px;">
+    
+        <div id="myChartt" style="height: 160px;"> </div>
+
+      </div>
+    </div>
+  </div>
+
+    <!-- <div>
+      <div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+    </div> -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script>
+      google.charts.load('current',{packages:['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      
+      function drawChart() {
+      // Set Data
+      var data = google.visualization.arrayToDataTable([
+        ['Price', 'Size'],
+        [50,7],[60,8],[70,8],[80,9],[90,9],
+        [100,9],[110,10],[120,11],
+        [130,14],[140,14],[150,15]
+      ]);
+      // Set Options
+      var options = {
+        title: 'House Prices vs. Size',
+        hAxis: {title: 'Square Meters'},
+        vAxis: {title: 'Price in Millions'},
+        legend: 'none'
+      };
+      // Draw
+      var chart = new google.visualization.LineChart(document.getElementById('myChart'));
+      chart.draw(data, options);
+      }
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  google.charts.load('current',{packages:['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+  
+  function drawChart() {
+  // Set Data
+  var data = google.visualization.arrayToDataTable([
+    ['Price', 'Size'],
+    [50,7],[60,8],[70,8],[80,9],[90,9],
+    [100,9],[110,10],[120,11],
+    [130,14],[140,14],[150,15]
+  ]);
+  // Set Options
+  var options = {
+    title: 'House Prices vs. Size',
+    hAxis: {title: 'Square Meters'},
+    vAxis: {title: 'Price in Millions'},
+    legend: 'none'
+  };
+  // Draw
+  var chart = new google.visualization.LineChart(document.getElementById('myChartt'));
+  chart.draw(data, options);
+  }
+  </script>
+
+
+
+
+
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        const showNavbar = (toggleId, navId, bodyId, headerId) => {
+          const toggle = document.getElementById(toggleId),
+            nav = document.getElementById(navId),
+            bodypd = document.getElementById(bodyId),
+            headerpd = document.getElementById(headerId);
+
+          // Validate that all variables exist
+          if (toggle && nav && bodypd && headerpd) {
+            toggle.addEventListener("click", () => {
+              toggle.classList.toggle("checkToggle");
+              // show navbar
+              nav.classList.toggle("show");
+              // change icon
+              toggle.classList.toggle("bx-x");
+
+              // add padding to body
+              bodypd.classList.toggle("body-pd");
+              // add padding to header
+              headerpd.classList.toggle("body-pd");
+            });
+          }
+        };
+
+        showNavbar("header-toggle", "nav-bar", "body-pd", "header");
+
+        /*===== LINK ACTIVE =====*/
+        const linkColor = document.querySelectorAll(".nav_link");
+
+        function colorLink() {
+          if (linkColor) {
+            linkColor.forEach((l) => l.classList.remove("active"));
+            this.classList.add("active");
+          }
+        }
+        linkColor.forEach((l) => l.addEventListener("click", colorLink));
+
+        // Your code to run since DOM is loaded and ready
+      });
+    </script>
+  </body>
+</html>
