@@ -1,0 +1,634 @@
+@import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Open+Sans:ital,wght@0,300;1,300;1,600&family=Poppins:wght@100;200;300;500&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #161616;
+}
+
+.top {
+  width: 100%;
+  position: relative;
+}
+
+.top .topLeftImg {
+  position: absolute;
+  top: -50px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.top .ellipse {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  opacity: 0.2;
+}
+
+.top .maskGroup {
+  z-index: -1;
+  position: absolute;
+  right: 0px;
+  bottom: 40px;
+  opacity: 0.2;
+}
+
+.top .header {
+  width: 96%;
+  max-width: 1160px;
+  margin: 36px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Poppins";
+}
+
+.top .header .logoMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.top .header .logoMenu h1 {
+  margin-right: 40px;
+  color: #fff;
+  font-family: inherit;
+  font-size: calc(2rem + 1vw);
+  font-weight: 400;
+}
+
+.top .header .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top .header .right .menu a {
+  padding: 0px 20px;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(0.2rem + 1vw);
+  line-height: 22px;
+  font-family: inherit;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.top .header .right .menu a.feature {
+  padding-left: 50px;
+  border-left: 1px solid #fff;
+  opacity: 0.6;
+}
+
+.top .header .right .socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.top .header .right .socialIcons a {
+  text-decoration: none;
+  color: #ffbb54;
+  text-decoration: none;
+}
+
+.top .header .right .socialIcons a .icons {
+  border: 1px solid #ffbb54;
+  border-radius: 15px;
+  margin: 0px 10px;
+  width: calc(4 * 1vw);
+  height: calc(4 * 1vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #ffbb54;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.top .header .right .socialIcons a .icons:hover {
+  background-color: #ffbb54;
+  color: #000;
+}
+
+.top .header .openMobileMenu {
+  display: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #2d2d2d;
+}
+
+.top .header .openMobileMenu img {
+  vertical-align: middle;
+  padding: 7px;
+}
+
+.top .login,
+.top .resetTop .resetAccount,
+.top .createAccount {
+  width: 96%;
+  max-width: 500px;
+  margin: 80px auto 20px auto;
+  color: #fff;
+}
+
+.top .login h1,
+.top .resetTop .resetAccount h1,
+.top .createAccount h1 {
+  color: inherit;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 250;
+  font-size: calc(2rem + 0.1vw);
+  line-height: 41px;
+}
+
+.top .login p,
+.top .resetTop .resetAccount p,
+.top .createAccount p {
+  margin: 12px 0px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 200;
+  font-size: calc(1rem + 0.1vw);
+  line-height: 28px;
+  /* identical to box height */
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.top .login .socialLogin,
+.top .login .socialCreate,
+.top .resetTop .resetAccount .socialLogin,
+.top .resetTop .resetAccount .socialCreate,
+.top .createAccount .socialLogin,
+.top .createAccount .socialCreate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.top .login .socialLogin button,
+.top .login .socialCreate button,
+.top .resetTop .resetAccount .socialLogin button,
+.top .resetTop .resetAccount .socialCreate button,
+.top .createAccount .socialLogin button,
+.top .createAccount .socialCreate button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(2 * 24%);
+  height: calc(2 + 3vh);
+  background-color: transparent;
+  color: #ffbb54;
+  border: 1px solid #ffbb54;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 20px 0px;
+}
+
+.top .login .socialLogin button p,
+.top .login .socialCreate button p,
+.top .resetTop .resetAccount .socialLogin button p,
+.top .resetTop .resetAccount .socialCreate button p,
+.top .createAccount .socialLogin button p,
+.top .createAccount .socialCreate button p {
+  color: #ffbb54;
+  opacity: 1;
+  font-size: calc(0.8rem + 0.1vw);
+}
+
+.top .login .socialLogin button img,
+.top .login .socialCreate button img,
+.top .resetTop .resetAccount .socialLogin button img,
+.top .resetTop .resetAccount .socialCreate button img,
+.top .createAccount .socialLogin button img,
+.top .createAccount .socialCreate button img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.top .login .separator,
+.top .resetTop .resetAccount .separator,
+.top .createAccount .separator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.top .login .separator .line,
+.top .resetTop .resetAccount .separator .line,
+.top .createAccount .separator .line {
+  height: 1px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: #fff;
+  opacity: 0.2;
+}
+
+.top .login .separator h2,
+.top .resetTop .resetAccount .separator h2,
+.top .createAccount .separator h2 {
+  padding: 0 2rem;
+  font-family: "Poppins";
+}
+
+.top .login .loginCredentialTop,
+.top .login .resetCredentialTop,
+.top .login .createCredentialTop,
+.top .resetTop .resetAccount .loginCredentialTop,
+.top .resetTop .resetAccount .resetCredentialTop,
+.top .resetTop .resetAccount .createCredentialTop,
+.top .createAccount .loginCredentialTop,
+.top .createAccount .resetCredentialTop,
+.top .createAccount .createCredentialTop {
+  margin-top: 20px;
+}
+
+.top .login .loginCredentialTop input,
+.top .login .resetCredentialTop input,
+.top .login .createCredentialTop input,
+.top .resetTop .resetAccount .loginCredentialTop input,
+.top .resetTop .resetAccount .resetCredentialTop input,
+.top .resetTop .resetAccount .createCredentialTop input,
+.top .createAccount .loginCredentialTop input,
+.top .createAccount .resetCredentialTop input,
+.top .createAccount .createCredentialTop input {
+  display: block;
+  width: 100%;
+  min-height: 40px;
+  padding: calc(2 * 3vh);
+  height: calc(2 * 3vh);
+  background-color: #2d2d2d;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 0px 32px;
+  margin-bottom: 10px;
+}
+
+.top .login .loginCredentialTop input:focus,
+.top .login .resetCredentialTop input:focus,
+.top .login .createCredentialTop input:focus,
+.top .resetTop .resetAccount .loginCredentialTop input:focus,
+.top .resetTop .resetAccount .resetCredentialTop input:focus,
+.top .resetTop .resetAccount .createCredentialTop input:focus,
+.top .createAccount .loginCredentialTop input:focus,
+.top .createAccount .resetCredentialTop input:focus,
+.top .createAccount .createCredentialTop input:focus {
+  color: #fff;
+  background-color: #2d2d2d;
+}
+
+.top .login .remeberForgotPass,
+.top .resetTop .resetAccount .remeberForgotPass,
+.top .createAccount .remeberForgotPass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-family: "Poppins";
+}
+
+.top .login .remeberForgotPass ul,
+.top .resetTop .resetAccount .remeberForgotPass ul,
+.top .createAccount .remeberForgotPass ul {
+  list-style: none;
+}
+
+.top .login .remeberForgotPass ul .styled-checkbox,
+.top .resetTop .resetAccount .remeberForgotPass ul .styled-checkbox,
+.top .createAccount .remeberForgotPass ul .styled-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.top .login .remeberForgotPass ul .styled-checkbox + label,
+.top .resetTop .resetAccount .remeberForgotPass ul .styled-checkbox + label,
+.top .createAccount .remeberForgotPass ul .styled-checkbox + label {
+  font-size: calc(1rem + 0.1vw);
+  font-weight: 200;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+
+.top .login .remeberForgotPass ul .styled-checkbox + label:before,
+.top
+  .resetTop
+  .resetAccount
+  .remeberForgotPass
+  ul
+  .styled-checkbox
+  + label:before,
+.top .createAccount .remeberForgotPass ul .styled-checkbox + label:before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: #2d2d2d;
+  border-radius: 3px;
+}
+
+.top .login .remeberForgotPass ul .styled-checkbox:hover + label:before,
+.top
+  .resetTop
+  .resetAccount
+  .remeberForgotPass
+  ul
+  .styled-checkbox:hover
+  + label:before,
+.top
+  .createAccount
+  .remeberForgotPass
+  ul
+  .styled-checkbox:hover
+  + label:before {
+  background: #ffbb54;
+}
+
+.top .login .remeberForgotPass ul .styled-checkbox:focus + label:before,
+.top
+  .resetTop
+  .resetAccount
+  .remeberForgotPass
+  ul
+  .styled-checkbox:focus
+  + label:before,
+.top
+  .createAccount
+  .remeberForgotPass
+  ul
+  .styled-checkbox:focus
+  + label:before {
+  -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+
+.top .login .remeberForgotPass ul .styled-checkbox:checked + label:before,
+.top
+  .resetTop
+  .resetAccount
+  .remeberForgotPass
+  ul
+  .styled-checkbox:checked
+  + label:before,
+.top
+  .createAccount
+  .remeberForgotPass
+  ul
+  .styled-checkbox:checked
+  + label:before {
+  background: #ffbb54;
+}
+
+.top .login .remeberForgotPass ul .styled-checkbox:checked + label:after,
+.top
+  .resetTop
+  .resetAccount
+  .remeberForgotPass
+  ul
+  .styled-checkbox:checked
+  + label:after,
+.top
+  .createAccount
+  .remeberForgotPass
+  ul
+  .styled-checkbox:checked
+  + label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: black;
+  width: 2px;
+  height: 2px;
+  -webkit-box-shadow: 2px 0 0 black, 4px 0 0 black, 4px -2px 0 black,
+    4px -4px 0 black, 4px -6px 0 black, 4px -8px 0 black;
+  box-shadow: 2px 0 0 black, 4px 0 0 black, 4px -2px 0 black, 4px -4px 0 black,
+    4px -6px 0 black, 4px -8px 0 black;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.top .login .remeberForgotPass a,
+.top .resetTop .resetAccount .remeberForgotPass a,
+.top .createAccount .remeberForgotPass a {
+  text-decoration: none;
+  color: #ffbb54;
+  font-size: calc(1rem + 0.1vw);
+  font-weight: 200;
+}
+
+.top .login .loginToAccount,
+.top .login .createToAccount,
+.top .resetTop .resetAccount .loginToAccount,
+.top .resetTop .resetAccount .createToAccount,
+.top .createAccount .loginToAccount,
+.top .createAccount .createToAccount {
+  width: 100%;
+  min-height: 35px;
+  height: calc(2 * 3vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #ffbb54;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  margin-top: 30px;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #08071b;
+  overflow: hidden;
+  position: relative;
+}
+
+.top .login .loginToAccount::before,
+.top .login .createToAccount::before,
+.top .resetTop .resetAccount .loginToAccount::before,
+.top .resetTop .resetAccount .createToAccount::before,
+.top .createAccount .loginToAccount::before,
+.top .createAccount .createToAccount::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #08071b;
+  z-index: 100;
+  opacity: 0.4;
+  left: 0px;
+  width: 0px;
+  border-radius: 20px 20px 20px 20px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.top .login .loginToAccount:hover::before,
+.top .login .createToAccount:hover::before,
+.top .resetTop .resetAccount .loginToAccount:hover::before,
+.top .resetTop .resetAccount .createToAccount:hover::before,
+.top .createAccount .loginToAccount:hover::before,
+.top .createAccount .createToAccount:hover::before {
+  width: 100%;
+  right: 0px;
+}
+
+.top .login .notYetMember,
+.top .resetTop .resetAccount .notYetMember,
+.top .createAccount .notYetMember {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: calc(1rem + 0.1vw);
+  font-weight: 200;
+}
+
+.top .login .notYetMember a,
+.top .resetTop .resetAccount .notYetMember a,
+.top .createAccount .notYetMember a {
+  color: #ffbb54;
+  font-family: "Poppins";
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.top .login .privacyCopyRight,
+.top .resetTop .resetAccount .privacyCopyRight,
+.top .createAccount .privacyCopyRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.top .login .privacyCopyRight a,
+.top .resetTop .resetAccount .privacyCopyRight a,
+.top .createAccount .privacyCopyRight a {
+  text-decoration: none;
+  color: #ffbb54;
+  font-family: "Poppins";
+  font-size: calc(1rem + 0.1vw);
+  font-weight: 200;
+}
+
+@media screen and (max-width: 992px) {
+  .top .header .right {
+    display: none !important;
+  }
+  .top .header .openMobileMenu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 669px) {
+  .top .topLeftImg {
+    top: -120px;
+    left: -120px;
+  }
+  .top .login .socialLogin {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .top .login .socialLogin button {
+    width: 100%;
+    margin: 10px 0px;
+    height: calc(2 * 20px);
+  }
+  .top .login .privacyCopyRight {
+    margin-top: 20px;
+  }
+  .top .login h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .top .login p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .top .login .notYetMember {
+    margin-bottom: 50px;
+  }
+  .top .login .loginCredentialTop input {
+    height: 40px;
+  }
+  .top .privacyCopyRight {
+    margin-top: calc(2 * 20px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
