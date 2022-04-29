@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --header-height: 3rem;
   --nav-width: 132px;
@@ -344,7 +344,7 @@ a {
 .topdiv {
   position: relative;
   top: 80px;
-  padding-left: 200px;
+  padding-left: 160px;
 }
 .topdiv .headmain .videolesson {
   font-family: "Poppins";
@@ -369,18 +369,120 @@ a {
 .firstcontainer {
   display: flex;
   justify-content: space-between;
-  margin-left: 200px !important;
+  margin-left: 140px !important;
 }
 .firstcontainer .mainContainer {
   margin-top: 100px;
   width: 100%;
 }
 .firstcontainer .mainContainer .tabscontainer {
-  border: 1px solid white;
-  margin-right: -500px;
-  margin-left: 50px;
-  height: 300px;
-  margin-top: -50px;
+  margin-right: -490px;
+  margin-left: 45px;
+  height: auto;
+  background: #0e0e0e;
+  border-radius: 18px;
+}
+.firstcontainer .mainContainer .tabscontainer .tabsmaincontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0px 0px 0px;
+  padding-bottom: 16px;
+}
+.firstcontainer .mainContainer .tabscontainer .tabsmaincontainer .navitemclass {
+  text-decoration: none;
+  list-style-type: none;
+  list-style: none;
+  width: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.firstcontainer .mainContainer .tabscontentcontainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 7px;
+}
+.firstcontainer .mainContainer .tabscontentcontainer .buysectionsecond {
+  border-radius: 14px;
+  background: #272727;
+  margin-top: 10px;
+}
+.firstcontainer .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+}
+.firstcontainer .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .coinnameheading {
+  font-family: "Poppins";
+  font-style: normal;
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #ffffff;
+  opacity: 0.6;
+}
+.firstcontainer .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .buysectioncontentsub {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+.firstcontainer .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .buysectioncontentsub .bitcoinheading {
+  margin-left: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.firstcontainer .mainContainer .tabscontentcontainer .buysubsectionfirst {
+  display: flex;
+  width: 100%;
+  background: #272727;
+  border-radius: 14px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+}
+.firstcontainer .mainContainer .tabscontentcontainer .buysubsectionfirst .coinnameheading {
+  font-family: "Poppins";
+  font-style: normal;
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #ffffff;
+  opacity: 0.6;
+}
+.firstcontainer .mainContainer .tabscontentcontainer .buysubsectionfirst .buysectioncontentsub {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  width: 100%;
+}
+.firstcontainer .mainContainer .tabscontentcontainer .buysubsectionfirst .buysectioncontentsub .bitcoinheading {
+  margin-left: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #ffffff;
 }
 .firstcontainer .mainContainer .secondmaincontainer {
   padding: 40px;
@@ -458,10 +560,13 @@ a {
   /* identical to box height */
   color: #ffbb54;
 }
-.firstcontainer .mainContainer .assetmaincontainer {
+.firstcontainer .mainContainer .assetsmainsection {
+  display: flex;
+}
+.firstcontainer .mainContainer .assetsmainsection .assetmaincontainer {
   margin-top: 30px;
 }
-.firstcontainer .mainContainer .assetmaincontainer .assetsheading {
+.firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -469,19 +574,24 @@ a {
   line-height: 24px;
   color: #ffffff;
 }
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer {
+.firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer {
   display: flex;
   padding: 10px 30px 10px 30px;
   justify-content: space-evenly;
-  background: #0E0E0E;
+  background: #0e0e0e;
   border-radius: 18px;
 }
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer {
+.firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer {
   display: flex;
   margin-left: 70px;
   flex-direction: column;
 }
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .bitcoinheading {
+.firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .canvasgraphcontainer {
+  width: 100%;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .bitcoinheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -490,7 +600,7 @@ a {
   /* identical to box height */
   color: #ffffff;
 }
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .BTCheading {
+.firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .BTCheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -500,7 +610,7 @@ a {
   color: #ffffff;
   opacity: 0.8;
 }
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .sellheading {
+.firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .sellheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -510,7 +620,7 @@ a {
   color: #14bd6c;
   margin-left: 10px;
 }
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .firstnumberheading {
+.firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .firstnumberheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -519,12 +629,12 @@ a {
   /* identical to box height */
   color: #ffffff;
 }
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer {
+.firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .seconddateheading {
+.firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .seconddateheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -535,7 +645,7 @@ a {
   color: #ffffff;
   opacity: 0.6;
 }
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .coinbaseheading {
+.firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .coinbaseheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -545,7 +655,7 @@ a {
   color: #ffffff;
   opacity: 0.4;
 }
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .lastdateheading {
+.firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .lastdateheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -559,7 +669,7 @@ a {
   border-radius: 18px;
   width: 70%;
   height: 100%;
-  margin-left: 50px;
+  margin-left: 20px;
 }
 .firstcontainer .twocontainer .twosubcontainer {
   display: flex;
@@ -579,7 +689,7 @@ a {
   width: 90px;
 }
 .firstcontainer .twocontainer .twosubcontainer .dropdownmaincontainer .dropdownbutton {
-  background: #0E0E0E;
+  background: #0e0e0e;
   border-radius: 18px;
 }
 .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer {
@@ -607,7 +717,7 @@ a {
   font-size: 14px;
   line-height: 21px;
   /* identical to box height */
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .numberheading {
   font-family: "Poppins";
@@ -618,7 +728,7 @@ a {
   /* identical to box height, or 133% */
   display: flex;
   align-items: center;
-  color: #AEB6CE;
+  color: #aeb6ce;
 }
 .firstcontainer .twosubcontainervalue {
   margin-left: 20px;
@@ -643,6 +753,15 @@ a {
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
+}
+.firstcontainer .canvasfirstcontainer {
+  width: 100%;
+  height: 215px;
+  padding: 10px;
+}
+.firstcontainer .canvasfirstcontainer .subcanvascontainer {
+  width: 100% !important;
+  height: 120px !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -742,7 +861,6 @@ a {
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
     color: #ffffff;
   }
   .secondcontainer .lineclass .verifiedheading {
@@ -751,11 +869,829 @@ a {
     font-weight: 400;
     font-size: 11px;
     line-height: 16px;
-    /* identical to box height */
     position: absolute;
     bottom: -23px;
     color: #ffffff;
     opacity: 0.4;
+  }
+
+  .topdiv {
+    padding-left: 10px;
+  }
+  .topdiv .headmain .videolesson {
+    font-size: 26px;
+  }
+  .topdiv .headmain .parahead {
+    margin-top: -18px;
+  }
+
+  .firstcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0 !important;
+  }
+  .firstcontainer .mainContainer {
+    margin-top: 80px;
+    width: 100%;
+  }
+  .firstcontainer .mainContainer .tabscontainer {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .firstcontainer .mainContainer .tabscontainer .tabsmaincontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px 0px 0px;
+    padding-bottom: 16px;
+  }
+  .firstcontainer .mainContainer .tabscontainer .tabsmaincontainer .navitemclass {
+    text-decoration: none;
+    list-style-type: none;
+    list-style: none;
+    width: auto;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .firstcontainer .mainContainer .tabscontentcontainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 7px;
+  }
+  .firstcontainer .mainContainer .tabscontentcontainer .buysectionsecond {
+    border-radius: 14px;
+    background: #272727;
+    margin-top: 10px;
+  }
+  .firstcontainer .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+  }
+  .firstcontainer .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .coinnameheading {
+    font-family: "Poppins";
+    font-style: normal;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    /* identical to box height */
+    color: #ffffff;
+    opacity: 0.6;
+  }
+  .firstcontainer .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .buysectioncontentsub {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+  }
+  .firstcontainer .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .buysectioncontentsub .bitcoinheading {
+    margin-left: 10px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .firstcontainer .mainContainer .tabscontentcontainer .buysubsectionfirst {
+    display: flex;
+    width: 400px !important;
+    background: #272727;
+    border-radius: 14px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+  }
+  .firstcontainer .mainContainer .tabscontentcontainer .buysubsectionfirst .coinnameheading {
+    font-family: "Poppins";
+    font-style: normal;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    /* identical to box height */
+    color: #ffffff;
+    opacity: 0.6;
+  }
+  .firstcontainer .mainContainer .tabscontentcontainer .buysubsectionfirst .buysectioncontentsub {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    width: 100%;
+  }
+  .firstcontainer .mainContainer .tabscontentcontainer .buysubsectionfirst .buysectioncontentsub .bitcoinheading {
+    margin-left: 10px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer {
+    padding: 40px;
+    border-radius: 30px;
+    width: 100%;
+    position: relative;
+    background: #0e0e0e;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .containerimage1 {
+    position: absolute;
+    left: 40%;
+    top: 0;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .containerimage2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .thirdcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer {
+    display: flex;
+    margin-top: 10px;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .thirdsubsubcontainer {
+    background: #323232;
+    border-radius: 14px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .transactions {
+    margin-left: 14px;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .paratext {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .paratexttwo {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #ffffff;
+    opacity: 0.55;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .headertext {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .parayellowtext {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 75px;
+    /* identical to box height */
+    color: #ffbb54;
+  }
+  .firstcontainer .mainContainer .assetsmainsection {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer {
+    margin-top: 30px;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer {
+    display: flex;
+    padding: 10px 30px 10px 30px;
+    justify-content: space-evenly;
+    background: #0e0e0e;
+    border-radius: 18px;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer {
+    display: flex;
+    margin-left: 70px;
+    flex-direction: column;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .canvasgraphcontainer {
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .bitcoinheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .BTCheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #ffffff;
+    opacity: 0.8;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .sellheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #14bd6c;
+    margin-left: 10px;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .firstnumberheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .seconddateheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+    text-align: right;
+    color: #ffffff;
+    opacity: 0.6;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .coinbaseheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    /* identical to box height */
+    color: #ffffff;
+    opacity: 0.4;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .lastdateheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #14bd6c;
+  }
+  .firstcontainer .twocontainer {
+    background: #0e0e0e;
+    border-radius: 18px;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+  .firstcontainer .twocontainer .twosubcontainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+  }
+  .firstcontainer .twocontainer .twosubcontainer .paratexttwo {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    opacity: 0.55;
+  }
+  .firstcontainer .twocontainer .twosubcontainer .dropdownmaincontainer {
+    width: 90px;
+  }
+  .firstcontainer .twocontainer .twosubcontainer .dropdownmaincontainer .dropdownbutton {
+    background: #0e0e0e;
+    border-radius: 18px;
+  }
+  .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer {
+    width: 20%;
+    position: relative;
+    left: -200px;
+    background: #161616;
+    border-radius: 12px;
+  }
+  .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+  }
+  .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .btcheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .numberheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+    display: flex;
+    align-items: center;
+    color: #aeb6ce;
+  }
+  .firstcontainer .twosubcontainervalue {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .firstcontainer .twosubcontainervalue .greenrating {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 15px;
+    margin-left: 20px;
+    /* identical to box height */
+    margin-top: 10px;
+    color: #3ed10a;
+  }
+  .firstcontainer .twosubcontainervalue .headertext {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 480px) {
+  .topdiv {
+    padding-left: 10px;
+  }
+  .topdiv .headmain .videolesson {
+    font-size: 26px;
+  }
+  .topdiv .headmain .parahead {
+    margin-top: -18px;
+  }
+
+  .firstcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0 !important;
+  }
+  .firstcontainer .mainContainer {
+    margin-top: 80px;
+    width: 100%;
+  }
+  .firstcontainer .mainContainer .tabscontainer {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .firstcontainer .mainContainer .tabscontainer .tabsmaincontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px 0px 0px;
+    padding-bottom: 16px;
+  }
+  .firstcontainer .mainContainer .tabscontainer .tabsmaincontainer .navitemclass {
+    text-decoration: none;
+    list-style-type: none;
+    list-style: none;
+    width: auto;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .firstcontainer .mainContainer .tabscontentcontainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 7px;
+  }
+  .firstcontainer .mainContainer .tabscontentcontainer .buysectionsecond {
+    border-radius: 14px;
+    background: #272727;
+    margin-top: 10px;
+  }
+  .firstcontainer .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+  }
+  .firstcontainer .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .coinnameheading {
+    font-family: "Poppins";
+    font-style: normal;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    /* identical to box height */
+    color: #ffffff;
+    opacity: 0.6;
+  }
+  .firstcontainer .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .buysectioncontentsub {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+  }
+  .firstcontainer .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .buysectioncontentsub .bitcoinheading {
+    margin-left: 10px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .firstcontainer .mainContainer .tabscontentcontainer .buysubsectionfirst {
+    display: flex;
+    width: 400px !important;
+    background: #272727;
+    border-radius: 14px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+  }
+  .firstcontainer .mainContainer .tabscontentcontainer .buysubsectionfirst .coinnameheading {
+    font-family: "Poppins";
+    font-style: normal;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    /* identical to box height */
+    color: #ffffff;
+    opacity: 0.6;
+  }
+  .firstcontainer .mainContainer .tabscontentcontainer .buysubsectionfirst .buysectioncontentsub {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    width: 100%;
+  }
+  .firstcontainer .mainContainer .tabscontentcontainer .buysubsectionfirst .buysectioncontentsub .bitcoinheading {
+    margin-left: 10px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer {
+    padding: 40px;
+    border-radius: 30px;
+    width: 100%;
+    position: relative;
+    background: #0e0e0e;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .containerimage1 {
+    position: absolute;
+    left: 40%;
+    top: 0;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .containerimage2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .thirdcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer {
+    display: flex;
+    margin-top: 10px;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .thirdsubsubcontainer {
+    background: #323232;
+    border-radius: 14px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .transactions {
+    margin-left: 14px;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .paratext {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .paratexttwo {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #ffffff;
+    opacity: 0.55;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .lastactivityclass {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    font-size: 10px;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .headertext {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .firstcontainer .mainContainer .secondmaincontainer .parayellowtext {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 75px;
+    /* identical to box height */
+    color: #ffbb54;
+  }
+  .firstcontainer .mainContainer .assetsmainsection {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer {
+    margin-top: 30px;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer {
+    display: flex;
+    padding: 10px 30px 10px 30px;
+    justify-content: space-evenly;
+    background: #0e0e0e;
+    border-radius: 18px;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer {
+    display: flex;
+    margin-left: 70px;
+    flex-direction: column;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .canvasgraphcontainer {
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .bitcoinheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .BTCheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #ffffff;
+    opacity: 0.8;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .sellheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #14bd6c;
+    margin-left: 10px;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .firstnumberheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .seconddateheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+    text-align: right;
+    color: #ffffff;
+    opacity: 0.6;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .coinbaseheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    /* identical to box height */
+    color: #ffffff;
+    opacity: 0.4;
+  }
+  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .lastdateheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #14bd6c;
+  }
+  .firstcontainer .twocontainer {
+    background: #0e0e0e;
+    border-radius: 18px;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+  .firstcontainer .twocontainer .twosubcontainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+  }
+  .firstcontainer .twocontainer .twosubcontainer .paratexttwo {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    opacity: 0.55;
+  }
+  .firstcontainer .twocontainer .twosubcontainer .dropdownmaincontainer {
+    width: 90px;
+  }
+  .firstcontainer .twocontainer .twosubcontainer .dropdownmaincontainer .dropdownbutton {
+    background: #0e0e0e;
+    border-radius: 18px;
+  }
+  .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer {
+    width: 20%;
+    position: relative;
+    left: -200px;
+    background: #161616;
+    border-radius: 12px;
+  }
+  .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+  }
+  .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .btcheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .numberheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+    display: flex;
+    align-items: center;
+    color: #aeb6ce;
+  }
+  .firstcontainer .twosubcontainervalue {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .firstcontainer .twosubcontainervalue .greenrating {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 15px;
+    margin-left: 20px;
+    /* identical to box height */
+    margin-top: 10px;
+    color: #3ed10a;
+  }
+  .firstcontainer .twosubcontainervalue .headertext {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+  .firstcontainer .canvasfirstcontainer {
+    width: 100%;
+    height: 215px;
+    padding: 10px;
+  }
+  .firstcontainer .canvasfirstcontainer .subcanvascontainer {
+    width: 100% !important;
+    height: auto !important;
   }
 }
 
