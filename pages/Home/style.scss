@@ -1,5 +1,6 @@
 // @import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Open+Sans:ital,wght@0,300;1,300;1,600&family=Poppins:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Open+Sans:ital,wght@0,300;1,300;1,600&family=Poppins:wght@100;200;300;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   padding: 0px;
@@ -11,7 +12,7 @@
 $bgColor: #161616;
 $white: #fff;
 $textColor: #ffbb54;
-$fontfamily: "Poppins";
+$fontfamily:  'Poppins', sans-serif;
 $inputBg: #2d2d2d;
 // for increase button width for mobile ($buttonWidth* 24%) & for mobile ($buttonWidth * 50%) ========
 $buttonWidth: 2;
@@ -1099,14 +1100,7 @@ body {
   .footer {
     .mainFooterDiv {
       // flex-direction: column;
-<<<<<<< HEAD
-   
-   
-   
-      .firstDiv{
-=======
       .firstDiv {
->>>>>>> cc63bc7dd7e7f3dc2914d7baca0f0d781c82f25a
         padding-top: 20px;
         // padding-left: 10px;
         // width: 100%;
