@@ -159,6 +159,20 @@ a {
   height: 100vh;
 }
 
+@media screen and (max-width: 1011px) {
+  .friend .makecrypto {
+    font-size: 27px !important;
+    margin-top: -384px !important;
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+  }
+  .friend .makecryptotext {
+    margin-top: -242px !important;
+    font-size: 16px !important;
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+  }
+}
 @media screen and (min-width: 768px) {
   body {
     margin: calc(var(--header-height) + 1rem) 0 0 0;
@@ -197,6 +211,192 @@ a {
     padding-left: 0px;
   }
 }
+@media screen and (max-width: 528px) {
+  .friend .makecrypto {
+    line-height: 36px !important;
+  }
+  .friend .makecryptotext {
+    font-size: 11px !important;
+  }
+}
+@media screen and (max-width: 542px) {
+  .friend .makecrypto {
+    font-size: 22px !important;
+    margin-top: -399px !important;
+    line-height: 38px !important;
+  }
+  .friend .getstared {
+    width: 150px !important;
+    margin-top: 30px !important;
+  }
+}
+@media screen and (max-width: 438px) {
+  .friend .makecrypto {
+    line-height: 24px !important;
+  }
+  .friend .makecryptotext {
+    font-size: 10px !important;
+  }
+}
+@media screen and (max-width: 355px) {
+  .friend .getstared {
+    width: 117px !important;
+    margin-top: 46px !important;
+  }
+  .friend .makecrypto {
+    font-size: 16px !important;
+  }
+  .friend .makecryptotext {
+    font-size: 8px !important;
+  }
+}
+.friend {
+  margin-top: 77px;
+  margin-left: 8rem;
+}
+.friend .cont {
+  top: 181px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 57px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.friend .para {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  /* identical to box height, or 214% */
+  color: #ffffff;
+  opacity: 0.6;
+}
+.friend .rimg {
+  margin-top: 20px;
+  /* margin-left: 10rem; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.friend .rimmg {
+  margin-top: 20px;
+  margin-left: 21px;
+  margin-right: 21px;
+  height: 408.31px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  background: linear-gradient(235.31deg, #f9823f 29.55%, #d19574 80.75%);
+}
+.friend .makecrypto {
+  position: absolute;
+  height: 95.51px;
+  margin-left: 162px;
+  margin-right: 156px;
+  margin-top: -350px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47px;
+  /* or 131% */
+  text-align: center;
+  color: #ffffff;
+}
+.friend .makecryptotext {
+  position: absolute;
+  height: 40px;
+  margin-left: 247px;
+  margin-right: 196px;
+  margin-top: -203px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.friend .gbutton {
+  width: 28%;
+  height: 50px;
+  margin-left: 37%;
+  margin-top: -111px;
+  display: flex;
+  justify-content: center;
+}
+.friend .getstared {
+  color: #f9823f;
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
+  background: #141326;
+  border-radius: 12px;
+  width: 233px;
+  height: 47px;
+  align-items: center;
+}
+.friend .boxrefer {
+  margin-top: 10rem;
+  background: #0e0e0e;
+  margin-left: 21px;
+  margin-right: 21px;
+  height: 269.31px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-radius: 17.389px;
+}
+.friend .referusParentDiv {
+  width: 100%;
+}
+.friend .referusParentDiv .referus {
+  display: flex;
+  justify-content: start;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 48px;
+  margin-top: -50px;
+  margin-left: 44px;
+  /* identical to box height, or 199% */
+  text-align: center;
+  color: #ffffff;
+}
+.friend .link {
+  height: 69px;
+  width: 92%;
+  margin-left: 26px;
+  background: #161616;
+  border: 0.869448px solid rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  border-radius: 14px;
+  padding: 20px;
+}
+.friend .linkpar {
+  display: flex;
+  justify-content: space-between;
+}
+.friend .flex {
+  display: flex;
+}
+.friend .clink {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #ffbb54;
+}
+
 .test {
   padding-left: -100px;
   z-index: 1;
