@@ -33,7 +33,13 @@ a {
 .searchcontainer {
   width: 100%;
   display: flex;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+.searchcontainer .searchicon {
+  position: relative;
+  left: 40px;
 }
 .searchcontainer .icon {
   background-color: rgb(96, 94, 0);
@@ -47,9 +53,9 @@ a {
   border-radius: 8px;
   border: none;
   outline: none;
-  width: 400px;
+  width: 100%;
   height: 40px;
-  padding-left: 20px;
+  padding-left: 60px;
 }
 .searchcontainer .secondcontainer {
   width: 260px;
@@ -155,7 +161,7 @@ a {
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
-  margin-left: -40px;
+  margin-left: -30px;
   border-radius: 10px;
 }
 
@@ -177,7 +183,7 @@ a {
   left: -30%;
   width: var(--nav-width);
   height: 100%;
-  background-color: var(--first-color);
+  background-color: #141414;
   padding: 0.5rem 1rem 0 0;
   transition: 0.5s;
   z-index: var(--z-fixed);
@@ -202,6 +208,13 @@ a {
   line-height: 27px;
 }
 
+.nav_link:hover {
+  background: radial-gradient(354.23% 3112.34% at -29.41% 333.8%, rgba(255, 187, 84, 0.2) 50.63%, rgba(255, 187, 84, 0) 100%) !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding-bottom: 10px !important;
+}
+
 .nav_logo {
   margin-bottom: 2rem;
   font-family: "Poppins";
@@ -222,7 +235,7 @@ a {
   color: var(--white-color);
   font-weight: 800;
   letter-spacing: 5px;
-  margin-left: 7px;
+  margin-left: 13px;
 }
 
 .nav_link {
@@ -257,9 +270,10 @@ a {
   content: "";
   position: absolute;
   left: 0;
+  top: 0px;
   width: 2px;
-  height: 32px;
-  background-color: var(--white-color);
+  height: 45px;
+  background-color: #FFBB54;
 }
 
 .height-100 {
@@ -829,15 +843,16 @@ a {
     display: none !important;
   }
 
-  .searchinputfield {
+  .searchcontainer .searchicon {
     display: none;
   }
-
-  .icon {
+  .searchcontainer .searchinputfield {
     display: none;
   }
-
-  .secondcontainer {
+  .searchcontainer .icon {
+    display: none;
+  }
+  .searchcontainer .secondcontainer {
     width: 220px !important;
     margin-left: 0px !important;
     height: 42px !important;
@@ -845,17 +860,17 @@ a {
     border: none !important;
     border-radius: 0px !important;
   }
-  .secondcontainer .dropd {
+  .searchcontainer .secondcontainer .dropd {
     display: none !important;
     position: absolute;
     right: 10px !important;
   }
-  .secondcontainer .lineclass {
+  .searchcontainer .secondcontainer .lineclass {
     position: absolute;
     top: 2px !important;
     left: 70px;
   }
-  .secondcontainer .lineclass .userprofileheading {
+  .searchcontainer .secondcontainer .lineclass .userprofileheading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -863,7 +878,7 @@ a {
     line-height: 21px;
     color: #ffffff;
   }
-  .secondcontainer .lineclass .verifiedheading {
+  .searchcontainer .secondcontainer .lineclass .verifiedheading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;

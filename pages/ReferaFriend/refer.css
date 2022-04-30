@@ -30,6 +30,75 @@ a {
   text-decoration: none;
 }
 
+.searchcontainer {
+  width: 100%;
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchcontainer .searchicon {
+  position: relative;
+  left: 40px;
+}
+.searchcontainer .icon {
+  background-color: rgb(96, 94, 0);
+  backdrop-filter: blur(1px);
+  opacity: 0.6;
+  padding: 5px 10px 10px 10px;
+  border-radius: 8px;
+}
+.searchcontainer .searchinputfield {
+  background: #262626;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  padding-left: 60px;
+}
+.searchcontainer .secondcontainer {
+  width: 260px;
+  margin-left: 20px;
+  height: 60px;
+  margin-top: 2px;
+  margin-right: 10px;
+  align-items: center;
+  position: relative;
+  padding-left: 20px;
+  border: 1px solid rgb(93, 93, 93);
+  border-radius: 20px;
+  display: flex;
+}
+.searchcontainer .secondcontainer .dropd {
+  position: absolute;
+  right: 20px;
+}
+.searchcontainer .secondcontainer .lineclass {
+  position: absolute;
+  top: 5px;
+  left: 70px;
+}
+.searchcontainer .secondcontainer .lineclass .userprofileheading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.searchcontainer .secondcontainer .lineclass .verifiedheading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #ffffff;
+  opacity: 0.4;
+}
+
 .header {
   width: 100%;
   height: var(--header-height);
@@ -40,17 +109,18 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
-  background-color: var(--white-color);
   z-index: var(--z-fixed);
   transition: 0.5s;
-  background-color: #d19574;
+}
+.header .openMobileMono {
+  display: none;
 }
 
 .header_toggle {
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
-  margin-left: -40px;
+  margin-left: -30px;
   border-radius: 10px;
 }
 
@@ -72,7 +142,7 @@ a {
   left: -30%;
   width: var(--nav-width);
   height: 100vh;
-  background-color: var(--first-color);
+  background-color: #141414;
   padding: 0.5rem 1rem 0 0;
   transition: 0.5s;
   z-index: var(--z-fixed);
@@ -92,9 +162,16 @@ a {
   display: grid;
   grid-template-columns: max-content max-content;
   align-items: center;
-  column-gap: 1.75rem;
+  column-gap: 2.75rem;
   padding: 0.5rem 0 0rem 1.5rem;
   line-height: 27px;
+}
+
+.nav_link:hover {
+  background: radial-gradient(354.23% 3112.34% at -29.41% 333.8%, rgba(255, 187, 84, 0.2) 50.63%, rgba(255, 187, 84, 0) 100%) !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding-bottom: 10px !important;
 }
 
 .nav_logo {
@@ -116,12 +193,14 @@ a {
 .nav_logo-name {
   color: var(--white-color);
   font-weight: 800;
+  letter-spacing: 5px;
+  margin-left: 13px;
 }
 
 .nav_link {
   position: relative;
   color: var(--first-color-light);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   transition: 0.3s;
   font-family: "Poppins";
   font-style: normal;
@@ -150,9 +229,10 @@ a {
   content: "";
   position: absolute;
   left: 0;
+  top: 0px;
   width: 2px;
-  height: 32px;
-  background-color: var(--white-color);
+  height: 45px;
+  background-color: #FFBB54;
 }
 
 .height-100 {
@@ -206,9 +286,61 @@ a {
   }
 }
 @media screen and (max-width: 767px) {
+  .searchcontainer .searchicon {
+    display: none;
+  }
+  .searchcontainer .searchinputfield {
+    background: #262626;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    display: none;
+    padding-left: 60px;
+  }
+  .searchcontainer .secondcontainer {
+    width: 260px;
+    margin-left: 20px;
+    height: 60px;
+    margin-top: 2px;
+  }
+  .searchcontainer .secondcontainer .dropd {
+    position: absolute;
+    right: 20px;
+  }
+  .searchcontainer .secondcontainer .lineclass {
+    position: absolute;
+    top: 5px;
+    left: 70px;
+  }
+  .searchcontainer .secondcontainer .lineclass .userprofileheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .searchcontainer .secondcontainer .lineclass .verifiedheading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    /* identical to box height */
+    color: #ffffff;
+    opacity: 0.4;
+  }
+
   .body-pd {
     /* padding-left: calc(var(--nav-width) + 188px) */
     padding-left: 0px;
+  }
+
+  .header .openMobileMono {
+    display: block;
   }
 }
 @media screen and (max-width: 528px) {
@@ -405,6 +537,13 @@ a {
 .checkToggle {
   margin-left: 155px;
   transform: rotate(180deg);
+}
+
+@media screen and (max-width: 768px) {
+  .friend {
+    margin-left: 0px;
+    padding-left: 10px;
+  }
 }
 
 /*# sourceMappingURL=refer.css.map */
