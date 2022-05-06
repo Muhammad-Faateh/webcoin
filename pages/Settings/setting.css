@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --header-height: 3rem;
   --nav-width: 132px;
@@ -33,7 +34,13 @@ a {
 .searchcontainer {
   width: 100%;
   display: flex;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+.searchcontainer .searchicon {
+  position: relative;
+  left: 40px;
 }
 .searchcontainer .icon {
   background-color: rgb(96, 94, 0);
@@ -47,9 +54,9 @@ a {
   border-radius: 8px;
   border: none;
   outline: none;
-  width: 400px;
+  width: 100%;
   height: 40px;
-  padding-left: 20px;
+  padding-left: 60px;
 }
 .searchcontainer .secondcontainer {
   width: 260px;
@@ -155,7 +162,7 @@ a {
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
-  margin-left: -40px;
+  margin-left: -30px;
   border-radius: 10px;
 }
 
@@ -177,7 +184,7 @@ a {
   left: -30%;
   width: var(--nav-width);
   height: 100%;
-  background-color: var(--first-color);
+  background-color: #141414;
   padding: 0.5rem 1rem 0 0;
   transition: 0.5s;
   z-index: var(--z-fixed);
@@ -202,6 +209,13 @@ a {
   line-height: 27px;
 }
 
+.nav_link:hover {
+  background: radial-gradient(354.23% 3112.34% at -29.41% 333.8%, rgba(255, 187, 84, 0.2) 50.63%, rgba(255, 187, 84, 0) 100%) !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding-bottom: 10px !important;
+}
+
 .nav_logo {
   margin-bottom: 2rem;
   font-family: "Poppins";
@@ -222,7 +236,7 @@ a {
   color: var(--white-color);
   font-weight: 800;
   letter-spacing: 5px;
-  margin-left: 7px;
+  margin-left: 13px;
 }
 
 .nav_link {
@@ -257,9 +271,10 @@ a {
   content: "";
   position: absolute;
   left: 0;
+  top: 0px;
   width: 2px;
-  height: 32px;
-  background-color: var(--white-color);
+  height: 45px;
+  background-color: #ffbb54;
 }
 
 .height-100 {
@@ -448,7 +463,7 @@ a {
   display: flex;
   padding: 10px 30px 10px 30px;
   justify-content: space-evenly;
-  background: #0E0E0E;
+  background: #0e0e0e;
   border-radius: 18px;
 }
 .firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer {
@@ -554,7 +569,7 @@ a {
   width: 90px;
 }
 .firstcontainer .twocontainer .twosubcontainer .dropdownmaincontainer .dropdownbutton {
-  background: #0E0E0E;
+  background: #0e0e0e;
   border-radius: 18px;
 }
 .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer {
@@ -582,7 +597,7 @@ a {
   font-size: 14px;
   line-height: 21px;
   /* identical to box height */
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .numberheading {
   font-family: "Poppins";
@@ -593,7 +608,7 @@ a {
   /* identical to box height, or 133% */
   display: flex;
   align-items: center;
-  color: #AEB6CE;
+  color: #aeb6ce;
 }
 .firstcontainer .twosubcontainervalue {
   margin-left: 20px;
@@ -618,6 +633,47 @@ a {
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
+}
+
+.settingMain {
+  padding: 80px 185px;
+}
+.settingMain .buttoncontainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 40px;
+  margin-left: -20px;
+}
+.settingMain .buttoncontainer .cancelButton {
+  background: #41301e;
+  border: none;
+  width: 181px;
+  margin-right: 20px;
+  height: 54px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffbb54;
+  border-radius: 14px;
+}
+.settingMain .buttoncontainer .saveButton {
+  background: #ffbb54;
+  border-radius: 14px;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #08071b;
+  margin-right: 45px;
+  width: 181px;
+  height: 54px;
 }
 
 @media screen and (min-width: 768px) {
@@ -665,6 +721,50 @@ a {
 }
 
 @media screen and (max-width: 860px) {
+  .settingMain {
+    margin: 100px 100px;
+    padding: 0px 0px;
+  }
+  .settingMain .buttoncontainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-left: -20px;
+    flex-direction: column;
+  }
+  .settingMain .buttoncontainer .cancelButton {
+    background: #41301e;
+    border: none;
+    width: 181px;
+    margin-right: 0px;
+    height: 54px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffbb54;
+    border-radius: 14px;
+  }
+  .settingMain .buttoncontainer .saveButton {
+    background: #ffbb54;
+    border-radius: 14px;
+    border: none;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    color: #08071b;
+    margin-top: 10px;
+    margin-right: 0px;
+    width: 181px;
+    height: 54px;
+  }
+
   .header {
     padding: 40px 20px;
   }
@@ -674,6 +774,10 @@ a {
     right: 20px;
   }
 
+  .header_toggle {
+    display: none;
+  }
+
   .l-navbar {
     display: none !important;
   }
@@ -681,15 +785,19 @@ a {
     display: none !important;
   }
 
-  .searchinputfield {
+  .searchcontainer .bellIcon {
     display: none;
   }
-
-  .icon {
+  .searchcontainer .searchicon {
     display: none;
   }
-
-  .secondcontainer {
+  .searchcontainer .searchinputfield {
+    display: none;
+  }
+  .searchcontainer .icon {
+    display: none;
+  }
+  .searchcontainer .secondcontainer {
     width: 220px !important;
     margin-left: 0px !important;
     height: 42px !important;
@@ -697,17 +805,17 @@ a {
     border: none !important;
     border-radius: 0px !important;
   }
-  .secondcontainer .dropd {
+  .searchcontainer .secondcontainer .dropd {
     display: none !important;
     position: absolute;
     right: 10px !important;
   }
-  .secondcontainer .lineclass {
+  .searchcontainer .secondcontainer .lineclass {
     position: absolute;
     top: 2px !important;
     left: 70px;
   }
-  .secondcontainer .lineclass .userprofileheading {
+  .searchcontainer .secondcontainer .lineclass .userprofileheading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -716,7 +824,7 @@ a {
     /* identical to box height */
     color: #ffffff;
   }
-  .secondcontainer .lineclass .verifiedheading {
+  .searchcontainer .secondcontainer .lineclass .verifiedheading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -738,19 +846,8 @@ a {
   border: 1px solid #ffffff;
 }
 
-.settingMain {
-  margin: 100px 75px !important;
-  padding-left: 100px !important;
-}
-@media screen and (max-width: 860px) {
-  .settingMain {
-    margin-left: 0px !important;
-    padding-left: 0px;
-  }
-}
-
 .section1 .settings {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 38px;
@@ -758,7 +855,7 @@ a {
   color: #ffffff;
 }
 .section1 .subHeading {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -767,12 +864,13 @@ a {
   opacity: 0.6;
 }
 .section1 .infoButton {
-  width: 169px;
+  width: auto;
   height: 42px;
   padding: 5px 15px;
   border-radius: 10px;
   border: none;
-  font-family: "Poppins";
+  margin-right: 10px;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -786,7 +884,7 @@ a {
   height: 42px;
   color: #ffbb54;
   padding: 9px 24px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -808,7 +906,7 @@ a {
   margin-top: 70px;
 }
 .section2 .changePassword {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 28px;
   font-weight: 600;
@@ -816,7 +914,7 @@ a {
   color: #ffffff;
 }
 .section2 .subHeading {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -854,6 +952,11 @@ a {
   display: flex;
   flex-direction: column;
 }
+.formDiv form .firstRow .row-left .inputFeilds,
+.formDiv form .firstRow .row-right .inputFeilds {
+  color: #ffffff;
+  padding-left: 20px;
+}
 .formDiv form .secRow {
   width: 100%;
   margin-top: 40px;
@@ -861,8 +964,10 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
-.formDiv form .secRow input {
-  width: 45% !important;
+.formDiv form .secRow .inputFeilds {
+  color: #ffffff;
+  padding-left: 20px;
+  width: 45%;
 }
 .formDiv form .twoButtons {
   width: 100%;
@@ -881,7 +986,7 @@ a {
   border-radius: 14px;
   border: none;
   outline: none;
-  color: #FFBB54;
+  color: #ffbb54;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -889,7 +994,7 @@ a {
   line-height: 24px;
 }
 .formDiv form .twoButtons .saveButton {
-  background: #FFBB54;
+  background: #ffbb54;
   width: 181px;
   height: 54px;
   border-radius: 14px;

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Open+Sans:ital,wght@0,300;1,300;1,600&family=Poppins:wght@100;200;300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -53,6 +54,15 @@ body {
 .top .header .logoMenu {
   display: flex;
   align-items: center;
+}
+.top .header .logoMenu .logoheadingtwo {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 54px;
+  /* identical to box height */
+  color: #ffffff;
 }
 .top .header .logoMenu h1 {
   margin-right: 40px;
@@ -506,7 +516,7 @@ body {
   opacity: 0.6;
 }
 .footer .mainFooterDiv .firstDiv .copyright {
-  margin-top: 60px;
+  margin-top: 40px;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
@@ -519,10 +529,11 @@ body {
 }
 .footer .mainFooterDiv .secondDiv .socialmainDiv {
   display: flex;
-  margin-left: 250px;
 }
 .footer .mainFooterDiv .secondDiv .socialmainDiv .socialIcons {
-  margin-top: 134px;
+  position: relative;
+  top: 150px;
+  right: -30px;
   display: flex;
 }
 .footer .mainFooterDiv .secondDiv .socialmainDiv .socialIcons a {
@@ -546,7 +557,9 @@ body {
   color: #ffbb54 !important;
 }
 .footer .mainFooterDiv .secondDiv .termPolicies {
-  padding: 100px 100px 100px 100px;
+  position: relative;
+  top: 330px;
+  right: 100px;
   display: flex;
   position: relative;
 }
@@ -609,34 +622,115 @@ body {
   }
 
   .footer {
-    height: auto;
+    position: absolute;
+    height: 400px;
+    background: #272727;
+    width: 100%;
+    margin-top: 300px;
   }
   .footer .mainFooterDiv {
-    flex-direction: row;
-  }
-  .footer .mainFooterDiv .firstDiv {
-    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
   }
-  .footer .mainFooterDiv .secondDiv .socialmainDiv .socialIcons {
-    margin-top: 18px;
-    position: absolute;
-    left: 0;
-    bottom: 60px;
+  .footer .mainFooterDiv .firstDiv {
+    padding-left: 50px;
+    padding-top: 50px;
+    height: auto;
+    width: 100%;
+  }
+  .footer .mainFooterDiv .firstDiv .content .menu {
+    margin-top: 38px;
+    margin-left: -16px;
+    width: 100%;
+  }
+  .footer .mainFooterDiv .firstDiv .content .menu a {
+    padding: 0px 20px;
+    text-decoration: none;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.2rem + 1vw);
+    line-height: 20px;
+    font-family: inherit;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: -0.204545px;
+  }
+  .footer .mainFooterDiv .firstDiv .content .menu a.feature {
+    padding-left: 50px;
+    opacity: 0.6;
+  }
+  .footer .mainFooterDiv .firstDiv .copyright {
+    margin-top: 55px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2px !important;
+    line-height: 20px;
+    letter-spacing: -0.204545px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .footer .mainFooterDiv .secondDiv .socialmainDiv {
     display: flex;
-    gap: 27px;
+  }
+  .footer .mainFooterDiv .secondDiv .socialmainDiv .socialIcons {
+    position: relative;
+    top: 150px;
+    right: -130px;
+    display: flex;
   }
   .footer .mainFooterDiv .secondDiv .socialmainDiv .socialIcons a {
-    color: #fff;
+    text-decoration: none;
+    color: #ffbb54;
+    text-decoration: none;
+  }
+  .footer .mainFooterDiv .secondDiv .socialmainDiv .socialIcons a .icons {
+    border-radius: 15px;
+    margin: 0px 10px;
+    width: 19.56px;
+    height: 15.89px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .footer .mainFooterDiv .secondDiv .socialmainDiv .socialIcons a .icons:hover {
+    color: #ffbb54 !important;
   }
   .footer .mainFooterDiv .secondDiv .termPolicies {
-    padding: 0px;
+    position: relative;
+    top: 330px;
+    right: 0px;
     display: flex;
-    flex-direction: row;
-    padding-left: 15px;
-    position: absolute;
-    left: 0;
-    bottom: 24px;
+    position: relative;
+  }
+  .footer .mainFooterDiv .secondDiv .termPolicies .term {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    width: 110px;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+    margin-right: 39px;
+    letter-spacing: -0.204545px;
+    color: #ffffff;
+  }
+  .footer .logoMenu {
+    display: flex;
+    align-items: center;
+  }
+  .footer .logoMenu h1 {
+    margin-right: 40px;
+    color: #fff;
+    font-family: inherit;
+    font-size: calc(2rem + 1vw);
+    font-weight: 400;
   }
 
   .boxHeading {
@@ -756,7 +850,44 @@ body {
     opacity: 0.4;
   }
 }
-@media screen and (max-width: 772px) {
+@media screen and (max-width: 800px) {
+  .footer .mainFooterDiv .firstDiv {
+    padding-top: 20px;
+  }
+  .footer {
+    display: none;
+  }
+
+  .maindiv {
+    background: linear-gradient(180deg, #3a3434 0%, rgba(56, 50, 50, 0) 97.76%);
+    color: #fff;
+    margin: 50px;
+    padding: 50px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .maindiv .boll {
+    width: 90%;
+  }
+  .maindiv .socialIconsTwo {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 47px;
+  }
+  .maindiv .socialIconsTwo a {
+    color: #fff;
+  }
+  .maindiv .socialIconsTwo .logome {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 23.35px;
+    line-height: 35px;
+    color: #ffffff;
+  }
+
   .section7 {
     display: flex !important;
     justify-content: center !important;
@@ -877,43 +1008,6 @@ body {
     border: none;
     padding: 15px 34px;
     outline: none;
-  }
-
-  .footer .mainFooterDiv .firstDiv {
-    padding-top: 20px;
-  }
-  .footer {
-    display: none;
-  }
-
-  .maindiv {
-    background: linear-gradient(180deg, #3a3434 0%, rgba(56, 50, 50, 0) 97.76%);
-    color: #fff;
-    margin: 50px;
-    padding: 50px 0px 50px 0px;
-    display: flex;
-    justify-content: center;
-  }
-  .maindiv .boll {
-    width: 90%;
-  }
-  .maindiv .socialIconsTwo {
-    margin-top: 50px;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 47px;
-  }
-  .maindiv .socialIconsTwo a {
-    color: #fff;
-  }
-  .maindiv .socialIconsTwo .logome {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 23.35px;
-    line-height: 35px;
-    color: #ffffff;
   }
 
   .section5 .firstImageTwo {
@@ -1122,6 +1216,7 @@ body {
     height: 47px;
     left: 59px;
     top: 249px;
+    margin-top: 60px;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
