@@ -763,7 +763,7 @@ a {
     align-items: center;
     justify-content: flex-end;
     margin-top: 40px;
-    margin-left: -20px;
+    // margin-left: -20px;
     .cancelButton {
       background: #41301e;
       // opacity: 0.1;
@@ -792,9 +792,19 @@ a {
 
       color: #08071b;
 
-      margin-right: 45px;
+      // margin-right: 45px;
       width: 181px;
       height: 54px;
+    }
+
+    .saveButton:hover {
+      background-color: $white;
+      color: $bgColor;
+    }
+
+    .cancelButton:hover {
+      background: $textColor;
+      color: $bgColor;
     }
   }
 }
@@ -852,48 +862,6 @@ a {
     // border: 1px solid white;
     margin: 100px 100px;
     padding: 0px 0px;
-    .buttoncontainer {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      margin-top: 40px;
-      margin-left: -20px;
-      flex-direction: column;
-      .cancelButton {
-        background: #41301e;
-        // opacity: 0.1;
-        border: none;
-        width: 181px;
-        margin-right: 00px;
-        height: 54px;
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 24px;
-        color: #ffbb54;
-        border-radius: 14px;
-      }
-      .saveButton {
-        background: #ffbb54;
-        border-radius: 14px;
-        border: none;
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 24px;
-        /* identical to box height */
-
-        color: #08071b;
-        margin-top: 10px;
-
-        margin-right: 0px;
-        width: 181px;
-        height: 54px;
-      }
-    }
   }
 
   .header {
@@ -1116,7 +1084,7 @@ a {
       .row-left,
       .row-right {
         width: 100%;
-
+        margin-top: 20px !important;
         display: flex;
         flex-direction: column;
         .inputFeilds {
@@ -1128,9 +1096,9 @@ a {
 
     .secRow {
       width: 100%;
-      margin-top: 40px;
+      margin-top: 20px !important;
       display: flex;
-
+      // border: 1px solid white;
       flex-direction: column;
       justify-content: space-between;
       .inputFeilds {
@@ -1176,6 +1144,185 @@ a {
         font-weight: 600;
         font-size: 16px;
         line-height: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .buttoncontainer {
+    width: 100% !important;
+    display: flex !important;
+    // border: 1px solid white;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 40px;
+    // margin-left: 20px !important;
+    // margin-right: 0px !important;
+    // flex-direction: row;
+    .cancelButton {
+      width: 160px !important;
+      // margin-right: 0px !important;
+      height: 50px !important;
+      font-weight: 600 !important;
+      font-size: 14px !important;
+      line-height: 21px !important;
+    }
+    .saveButton {
+      font-weight: 600 !important;
+      font-size: 14px !important;
+      line-height: 21px !important;
+
+      width: 160px !important;
+      // margin-left: 20px !important;
+      height: 50px !important;
+    }
+  }
+
+  .settingMain {
+    margin: 100px 20px;
+    padding: 0px 0px;
+  }
+}
+
+.section1 {
+  .settings {
+    font-family: $fontfamily;
+    font-style: $fontStyle;
+    font-weight: $fontWeight;
+    font-size: 38px;
+    line-height: 57px;
+    color: $white;
+  }
+
+  .subHeading {
+    font-family: $fontfamily;
+    font-style: $fontStyle;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: $white;
+    opacity: 0.6;
+  }
+
+  .infoButton {
+    width: auto;
+    height: 42px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+    font-family: $fontfamily;
+    font-style: $fontStyle;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    background-color: $bgColor;
+    color: $white;
+    border: 1px solid $white;
+  }
+
+  .passwordButton {
+    width: 126px;
+    height: 42px;
+    color: $textColor;
+    padding: 9px 24px;
+    font-family: $fontfamily;
+    font-style: $fontStyle;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    background: rgba(255, 187, 84, 0.1);
+    border-radius: 10px;
+    border: none;
+  }
+
+  .passwordButton:hover {
+    background: $textColor;
+    color: $bgColor;
+  }
+
+  .infoButton:hover {
+    background-color: $white;
+    color: $bgColor;
+  }
+}
+
+.section2 {
+  margin-top: 70px;
+
+  .changePassword {
+    font-family: $fontfamily;
+    font-style: $fontStyle;
+    // font-weight: $fontWeight;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 30px;
+    color: $white;
+  }
+
+  .subHeading {
+    font-family: $fontfamily;
+    font-style: $fontStyle;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: $white;
+    opacity: 0.6;
+  }
+}
+
+.formDiv {
+  width: 100%;
+  form {
+    width: 100%;
+
+    font-family: "Poppins";
+    font-style: normal;
+
+    label {
+      color: #4f4f4f;
+    }
+
+    input {
+      width: 90%;
+      background-color: #202020;
+      border: none;
+      height: 60px;
+      border-radius: 10px;
+    }
+
+    .firstRow {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .row-left,
+      .row-right {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        .inputFeilds {
+          color: $white;
+          padding-left: 20px;
+          width: 100%;
+        }
+      }
+    }
+
+    .secRow {
+      width: 100%;
+      margin-top: 40px;
+      display: flex;
+
+      flex-direction: column;
+      justify-content: space-between;
+      .inputFeilds {
+        color: $white;
+        padding-left: 20px;
+        width: 100%;
       }
     }
   }

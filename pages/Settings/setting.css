@@ -644,7 +644,6 @@ a {
   align-items: center;
   justify-content: flex-end;
   margin-top: 40px;
-  margin-left: -20px;
 }
 .settingMain .buttoncontainer .cancelButton {
   background: #41301e;
@@ -671,9 +670,16 @@ a {
   line-height: 24px;
   /* identical to box height */
   color: #08071b;
-  margin-right: 45px;
   width: 181px;
   height: 54px;
+}
+.settingMain .buttoncontainer .saveButton:hover {
+  background-color: #ffffff;
+  color: #141414;
+}
+.settingMain .buttoncontainer .cancelButton:hover {
+  background: #ffbb54;
+  color: #141414;
 }
 
 @media screen and (min-width: 768px) {
@@ -724,45 +730,6 @@ a {
   .settingMain {
     margin: 100px 100px;
     padding: 0px 0px;
-  }
-  .settingMain .buttoncontainer {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-top: 40px;
-    margin-left: -20px;
-    flex-direction: column;
-  }
-  .settingMain .buttoncontainer .cancelButton {
-    background: #41301e;
-    border: none;
-    width: 181px;
-    margin-right: 0px;
-    height: 54px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #ffbb54;
-    border-radius: 14px;
-  }
-  .settingMain .buttoncontainer .saveButton {
-    background: #ffbb54;
-    border-radius: 14px;
-    border: none;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height */
-    color: #08071b;
-    margin-top: 10px;
-    margin-right: 0px;
-    width: 181px;
-    height: 54px;
   }
 
   .header {
@@ -949,6 +916,7 @@ a {
 .formDiv form .firstRow .row-left,
 .formDiv form .firstRow .row-right {
   width: 100%;
+  margin-top: 20px !important;
   display: flex;
   flex-direction: column;
 }
@@ -959,7 +927,7 @@ a {
 }
 .formDiv form .secRow {
   width: 100%;
-  margin-top: 40px;
+  margin-top: 20px !important;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1006,6 +974,160 @@ a {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+}
+
+@media screen and (max-width: 700px) {
+  .buttoncontainer {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 40px;
+  }
+  .buttoncontainer .cancelButton {
+    width: 160px !important;
+    height: 50px !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+  }
+  .buttoncontainer .saveButton {
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+    width: 160px !important;
+    height: 50px !important;
+  }
+
+  .settingMain {
+    margin: 100px 20px;
+    padding: 0px 0px;
+  }
+}
+.section1 .settings {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 57px;
+  color: #ffffff;
+}
+.section1 .subHeading {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+.section1 .infoButton {
+  width: auto;
+  height: 42px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: none;
+  margin-right: 10px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  background-color: #141414;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.section1 .passwordButton {
+  width: 126px;
+  height: 42px;
+  color: #ffbb54;
+  padding: 9px 24px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  background: rgba(255, 187, 84, 0.1);
+  border-radius: 10px;
+  border: none;
+}
+.section1 .passwordButton:hover {
+  background: #ffbb54;
+  color: #141414;
+}
+.section1 .infoButton:hover {
+  background-color: #ffffff;
+  color: #141414;
+}
+
+.section2 {
+  margin-top: 70px;
+}
+.section2 .changePassword {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #ffffff;
+}
+.section2 .subHeading {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.formDiv {
+  width: 100%;
+}
+.formDiv form {
+  width: 100%;
+  font-family: "Poppins";
+  font-style: normal;
+}
+.formDiv form label {
+  color: #4f4f4f;
+}
+.formDiv form input {
+  width: 90%;
+  background-color: #202020;
+  border: none;
+  height: 60px;
+  border-radius: 10px;
+}
+.formDiv form .firstRow {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.formDiv form .firstRow .row-left,
+.formDiv form .firstRow .row-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.formDiv form .firstRow .row-left .inputFeilds,
+.formDiv form .firstRow .row-right .inputFeilds {
+  color: #ffffff;
+  padding-left: 20px;
+  width: 100%;
+}
+.formDiv form .secRow {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.formDiv form .secRow .inputFeilds {
+  color: #ffffff;
+  padding-left: 20px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=setting.css.map */
