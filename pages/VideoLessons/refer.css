@@ -54,12 +54,14 @@ a {
   border-radius: 8px;
   border: none;
   outline: none;
+  color: white;
   width: 100%;
   height: 40px;
   padding-left: 60px;
 }
 .searchcontainer .secondcontainer {
   width: 260px;
+  cursor: pointer;
   margin-left: 20px;
   height: 60px;
   margin-top: 2px;
@@ -139,6 +141,10 @@ a {
   border: 1px solid #ffffff;
 }
 
+.navlist_twoclass {
+  display: none;
+}
+
 .header {
   width: 100%;
   height: var(--header-height);
@@ -148,12 +154,13 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 0rem 1rem;
   background-color: var(--white-color);
   z-index: var(--z-fixed);
   transition: 0.5s;
   background-color: #141414;
 }
+
 .header .openMobileMono {
   display: none;
 }
@@ -162,8 +169,12 @@ a {
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
-  margin-left: -30px;
-  border-radius: 10px;
+  background-color: rgb(81, 80, 80);
+  position: relative;
+  left: 0;
+  padding: 0px 6px 8px 6px;
+  margin-left: 40px;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .header_img {
@@ -174,6 +185,7 @@ a {
   border-radius: 50%;
   overflow: hidden;
 }
+
 .header_img img {
   width: 40px;
 }
@@ -182,7 +194,7 @@ a {
   position: fixed;
   top: 0;
   left: -30%;
-  width: var(--nav-width);
+  width: 90px;
   height: 100%;
   background-color: #141414;
   padding: 0.5rem 1rem 0 0;
@@ -199,21 +211,123 @@ a {
   padding-left: 30px !important;
 }
 
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.nav-tabs {
+  border-bottom: none !important;
+}
+
+.navitemclass {
+  padding-bottom: 12px;
+  width: 50% !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.navitemclass:focus {
+  border-bottom: 2px solid white !important;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: transparent !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.nav_list .navlinkthree {
+  position: relative;
+  top: -16px;
+  left: 3px;
+}
+.nav_list .nav_link .nav_name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  /* identical to box height */
+  color: #ffffff;
+}
+
 .nav_logo,
 .nav_link {
+  cursor: pointer;
   display: grid;
   grid-template-columns: max-content max-content;
   align-items: center;
-  column-gap: 2.75rem;
-  padding: 0.5rem 0 0rem 1.5rem;
+  align-items: center;
+  column-gap: 2.4rem;
+  padding: 0.5rem 0rem 0.5rem 1.5rem;
+}
+.nav_logo .accordion-item,
+.nav_link .accordion-item {
+  position: relative !important;
+  left: -20px !important;
+}
+.nav_logo .accordion-item .nav_name,
+.nav_link .accordion-item .nav_name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
   line-height: 27px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.nav_logo #collapseOne,
+.nav_link #collapseOne {
+  border: none;
+}
+.nav_logo .accorbd,
+.nav_link .accorbd {
+  background-color: #141414;
+}
+.nav_logo .accorbd .inneraccor,
+.nav_link .accorbd .inneraccor {
+  margin-left: 38px;
+}
+.nav_logo .accorbd .inneraccor span,
+.nav_link .accorbd .inneraccor span {
+  font-size: 12px;
+  margin-left: -20px;
+}
+.nav_logo .accorbtn,
+.nav_link .accorbtn {
+  background-color: #141414 !important;
+  border: none;
+  outline: none;
+  width: auto;
+  color: white !important;
+}
+.nav_logo .accorbtn .nav_nameTwo,
+.nav_link .accorbtn .nav_nameTwo {
+  margin-left: 40px;
+}
+.nav_logo .accordion-button::after,
+.nav_link .accordion-button::after {
+  content: "";
+  background-image: url(../../img/vectorarrow.png) !important;
+  margin-left: 16px;
+  background-size: 11.3px;
+  margin-top: -12px;
+  transform: rotate(180deg);
 }
 
 .nav_link:hover {
   background: radial-gradient(354.23% 3112.34% at -29.41% 333.8%, rgba(255, 187, 84, 0.2) 50.63%, rgba(255, 187, 84, 0) 100%) !important;
   width: 100% !important;
   height: 100% !important;
-  padding-bottom: 10px !important;
+}
+
+.nav_name:hover {
+  color: #ffbb54 !important;
 }
 
 .nav_logo {
@@ -223,7 +337,7 @@ a {
   /* font-weight: 800; */
   font-size: 36px;
   line-height: 54px;
-  margin-left: -8px;
+  margin-left: -45px;
   color: #ffffff;
 }
 
@@ -243,11 +357,18 @@ a {
   position: relative;
   color: var(--first-color-light);
   margin-bottom: 1rem;
+  left: 0;
+  margin-left: -30px;
   transition: 0.3s;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
 }
+
+.nav_link:hover {
+  background-color: var(--white-color);
+}
+
 .nav_link:hover {
   color: var(--white-color);
 }
@@ -260,13 +381,10 @@ a {
   left: 0;
 }
 
-.body-pd {
-  padding-left: calc(var(--nav-width) + 1rem);
-}
-
 .active {
   color: var(--white-color);
 }
+
 .active::before {
   content: "";
   position: absolute;
@@ -274,7 +392,7 @@ a {
   top: 0px;
   width: 2px;
   height: 45px;
-  background-color: #FFBB54;
+  background-color: #ffbb54;
 }
 
 .height-100 {
@@ -358,8 +476,8 @@ a {
 
 .topdiv {
   position: relative;
-  top: 80px;
-  padding-left: 200px;
+  top: 20px;
+  padding-left: 180px;
 }
 .topdiv .headmain .videolesson {
   font-family: "Poppins";
@@ -386,8 +504,8 @@ a {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 70px;
-  margin-left: 40px;
+  margin-top: 20px;
+  margin-left: 120px;
 }
 
 @media screen and (min-width: 768px) {
@@ -434,21 +552,11 @@ a {
 }
 
 .checkToggle {
-  margin-left: 155px;
+  margin-left: 170px;
   transform: rotate(180deg);
 }
 
 @media screen and (max-width: 860px) {
-  .maincontainer {
-    margin-left: -20px;
-  }
-
-  .topdiv {
-    position: relative;
-    top: 80px;
-    padding-left: 20px;
-  }
-
   .header {
     padding: 40px 20px;
   }
@@ -519,20 +627,86 @@ a {
     opacity: 0.4;
   }
 }
+@media screen and (max-width: 991px) {
+  .newcontainer {
+    display: none !important;
+  }
+
+  .maincontainer {
+    margin-left: -20px;
+    padding-left: 0px;
+    margin-top: -10px;
+  }
+
+  .topdiv {
+    position: relative;
+    top: -10px;
+    padding-left: 20px;
+  }
+
+  .navlist_twoclass {
+    display: block !important;
+    padding-left: 80px;
+    padding-top: 40px;
+  }
+
+  .header {
+    padding: 40px 20px;
+  }
+
+  .header .openMobileMono {
+    display: block !important;
+    position: absolute;
+    right: 20px;
+  }
+
+  .header_toggle {
+    display: none;
+  }
+
+  .l-navbar {
+    display: none !important;
+  }
+
+  .l-navbar .nav {
+    display: none !important;
+  }
+
+  .searchcontainer .bellIcon {
+    display: none;
+  }
+
+  .searchcontainer .searchicon {
+    display: none;
+  }
+
+  .searchcontainer .searchinputfield {
+    display: none;
+  }
+
+  .searchcontainer .icon {
+    display: none;
+  }
+}
 @media screen and (max-width: 679px) {
+  .topdiv .headmain .videolesson {
+    line-height: 87px;
+  }
+
   .mainCard {
     background-color: #141414;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 350px;
+    width: 100%;
+    padding-left: 20px;
   }
 
   .maincard {
     display: flex;
   }
   .maincard .videoclass {
-    width: 180px;
+    width: 200px;
     border-radius: 20px;
   }
   .maincard .submaincontainer {
