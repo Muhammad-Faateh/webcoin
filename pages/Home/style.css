@@ -498,18 +498,25 @@ body {
   margin-left: -16px;
   width: 100%;
 }
+.footer .mainFooterDiv .firstDiv .content .menu .contentsubtext {
+  margin-left: 42px;
+}
+.footer .mainFooterDiv .firstDiv .content .menu .contentsubtexttwo {
+  margin-left: 20px;
+}
+.footer .mainFooterDiv .firstDiv .content .menu .contentsubtextthree {
+  margin-left: 20px;
+}
 .footer .mainFooterDiv .firstDiv .content .menu a {
-  padding: 0px 20px;
-  text-decoration: none;
-  font-family: "Poppins";
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: calc(0.2rem + 1vw);
-  line-height: 20px;
-  font-family: inherit;
-  color: #fff;
   font-size: 15px;
+  line-height: 20px;
   letter-spacing: -0.204545px;
+  color: #FFFFFF;
+  padding: 0px 20px;
+  text-decoration: none;
 }
 .footer .mainFooterDiv .firstDiv .content .menu a.feature {
   padding-left: 50px;
@@ -1175,8 +1182,6 @@ body {
 
 .slidertwo {
   margin-top: 20px;
-  position: relative;
-  left: -50px;
 }
 
 @media screen and (max-width: 669px) {

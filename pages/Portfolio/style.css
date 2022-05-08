@@ -19,7 +19,6 @@
 body {
   position: relative;
   margin: var(--header-height) 0 0 0;
-  /* padding: 0 1rem; */
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   transition: 0.5s;
@@ -81,6 +80,72 @@ a {
   display: flex;
 }
 
+.searchcontainer .bellIcon {
+  margin-left: 12px;
+}
+
+.searchcontainer .dropdown-toggle::after {
+  content: none !important;
+}
+.searchcontainer .dropdown_submenu {
+  width: 300px;
+  background: #242323;
+  border-radius: 16px;
+  margin-top: 10px;
+}
+.searchcontainer .dropdown_submenu .secondcontainertwo {
+  width: 260px;
+  cursor: pointer;
+  margin-left: 20px;
+  height: 60px;
+  margin-top: 2px;
+  align-items: center;
+  position: relative;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+}
+.searchcontainer .dropdown_submenu .secondcontainertwo .dropd {
+  position: absolute;
+  right: 10px;
+}
+.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass {
+  position: absolute;
+  top: 5px;
+  left: 50px;
+}
+.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass .userprofileheading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass .verifiedheading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.4;
+}
+.searchcontainer .dropdown_submenu .addprofile {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 20px;
+}
+.searchcontainer .dropdown_submenu .addprofile .addprofiletext {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  color: #bdbbbb;
+}
+
 .searchcontainer .secondcontainer .dropd {
   position: absolute;
   right: 20px;
@@ -98,7 +163,6 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   color: #ffffff;
 }
 
@@ -108,7 +172,6 @@ a {
   font-weight: 400;
   font-size: 11px;
   line-height: 16px;
-  /* identical to box height */
   color: #ffffff;
   opacity: 0.4;
 }
@@ -131,10 +194,8 @@ a {
 }
 
 .row .imageDropDown {
-  /* opacity: 0.1; */
   width: 260px;
   border: 1.5px solid #ffffff;
-  /* box-sizing: border-box; */
   border-radius: 16px;
   height: 60px;
 }
@@ -154,6 +215,10 @@ a {
   top: 147px;
   opacity: 0.1;
   border: 1px solid #ffffff;
+}
+
+.navlist_twoclass {
+  display: none;
 }
 
 .header {
@@ -183,8 +248,8 @@ a {
   background-color: rgb(81, 80, 80);
   position: relative;
   left: 0;
-  padding: 0px 6px 8px 6px;
-  margin-left: 40px;
+  padding: 10px 6px 10px 6px;
+  margin-left: 20px;
   border-radius: 0px 10px 10px 0px;
 }
 
@@ -252,18 +317,62 @@ a {
   box-shadow: none !important;
 }
 
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: -26.5px;
+  background-color: transparent !important;
+  line-height: 22px;
+  align-items: center;
+}
+.accordion-item:first-of-type .accorbd {
+  background-color: #141414;
+}
+.accordion-item:first-of-type .accorbd .inneraccor {
+  margin-left: 7px;
+}
+.accordion-item:first-of-type .accorbd .inneraccor span {
+  font-size: 14px;
+  margin-left: -20px;
+}
+.accordion-item:first-of-type .accorbtn {
+  background-color: #141414 !important;
+  border: none;
+  outline: none;
+  width: 280px;
+  color: #ffffff;
+}
+.accordion-item:first-of-type .accorbtn .nav_nameTwo {
+  margin-left: 40px;
+}
+.accordion-item:first-of-type .accorbtn:hover {
+  background: radial-gradient(354.23% 3112.34% at -29.41% 333.8%, rgba(255, 187, 84, 0.2) 50.63%, rgba(255, 187, 84, 0) 100%) !important;
+  color: #ffbb54 !important;
+}
+.accordion-item:first-of-type .accordion-button::after {
+  content: "";
+  background-image: url(../../img/vectorarrow.png) !important;
+  margin-left: 16px;
+  background-size: 11.3px;
+  margin-top: -12px;
+  transform: rotate(180deg);
+}
+
 .nav_list .navlinkthree {
   position: relative;
-  top: -16px;
-  left: 3px;
+  top: 8px;
+  left: px;
 }
-.nav_list .nav_link .nav_name {
+.nav_list .nav_link {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 27px;
-  /* identical to box height */
   color: #ffffff;
 }
 
@@ -277,75 +386,19 @@ a {
   column-gap: 2.4rem;
   padding: 0.5rem 0rem 0.5rem 1.5rem;
 }
-.nav_logo .accordion-item,
-.nav_link .accordion-item {
-  position: relative !important;
-  left: -20px !important;
-}
-.nav_logo .accordion-item .nav_name,
-.nav_link .accordion-item .nav_name {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 27px;
-  /* identical to box height */
-  color: #ffffff;
-}
-.nav_logo #collapseOne,
-.nav_link #collapseOne {
-  border: none;
-}
-.nav_logo .accorbd,
-.nav_link .accorbd {
-  background-color: #141414;
-}
-.nav_logo .accorbd .inneraccor,
-.nav_link .accorbd .inneraccor {
-  margin-left: 38px;
-}
-.nav_logo .accorbd .inneraccor span,
-.nav_link .accorbd .inneraccor span {
-  font-size: 12px;
-  margin-left: -20px;
-}
-.nav_logo .accorbtn,
-.nav_link .accorbtn {
-  background-color: #141414 !important;
-  border: none;
-  outline: none;
-  width: auto;
-  color: white !important;
-}
-.nav_logo .accorbtn .nav_nameTwo,
-.nav_link .accorbtn .nav_nameTwo {
-  margin-left: 40px;
-}
-.nav_logo .accordion-button::after,
-.nav_link .accordion-button::after {
-  content: "";
-  background-image: url(../../img/vectorarrow.png) !important;
-  margin-left: 16px;
-  background-size: 11.3px;
-  margin-top: -12px;
-  transform: rotate(180deg);
-}
 
 .nav_link:hover {
   background: radial-gradient(354.23% 3112.34% at -29.41% 333.8%, rgba(255, 187, 84, 0.2) 50.63%, rgba(255, 187, 84, 0) 100%) !important;
+  color: #ffbb54 !important;
   width: 100% !important;
   height: 100% !important;
 }
 
-.nav_name:hover {
-  color: #ffbb54 !important;
-}
-
 .nav_logo {
   margin-bottom: 2rem;
+  margin-top: -10px;
   font-family: "Poppins";
   font-style: normal;
-  /* font-weight: 800; */
   font-size: 36px;
   line-height: 54px;
   margin-left: -45px;
@@ -374,14 +427,6 @@ a {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-}
-
-.nav_link:hover {
-  background-color: var(--white-color);
-}
-
-.nav_link:hover {
-  color: var(--white-color);
 }
 
 .nav_icon {
@@ -427,7 +472,6 @@ a {
   font-weight: 600;
   font-size: 38px;
   line-height: 57px;
-  /* identical to box height */
   color: #ffffff;
 }
 
@@ -437,7 +481,6 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  /* identical to box height, or 214% */
   color: #ffffff;
   opacity: 0.6;
 }
@@ -448,7 +491,6 @@ a {
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
-  /* identical to box height, or 165% */
   color: #ffffff;
 }
 
@@ -458,7 +500,6 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   color: #ffffff;
   opacity: 0.6;
 }
@@ -490,7 +531,7 @@ a {
 .topdiv {
   position: relative;
   top: 0px;
-  padding-left: 150px;
+  padding-left: 170px;
 }
 
 .topdiv .headmain .videolesson {
@@ -499,7 +540,6 @@ a {
   font-weight: 600;
   font-size: 38px;
   line-height: 57px;
-  /* identical to box height */
   color: #ffffff;
 }
 
@@ -509,7 +549,6 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  /* identical to box height, or 214% */
   color: #ffffff;
   opacity: 0.6;
 }
@@ -518,7 +557,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 130px !important;
+  margin-left: 150px !important;
 }
 
 .firstcontainer .mainContainer {
@@ -584,7 +623,6 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   color: #ffffff;
 }
 
@@ -595,7 +633,6 @@ a {
   margin-bottom: 5px;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   color: #ffffff;
   opacity: 0.55;
 }
@@ -606,7 +643,6 @@ a {
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
-  /* identical to box height */
   color: #ffffff;
 }
 
@@ -616,7 +652,6 @@ a {
   font-weight: 600;
   font-size: 50px;
   line-height: 75px;
-  /* identical to box height */
   color: #ffbb54;
 }
 
@@ -682,7 +717,6 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   color: #ffffff;
 }
 
@@ -710,7 +744,6 @@ a {
   font-size: 10px;
   line-height: 15px;
   margin-left: 20px;
-  /* identical to box height */
   margin-top: 10px;
   color: #3ed10a;
 }
@@ -732,7 +765,7 @@ a {
 
 .firstcontainer .canvasfirstcontainer .subcanvascontainer {
   width: 100% !important;
-  height: 120px !important;
+  height: 160px !important;
 }
 
 .firstcontainer .assetsmainsection {
@@ -779,7 +812,7 @@ a {
 
 .canvasgraphcontainer .canvasgraph {
   width: 100%;
-  height: 120px;
+  height: 140px;
 }
 
 .firstcontainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .bitcoinheading {
@@ -788,7 +821,6 @@ a {
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
-  /* identical to box height */
   color: #ffffff;
 }
 
@@ -798,7 +830,6 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   color: #ffffff;
   opacity: 0.8;
 }
@@ -809,7 +840,6 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   color: #14bd6c;
   margin-left: 10px;
 }
@@ -820,7 +850,6 @@ a {
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
-  /* identical to box height */
   color: #ffffff;
 }
 
@@ -836,7 +865,6 @@ a {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  /* identical to box height */
   text-align: right;
   color: #ffffff;
   position: relative;
@@ -850,7 +878,6 @@ a {
   font-weight: 400;
   font-size: 10px;
   line-height: 15px;
-  /* identical to box height */
   color: #ffffff;
   position: relative;
   top: 12px;
@@ -863,7 +890,6 @@ a {
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
-  /* identical to box height */
   color: #14bd6c;
 }
 
@@ -895,7 +921,6 @@ a {
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
-  /* identical to box height */
   color: #ffffff;
 }
 
@@ -929,7 +954,6 @@ a {
   font-weight: 500;
   font-size: 10px;
   line-height: 15px;
-  /* identical to box height */
   position: relative;
   top: 5px;
   color: #ffffff;
@@ -950,7 +974,6 @@ a {
   margin-top: 5px;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height */
   color: #ffffff;
 }
 
@@ -993,7 +1016,6 @@ a {
   margin-top: 5px;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height */
   color: #ffffff;
 }
 
@@ -1023,7 +1045,7 @@ a {
   }
 
   .show {
-    width: calc(var(--nav-width) + 140px);
+    width: calc(var(--nav-width) + 150px);
   }
 
   .body-pd {
@@ -1042,7 +1064,8 @@ a {
 }
 
 .checkToggle {
-  margin-left: 170px;
+  margin-left: 190px;
+  border-radius: 10px 0px 0px 10px;
   transform: rotate(180deg);
 }
 
@@ -1214,7 +1237,6 @@ a {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
     color: #ffffff;
   }
 
@@ -1225,7 +1247,6 @@ a {
     margin-bottom: 5px;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
     color: #ffffff;
     opacity: 0.55;
   }
@@ -1236,7 +1257,6 @@ a {
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
-    /* identical to box height */
     color: #ffffff;
   }
 
@@ -1246,7 +1266,6 @@ a {
     font-weight: 600;
     font-size: 50px;
     line-height: 75px;
-    /* identical to box height */
     color: #ffbb54;
   }
 
@@ -1312,7 +1331,6 @@ a {
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
     color: #ffffff;
   }
 
@@ -1341,7 +1359,6 @@ a {
     font-size: 10px;
     line-height: 15px;
     margin-left: 20px;
-    /* identical to box height */
     margin-top: 10px;
     color: #3ed10a;
   }
@@ -1402,7 +1419,6 @@ a {
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
-    /* identical to box height */
     color: #ffffff;
   }
 
@@ -1412,7 +1428,6 @@ a {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
     color: #ffffff;
     opacity: 0.8;
   }
@@ -1423,7 +1438,6 @@ a {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
     color: #14bd6c;
     margin-left: 10px;
   }
@@ -1434,7 +1448,6 @@ a {
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
-    /* identical to box height */
     color: #ffffff;
   }
 
@@ -1450,7 +1463,6 @@ a {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    /* identical to box height */
     text-align: right;
     color: #ffffff;
     position: relative;
@@ -1464,7 +1476,6 @@ a {
     font-weight: 400;
     font-size: 10px;
     line-height: 15px;
-    /* identical to box height */
     color: #ffffff;
     position: relative;
     top: 12px;
@@ -1477,7 +1488,6 @@ a {
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
-    /* identical to box height */
     color: #14bd6c;
   }
 
@@ -1507,7 +1517,6 @@ a {
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
-    /* identical to box height */
     color: #ffffff;
   }
 
@@ -1540,7 +1549,6 @@ a {
     font-weight: 500;
     font-size: 10px;
     line-height: 15px;
-    /* identical to box height */
     color: #ffffff;
     opacity: 0.6;
   }
@@ -1559,7 +1567,6 @@ a {
     margin-top: 5px;
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height */
     color: #ffffff;
   }
 
@@ -1580,7 +1587,6 @@ a {
     font-weight: 500;
     font-size: 10px;
     line-height: 15px;
-    /* identical to box height */
     color: #ffffff;
     opacity: 0.6;
   }
@@ -1600,7 +1606,6 @@ a {
     margin-top: 5px;
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height */
     color: #ffffff;
   }
 }
@@ -1653,7 +1658,6 @@ a {
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
-    /* identical to box height */
     color: #ffffff;
   }
 
@@ -1685,7 +1689,6 @@ a {
     font-weight: 500;
     font-size: 10px;
     line-height: 15px;
-    /* identical to box height */
     color: #ffffff;
     opacity: 0.6;
   }
@@ -1704,7 +1707,6 @@ a {
     margin-top: 5px;
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height */
     color: #ffffff;
   }
 
@@ -1725,7 +1727,6 @@ a {
     font-weight: 500;
     font-size: 10px;
     line-height: 15px;
-    /* identical to box height */
     color: #ffffff;
     opacity: 0.6;
   }
@@ -1745,7 +1746,6 @@ a {
     margin-top: 5px;
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height */
     color: #ffffff;
   }
 
@@ -1800,7 +1800,6 @@ a {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
     color: #ffffff;
   }
 
@@ -1811,7 +1810,6 @@ a {
     margin-bottom: 5px;
     font-size: 12px;
     line-height: 21px;
-    /* identical to box height */
     color: #ffffff;
     opacity: 0.55;
   }
@@ -1830,7 +1828,6 @@ a {
     font-weight: 600;
     font-size: 16px;
     line-height: 36px;
-    /* identical to box height */
     color: #ffffff;
   }
 
@@ -1840,7 +1837,6 @@ a {
     font-weight: 600;
     font-size: 40px;
     line-height: 75px;
-    /* identical to box height */
     color: #ffbb54;
   }
 
@@ -1884,7 +1880,8 @@ a {
   }
 
   .canvasgraphcontainer .canvasgraph {
-    height: 100px !important;
+    height: 140px !important;
+    width: 200px !important;
   }
 
   .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .bitcoinheading {
@@ -1893,7 +1890,6 @@ a {
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
-    /* identical to box height */
     color: #ffffff;
   }
 
@@ -1903,7 +1899,6 @@ a {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
     color: #ffffff;
     opacity: 0.8;
   }
@@ -1914,7 +1909,6 @@ a {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
     color: #14bd6c;
     margin-left: 10px;
   }
@@ -1925,7 +1919,6 @@ a {
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
-    /* identical to box height */
     color: #ffffff;
   }
 
@@ -1941,7 +1934,6 @@ a {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    /* identical to box height */
     text-align: right;
     color: #ffffff;
     opacity: 0.6;
@@ -1953,7 +1945,6 @@ a {
     font-weight: 400;
     font-size: 10px;
     line-height: 15px;
-    /* identical to box height */
     color: #ffffff;
     opacity: 0.4;
   }
@@ -1964,7 +1955,6 @@ a {
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
-    /* identical to box height */
     color: #14bd6c;
   }
 
@@ -2029,7 +2019,6 @@ a {
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
     color: #ffffff;
   }
 
@@ -2058,7 +2047,6 @@ a {
     font-size: 10px;
     line-height: 15px;
     margin-left: 20px;
-    /* identical to box height */
     margin-top: 10px;
     color: #3ed10a;
   }

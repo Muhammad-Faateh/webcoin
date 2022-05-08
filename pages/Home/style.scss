@@ -1,4 +1,3 @@
-// @import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Open+Sans:ital,wght@0,300;1,300;1,600&family=Poppins:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Open+Sans:ital,wght@0,300;1,300;1,600&family=Poppins:wght@100;200;300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
@@ -14,21 +13,13 @@ $white: #fff;
 $textColor: #ffbb54;
 $fontfamily: "Poppins", sans-serif;
 $inputBg: #2d2d2d;
-// for increase button width for mobile ($buttonWidth* 24%) & for mobile ($buttonWidth * 50%) ========
 $buttonWidth: 2;
-// for styling button height every button like social link and submit button
 $buttonHeight: 2;
-// mpbile button height width will be 100%
 $mobileButtonHeight: 2;
-// social media icons size=====================
 $SocialIconSize: 4;
-// top header memu links sizes ==========
 $menuLink: 0.2rem;
-//for header text size ===============
 $textSize: 2rem;
-//for small paragraph size========
 $paraSize: 1rem;
-// for button text size ====================
 $buttonTextSize: 0.8rem;
 
 body {
@@ -46,8 +37,6 @@ body {
 .top {
   width: 100%;
   position: relative;
-
-  // absolute images on left and right to show in background ===========================
   .topLeftImg {
     position: absolute;
     top: -100px;
@@ -55,15 +44,12 @@ body {
     transform: rotate(320deg);
     width: 700px;
     height: 700px;
-    // z-index: -1;
     opacity: 0.1;
   }
 
   .ellipse {
     position: absolute;
     top: -40px;
-    // left: 200px;
-    // opacity: 10px;
   }
 
   .maskGroup {
@@ -74,9 +60,7 @@ body {
     opacity: 0.2;
   }
 
-  // end here ==========================================================================
 
-  // header section start here ===========================
   .header {
     width: 96%;
     max-width: 1160px;
@@ -108,7 +92,6 @@ body {
       }
     }
 
-    // right section start here ====================
     .right {
       display: flex;
       align-items: center;
@@ -137,7 +120,6 @@ body {
         }
       }
 
-      // header left ic0ns===============
       .socialIcons {
         display: flex;
         align-items: center;
@@ -170,7 +152,6 @@ body {
       }
     }
 
-    // mobile menu start here ==================
     .openMobileMenu {
       display: none;
       cursor: pointer;
@@ -262,11 +243,6 @@ body {
   }
 }
 
-// .sliderimages{
-//   .sliderimage{
-//    width: 100%;
-//   }
-// }
 
 .section4 {
   display: flex;
@@ -299,7 +275,6 @@ body {
 
   .firstImageTwo {
     margin-top: 88px;
-    // width: 828.54px !important;
     object-fit: contain;
     height: 572.42px;
     border-bottom-left-radius: 100%;
@@ -315,8 +290,6 @@ body {
 
 .section6maincontainer {
   margin-top: 50px;
-  // border: 1px solid white;
-  // padding-top: 50px;
   position: relative;
   overflow: hidden;
   padding-bottom: 80px;
@@ -328,7 +301,6 @@ body {
     position: absolute;
     opacity: 0.05;
     filter: blur(2px);
-    // height: 200%;
     object-fit: contain;
     width: 100%;
   }
@@ -341,11 +313,9 @@ body {
   }
 
   .section6 {
-    // padding-top: 200px;
     display: flex;
     justify-content: center;
     margin-top: 100px;
-    // position: absolute;
 
     .topHeading2 {
       margin-top: 22px;
@@ -391,7 +361,6 @@ body {
           align-content: center;
           color: #ffffff;
           text-align: center;
-          // margin-top: -120px;
         }
 
         .boxHeading1 {
@@ -403,7 +372,6 @@ body {
           align-content: center;
           color: #ffffff;
           text-align: center;
-          // margin-top: -120px;
         }
 
         .BoxSubHeading {
@@ -437,13 +405,10 @@ body {
 }
 
 .section6 {
-  // padding-top: 200px;
   display: flex;
   justify-content: center;
   margin-top: 100px;
 
-  // position: absolute;
-  // padding-bottom: 100px;
   .topHeading2 {
     margin-top: 22px;
     display: flex;
@@ -465,7 +430,6 @@ body {
 }
 
 .imgsection1 {
-  // border: 1px solid white;
   position: absolute;
   left: 0;
 }
@@ -475,14 +439,10 @@ body {
 }
 
 .imgsection3 {
-  // border: 1px solid red;
   position: absolute;
-  // top: 0;
   z-index: -1;
   margin-top: -150px;
   right: 0;
-  // margin-top: 100px;
-  // border: 1px solid white;
 }
 
 .imageslider {
@@ -527,12 +487,9 @@ body {
 }
 
 .imagesecondlasts {
-  // border: 1px solid white;
   position: absolute;
-  // height: 110%;
   z-index: -1;
   margin-top: -250px;
-  // overflow: hidden;
 }
 
 .imagesecondnone {
@@ -569,12 +526,9 @@ body {
 
 .imagelastsss {
   position: absolute;
-  // transform: rotate(180deg);
   left: 0px;
-  // opacity: 0.8;
   margin-top: -250px;
   z-index: -1;
-  // margin-top: -200px;
 }
 
 .maindiv {
@@ -587,24 +541,17 @@ body {
   height: 400px;
   background: #272727;
   width: 100%;
-  // height: 320px;
-  // bottom: 0;
   margin-top: 300px;
 
-  // border: 1px solid red;
   .mainFooterDiv {
     display: flex;
     justify-content: space-between;
-    // border: 1px solid red;
     width: 100%;
 
     .firstDiv {
-      // margin-top: 42px;
-      // padding: 100px;
       padding-left: 200px;
       padding-top: 50px;
       height: auto;
-      // padding-bottom: 100px;
       width: 100%;
 
       .content {
@@ -612,20 +559,25 @@ body {
           margin-top: 38px;
           margin-left: -16px;
           width: 100%;
-
+            .contentsubtext{
+              margin-left: 42px;
+            }
+            .contentsubtexttwo{
+              margin-left: 20px;
+            }
+            .contentsubtextthree{
+              margin-left: 20px;
+            }
           a {
-            padding: 0px 20px;
-            text-decoration: none;
-            font-family: "Poppins";
+            font-family: 'DM Sans';
             font-style: normal;
             font-weight: 400;
-            font-size: calc(#{$menuLink} + 1vw);
-            line-height: 20px;
-            font-family: inherit;
-            color: $white;
             font-size: 15px;
+            line-height: 20px;
             letter-spacing: -0.204545px;
-
+            color: #FFFFFF;
+            padding: 0px 20px;
+            text-decoration: none;
             &.feature {
               padding-left: 50px;
               opacity: 0.6;
@@ -651,9 +603,7 @@ body {
     .secondDiv {
       .socialmainDiv {
         display: flex;
-        // position: relative;
 
-        // justify-content: flex-end;
         .socialIcons {
           position: relative;
           top: 150px;
@@ -668,8 +618,6 @@ body {
             .icons {
               border-radius: 15px;
               margin: 0px 10px;
-              // width: calc(#{$SocialIconSize} * 1vw);
-              // height: calc(#{$SocialIconSize} * 1vw);
               width: 19.56px;
               height: 15.89px;
               display: flex;
@@ -688,25 +636,16 @@ body {
       }
 
       .termPolicies {
-        // padding: 100px 100px 100px 100px;
-        // border: 1px solid white;
         position: relative;
         top: 330px;
         right: 100px;
-        // margin-bottom: -120px;
         display: flex;
         position: relative;
 
-        // border: 1px solid green;
-        // bottom: -100px;
-        // justify-content: space-between;
-        // margin-left: -194;
         .term {
           font-family: "DM Sans";
           font-style: normal;
           font-weight: 400;
-          // width: auto;
-          // border: 1px solid white;
           width: 110px;
           font-size: 15px;
           line-height: 20px;
@@ -733,7 +672,6 @@ body {
   }
 }
 
-// media query start here ================================================
 
 @media screen and (max-width: 1440px) {
   .backgroundimage2 {
@@ -749,7 +687,6 @@ body {
 
   .section6maincontainer {
     border-bottom-left-radius: 0px;
-    // height: 1000px;.
 
     overflow: visible;
     border-bottom-right-radius: 0px;
@@ -779,28 +716,20 @@ body {
 
   .footer {
     position: absolute;
-    // width: 1440px;
     height: 400px;
     background: #272727;
     width: 100%;
-    // height: 320px;
-    // bottom: 0;
     margin-top: 300px;
 
-    // border: 1px solid red;
     .mainFooterDiv {
       display: flex;
       justify-content: space-between;
-      // border: 1px solid red;
       width: 100%;
 
       .firstDiv {
-        // margin-top: 42px;
-        // padding: 100px;
         padding-left: 50px;
         padding-top: 50px;
         height: auto;
-        // padding-bottom: 100px;
         width: 100%;
 
         .content {
@@ -847,9 +776,7 @@ body {
       .secondDiv {
         .socialmainDiv {
           display: flex;
-          // position: relative;
 
-          // justify-content: flex-end;
           .socialIcons {
             position: relative;
             top: 150px;
@@ -864,8 +791,6 @@ body {
               .icons {
                 border-radius: 15px;
                 margin: 0px 10px;
-                // width: calc(#{$SocialIconSize} * 1vw);
-                // height: calc(#{$SocialIconSize} * 1vw);
                 width: 19.56px;
                 height: 15.89px;
                 display: flex;
@@ -884,25 +809,16 @@ body {
         }
 
         .termPolicies {
-          // padding: 100px 100px 100px 100px;
-          // border: 1px solid white;
           position: relative;
           top: 330px;
           right: 0px;
-          // margin-bottom: -120px;
           display: flex;
           position: relative;
 
-          // border: 1px solid green;
-          // bottom: -100px;
-          // justify-content: space-between;
-          // margin-left: -194;
           .term {
             font-family: "DM Sans";
             font-style: normal;
             font-weight: 400;
-            // width: auto;
-            // border: 1px solid white;
             width: 110px;
             font-size: 15px;
             line-height: 20px;
@@ -938,7 +854,6 @@ body {
     align-content: center;
     color: #ffffff;
     text-align: center;
-    // margin-top: -120px;
   }
 
   .boxHeading1 {
@@ -950,7 +865,6 @@ body {
     align-content: center;
     color: #ffffff;
     text-align: center;
-    // margin-top: -120px;
   }
 
   .BoxSubHeading {
@@ -994,24 +908,11 @@ body {
     margin-top: 0px;
   }
 
-  // .section6maincontainer .firstImage{
-  //   margin-top: 100px;
-  // }
   .copyright > h1 {
-    // margin-top: 60px;
-    // font-family: "DM Sans";
-    // font-style: normal;
-    // font-weight: 400;
     font-size: 20px;
-    // line-height: 20px;
-    // letter-spacing: -0.204545px;
-    // color: #ffffff;
-    // mix-blend-mode: normal;
-    // opacity: 0.5;
   }
 
   .imgsection2 {
-    // border: 1px solid red !important;
     width: 80%;
     height: 80%;
   }
@@ -1039,7 +940,6 @@ body {
     align-content: center;
     color: #ffffff;
     text-align: center;
-    // margin-top: -120px;
   }
 
   .boxHeading1 {
@@ -1053,7 +953,6 @@ body {
     align-content: center;
     color: #ffffff;
     text-align: center;
-    // margin-top: -120px;
   }
 
   .BoxSubHeading {
@@ -1079,11 +978,8 @@ body {
 @media screen and (max-width: 800px) {
   .footer {
     .mainFooterDiv {
-      // flex-direction: column;
       .firstDiv {
         padding-top: 20px;
-        // padding-left: 10px;
-        // width: 100%;
       }
 
       .secondDiv {
@@ -1099,11 +995,9 @@ body {
 
   .maindiv {
     background: linear-gradient(180deg, #3a3434 0%, rgba(56, 50, 50, 0) 97.76%);
-    // opacity: 0.1;
     color: #fff;
     margin: 50px;
     padding: 50px 0px 50px 0px;
-    // margin-bottom: 100px;
     display: flex;
     justify-content: center;
 
@@ -1157,7 +1051,6 @@ body {
     align-content: center;
     color: #ffffff;
     text-align: center;
-    // margin-top: -120px;
   }
 
   .boxHeading1 {
@@ -1171,7 +1064,6 @@ body {
     align-content: center;
     color: #ffffff;
     text-align: center;
-    // margin-top: -120px;
   }
 
   .BoxSubHeading {
@@ -1220,7 +1112,6 @@ body {
     align-content: center;
     color: #ffffff;
     text-align: center;
-    // margin-top: -120px;
   }
 
   .boxHeading1 {
@@ -1234,7 +1125,6 @@ body {
     align-content: center;
     color: #ffffff;
     text-align: center;
-    // margin-top: -120px;
   }
 
   .BoxSubHeading {
@@ -1289,27 +1179,16 @@ body {
     margin-top: 70px;
   }
 
-  // .section34{
-  //   margin-top: 100px;
-  // }
   .section77 {
     margin-top: -20px;
   }
 
   .section2 {
     .paragraph {
-      // margin-top: -20px;
-      // padding-bottom: 0px;
-      // border: 1px solid red;
     }
   }
 
-  // .section3{
-  // .paragraph3{
 
-  // margin-top: -40px;
-  // }
-  // }
 
   .section2 {
     height: 100px;
@@ -1317,36 +1196,20 @@ body {
 
   .section3subcontainer {
     margin-top: -80px !important;
-    // padding-bottom: 20px;
     margin-bottom: 50px;
-    // border: 1px solid red !important;
   }
 
   .section3subcontainer2 {
     margin-bottom: 50px;
-    // border: 1px solid red;
   }
 
   .backgroundimage2 {
-    // border: 1px solid red !important;
-    // transform: rotate(16deg);
     display: none;
-    // box-shadow: inset 2px 93px 88px 19px rgba(0,0,0,0.78) !important;
-    // border: 1px solid red;
-    // margin-left: 25px !important;
-    // top: 0 !important;
-    // margin-top: -50px !important;
-    // clip-path: polygon(0 0, 60% 0, 93% 97%, 0% 100%);
 
-    // left: 190px;
     border-top-left-radius: 0px !important;
     border-top-right-radius: 30% !important;
-    // position: fixed;
-    // overflow: hidden;
-    // right: -20% !important;
     margin-top: 140px;
     opacity: 1;
-    // z-index: -1;
     height: 45%;
     width: 70%;
   }
@@ -1380,45 +1243,36 @@ body {
 
   .firstImage {
     opacity: 0.1 !important;
-    // border: 1px solid red !important;
   }
 
   .thirdimage {
     display: none;
-    // border: 1px solid red !important;
   }
 
   .imgsection1 {
     display: none;
-    // border: 1px solid red !important;
   }
 
   .imgsection2 {
-    // border: 1px solid red !important;
   }
 
   .imgsection3 {
-    // border: 1px solid red !important;
     display: none;
   }
 
   .imageslider {
-    // border: 1px solid red !important;
   }
 
   .imagelast {
-    // border: 1px solid red !important;
     width: 50%;
     height: 100%;
     display: none;
-    // margin-right: -100px;
   }
 
   .imagelasts {
     margin-top: -50px;
     z-index: -1;
     width: 40%;
-    // border: 1px solid red !important;
   }
 
   .imagelasttwo {
@@ -1429,13 +1283,10 @@ body {
   }
 
   .imagesecondlast {
-    // border: 1px solid red !important;
     width: 70%;
   }
 
   .imagesecondlasts {
-    // border: 1px solid red !important;
-    // width: 100%;
     display: none;
     transform: rotate(10deg);
     margin-top: 110px;
@@ -1453,7 +1304,6 @@ body {
   }
 
   .imagelastsss {
-    // border: 1px solid red !important;
     display: none;
   }
 
@@ -1478,10 +1328,6 @@ body {
     }
   }
 
-  // br {
-  //   display: block;
-  //   white-space: pre-line;
-  // }
 
   .toggleText {
     display: flex;
@@ -1510,15 +1356,9 @@ body {
 
 .slidertwo {
   margin-top: 20px;
-  position: relative;
-  left: -50px;
 }
 
 @media screen and (max-width: 669px) {
-  // br {
-  //   display: none;
-  //   white-space: pre-line;
-  // }
 
   .section1 {
     display: flex;
@@ -1551,7 +1391,6 @@ body {
   .section3 {
     display: flex;
     justify-content: center;
-    // border: 1px solid white;
 
     .paragraph3 {
       width: 297px;
@@ -1582,7 +1421,6 @@ body {
   .top {
     .topLeftImg {
       top: -120px;
-      // left: -120px;
     }
 
     .login {
@@ -1630,9 +1468,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  // .carousel-inner .carousel-item>div {
-  //     display: none;
-  // }
   .openMobileMenu {
     display: block !important;
   }
@@ -1642,6 +1477,5 @@ body {
   }
 
   .socialIcons {
-    // display: none !important;
   }
 }

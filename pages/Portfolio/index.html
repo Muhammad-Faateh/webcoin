@@ -12,207 +12,234 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style>
-      .main {
-          display: block;
-          position: relative;
-          cursor: pointer;
-      }
-      input[type=checkbox] {
-          visibility: hidden;
-      }
-      .check {
-          position: absolute;
-          top: 16px;
-          left: 0;
-          height: 16px;
-          width: 16px;
-          border-radius: 5px;
-          background-color: rgb(57, 56, 56);
-      }
-      .main input:checked ~ .check {
-          background-color:  #FFBB54;
-      }
-      .check:after {
-          content: "";
-          position: absolute;
-          display: none;
-      }
-      .main input:checked ~ .check:after {
-          display: block;
-      }
-      .main .check:after {
-          left: 5px;
-          top: 1px;
-          width: 6px;
-          height: 12px;
-          border: 1px solid black;
-          border-width: 0 2px 2px 0;
-          -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-      }
-    </style>
+  <style>
+    .main {
+      display: block;
+      position: relative;
+      cursor: pointer;
+    }
 
+    input[type=checkbox] {
+      visibility: hidden;
+    }
+
+    .check {
+      position: absolute;
+      top: 16px;
+      left: 0;
+      height: 16px;
+      width: 16px;
+      border-radius: 5px;
+      background-color: rgb(57, 56, 56);
+    }
+
+    .main input:checked~.check {
+      background-color: #FFBB54;
+    }
+
+    .check:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    .main input:checked~.check:after {
+      display: block;
+    }
+
+    .main .check:after {
+      left: 5px;
+      top: 1px;
+      width: 6px;
+      height: 12px;
+      border: 1px solid black;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  </style>
 </head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
 <body id="body-pd">
-  <!-- header section -->
-    <!-- <header class="header" id="header">
-    <div class="header_toggle" >
-      <img src="../../img/vectoropen.png" id="header-toggle" alt="">
-    </div>
-    <div class="searchcontainer">
-        <img src="../../img/Vector.png" alt="" class="searchicon">
-        <input type="text" placeholder="Search..." class="searchinputfield" />
-      
-      <div style="display: flex; align-items: center;">
-
-        <div class="secondcontainer">
-          <div>
-            <img class="avatar" src="../../img/settings/avatar.svg" alt="avatar" />
-          </div>
-        <div class="lineclass">
-          <h6 class="userprofileheading">User Profile Name</h6>
-          <p class="verifiedheading">Verified</p>
-        </div>
-        <div class="dropd">
-          <img class="dropDown" src="../../img/settings/dropdown.svg" alt="dropdown" />
-        </div>
-        
-      </div>
-      <img class="bellIcon" src="../../img/belliconimage.png" />
-      </div>
-    
-    </div>
-    </div>
-    <div class="openMobileMono">
-      <img src="../../img/menu.png" alt="" />
-    </div>
-  </header> -->
-  <!-- sidebar section -->
-
-
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg" style="background-color: #141414;">
-    <a class="navbar-brand" href="#"><div>
-      <img class="avatar" src="../../img/settings/avatar.svg" alt="avatar" />
-    </div></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#">
+      <div>
+        <img class="avatar" style="margin-left: 30px;" src="../../img/settings/avatar.svg" alt="avatar" />
+      </div>
+    </a>
+    <button class="navbar-toggler" style="position: fixed; right:10px; top: 2px; z-index: 1;" type="button" data-toggle="collapse"
+      data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+      aria-label="Toggle navigation">
       <img src="../../img/Group45.png" alt="">
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup" id="header">
-          <div class="header_toggle">
-            <img src="../../img/vectoropen.png" id="header-toggle" alt="">
-          </div>
-          <div class="nav_list navlist_twoclass">
-            <span href="#" class="nav_link active">
-              <i class=""><img src="../../img/frame.png" alt="" /></i>
-              <span class="nav_name">Dashboard</span>
-            </span>
-            <span href="#" class="nav_link">
-              <i class="">
-                <img src="../../img/Vector.png" alt="" />
-              </i>
-              <span class="nav_name">Article</span>
-            </span>
-            <!-- <i class=""><img src="../../img/Vector.png" alt="" /></i> -->
-            <span href="#" class="nav_link">
-              <i class="">
-                <img src="../../img/frame.png" alt="" />
-              </i>
-              <span class="nav_name">Crypto Suggest</span>
-            </span>
-            <span href="#" class="nav_link">
-              <i class="">
-                <img src="../../img/vid.png" alt="" />
-              </i>
-              <span class="nav_name">Video Lessons</span>
-            </span>
-            <span href="#" class="nav_link">
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                
-                    <button class="accordion-button accorbtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      <i class="">
-                        <img src="../../img/pres.png" alt="" />
-                      </i>
-                      <span class="nav_name" style="margin-left: 42px;">Auto-Trading Bot</span>
-                    </button>
-                  
-                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body accorbd">
-                      <div class="inneraccor nav_link">
-                        <i class="">
-                          <img src="../../img/pres.png" alt="" />
-                        </i>
-                        <span class="nav_name">Transactions</span>
-                      </div>
-  
-                      <div class="inneraccor nav_link">
-                        <i class="">
-                          <img src="../../img/pres.png" alt="" />
-                        </i>
-                        <span class="nav_name">Trading Setting</span>
-                      </div>
-                    </div>
+      <img class="header_toggle" src="../../img/vectoropen.png" id="header-toggle" alt="">
+      <div class="nav_list navlist_twoclass">
+        <span href="#" class="nav_link active">
+          <i class=""><img src="../../img/frame.png" alt="" /></i>
+          <span>Dashboard</span>
+        </span>
+        <span href="#" class="nav_link">
+          <i class="">
+            <img src="../../img/Vector.png" alt="" />
+          </i>
+          <span>Article</span>
+        </span>
+        <span href="#" class="nav_link">
+          <i class="">
+            <img src="../../img/frame.png" alt="" />
+          </i>
+          <span>Crypto Suggest</span>
+        </span>
+        <span href="#" class="nav_link">
+          <i class="">
+            <img src="../../img/vid.png" alt="" />
+          </i>
+          <span>Video Lessons</span>
+        </span>
+        <span href="#">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+
+              <button class="accordion-button accorbtn" style="width: auto;" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <i class="">
+                  <img src="../../img/settingicon.png" alt="" />
+                </i>
+                <span style="margin-left: 42px;">Auto-Trading Bot</span>
+              </button>
+
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body accorbd">
+                  <div class="inneraccor nav_link">
+                    <i class="">
+                      <img src="../../img/settingicon.png" alt="" />
+                    </i>
+                    <span>Transactions</span>
+                  </div>
+
+                  <div class="inneraccor nav_link">
+                    <i class="">
+                      <img src="../../img/pres.png" alt="" />
+                    </i>
+                    <span>Trading Setting</span>
                   </div>
                 </div>
               </div>
-            </span>
-  
-            <span href="#" class="nav_link navlinkthree">
-              <i class="">
-                <img src="../../img/Vector1.png" alt="" />
-              </i>
-              <span class="nav_name" style="margin-left: 3px;">Setting</span>
-            </span>
-            <span href="#" class="nav_link navlinkthree" >
-              <i class="">
-                <img src="../../img/Vector2.png" alt="" />
-              </i>
-              <span class="nav_name"  style="margin-left: 5px;">Support</span>
-            </span>
-            <span href="#" class="nav_link navlinkthree">
-              <i class="">
-                <img src="../../img/profile.png" alt="" />
-              </i>
-              <span class="nav_name">Refer a friend</span>
-            </span>
-            <span href="#" class="nav_link navlinkthree">
-              <i class="">
-                <img src="../../img/Vector1.png" alt="" />
-              </i>
-              <span class="nav_name"  style="margin-left: 4px;">Become VIP</span>
-            </span>
+            </div>
           </div>
+        </span>
 
-          <div class="searchcontainer" id="header">
-              <img src="../../img/Vector.png" alt="" class="searchicon">
-              <input type="text" placeholder="Search..." class="searchinputfield" />
-            
-            <div style="display: flex; align-items: center;">
-      
-              <div class="secondcontainer newcontainer">
+        <span href="#" class="nav_link navlinkthree">
+          <i class="">
+            <img src="../../img/Vector1.png" alt="" />
+          </i>
+          <span style="margin-left: 3px;">Setting</span>
+        </span>
+        <span href="#" class="nav_link navlinkthree">
+          <i class="">
+            <img src="../../img/Vector2.png" alt="" />
+          </i>
+          <span style="margin-left: 5px;">Support</span>
+        </span>
+        <span href="#" class="nav_link navlinkthree">
+          <i class="">
+            <img src="../../img/profile.png" alt="" />
+          </i>
+          <span>Refer a friend</span>
+        </span>
+        <span href="#" class="nav_link navlinkthree">
+          <i class="">
+            <img src="../../img/Vector1.png" alt="" />
+          </i>
+          <span style="margin-left: 4px;">Become VIP</span>
+        </span>
+      </div>
+
+      <div class="searchcontainer" id="header">
+        <img src="../../img/Vector.png" alt="" class="searchicon">
+        <input type="text" placeholder="Search..." class="searchinputfield" />
+        <div style="display: flex; align-items: center;">
+          <div class="dropdown">
+            <a class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="true">
+              <div class="secondcontainer">
                 <div>
                   <img class="avatar" src="../../img/settings/avatar.svg" alt="avatar" />
                 </div>
-              <div class="lineclass">
-                <h6 class="userprofileheading">User Profile Name</h6>
-                <p class="verifiedheading">Verified</p>
+                <div class="lineclass">
+                  <h6 class="userprofileheading">User Profile Name</h6>
+                  <p class="verifiedheading">Verified</p>
+                </div>
+                <div class="dropd">
+                  <img class="dropDown" src="../../img/settings/dropdown.svg" alt="dropdown" />
+                </div>
               </div>
-              <div class="dropd">
-                <img class="dropDown" src="../../img/settings/dropdown.svg" alt="dropdown" />
+            </a>
+            <div class="dropdown-menu dropdown_submenu">
+
+              <div class="secondcontainertwo ">
+                <div>
+                  <img class="avatar" src="../../img/settings/avatar.svg" alt="avatar" />
+                </div>
+                <div class="lineclass">
+                  <h6 class="userprofileheading">User Profile Name</h6>
+                  <p class="verifiedheading">Verified</p>
+                </div>
+                <div class="dropd">
+                  <label class="main">
+                    <input type="checkbox">
+                    <span class="check"></span>
+                  </label>
+                </div>
+
               </div>
-              
+              <div class="secondcontainertwo ">
+                <div>
+                  <img class="avatar" src="../../img/profile2.png" alt="avatar" />
+                </div>
+                <div class="lineclass">
+                  <h6 class="userprofileheading">User Profile Name</h6>
+                  <p class="verifiedheading">Verified</p>
+                </div>
+                <div class="dropd">
+                  <label class="main">
+                    <input type="checkbox">
+                    <span class="check"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="addprofile">
+                <p class="addprofiletext">+ Add Profile</p>
+              </div>
             </div>
-            <img class="bellIcon" src="../../img/belliconimage.png" />
-            </div>
-          
           </div>
-          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <img class="bellIcon" src="../../img/belliconimage.png" />
+        </div>
+
+      </div>
+    </div>
     </div>
   </nav>
+  <!-- Sidebar -->
   <div class="l-navbar" id="nav-bar">
     <nav class="nav">
       <div>
@@ -220,53 +247,56 @@
           <span class="nav_logo-name">LOGO</span>
         </span>
         <div class="nav_list">
-          <span href="#" class="nav_link active">
+          <span href="#" class="nav_link">
             <i class=""><img src="../../img/frame.png" alt="" /></i>
-            <span class="nav_name">Dashboard</span>
+            <span>Dashboard</span>
           </span>
           <span href="#" class="nav_link">
             <i class="">
               <img src="../../img/Vector.png" alt="" />
             </i>
-            <span class="nav_name">Article</span>
+            <span>Article</span>
           </span>
           <span href="#" class="nav_link">
             <i class="">
               <img src="../../img/frame.png" alt="" />
             </i>
-            <span class="nav_name">Crypto Suggest</span>
+            <span>Crypto Suggest</span>
           </span>
           <span href="#" class="nav_link">
             <i class="">
               <img src="../../img/vid.png" alt="" />
             </i>
-            <span class="nav_name">Video Lessons</span>
+            <span>Video Lessons</span>
           </span>
-          <span href="#" class="nav_link">
-            <div id="accordionExample" style="margin-top: -15px;">
+
+          <span href="#">
+            <div id="accordionExample">
               <div class="accordion-item">
-              
-                  <button class="accordion-button accorbtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <i class="">
-                      <img src="../../img/pres.png" alt="" />
-                    </i>
-                    <span class="nav_name" style="margin-left: 38px;">Auto-Trading Bot</span>
-                  </button>
-                
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+
+                <button class="accordion-button accorbtn" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <i class="">
+                    <img src="../../img/pres.png" alt="" />
+                  </i>
+                  <span style="margin-left: 38px;">Auto-Trading Bot</span>
+                </button>
+
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
                   <div class="accordion-body accorbd">
                     <div class="inneraccor nav_link">
                       <i class="">
-                        <img src="../../img/pres.png" alt="" />
+                        <img src="../../img/settingicon.png" alt="" />
                       </i>
-                      <span class="nav_name">Transactions</span>
+                      <span>Transactions</span>
                     </div>
 
                     <div class="inneraccor nav_link">
                       <i class="">
-                        <img src="../../img/pres.png" alt="" />
+                        <img src="../../img/settingicon.png" alt="" />
                       </i>
-                      <span class="nav_name">Trading Setting</span>
+                      <span>Trading Setting</span>
                     </div>
                   </div>
                 </div>
@@ -274,51 +304,35 @@
             </div>
           </span>
 
+
           <span href="#" class="nav_link navlinkthree">
             <i class="">
               <img src="../../img/Vector1.png" alt="" />
             </i>
-            <span class="nav_name" style="margin-left: 3px;">Setting</span>
+            <span style="margin-left: 3px;">Setting</span>
           </span>
-          <span href="#" class="nav_link navlinkthree" >
+          <span href="#" class="nav_link navlinkthree">
             <i class="">
               <img src="../../img/Vector2.png" alt="" />
             </i>
-            <span class="nav_name"  style="margin-left: 5px;">Support</span>
+            <span style="margin-left: 5px;">Support</span>
           </span>
           <span href="#" class="nav_link navlinkthree">
             <i class="">
               <img src="../../img/profile.png" alt="" />
             </i>
-            <span class="nav_name">Refer a friend</span>
+            <span>Refer a friend</span>
           </span>
           <span href="#" class="nav_link navlinkthree">
             <i class="">
               <img src="../../img/Vector1.png" alt="" />
             </i>
-            <span class="nav_name"  style="margin-left: 4px;">Become VIP</span>
+            <span style="margin-left: 4px;">Become VIP</span>
           </span>
         </div>
       </div>
     </nav>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <!-- Overview Header Section -->
   <div class="topdiv">
     <div class="headmain">
@@ -330,106 +344,101 @@
     </div>
   </div>
   <!-- Main Content Section -->
-  <div class=" firstcontainer" >
+  <div class=" firstcontainer">
     <div class="mainContainer">
       <!-- Available Balance Container -->
-    
-        <div class="secondmaincontainer">
-          <img src="../../img/Group95.png" class="containerimage1" alt="">
-          <img src="../../img/Group96.png" class="containerimage2" alt="">
-          <p class="paratext">Available Balance</p>
-          <h1 class="parayellowtext"> 123,789,980</h1>
-          <div class="thirdcontainer">
 
-            <div class="thirdsubcontainer">
-              <div class="thirdsubsubcontainer">
-                <p class="paratexttwo">Wallet</p>
-                <h1 class="headertext">7</h1>
-              </div>
-              <div class="thirdsubsubcontainer transactions">
-                <p class="paratexttwo">Transactions</p>
-                <h1 class="headertext">25,478</h1>
-              </div>
+      <div class="secondmaincontainer">
+        <img src="../../img/Group95.png" class="containerimage1" alt="">
+        <img src="../../img/Group96.png" class="containerimage2" alt="">
+        <p class="paratext">Available Balance</p>
+        <h1 class="parayellowtext"> 123,789,980</h1>
+        <div class="thirdcontainer">
+
+          <div class="thirdsubcontainer">
+            <div class="thirdsubsubcontainer">
+              <p class="paratexttwo">Wallet</p>
+              <h1 class="headertext">7</h1>
             </div>
-            <div>
-              <p class="paratexttwo lastactivityclass">Last Activity at 09 Dec, 2021</p>
+            <div class="thirdsubsubcontainer transactions">
+              <p class="paratexttwo">Transactions</p>
+              <h1 class="headertext">25,478</h1>
+            </div>
+          </div>
+          <div>
+            <p class="paratexttwo lastactivityclass">Last Activity at 09 Dec, 2021</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Activity Container -->
+      <div class="twocontainer">
+        <div class="twosubcontainer">
+          <p class="paratexttwo">Activity</p>
+          <div class="dropdown dropdownmaincontainer">
+            <a class="btn btn-secondary dropdown-toggle dropdownbutton" href="#" role="button" id="dropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Bitcoin
+            </a>
+            <div class="dropdown-menu dropdownshowcontainer">
+              <div class="dropdownsecondcontainer">
+                <img src="../../img/eth.png" alt="">
+                <div class="dropdownthirdcontainer">
+                  <p class="btcheading">ETH</p>
+                  <p class="numberheading">+1,6%</p>
+                </div>
+                <label class="main">
+                  <input type="checkbox">
+                  <span class="check"></span>
+                </label>
+              </div>
+
+              <div class="dropdownsecondcontainer">
+                <img src="../../img/ltc.png" alt="">
+                <div class="dropdownthirdcontainer">
+                  <p class="btcheading">LTC</p>
+                  <p class="numberheading">+1,6%</p>
+                </div>
+                <label class="main">
+                  <input type="checkbox">
+                  <span class="check"></span>
+                </label>
+              </div>
+
+              <div class="dropdownsecondcontainer">
+                <img src="../../img/eth.png" alt="">
+                <div class="dropdownthirdcontainer">
+                  <p class="btcheading">BTC</p>
+                  <p class="numberheading">+1,6%</p>
+                </div>
+                <label class="main">
+                  <input type="checkbox">
+                  <span class="check"></span>
+                </label>
+              </div>
             </div>
           </div>
         </div>
-    
-       <!-- Activity Container -->
-    <div class="twocontainer">
-      <div class="twosubcontainer">
-        <p class="paratexttwo">Activity</p>
-        <div class="dropdown dropdownmaincontainer">
-          <a class="btn btn-secondary dropdown-toggle dropdownbutton" href="#" role="button" id="dropdownMenuLink"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Bitcoin
-          </a>
-          <div class="dropdown-menu dropdownshowcontainer">
-            <div class="dropdownsecondcontainer">
-              <img src="../../img/eth.png" alt="">
-              <div class="dropdownthirdcontainer">
-                <p class="btcheading">ETH</p>
-                <p class="numberheading">+1,6%</p>
-              </div>
-                   <label class="main">
-                    <input type="checkbox">
-                    <span class="check"></span>
-                </label>
-            </div>
+        <div class="twosubcontainervalue">
 
-            <div class="dropdownsecondcontainer">
-              <img src="../../img/ltc.png" alt="">
-              <div class="dropdownthirdcontainer">
-                <p class="btcheading">LTC</p>
-                <p class="numberheading">+1,6%</p>
-              </div>
-                   <label class="main">
-                    <input type="checkbox">
-                    <span class="check"></span>
-                </label>
-            </div>
-
-            <div class="dropdownsecondcontainer">
-              <img src="../../img/eth.png" alt="">
-              <div class="dropdownthirdcontainer">
-                <p class="btcheading">BTC</p>
-                <p class="numberheading">+1,6%</p>
-              </div>
-                   <label class="main">
-                    <input type="checkbox">
-                    <span class="check"></span>
-                </label>
-            </div>
-          </div>
-
-
+          <h1 class="headertext">25,478</h1>
+          <p class="greenrating">+ 4.67%</p>
+        </div>
+        <div class="canvasfirstcontainer">
+          <canvas id="myChart4" class="subcanvascontainer"></canvas>
 
         </div>
-
-
-      </div>
-      <div class="twosubcontainervalue">
-
-        <h1 class="headertext">25,478</h1>
-        <p class="greenrating">+ 4.67%</p>
-      </div>
-      <div class="canvasfirstcontainer">
-        <canvas id="myChart4" class="subcanvascontainer"></canvas>
-
       </div>
     </div>
-    </div>
-    
-      <div class="assetsmainsection">
+
+    <div class="assetsmainsection">
       <!-- Assests Section -->
       <div class="assetmaincontainer">
-        
+
         <p class="assetsheading">Assets</p>
         <div class="assetsfirstcontainer" style="margin-top: 10px;">
           <div style="position: relative; left: 0; top: 30px;">
-    
+
             <img style="position:absolute; left: 15px; top: 15px;" src="../../img/coinicon.png" alt="">
             <img style="position:absolute" src="../../img/rectangle.png" alt="">
           </div>
@@ -443,7 +452,7 @@
           </div>
           <div class="canvasgraphcontainer">
             <canvas id="myChart" class="canvasgraph"></canvas>
-    
+
           </div>
           <div class="thirdassetcontainer">
             <p class="seconddateheading">10 Jan</p>
@@ -455,7 +464,7 @@
         </div>
         <div class="assetsfirstcontainer" style="margin-top: 10px;">
           <div style="position: relative; left: 0; top: 30px;">
-    
+
             <img style="position:absolute; left: 15px; top: 15px;" src="../../img/coinicon.png" alt="">
             <img style="position:absolute" src="../../img/rectangle.png" alt="">
           </div>
@@ -468,8 +477,8 @@
             <h1 class="firstnumberheading">$8,765.32</h1>
           </div>
           <div class="canvasgraphcontainer">
-            <canvas id="myChart2"  class="canvasgraph"></canvas>
-    
+            <canvas id="myChart2" class="canvasgraph"></canvas>
+
           </div>
           <div class="thirdassetcontainer">
             <p class="seconddateheading">10 Jan</p>
@@ -481,7 +490,7 @@
         </div>
         <div class="assetsfirstcontainer" style="margin-top: 10px;">
           <div style="position: relative; left: 0; top: 30px;">
-    
+
             <img style="position:absolute; left: 15px; top: 15px;" src="../../img/coinicon.png" alt="">
             <img style="position:absolute" src="../../img/rectangle.png" alt="">
           </div>
@@ -494,8 +503,8 @@
             <h1 class="firstnumberheading">$8,765.32</h1>
           </div>
           <div class="canvasgraphcontainer">
-            <canvas id="myChart3"  class="canvasgraph"></canvas>
-    
+            <canvas id="myChart3" class="canvasgraph"></canvas>
+
           </div>
           <div class="thirdassetcontainer">
             <p class="seconddateheading">10 Jan</p>
@@ -507,127 +516,122 @@
         </div>
       </div>
       <!-- Tabs Container -->
-      
-        <div class="tabscontainer">
-          <nav>
-            <div class="nav flex-row nav-tabs tabsmaincontainer" id="nav-tab" role="tablist">
-              <a class="navitemclass" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-                aria-controls="nav-home" aria-selected="true">Buy</a>
-              <a class="navitemclass" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-                aria-controls="nav-profile" aria-selected="false">Sell</a>
+      <div class="tabscontainer">
+        <nav>
+          <div class="nav flex-row nav-tabs tabsmaincontainer" id="nav-tab" role="tablist">
+            <a class="navitemclass" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+              aria-controls="nav-home" aria-selected="true">Buy</a>
+            <a class="navitemclass" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+              aria-controls="nav-profile" aria-selected="false">Sell</a>
+          </div>
+        </nav>
+        <div class="tab-content tabscontentcontainer" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+            <div class="buysubsectionfirst">
+              <div>
+                <p class="coinnameheading">CoinName</p>
+                <div class="buysectioncontentsub">
+
+                  <img src="../../img/eth.png" width="40px" height="40px" alt="">
+                  <h4 class="bitcoinheading">Bitcoin/BTC</h4>
+                </div>
+              </div>
+              <img src="../../img/settings/dropdown.svg" alt="dropdown" style="margin-top: 10px;" />
             </div>
-          </nav>
-          <div class="tab-content tabscontentcontainer" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-    
-              <div class="buysubsectionfirst">
+
+
+            <div class="buysectionsecond">
+
+              <div class="buysubsectionsecond">
                 <div>
                   <p class="coinnameheading">CoinName</p>
                   <div class="buysectioncontentsub">
-    
+
+                    <img src="../../img/ltc.png" width="40px" height="40px" alt="">
+                    <h4 class="bitcoinheading">Bitcoin/BTC</h4>
+                  </div>
+                </div>
+                <label class="main">
+                  <input type="checkbox">
+                  <span class="check"></span>
+                </label>
+              </div>
+
+
+              <div class="buysubsectionsecond">
+                <div>
+                  <p class="coinnameheading">CoinName</p>
+                  <div class="buysectioncontentsub">
+
+                    <img src="../../img/ltc.png" width="40px" height="40px" alt="">
+                    <h4 class="bitcoinheading">Bitcoin/BTC</h4>
+                  </div>
+                </div>
+                <label class="main">
+                  <input type="checkbox">
+                  <span class="check"></span>
+                </label>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="buysubsectionfirst">
+              <div>
+                <p class="coinnameheading">CoinName</p>
+                <div class="buysectioncontentsub">
+                  <img src="../../img/ltc.png" width="40px" height="40px" alt="">
+
+                  <h4 class="bitcoinheading">Bitcoin/BTC</h4>
+                </div>
+              </div>
+              <img src="../../img/settings/dropdown.svg" alt="dropdown" />
+            </div>
+
+
+            <div class="buysectionsecond">
+
+              <div class="buysubsectionsecond">
+                <div>
+                  <p class="coinnameheading">CoinName</p>
+                  <div class="buysectioncontentsub">
+
                     <img src="../../img/eth.png" width="40px" height="40px" alt="">
                     <h4 class="bitcoinheading">Bitcoin/BTC</h4>
                   </div>
                 </div>
-                <img src="../../img/settings/dropdown.svg" alt="dropdown" style="margin-top: 10px;"/>
-              </div>
-    
-    
-              <div class="buysectionsecond">
-    
-                <div class="buysubsectionsecond">
-                  <div>
-                    <p class="coinnameheading">CoinName</p>
-                    <div class="buysectioncontentsub">
-    
-                      <img src="../../img/ltc.png" width="40px" height="40px" alt="">
-                      <h4 class="bitcoinheading">Bitcoin/BTC</h4>
-                    </div>
-                  </div>
-                  <label class="main">
-                    <input type="checkbox">
-                    <span class="check"></span>
+                <label class="main">
+                  <input type="checkbox">
+                  <span class="check"></span>
                 </label>
-                </div>
-    
-    
-                <div class="buysubsectionsecond">
-                  <div>
-                    <p class="coinnameheading">CoinName</p>
-                    <div class="buysectioncontentsub">
-    
-                      <img src="../../img/ltc.png" width="40px" height="40px" alt="">
-                      <h4 class="bitcoinheading">Bitcoin/BTC</h4>
-                    </div>
-                  </div>
-                  <label class="main">
-                    <input type="checkbox">
-                    <span class="check"></span>
-                </label>
-                </div>
-    
               </div>
-    
-            </div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-              <div class="buysubsectionfirst">
+
+
+              <div class="buysubsectionsecond">
                 <div>
                   <p class="coinnameheading">CoinName</p>
                   <div class="buysectioncontentsub">
+
                     <img src="../../img/ltc.png" width="40px" height="40px" alt="">
-    
                     <h4 class="bitcoinheading">Bitcoin/BTC</h4>
                   </div>
                 </div>
-                <img src="../../img/settings/dropdown.svg" alt="dropdown" />
-              </div>
-    
-    
-              <div class="buysectionsecond">
-    
-                <div class="buysubsectionsecond">
-                  <div>
-                    <p class="coinnameheading">CoinName</p>
-                    <div class="buysectioncontentsub">
-    
-                      <img src="../../img/eth.png" width="40px" height="40px" alt="">
-                      <h4 class="bitcoinheading">Bitcoin/BTC</h4>
-                    </div>
-                  </div>
-                      <label class="main">
-                    <input type="checkbox">
-                    <span class="check"></span>
+                <label class="main">
+                  <input type="checkbox">
+                  <span class="check"></span>
                 </label>
-                </div>
-    
-    
-                <div class="buysubsectionsecond">
-                  <div>
-                    <p class="coinnameheading">CoinName</p>
-                    <div class="buysectioncontentsub">
-    
-                      <img src="../../img/ltc.png" width="40px" height="40px" alt="">
-                      <h4 class="bitcoinheading">Bitcoin/BTC</h4>
-                    </div>
-                  </div>
-                      <label class="main">
-                    <input type="checkbox">
-                    <span class="check"></span>
-                </label>
-                </div>
-    
               </div>
+
             </div>
           </div>
-    
         </div>
-     
+
+      </div>
     </div>
+  </div>
 
-
-
-
-    </div>
   <!-- Bootstrap Scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -639,8 +643,9 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <!-- Chart Scripts -->
   <script>
     var xValues = [];
@@ -653,7 +658,6 @@
         labels: xValues,
         datasets: [{
           fill: true,
-          // display: none,
           pointRadius: 1,
           borderColor: "rgba(164,156,21,0.53)",
           data: yValues,
@@ -688,7 +692,6 @@
         labels: xValues,
         datasets: [{
           fill: true,
-          // display: none,
           pointRadius: 1,
           borderColor: "#ce4747",
           data: yValues,
@@ -723,7 +726,6 @@
         labels: xValues,
         datasets: [{
           fill: true,
-          // display: none,
           pointRadius: 1,
           borderColor: "	#5ca9bb",
           data: yValues,
@@ -758,7 +760,6 @@
         labels: xValues,
         datasets: [{
           fill: true,
-          // display: none,
           pointRadius: 1,
           borderColor: "	#5ca9bb",
           data: yValues,
@@ -787,21 +788,18 @@
     google.charts.setOnLoadCallback(drawChart);
 
     function drawChart() {
-      // Set Data
       var data = google.visualization.arrayToDataTable([
         ['Price', 'Size'],
         [50, 7], [60, 8], [70, 8], [80, 9], [90, 9],
         [100, 9], [110, 10], [120, 11],
         [130, 14], [140, 14], [150, 15]
       ]);
-      // Set Options
       var options = {
         title: 'House Prices vs. Size',
         hAxis: { title: 'Square Meters' },
         vAxis: { title: 'Price in Millions' },
         legend: 'none'
       };
-      // Draw
       var chart = new google.visualization.LineChart(document.getElementById('myChartt'));
       chart.draw(data, options);
     }
@@ -814,27 +812,17 @@
           nav = document.getElementById(navId),
           bodypd = document.getElementById(bodyId),
           headerpd = document.getElementById(headerId);
-
-        // Validate that all variables exist
         if (toggle && nav && bodypd && headerpd) {
           toggle.addEventListener("click", () => {
             toggle.classList.toggle("checkToggle");
-            // show navbar
             nav.classList.toggle("show");
-            // change icon
             toggle.classList.toggle("bx-x");
-
-            // add padding to body
             bodypd.classList.toggle("body-pd");
-            // add padding to header
             headerpd.classList.toggle("body-pd");
           });
         }
       };
-
       showNavbar("header-toggle", "nav-bar", "body-pd", "header");
-
-      /*===== LINK ACTIVE =====*/
       const linkColor = document.querySelectorAll(".nav_link");
 
       function colorLink() {
@@ -845,120 +833,9 @@
       }
       linkColor.forEach((l) => l.addEventListener("click", colorLink));
 
-      // Your code to run since DOM is loaded and ready
     });
   </script>
 
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
