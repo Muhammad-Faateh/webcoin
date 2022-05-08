@@ -889,7 +889,39 @@ a {
     justify-content: flex-end;
     margin-top: 40px;
     // margin-left: -20px;
-    .cancelButton {
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .cancelButton{
       background: #41301e;
       // opacity: 0.1;
       border: none;
@@ -899,38 +931,127 @@ a {
       font-family: "Poppins";
       font-style: normal;
       font-weight: 600;
+      position: relative;
+      overflow: hidden;
       font-size: 16px;
       line-height: 24px;
       color: #ffbb54;
       border-radius: 14px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #08071b;
+      z-index: 100;
+      opacity: 0.4;
+      bottom: 0px;
+      left: 0px;
+      width: 0px;
+      border-radius: 10px 10px 10px 10px;
+      transition: 0.6s;
     }
-    .saveButton {
-      background: #ffbb54;
-      border-radius: 14px;
-      border: none;
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 24px;
-      /* identical to box height */
-
-      color: #08071b;
-
-      // margin-right: 45px;
-      width: 181px;
-      height: 54px;
+    &:hover {
+      &::before {
+        width: 100%;
+        right: 0px;
+        top: 0px;
+      }
     }
+  }
 
-    .saveButton:hover {
-      background-color: $white;
-      color: $bgColor;
+.saveButton{
+  background: #ffbb54;
+  border-radius: 14px;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #08071b;
+  position: relative;
+  overflow: hidden;
+  width: 181px;
+  height: 54px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #08071b;
+    z-index: 100;
+    opacity: 0.4;
+    left: 0px;
+    bottom: 0px;
+    width: 0px;
+    // top: -30px;
+    border-radius: 10px 10px 10px 10px;
+    transition: 0.6s;
+  }
+  &:hover {
+    &::before {
+      width: 100%;
+      
+      right: 0px;
+      top: 0px;
     }
+  }
+}
 
-    .cancelButton:hover {
-      background: $textColor;
-      color: $bgColor;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // .cancelButton {
+    
+    // }
+    // .saveButton {
+     
+    // }
+
+    // .saveButton:hover {
+    //   background-color: $white;
+    //   color: $bgColor;
+    // }
+
+    // .cancelButton:hover {
+    //   background: $textColor;
+    //   color: $bgColor;
+    // }
   }
 }
 
@@ -1101,13 +1222,55 @@ a {
     opacity: 0.6;
   }
 
-  .infoButton {
-    width: auto;
+  // .infoButton {
+  //   width: auto;
+  //   height: 42px;
+  //   padding: 5px 15px;
+  //   border-radius: 10px;
+  //   border: none;
+  //   margin-right: 10px;
+  //   font-family: $fontfamily;
+  //   font-style: $fontStyle;
+  //   font-weight: 500;
+  //   font-size: $fontSize;
+  //   line-height: 24px;
+  //   background-color: $bgColor;
+  //   color: $white;
+  //   border: 1px solid $white;
+  // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .infoButton{
+      width: auto;
     height: 42px;
     padding: 5px 15px;
     border-radius: 10px;
     border: none;
     margin-right: 10px;
+    position: relative;
     font-family: $fontfamily;
     font-style: $fontStyle;
     font-weight: 500;
@@ -1116,11 +1279,32 @@ a {
     background-color: $bgColor;
     color: $white;
     border: 1px solid $white;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #08071b;
+      z-index: 100;
+      opacity: 0.4;
+      left: 0px;
+      bottom: 0px;
+      width: 0px;
+      border-radius: 10px 10px 10px 10px;
+      transition: 0.6s;
+    }
+    &:hover {
+      &::before {
+        width: 100%;
+        right: 0px;
+        top: 0px;
+      }
+    }
   }
 
-  .passwordButton {
-    width: 126px;
-    height: 42px;
+  .passwordButton{
+    width: 100%;
+    min-height: 35px;
     color: $textColor;
     padding: 9px 24px;
     font-family: $fontfamily;
@@ -1130,18 +1314,31 @@ a {
     line-height: 24px;
     background: rgba(255, 187, 84, 0.1);
     border-radius: 10px;
+    overflow: hidden;
     border: none;
+    position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #08071b;
+    z-index: 100;
+    opacity: 0.4;
+    left: 0px;
+    bottom: 0px;
+    width: 0px;
+    border-radius: 10px 10px 10px 10px;
+    transition: 0.6s;
   }
-
-  .passwordButton:hover {
-    background: $textColor;
-    color: $bgColor;
+  &:hover {
+    &::before {
+      width: 100%;
+      right: 0px;
+      top: 0px;
+    }
   }
-
-  .infoButton:hover {
-    background-color: $white;
-    color: $bgColor;
-  }
+}
 }
 
 .section2 {
@@ -1346,15 +1543,15 @@ a {
     border: none;
   }
 
-  .passwordButton:hover {
-    background: $textColor;
-    color: $bgColor;
-  }
+  // .passwordButton:hover {
+  //   background: $textColor;
+  //   color: $bgColor;
+  // }
 
-  .infoButton:hover {
-    background-color: $white;
-    color: $bgColor;
-  }
+  // .infoButton:hover {
+  //   background-color: $white;
+  //   color: $bgColor;
+  // }
 }
 
 .section2 {
