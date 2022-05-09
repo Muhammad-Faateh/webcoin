@@ -64,54 +64,206 @@
     </head>
   <body  id="body-pd">
 
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="#">
+    <div>
+      <img class="avatar" src="../../img/settings/avatar.svg" alt="avatar" />
+    </div>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <img src="../../img/Group45.png" alt="">
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup" id="header">
+    <img class="header_toggle" src="../../img/vectoropen.png" id="header-toggle" alt="">
+    <div class="nav_list navlist_twoclass">
+      <a href="#" class="nav_link active">
+        <i class=""><img src="../../img/frame.png" alt="" /></i>
+        <span>Dashboard</span>
+      </a>
+      <a href="#" class="nav_link">
+        <i class="">
+          <img src="../../img/Vector.png" alt="" />
+        </i>
+        <span>Article</span>
+      </a>
+      <a href="#" class="nav_link">
+        <i class="">
+          <img src="../../img/frame.png" alt="" />
+        </i>
+        <span>Crypto Suggest</span>
+      </a>
+      <a href="#" class="nav_link">
+        <i class="">
+          <img src="../../img/vid.png" alt="" />
+        </i>
+        <span>Video Lessons</span>
+      </a>
+      <a href="#">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <button class="accordion-button accorbtn" style="width: auto;" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <i class="">
+                <img src="../../img/settingicon.png" alt="" />
+              </i>
+              <span>Auto-Trading Bot</span>
+            </button>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body accorbd">
+                <div class="inneraccor nav_link">
+                  <i class="">
+                    <img src="../../img/settingicon.png" alt="" />
+                  </i>
+                  <span>Transactions</span>
+                </div>
 
-   <!-- Navbar -->
-   <nav class="navbar navbar-expand-lg" style="background-color: #141414;">
-    <a class="navbar-brand" href="#">
-      <div>
-        <img class="avatar" style="margin-left: 30px;" src="../../img/settings/avatar.svg" alt="avatar" />
+                <div class="inneraccor nav_link">
+                  <i class="">
+                    <img src="../../img/pres.png" alt="" />
+                  </i>
+                  <span>Trading Setting</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="nav_link navlinkthree">
+        <i class="">
+          <img src="../../img/Vector1.png" alt="" />
+        </i>
+        <span>Setting</span>
+      </a>
+      <a href="#" class="nav_link navlinkthree">
+        <i class="">
+          <img src="../../img/Vector2.png" alt="" />
+        </i>
+        <span>Support</span>
+      </a>
+      <a href="#" class="nav_link navlinkthree">
+        <i class="">
+          <img src="../../img/profile.png" alt="" />
+        </i>
+        <span>Refer a friend</span>
+      </a>
+      <a href="#" class="nav_link navlinkthree">
+        <i class="">
+          <img src="../../img/Vector1.png" alt="" />
+        </i>
+        <span>Become VIP</span>
+      </a>
+    </div>
+
+    <div class="searchcontainer" id="header">
+      <img src="../../img/Vector.png" alt="" class="searchicon">
+      <input type="text" placeholder="Search..." class="searchinputfield" />
+      <div style="display: flex;">
+        <div class="dropdown">
+          <a class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="true">
+            <div class="secondcontainer">
+              <div>
+                <img class="avatar" src="../../img/settings/avatar.svg" alt="avatar" />
+              </div>
+              <div class="lineclass">
+                <h6 class="userprofileheading">User Profile Name</h6>
+                <p class="verifiedheading">Verified</p>
+              </div>
+              <div class="dropd">
+                <img class="dropDown" src="../../img/settings/dropdown.svg" alt="dropdown" />
+              </div>
+            </div>
+          </a>
+          <div class="dropdown-menu dropdown_submenu">
+
+            <div class="secondcontainertwo ">
+              <div>
+                <img class="avatar" src="../../img/settings/avatar.svg" alt="avatar" />
+              </div>
+              <div class="lineclass">
+                <h6 class="userprofileheading">User Profile Name</h6>
+                <p class="verifiedheading">Verified</p>
+              </div>
+              <div class="dropd">
+                <label class="main">
+                  <input type="checkbox">
+                  <span class="check"></span>
+                </label>
+              </div>
+
+            </div>
+            <div class="secondcontainertwo ">
+              <div>
+                <img class="avatar" src="../../img/profile2.png" alt="avatar" />
+              </div>
+              <div class="lineclass">
+                <h6 class="userprofileheading">User Profile Name</h6>
+                <p class="verifiedheading">Verified</p>
+              </div>
+              <div class="dropd">
+                <label class="main">
+                  <input type="checkbox">
+                  <span class="check"></span>
+                </label>
+              </div>
+            </div>
+            <div class="addprofile">
+              <p class="addprofiletext">+ Add Profile</p>
+            </div>
+          </div>
+        </div>
+        <img class="bellIcon" src="../../img/belliconimage.png" />
       </div>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse"
-      data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <img src="../../img/Group45.png" alt="">
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup" id="header">
-      <img class="header_toggle" src="../../img/vectoropen.png" id="header-toggle" alt="">
-      <div class="nav_list navlist_twoclass">
-        <span href="#" class="nav_link active">
+
+    </div>
+  </div>
+  </div>
+</nav>
+<!-- Sidebar -->
+<div class="l-navbar" id="nav-bar">
+  <nav class="nav">
+    <div>
+      <a href="#" class="nav_logo">
+        <span class="nav_logo-name">LOGO</span>
+      </a>
+      <div class="nav_list">
+        <a href="#" class="nav_link">
           <i class=""><img src="../../img/frame.png" alt="" /></i>
           <span>Dashboard</span>
-        </span>
-        <span href="#" class="nav_link">
+        </a>
+        <a href="#" class="nav_link">
           <i class="">
             <img src="../../img/Vector.png" alt="" />
           </i>
           <span>Article</span>
-        </span>
-        <span href="#" class="nav_link">
+        </a>
+        <a href="#" class="nav_link">
           <i class="">
             <img src="../../img/frame.png" alt="" />
           </i>
           <span>Crypto Suggest</span>
-        </span>
-        <span href="#" class="nav_link">
+        </a>
+        <a href="#" class="nav_link">
           <i class="">
             <img src="../../img/vid.png" alt="" />
           </i>
           <span>Video Lessons</span>
-        </span>
+        </a>
+
         <span href="#">
-          <div class="accordion" id="accordionExample">
+          <div id="accordionExample">
             <div class="accordion-item">
 
-              <button class="accordion-button accorbtn" style="width: auto;" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button accorbtn" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 <i class="">
-                  <img src="../../img/settingicon.png" alt="" />
+                  <img src="../../img/pres.png" alt="" />
                 </i>
-                <span style="margin-left: 42px;">Auto-Trading Bot</span>
+                <span>Auto-Trading Bot</span>
               </button>
 
               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
@@ -126,7 +278,7 @@
 
                   <div class="inneraccor nav_link">
                     <i class="">
-                      <img src="../../img/pres.png" alt="" />
+                      <img src="../../img/settingicon.png" alt="" />
                     </i>
                     <span>Trading Setting</span>
                   </div>
@@ -136,193 +288,35 @@
           </div>
         </span>
 
-        <span href="#" class="nav_link navlinkthree">
+
+        <a href="#" class="nav_link navlinkthree">
           <i class="">
             <img src="../../img/Vector1.png" alt="" />
           </i>
-          <span style="margin-left: 3px;">Setting</span>
-        </span>
-        <span href="#" class="nav_link navlinkthree">
+          <span>Setting</span>
+        </a>
+        <a href="#" class="nav_link navlinkthree">
           <i class="">
             <img src="../../img/Vector2.png" alt="" />
           </i>
-          <span style="margin-left: 5px;">Support</span>
-        </span>
-        <span href="#" class="nav_link navlinkthree">
+          <span>Support</span>
+        </a>
+        <a href="#" class="nav_link navlinkthree">
           <i class="">
             <img src="../../img/profile.png" alt="" />
           </i>
           <span>Refer a friend</span>
-        </span>
-        <span href="#" class="nav_link navlinkthree">
+        </a>
+        <a href="#" class="nav_link navlinkthree">
           <i class="">
             <img src="../../img/Vector1.png" alt="" />
           </i>
-          <span style="margin-left: 4px;">Become VIP</span>
-        </span>
+          <span>Become VIP</span>
+        </a>
       </div>
-
-      <div class="searchcontainer" id="header">
-        <img src="../../img/Vector.png" alt="" class="searchicon">
-        <input type="text" placeholder="Search..." class="searchinputfield" />
-        <div style="display: flex; align-items: center;">
-          <div class="dropdown">
-            <a class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="true">
-              <div class="secondcontainer">
-                <div>
-                  <img class="avatar" src="../../img/settings/avatar.svg" alt="avatar" />
-                </div>
-                <div class="lineclass">
-                  <h6 class="userprofileheading">User Profile Name</h6>
-                  <p class="verifiedheading">Verified</p>
-                </div>
-                <div class="dropd">
-                  <img class="dropDown" src="../../img/settings/dropdown.svg" alt="dropdown" />
-                </div>
-              </div>
-            </a>
-            <div class="dropdown-menu dropdown_submenu">
-
-              <div class="secondcontainertwo ">
-                <div>
-                  <img class="avatar" src="../../img/settings/avatar.svg" alt="avatar" />
-                </div>
-                <div class="lineclass">
-                  <h6 class="userprofileheading">User Profile Name</h6>
-                  <p class="verifiedheading">Verified</p>
-                </div>
-                <div class="dropd">
-                  <label class="main">
-                    <input type="checkbox">
-                    <span class="check"></span>
-                  </label>
-                </div>
-
-              </div>
-              <div class="secondcontainertwo ">
-                <div>
-                  <img class="avatar" src="../../img/profile2.png" alt="avatar" />
-                </div>
-                <div class="lineclass">
-                  <h6 class="userprofileheading">User Profile Name</h6>
-                  <p class="verifiedheading">Verified</p>
-                </div>
-                <div class="dropd">
-                  <label class="main">
-                    <input type="checkbox">
-                    <span class="check"></span>
-                  </label>
-                </div>
-              </div>
-              <div class="addprofile">
-                <p class="addprofiletext">+ Add Profile</p>
-              </div>
-            </div>
-          </div>
-
-          <img class="bellIcon" src="../../img/belliconimage.png" />
-        </div>
-
-      </div>
-    </div>
     </div>
   </nav>
-  <!-- Sidebar -->
-  <div class="l-navbar" id="nav-bar">
-    <nav class="nav">
-      <div>
-        <span href="#" class="nav_logo">
-          <span class="nav_logo-name">LOGO</span>
-        </span>
-        <div class="nav_list">
-          <span href="#" class="nav_link">
-            <i class=""><img src="../../img/frame.png" alt="" /></i>
-            <span>Dashboard</span>
-          </span>
-          <span href="#" class="nav_link">
-            <i class="">
-              <img src="../../img/Vector.png" alt="" />
-            </i>
-            <span>Article</span>
-          </span>
-          <span href="#" class="nav_link">
-            <i class="">
-              <img src="../../img/frame.png" alt="" />
-            </i>
-            <span>Crypto Suggest</span>
-          </span>
-          <span href="#" class="nav_link">
-            <i class="">
-              <img src="../../img/vid.png" alt="" />
-            </i>
-            <span>Video Lessons</span>
-          </span>
-
-          <span href="#">
-            <div id="accordionExample">
-              <div class="accordion-item">
-
-                <button class="accordion-button accorbtn" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  <i class="">
-                    <img src="../../img/pres.png" alt="" />
-                  </i>
-                  <span style="margin-left: 38px;">Auto-Trading Bot</span>
-                </button>
-
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body accorbd">
-                    <div class="inneraccor nav_link">
-                      <i class="">
-                        <img src="../../img/settingicon.png" alt="" />
-                      </i>
-                      <span>Transactions</span>
-                    </div>
-
-                    <div class="inneraccor nav_link">
-                      <i class="">
-                        <img src="../../img/settingicon.png" alt="" />
-                      </i>
-                      <span>Trading Setting</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </span>
-
-
-          <span href="#" class="nav_link navlinkthree">
-            <i class="">
-              <img src="../../img/Vector1.png" alt="" />
-            </i>
-            <span style="margin-left: 3px;">Setting</span>
-          </span>
-          <span href="#" class="nav_link navlinkthree">
-            <i class="">
-              <img src="../../img/Vector2.png" alt="" />
-            </i>
-            <span style="margin-left: 5px;">Support</span>
-          </span>
-          <span href="#" class="nav_link navlinkthree">
-            <i class="">
-              <img src="../../img/profile.png" alt="" />
-            </i>
-            <span>Refer a friend</span>
-          </span>
-          <span href="#" class="nav_link navlinkthree">
-            <i class="">
-              <img src="../../img/Vector1.png" alt="" />
-            </i>
-            <span style="margin-left: 4px;">Become VIP</span>
-          </span>
-        </div>
-      </div>
-    </nav>
-  </div>
-
+</div>
 
 <!-- Become-Vip Content heading -->
    <div class="mainContainerText">
