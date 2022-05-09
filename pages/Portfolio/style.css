@@ -33,7 +33,7 @@ a {
   display: none;
 }
 
-.searchcontainer {
+.search-container {
   width: 100%;
   display: flex;
   display: flex;
@@ -41,12 +41,12 @@ a {
   align-items: center;
 }
 
-.searchcontainer .searchicon {
+.search-container .search-icon {
   position: relative;
   left: 40px;
 }
 
-.searchcontainer .icon {
+.search-container .icon {
   background-color: rgb(96, 94, 0);
   backdrop-filter: blur(1px);
   opacity: 0.6;
@@ -54,7 +54,7 @@ a {
   border-radius: 8px;
 }
 
-.searchcontainer .searchinputfield {
+.search-container .search-input-field {
   background: #262626;
   border-radius: 8px;
   border: none;
@@ -65,7 +65,7 @@ a {
   padding-left: 60px;
 }
 
-.searchcontainer .secondcontainer {
+.search-container .user-profile-container {
   width: 260px;
   margin-left: 20px;
   height: 60px;
@@ -80,20 +80,20 @@ a {
   display: flex;
 }
 
-.searchcontainer .bellIcon {
+.search-container .bellIcon {
   margin-left: 12px;
 }
 
-.searchcontainer .dropdown-toggle::after {
+.search-container .dropdown-toggle::after {
   content: none !important;
 }
-.searchcontainer .dropdown_submenu {
+.search-container .dropdown_submenu {
   width: 300px;
   background: #242323;
   border-radius: 16px;
   margin-top: 10px;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo {
+.search-container .dropdown_submenu .user-sub-profile-container {
   width: 260px;
   cursor: pointer;
   margin-left: 20px;
@@ -105,16 +105,16 @@ a {
   border-radius: 20px;
   display: flex;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd {
+.search-container .dropdown_submenu .user-sub-profile-container .drop-down-container {
   position: absolute;
   right: 10px;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass {
+.search-container .dropdown_submenu .user-sub-profile-container .lineclass {
   position: absolute;
   top: 5px;
   left: 50px;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass .userprofileheading {
+.search-container .dropdown_submenu .user-sub-profile-container .lineclass .user-profile-heading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -122,7 +122,7 @@ a {
   line-height: 21px;
   color: #ffffff;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass .verifiedheading {
+.search-container .dropdown_submenu .user-sub-profile-container .lineclass .verified-heading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -131,7 +131,7 @@ a {
   color: #ffffff;
   opacity: 0.4;
 }
-.searchcontainer .dropdown_submenu .addprofile {
+.search-container .dropdown_submenu .addprofile {
   display: flex;
   width: 300px;
   align-items: center;
@@ -139,25 +139,25 @@ a {
   cursor: pointer;
   padding-top: 20px;
 }
-.searchcontainer .dropdown_submenu .addprofile .addprofiletext {
+.search-container .dropdown_submenu .addprofile .addprofiletext {
   font-weight: 400;
   font-size: 11px;
   line-height: 16px;
   color: #bdbbbb;
 }
 
-.searchcontainer .secondcontainer .dropd {
+.search-container .user-profile-container .drop-down-container {
   position: absolute;
   right: 20px;
 }
 
-.searchcontainer .secondcontainer .lineclass {
+.search-container .user-profile-container .lineclass {
   position: absolute;
   top: 5px;
   left: 70px;
 }
 
-.searchcontainer .secondcontainer .lineclass .userprofileheading {
+.search-container .user-profile-container .lineclass .user-profile-heading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -166,7 +166,7 @@ a {
   color: #ffffff;
 }
 
-.searchcontainer .secondcontainer .lineclass .verifiedheading {
+.search-container .user-profile-container .lineclass .verified-heading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -184,7 +184,7 @@ a {
   padding-left: 80px;
 }
 
-.row .searchIcon {
+.row .search-icon {
   position: absolute;
   left: 14.92%;
   right: 91.38%;
@@ -266,7 +266,7 @@ a {
   width: 40px;
 }
 
-.l-navbar {
+.left-navbar {
   position: fixed;
   top: 0;
   left: -30%;
@@ -370,7 +370,15 @@ a {
   top: 8px;
   margin-left: -28px;
   text-decoration: none;
-  left: px;
+}
+.nav_list .nav_link_refer_a_friend {
+  margin-left: -30px;
+  position: relative;
+  top: 8px;
+  text-decoration: none;
+}
+.nav_list .nav_link_refer_a_friend span {
+  margin-left: -2px;
 }
 .nav_list .nav_link {
   font-family: "Poppins";
@@ -540,7 +548,7 @@ a {
 .topdiv {
   position: relative;
   top: 0px;
-  padding-left: 170px;
+  padding-left: 145px;
 }
 
 .topdiv .headmain .videolesson {
@@ -562,14 +570,14 @@ a {
   opacity: 0.6;
 }
 
-.firstcontainer {
+.main-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 150px !important;
+  margin-left: 130px !important;
 }
 
-.firstcontainer .mainContainer {
+.main-container .mainContainer {
   margin-top: 0px;
   width: 100%;
   display: flex;
@@ -578,7 +586,7 @@ a {
   align-items: center;
 }
 
-.firstcontainer .mainContainer .secondmaincontainer {
+.main-container .mainContainer .secondmaincontainer {
   padding: 40px;
   height: 335px;
   border-radius: 30px;
@@ -589,31 +597,31 @@ a {
   background: #0e0e0e;
 }
 
-.firstcontainer .mainContainer .secondmaincontainer .containerimage1 {
+.main-container .mainContainer .secondmaincontainer .containerimage1 {
   position: absolute;
   left: 40%;
   top: 0;
 }
 
-.firstcontainer .mainContainer .secondmaincontainer .containerimage2 {
+.main-container .mainContainer .secondmaincontainer .containerimage2 {
   position: absolute;
   right: 0;
   bottom: 0;
 }
 
-.firstcontainer .mainContainer .secondmaincontainer .thirdcontainer {
+.main-container .mainContainer .secondmaincontainer .thirdcontainer {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer {
+.main-container .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer {
   display: flex;
   margin-top: 10px;
 }
 
-.firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .thirdsubsubcontainer {
+.main-container .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .thirdsubsubcontainer {
   background: #323232;
   border-radius: 14px;
   padding: 10px 20px;
@@ -622,11 +630,11 @@ a {
   flex-direction: column;
 }
 
-.firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .transactions {
+.main-container .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .transactions {
   margin-left: 14px;
 }
 
-.firstcontainer .mainContainer .secondmaincontainer .paratext {
+.main-container .mainContainer .secondmaincontainer .paratext {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -635,7 +643,7 @@ a {
   color: #ffffff;
 }
 
-.firstcontainer .mainContainer .secondmaincontainer .paratexttwo {
+.main-container .mainContainer .secondmaincontainer .paratexttwo {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -646,7 +654,7 @@ a {
   opacity: 0.55;
 }
 
-.firstcontainer .mainContainer .secondmaincontainer .headertext {
+.main-container .mainContainer .secondmaincontainer .headertext {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -655,7 +663,7 @@ a {
   color: #ffffff;
 }
 
-.firstcontainer .mainContainer .secondmaincontainer .parayellowtext {
+.main-container .mainContainer .secondmaincontainer .parayellowtext {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -664,7 +672,7 @@ a {
   color: #ffbb54;
 }
 
-.firstcontainer .twocontainer {
+.main-container .twocontainer {
   background: #0e0e0e;
   border-radius: 18px;
   width: 70%;
@@ -674,12 +682,12 @@ a {
   margin-right: 30px;
 }
 
-.firstcontainer .twocontainer .twosubcontainer {
+.main-container .twocontainer .twosubcontainer {
   display: flex;
   justify-content: space-between;
 }
 
-.firstcontainer .twocontainer .twosubcontainer .paratexttwo {
+.main-container .twocontainer .twosubcontainer .paratexttwo {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -689,17 +697,17 @@ a {
   opacity: 0.55;
 }
 
-.firstcontainer .twocontainer .twosubcontainer .dropdownmaincontainer {
+.main-container .twocontainer .twosubcontainer .dropdownmaincontainer {
   width: 90px;
 }
 
-.firstcontainer .twocontainer .twosubcontainer .dropdownmaincontainer .dropdownbutton {
+.main-container .twocontainer .twosubcontainer .dropdownmaincontainer .dropdownbutton {
   background: #0e0e0e;
   border: 1.5px solid #494949;
   border-radius: 10px;
 }
 
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer {
+.main-container .twocontainer .twosubcontainer .dropdownshowcontainer {
   width: 20%;
   position: relative;
   left: -200px;
@@ -707,20 +715,20 @@ a {
   border-radius: 12px;
 }
 
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer {
+.main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   border-bottom: 1px solid black;
 }
 
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer {
+.main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
 }
 
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .btcheading {
+.main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .btcheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -729,7 +737,7 @@ a {
   color: #ffffff;
 }
 
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .numberheading {
+.main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .numberheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -741,12 +749,12 @@ a {
   color: #aeb6ce;
 }
 
-.firstcontainer .twosubcontainervalue {
+.main-container .twosubcontainervalue {
   display: flex;
   align-items: center;
 }
 
-.firstcontainer .twosubcontainervalue .greenrating {
+.main-container .twosubcontainervalue .greenrating {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -757,7 +765,7 @@ a {
   color: #3ed10a;
 }
 
-.firstcontainer .twosubcontainervalue .headertext {
+.main-container .twosubcontainervalue .headertext {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -766,30 +774,30 @@ a {
   color: #ffffff;
 }
 
-.firstcontainer .canvasfirstcontainer {
+.main-container .canvasfirstcontainer {
   width: 100%;
   height: 215px;
   padding: 10px;
 }
 
-.firstcontainer .canvasfirstcontainer .subcanvascontainer {
+.main-container .canvasfirstcontainer .subcanvascontainer {
   width: 100% !important;
   height: 160px !important;
 }
 
-.firstcontainer .assetsmainsection {
+.main-container .assetsmainsection {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.firstcontainer .assetsmainsection .assetmaincontainer {
+.main-container .assetsmainsection .assetmaincontainer {
   width: 100%;
   margin-top: 30px;
   padding-left: 20px;
 }
 
-.firstcontainer .assetsmainsection .assetmaincontainer .assetsheading {
+.main-container .assetsmainsection .assetmaincontainer .assetsheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -798,22 +806,39 @@ a {
   color: #ffffff;
 }
 
-.firstcontainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer {
+.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer {
   display: flex;
   padding: 10px 30px 10px 30px;
   justify-content: space-evenly;
   background: #0e0e0e;
+  margin-top: 10px;
   border-radius: 18px;
   margin-left: -5px;
 }
 
-.firstcontainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer {
+.assets-sub-container {
+  position: relative;
+  left: 0;
+  top: 30px;
+}
+
+.assets-sub-container .assets-image-one {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+.assets-sub-container .assets-image-two {
+  position: absolute;
+}
+
+.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer {
   display: flex;
   margin-left: 70px;
   flex-direction: column;
 }
 
-.firstcontainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .canvasgraphcontainer {
+.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .canvasgraphcontainer {
   width: 100%;
   margin-left: 30px;
   margin-right: 30px;
@@ -824,7 +849,7 @@ a {
   height: 140px;
 }
 
-.firstcontainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .bitcoinheading {
+.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .bitcoinheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -833,7 +858,7 @@ a {
   color: #ffffff;
 }
 
-.firstcontainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .BTCheading {
+.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .BTCheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -843,7 +868,7 @@ a {
   opacity: 0.8;
 }
 
-.firstcontainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .sellheading {
+.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .sellheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -853,7 +878,7 @@ a {
   margin-left: 10px;
 }
 
-.firstcontainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .firstnumberheading {
+.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .price-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -862,13 +887,25 @@ a {
   color: #ffffff;
 }
 
-.firstcontainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer {
+.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
-.firstcontainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .seconddateheading {
+.thirdassetcontainer > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.buysectioncontentsub > img {
+  width: 40px;
+  height: 40px;
+}
+
+.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .seconddateheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -881,7 +918,7 @@ a {
   opacity: 0.6;
 }
 
-.firstcontainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .coinbaseheading {
+.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .coinbaseheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -893,7 +930,7 @@ a {
   opacity: 0.4;
 }
 
-.firstcontainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .lastdateheading {
+.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .lastdateheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -902,17 +939,17 @@ a {
   color: #14bd6c;
 }
 
-.firstcontainer .assetsmainsection .tabscontainer {
+.main-container .assetsmainsection .tabscontainer {
   margin-left: 30px;
   margin-right: 30px;
   height: auto;
   width: 66%;
-  margin-top: 30px;
+  margin-top: -10px;
   background: #0e0e0e;
   border-radius: 18px;
 }
 
-.firstcontainer .assetsmainsection .tabscontainer .tabsmaincontainer {
+.main-container .assetsmainsection .tabscontainer .tabsmaincontainer {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -920,7 +957,7 @@ a {
   padding-bottom: 16px;
 }
 
-.firstcontainer .assetsmainsection .tabscontainer .tabsmaincontainer .navitemclass {
+.main-container .assetsmainsection .tabscontainer .tabsmaincontainer .navitemclass {
   text-decoration: none;
   list-style-type: none;
   list-style: none;
@@ -933,20 +970,20 @@ a {
   color: #ffffff;
 }
 
-.firstcontainer .assetsmainsection .tabscontainer .tabscontentcontainer {
+.main-container .assetsmainsection .tabscontainer .tabscontentcontainer {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 20px 7px;
 }
 
-.firstcontainer .assetsmainsection .tabscontainer .tabscontentcontainer .buysectionsecond {
+.main-container .assetsmainsection .tabscontainer .tabscontentcontainer .buysectionsecond {
   border-radius: 14px;
   background: #272727;
   margin-top: 10px;
 }
 
-.firstcontainer .assetsmainsection .tabscontainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond {
+.main-container .assetsmainsection .tabscontainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond {
   display: flex;
   width: 100%;
   background: #272727;
@@ -956,7 +993,7 @@ a {
   padding: 10px 20px 16px 10px;
 }
 
-.firstcontainer .assetsmainsection .tabscontainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .coinnameheading {
+.main-container .assetsmainsection .tabscontainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .coinnameheading {
   font-family: "Poppins";
   font-style: normal;
   margin-left: 10px;
@@ -969,13 +1006,13 @@ a {
   opacity: 0.6;
 }
 
-.firstcontainer .assetsmainsection .tabscontainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .buysectioncontentsub {
+.main-container .assetsmainsection .tabscontainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .buysectioncontentsub {
   display: flex;
   align-items: center;
   padding: 0px 10px;
 }
 
-.firstcontainer .assetsmainsection .tabscontainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .buysectioncontentsub .bitcoinheading {
+.main-container .assetsmainsection .tabscontainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .buysectioncontentsub .bitcoinheading {
   margin-left: 10px;
   font-family: "Poppins";
   font-style: normal;
@@ -986,7 +1023,7 @@ a {
   color: #ffffff;
 }
 
-.firstcontainer .assetsmainsection .tabscontainer .tabscontentcontainer .buysubsectionfirst {
+.main-container .assetsmainsection .tabscontainer .tabscontentcontainer .buysubsectionfirst {
   display: flex;
   width: 100%;
   background: #272727;
@@ -996,7 +1033,7 @@ a {
   padding: 10px 20px 16px 10px;
 }
 
-.firstcontainer .assetsmainsection .tabscontainer .tabscontentcontainer .buysubsectionfirst .coinnameheading {
+.main-container .assetsmainsection .tabscontainer .tabscontentcontainer .buysubsectionfirst .coinnameheading {
   font-family: "Poppins";
   font-style: normal;
   margin-left: 10px;
@@ -1010,14 +1047,14 @@ a {
   opacity: 0.6;
 }
 
-.firstcontainer .assetsmainsection .tabscontainer .tabscontentcontainer .buysubsectionfirst .buysectioncontentsub {
+.main-container .assetsmainsection .tabscontainer .tabscontentcontainer .buysubsectionfirst .buysectioncontentsub {
   display: flex;
   margin-left: 10px;
   align-items: center;
   width: 100%;
 }
 
-.firstcontainer .assetsmainsection .tabscontainer .tabscontentcontainer .buysubsectionfirst .buysectioncontentsub .bitcoinheading {
+.main-container .assetsmainsection .tabscontainer .tabscontentcontainer .buysubsectionfirst .buysectioncontentsub .bitcoinheading {
   margin-left: 10px;
   font-family: "Poppins";
   font-style: normal;
@@ -1048,17 +1085,13 @@ a {
     width: 45px;
   }
 
-  .l-navbar {
+  .left-navbar {
     left: 0;
     padding: 1rem 1rem 0 0;
   }
 
   .show {
     width: calc(var(--nav-width) + 150px);
-  }
-
-  .body-pd {
-    /* padding-left: calc(var(--nav-width) + 188px) */
   }
 }
 @media screen and (max-width: 767px) {
@@ -1106,31 +1139,31 @@ a {
     display: none;
   }
 
-  .l-navbar {
+  .left-navbar {
     display: none !important;
   }
 
-  .l-navbar .nav {
+  .left-navbar .nav {
     display: none !important;
   }
 
-  .searchcontainer .bellIcon {
+  .search-container .bellIcon {
     display: none;
   }
 
-  .searchcontainer .searchicon {
+  .search-container .search-icon {
     display: none;
   }
 
-  .searchcontainer .searchinputfield {
+  .search-container .search-input-field {
     display: none;
   }
 
-  .searchcontainer .icon {
+  .search-container .icon {
     display: none;
   }
 
-  .searchcontainer .secondcontainer {
+  .search-container .user-profile-container {
     width: 220px !important;
     margin-left: 0px !important;
     height: 42px !important;
@@ -1140,19 +1173,19 @@ a {
     border-radius: 0px !important;
   }
 
-  .searchcontainer .secondcontainer .dropd {
+  .search-container .user-profile-container .drop-down-container {
     display: none !important;
     position: absolute;
     right: 10px !important;
   }
 
-  .searchcontainer .secondcontainer .lineclass {
+  .search-container .user-profile-container .lineclass {
     position: absolute;
     top: 2px !important;
     left: 70px;
   }
 
-  .searchcontainer .secondcontainer .lineclass .userprofileheading {
+  .search-container .user-profile-container .lineclass .user-profile-heading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -1161,7 +1194,7 @@ a {
     color: #ffffff;
   }
 
-  .searchcontainer .secondcontainer .lineclass .verifiedheading {
+  .search-container .user-profile-container .lineclass .verified-heading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1185,7 +1218,7 @@ a {
     margin-top: -18px;
   }
 
-  .firstcontainer {
+  .main-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1193,12 +1226,12 @@ a {
     margin-left: 0 !important;
   }
 
-  .firstcontainer .mainContainer {
+  .main-container .mainContainer {
     margin-top: 0px;
     flex-direction: column;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer {
+  .main-container .mainContainer .secondmaincontainer {
     padding: 40px;
     border-radius: 30px;
     width: 100%;
@@ -1206,31 +1239,31 @@ a {
     background: #0e0e0e;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .containerimage1 {
+  .main-container .mainContainer .secondmaincontainer .containerimage1 {
     position: absolute;
     left: 40%;
     top: 0;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .containerimage2 {
+  .main-container .mainContainer .secondmaincontainer .containerimage2 {
     position: absolute;
     right: 0;
     bottom: 0;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .thirdcontainer {
+  .main-container .mainContainer .secondmaincontainer .thirdcontainer {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer {
+  .main-container .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer {
     display: flex;
     margin-top: 10px;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .thirdsubsubcontainer {
+  .main-container .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .thirdsubsubcontainer {
     background: #323232;
     border-radius: 14px;
     padding: 10px 20px;
@@ -1239,11 +1272,11 @@ a {
     flex-direction: column;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .transactions {
+  .main-container .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .transactions {
     margin-left: 14px;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .paratext {
+  .main-container .mainContainer .secondmaincontainer .paratext {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1252,7 +1285,7 @@ a {
     color: #ffffff;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .paratexttwo {
+  .main-container .mainContainer .secondmaincontainer .paratexttwo {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1263,7 +1296,7 @@ a {
     opacity: 0.55;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .headertext {
+  .main-container .mainContainer .secondmaincontainer .headertext {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -1272,7 +1305,7 @@ a {
     color: #ffffff;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .parayellowtext {
+  .main-container .mainContainer .secondmaincontainer .parayellowtext {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -1281,7 +1314,7 @@ a {
     color: #ffbb54;
   }
 
-  .firstcontainer .twocontainer {
+  .main-container .twocontainer {
     background: #0e0e0e;
     border-radius: 18px;
     width: 100%;
@@ -1291,13 +1324,13 @@ a {
     margin-right: 0px;
   }
 
-  .firstcontainer .twocontainer .twosubcontainer {
+  .main-container .twocontainer .twosubcontainer {
     display: flex;
     justify-content: space-between;
     padding: 20px 20px;
   }
 
-  .firstcontainer .twocontainer .twosubcontainer .paratexttwo {
+  .main-container .twocontainer .twosubcontainer .paratexttwo {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1307,16 +1340,16 @@ a {
     opacity: 0.55;
   }
 
-  .firstcontainer .twocontainer .twosubcontainer .dropdownmaincontainer {
+  .main-container .twocontainer .twosubcontainer .dropdownmaincontainer {
     width: 90px;
   }
 
-  .firstcontainer .twocontainer .twosubcontainer .dropdownmaincontainer .dropdownbutton {
+  .main-container .twocontainer .twosubcontainer .dropdownmaincontainer .dropdownbutton {
     background: #0e0e0e;
     border-radius: 18px;
   }
 
-  .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer {
+  .main-container .twocontainer .twosubcontainer .dropdownshowcontainer {
     width: 20%;
     position: relative;
     left: -200px;
@@ -1324,20 +1357,20 @@ a {
     border-radius: 12px;
   }
 
-  .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer {
+  .main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     border-bottom: 1px solid black;
   }
 
-  .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer {
+  .main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
   }
 
-  .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .btcheading {
+  .main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .btcheading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -1346,7 +1379,7 @@ a {
     color: #ffffff;
   }
 
-  .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .numberheading {
+  .main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .numberheading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1358,13 +1391,13 @@ a {
     color: #aeb6ce;
   }
 
-  .firstcontainer .twosubcontainervalue {
+  .main-container .twosubcontainervalue {
     margin-left: 20px;
     display: flex;
     align-items: center;
   }
 
-  .firstcontainer .twosubcontainervalue .greenrating {
+  .main-container .twosubcontainervalue .greenrating {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -1375,7 +1408,7 @@ a {
     color: #3ed10a;
   }
 
-  .firstcontainer .twosubcontainervalue .headertext {
+  .main-container .twosubcontainervalue .headertext {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -1454,7 +1487,7 @@ a {
     margin-left: 10px;
   }
 
-  .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .firstnumberheading {
+  .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .price-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -1634,7 +1667,7 @@ a {
     margin-top: -18px;
   }
 
-  .firstcontainer {
+  .main-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1642,17 +1675,17 @@ a {
     margin-left: 0 !important;
   }
 
-  .firstcontainer .mainContainer {
+  .main-container .mainContainer {
     margin-top: 0px;
     width: 100%;
   }
 
-  .firstcontainer .mainContainer .tabscontainer {
+  .main-container .mainContainer .tabscontainer {
     margin-right: 0px;
     margin-left: 0px;
   }
 
-  .firstcontainer .mainContainer .tabscontainer .tabsmaincontainer {
+  .main-container .mainContainer .tabscontainer .tabsmaincontainer {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -1660,7 +1693,7 @@ a {
     padding-bottom: 16px;
   }
 
-  .firstcontainer .mainContainer .tabscontainer .tabsmaincontainer .navitemclass {
+  .main-container .mainContainer .tabscontainer .tabsmaincontainer .navitemclass {
     text-decoration: none;
     list-style-type: none;
     list-style: none;
@@ -1673,20 +1706,20 @@ a {
     color: #ffffff;
   }
 
-  .firstcontainer .mainContainer .tabscontentcontainer {
+  .main-container .mainContainer .tabscontentcontainer {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 20px 7px;
   }
 
-  .firstcontainer .mainContainer .tabscontentcontainer .buysectionsecond {
+  .main-container .mainContainer .tabscontentcontainer .buysectionsecond {
     border-radius: 14px;
     background: #272727;
     margin-top: 10px;
   }
 
-  .firstcontainer .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond {
+  .main-container .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond {
     display: flex;
     width: 100%;
     align-items: center;
@@ -1694,7 +1727,7 @@ a {
     padding: 8px 10px;
   }
 
-  .firstcontainer .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .coinnameheading {
+  .main-container .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .coinnameheading {
     font-family: "Poppins";
     font-style: normal;
     margin-left: 10px;
@@ -1705,13 +1738,13 @@ a {
     opacity: 0.6;
   }
 
-  .firstcontainer .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .buysectioncontentsub {
+  .main-container .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .buysectioncontentsub {
     display: flex;
     align-items: center;
     padding: 0px 10px;
   }
 
-  .firstcontainer .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .buysectioncontentsub .bitcoinheading {
+  .main-container .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .buysectioncontentsub .bitcoinheading {
     margin-left: 10px;
     font-family: "Poppins";
     font-style: normal;
@@ -1722,7 +1755,7 @@ a {
     color: #ffffff;
   }
 
-  .firstcontainer .mainContainer .tabscontentcontainer .buysubsectionfirst {
+  .main-container .mainContainer .tabscontentcontainer .buysubsectionfirst {
     display: flex;
     width: 400px !important;
     background: #272727;
@@ -1732,7 +1765,7 @@ a {
     padding: 8px 10px;
   }
 
-  .firstcontainer .mainContainer .tabscontentcontainer .buysubsectionfirst .coinnameheading {
+  .main-container .mainContainer .tabscontentcontainer .buysubsectionfirst .coinnameheading {
     font-family: "Poppins";
     font-style: normal;
     margin-left: 10px;
@@ -1743,14 +1776,14 @@ a {
     opacity: 0.6;
   }
 
-  .firstcontainer .mainContainer .tabscontentcontainer .buysubsectionfirst .buysectioncontentsub {
+  .main-container .mainContainer .tabscontentcontainer .buysubsectionfirst .buysectioncontentsub {
     display: flex;
     margin-left: 10px;
     align-items: center;
     width: 100%;
   }
 
-  .firstcontainer .mainContainer .tabscontentcontainer .buysubsectionfirst .buysectioncontentsub .bitcoinheading {
+  .main-container .mainContainer .tabscontentcontainer .buysubsectionfirst .buysectioncontentsub .bitcoinheading {
     margin-left: 10px;
     font-family: "Poppins";
     font-style: normal;
@@ -1761,7 +1794,7 @@ a {
     color: #ffffff;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer {
+  .main-container .mainContainer .secondmaincontainer {
     padding: 40px;
     border-radius: 30px;
     width: 100%;
@@ -1769,31 +1802,31 @@ a {
     background: #0e0e0e;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .containerimage1 {
+  .main-container .mainContainer .secondmaincontainer .containerimage1 {
     position: absolute;
     left: 40%;
     top: 0;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .containerimage2 {
+  .main-container .mainContainer .secondmaincontainer .containerimage2 {
     position: absolute;
     right: 0;
     bottom: 0;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .thirdcontainer {
+  .main-container .mainContainer .secondmaincontainer .thirdcontainer {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer {
+  .main-container .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer {
     display: flex;
     margin-top: 10px;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .thirdsubsubcontainer {
+  .main-container .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .thirdsubsubcontainer {
     background: #323232;
     border-radius: 14px;
     padding: 14px 10px 0px 10px;
@@ -1802,11 +1835,11 @@ a {
     flex-direction: column;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .transactions {
+  .main-container .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .transactions {
     margin-left: 14px;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .paratext {
+  .main-container .mainContainer .secondmaincontainer .paratext {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1815,7 +1848,7 @@ a {
     color: #ffffff;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .paratexttwo {
+  .main-container .mainContainer .secondmaincontainer .paratexttwo {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1826,7 +1859,7 @@ a {
     opacity: 0.55;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .lastactivityclass {
+  .main-container .mainContainer .secondmaincontainer .lastactivityclass {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -1834,7 +1867,7 @@ a {
     font-size: 10px;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .headertext {
+  .main-container .mainContainer .secondmaincontainer .headertext {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -1843,7 +1876,7 @@ a {
     color: #ffffff;
   }
 
-  .firstcontainer .mainContainer .secondmaincontainer .parayellowtext {
+  .main-container .mainContainer .secondmaincontainer .parayellowtext {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -1852,17 +1885,17 @@ a {
     color: #ffbb54;
   }
 
-  .firstcontainer .mainContainer .assetsmainsection {
+  .main-container .mainContainer .assetsmainsection {
     display: flex;
     flex-direction: column;
     padding: 0px 20px;
   }
 
-  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer {
+  .main-container .mainContainer .assetsmainsection .assetmaincontainer {
     margin-top: 30px;
   }
 
-  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsheading {
+  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsheading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -1871,7 +1904,7 @@ a {
     color: #ffffff;
   }
 
-  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer {
+  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsmain-container {
     display: flex;
     padding: 10px 30px 10px 30px;
     justify-content: space-evenly;
@@ -1879,13 +1912,13 @@ a {
     border-radius: 18px;
   }
 
-  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer {
+  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer {
     display: flex;
     margin-left: 20px;
     flex-direction: column;
   }
 
-  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .canvasgraphcontainer {
+  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .canvasgraphcontainer {
     width: 100%;
     margin-left: 30px;
     margin-right: 30px;
@@ -1896,7 +1929,7 @@ a {
     width: 180px !important;
   }
 
-  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .bitcoinheading {
+  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .bitcoinheading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -1905,7 +1938,7 @@ a {
     color: #ffffff;
   }
 
-  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .BTCheading {
+  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .BTCheading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1915,7 +1948,7 @@ a {
     opacity: 0.8;
   }
 
-  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .sellheading {
+  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .sellheading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1925,7 +1958,7 @@ a {
     margin-left: 10px;
   }
 
-  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .firstnumberheading {
+  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .price-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -1934,13 +1967,13 @@ a {
     color: #ffffff;
   }
 
-  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer {
+  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer {
     align-items: center;
     display: flex;
     flex-direction: column;
   }
 
-  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .seconddateheading {
+  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .seconddateheading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1951,7 +1984,7 @@ a {
     opacity: 0.6;
   }
 
-  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .coinbaseheading {
+  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .coinbaseheading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1961,7 +1994,7 @@ a {
     opacity: 0.4;
   }
 
-  .firstcontainer .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .lastdateheading {
+  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .lastdateheading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -1970,7 +2003,7 @@ a {
     color: #14bd6c;
   }
 
-  .firstcontainer .twocontainer {
+  .main-container .twocontainer {
     background: #0e0e0e;
     border-radius: 18px;
     width: 100%;
@@ -1979,13 +2012,13 @@ a {
     margin-left: 0px;
   }
 
-  .firstcontainer .twocontainer .twosubcontainer {
+  .main-container .twocontainer .twosubcontainer {
     display: flex;
     justify-content: space-between;
     padding: 20px 20px;
   }
 
-  .firstcontainer .twocontainer .twosubcontainer .paratexttwo {
+  .main-container .twocontainer .twosubcontainer .paratexttwo {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1995,16 +2028,16 @@ a {
     opacity: 0.55;
   }
 
-  .firstcontainer .twocontainer .twosubcontainer .dropdownmaincontainer {
+  .main-container .twocontainer .twosubcontainer .dropdownmaincontainer {
     width: 90px;
   }
 
-  .firstcontainer .twocontainer .twosubcontainer .dropdownmaincontainer .dropdownbutton {
+  .main-container .twocontainer .twosubcontainer .dropdownmaincontainer .dropdownbutton {
     background: #0e0e0e;
     border-radius: 18px;
   }
 
-  .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer {
+  .main-container .twocontainer .twosubcontainer .dropdownshowcontainer {
     width: 20%;
     position: relative;
     left: -200px;
@@ -2012,20 +2045,20 @@ a {
     border-radius: 12px;
   }
 
-  .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer {
+  .main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     border-bottom: 1px solid black;
   }
 
-  .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer {
+  .main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
   }
 
-  .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .btcheading {
+  .main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .btcheading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -2034,7 +2067,7 @@ a {
     color: #ffffff;
   }
 
-  .firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .numberheading {
+  .main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .numberheading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -2046,13 +2079,13 @@ a {
     color: #aeb6ce;
   }
 
-  .firstcontainer .twosubcontainervalue {
+  .main-container .twosubcontainervalue {
     margin-left: 20px;
     display: flex;
     align-items: center;
   }
 
-  .firstcontainer .twosubcontainervalue .greenrating {
+  .main-container .twosubcontainervalue .greenrating {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -2063,7 +2096,7 @@ a {
     color: #3ed10a;
   }
 
-  .firstcontainer .twosubcontainervalue .headertext {
+  .main-container .twosubcontainervalue .headertext {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
