@@ -905,16 +905,16 @@ a {
     opacity: 0.4;
   }
 }
-.formcontentDiv {
+.form_content_Div {
   padding: 0px 50px 50px 130px;
 }
 @media screen and (max-width: 767px) {
-  .formcontentDiv {
+  .form_content_Div {
     padding-left: 0;
     margin: 0px 5px;
   }
 }
-.formcontentDiv .formsupportSec .formHeading1 {
+.form_content_Div .form_support_Sec .form_Heading1 {
   padding: 3% 0% 0% 1.6%;
   font-family: "Poppins";
   font-style: normal;
@@ -925,18 +925,18 @@ a {
   color: #ffffff;
 }
 @media screen and (max-width: 900px) {
-  .formcontentDiv .formsupportSec .formHeading1 {
+  .form_content_Div .form_support_Sec .form_Heading1 {
     line-height: 20px;
     font-size: 33px;
   }
 }
 @media screen and (max-width: 600px) {
-  .formcontentDiv .formsupportSec .formHeading1 {
+  .form_content_Div .form_support_Sec .form_Heading1 {
     font-size: 25px;
     padding-left: 25px;
   }
 }
-.formcontentDiv .formsupportSec .formPara1 {
+.form_content_Div .form_support_Sec .form_Para_1 {
   margin: 24px;
   font-family: "Poppins";
   font-style: normal;
@@ -947,15 +947,15 @@ a {
   opacity: 0.6;
 }
 @media screen and (max-width: 600px) {
-  .formcontentDiv .formsupportSec .formPara1 {
+  .form_content_Div .form_support_Sec .form_Para_1 {
     font-size: 12px;
   }
 }
-.formcontentDiv .formsupportSec .form_buttons {
+.form_content_Div .form_support_Sec .form_buttons {
   margin: 24px;
   padding-bottom: 24px;
 }
-.formcontentDiv .formsupportSec .form_buttons .ticket {
+.form_content_Div .form_support_Sec .form_buttons .ticket {
   background: #141414;
   color: white;
   border-radius: 15px;
@@ -972,7 +972,7 @@ a {
   overflow: hidden;
   position: relative;
 }
-.formcontentDiv .formsupportSec .form_buttons .ticket::before {
+.form_content_Div .form_support_Sec .form_buttons .ticket::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -986,26 +986,26 @@ a {
   border-radius: 10px 10px 10px 10px;
   transition: 0.6s;
 }
-.formcontentDiv .formsupportSec .form_buttons .ticket:hover::before {
+.form_content_Div .form_support_Sec .form_buttons .ticket:hover::before {
   width: 100%;
   right: 0px;
   top: 0px;
 }
 @media screen and (max-width: 800px) {
-  .formcontentDiv .formsupportSec .form_buttons .ticket {
+  .form_content_Div .form_support_Sec .form_buttons .ticket {
     width: 116px !important;
     font-size: 12px !important;
     height: 40px;
   }
 }
 @media screen and (max-width: 430px) {
-  .formcontentDiv .formsupportSec .form_buttons .ticket {
+  .form_content_Div .form_support_Sec .form_buttons .ticket {
     width: 80px !important;
     margin-right: 15px;
     font-size: 10px !important;
   }
 }
-.formcontentDiv .formsupportSec .form_buttons .open-new {
+.form_content_Div .form_support_Sec .form_buttons .open-new {
   color: #ffbb54;
   border: none;
   border-radius: 15px;
@@ -1018,7 +1018,7 @@ a {
   overflow: hidden;
   position: relative;
 }
-.formcontentDiv .formsupportSec .form_buttons .open-new::before {
+.form_content_Div .form_support_Sec .form_buttons .open-new::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -1032,42 +1032,42 @@ a {
   border-radius: 10px 10px 10px 10px;
   transition: 0.6s;
 }
-.formcontentDiv .formsupportSec .form_buttons .open-new:hover::before {
+.form_content_Div .form_support_Sec .form_buttons .open-new:hover::before {
   width: 100%;
   right: 0px;
   top: 0px;
 }
 @media screen and (max-width: 800px) {
-  .formcontentDiv .formsupportSec .form_buttons .open-new {
+  .form_content_Div .form_support_Sec .form_buttons .open-new {
     width: 150px !important;
     height: 40px;
     font-size: 12px !important;
   }
 }
 @media screen and (max-width: 430px) {
-  .formcontentDiv .formsupportSec .form_buttons .open-new {
+  .form_content_Div .form_support_Sec .form_buttons .open-new {
     width: 120px !important;
     font-size: 10px !important;
   }
 }
-.formcontentDiv .formsupportSec .formHeading2 {
+.form_content_Div .form_support_Sec .form_Heading2 {
   color: #ffffff;
   margin-left: 27px;
   font-size: 40px !important;
 }
 @media screen and (max-width: 900px) {
-  .formcontentDiv .formsupportSec .formHeading2 {
+  .form_content_Div .form_support_Sec .form_Heading2 {
     line-height: 10px;
     font-size: 27px !important;
   }
 }
 @media screen and (max-width: 600px) {
-  .formcontentDiv .formsupportSec .formHeading2 {
+  .form_content_Div .form_support_Sec .form_Heading2 {
     line-height: 10px;
     font-size: 20px !important;
   }
 }
-.formcontentDiv .formsupportSec .formPara2 {
+.form_content_Div .form_support_Sec .form_Para2 {
   margin: 10px 24px;
   font-family: "Poppins";
   font-style: normal;
@@ -1079,20 +1079,20 @@ a {
   width: 335px;
 }
 @media screen and (max-width: 600px) {
-  .formcontentDiv .formsupportSec .formPara2 {
+  .form_content_Div .form_support_Sec .form_Para2 {
     width: 100%;
     font-size: 12px;
     padding-right: 20px;
   }
 }
-.formcontentDiv .formsupportSec .inpForm {
+.form_content_Div .form_support_Sec .input_Form {
   margin: 20px;
 }
-.formcontentDiv .formsupportSec .inpForm form .form-group label {
+.form_content_Div .form_support_Sec .input_Form form .form-group label {
   font-size: 16px;
   color: rgb(143, 141, 141);
 }
-.formcontentDiv .formsupportSec .inpForm form .form-group .form-control {
+.form_content_Div .form_support_Sec .input_Form form .form-group .form-control {
   color: white;
   height: 61px;
   background-color: #202020;
@@ -1102,35 +1102,35 @@ a {
   border-radius: 10px;
 }
 @media screen and (max-width: 900px) {
-  .formcontentDiv .formsupportSec .inpForm form .form-group .numInp,
-.formcontentDiv .formsupportSec .inpForm form .form-group .subjectInp {
+  .form_content_Div .form_support_Sec .input_Form form .form-group .num_ticket_Input,
+.form_content_Div .form_support_Sec .input_Form form .form-group .subject_Input {
     height: 48px !important;
   }
 }
 @media screen and (max-width: 500px) {
-  .formcontentDiv .formsupportSec .inpForm form .form-group .numInp,
-.formcontentDiv .formsupportSec .inpForm form .form-group .subjectInp {
+  .form_content_Div .form_support_Sec .input_Form form .form-group .num_ticket_Input,
+.form_content_Div .form_support_Sec .input_Form form .form-group .subject_Input {
     height: 35px !important;
   }
 }
-.formcontentDiv .formsupportSec .inpForm form .form-group .question {
+.form_content_Div .form_support_Sec .input_Form form .form-group .question_input {
   height: 200px;
   padding: 20px 128px 10px 10px;
 }
 @media screen and (max-width: 900px) {
-  .formcontentDiv .formsupportSec .inpForm form .form-group .question {
+  .form_content_Div .form_support_Sec .input_Form form .form-group .question_input {
     padding: 4px 102px 0px 8px;
     font-size: 11px;
   }
 }
 @media screen and (max-width: 414px) {
-  .formcontentDiv .formsupportSec .inpForm form .form-group .question {
+  .form_content_Div .form_support_Sec .input_Form form .form-group .question_input {
     height: 300px !important;
     font-size: 11px !important;
     padding: 5px 10px 10px 2px;
   }
 }
-.formcontentDiv .formsupportSec .inpForm form .form-group .ticketButton button {
+.form_content_Div .form_support_Sec .input_Form form .form-group .ticketButton button {
   float: right;
   margin: 1.875rem 0.938rem 2.5rem auto;
   width: 175px;
@@ -1143,7 +1143,7 @@ a {
   overflow: hidden;
   position: relative;
 }
-.formcontentDiv .formsupportSec .inpForm form .form-group .ticketButton button::before {
+.form_content_Div .form_support_Sec .input_Form form .form-group .ticketButton button::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -1157,38 +1157,38 @@ a {
   border-radius: 10px 10px 10px 10px;
   transition: 0.6s;
 }
-.formcontentDiv .formsupportSec .inpForm form .form-group .ticketButton button:hover::before {
+.form_content_Div .form_support_Sec .input_Form form .form-group .ticketButton button:hover::before {
   width: 100%;
   right: 0px;
   top: 0px;
 }
 @media screen and (max-width: 800px) {
-  .formcontentDiv .formsupportSec .inpForm form .form-group .ticketButton button {
+  .form_content_Div .form_support_Sec .input_Form form .form-group .ticketButton button {
     width: 116px !important;
     font-size: 12px !important;
     height: 40px;
   }
 }
 @media screen and (max-width: 430px) {
-  .formcontentDiv .formsupportSec .inpForm form .form-group .ticketButton button {
+  .form_content_Div .form_support_Sec .input_Form form .form-group .ticketButton button {
     width: 80px !important;
     margin-right: 15px;
     font-size: 10px !important;
   }
 }
 @media screen and (max-width: 800px) {
-  .formcontentDiv .formsupportSec .inpForm form .form-group .ticketButton {
+  .form_content_Div .form_support_Sec .input_Form form .form-group .ticketButton {
     height: 40px;
   }
 }
 @media screen and (max-width: 600px) {
-  .formcontentDiv .formsupportSec .inpForm form .form-group .ticketButton {
+  .form_content_Div .form_support_Sec .input_Form form .form-group .ticketButton {
     font-size: small !important;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .formcontentDiv {
+  .form_content_Div {
     padding: 0px 0px 0px 0px;
   }
 
