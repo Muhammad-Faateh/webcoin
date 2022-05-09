@@ -908,13 +908,13 @@ a {
   }
 }
 
-.transactionContent {
+.transaction_Content {
   // margin: 100px 70px;
   padding-left: 140px;
   // border: 1px solid white;
   margin-top: -50px !important;
-  .tableContent {
-    .datesection {
+  .table_Content {
+    .date_section {
       font-family: "Poppins";
       font-style: normal;
       font-weight: 400;
@@ -928,7 +928,7 @@ a {
 
       opacity: 0.5;
     }
-    .amountsection {
+    .amount_section {
       font-family: "Poppins";
       font-style: normal;
       font-weight: 600;
@@ -940,7 +940,7 @@ a {
 
       color: #ffffff;
     }
-    .detailsection {
+    .detail_section {
       font-family: "Poppins";
       font-style: normal;
       font-weight: 400;
@@ -954,7 +954,7 @@ a {
 
       opacity: 0.5;
     }
-    .typesection {
+    .type_section {
       font-family: "Poppins";
       font-style: normal;
       font-weight: 400;
@@ -968,7 +968,7 @@ a {
 
       opacity: 0.5;
     }
-    .statussection {
+    .status_section {
       font-family: "Poppins";
       font-style: normal;
       font-weight: 400;
@@ -1135,7 +1135,7 @@ a {
   }
 }
 
-.transactionContent {
+.transaction_Content {
   // margin-top: -50px !important;
 
   @media screen and (max-width: 767px) {
@@ -1149,7 +1149,7 @@ a {
     padding-left: 0px !important;
   }
 
-  .transHeadingFirst {
+  .transaction_Heading_First {
     color: white !important;
     // margin-top: 10rem !important;
     margin-top: 5rem;
@@ -1164,7 +1164,7 @@ a {
     color: #ffffff;
   }
 
-  .transPara1 {
+  .transaction_Para_1 {
     color: #ffffff !important;
     width: 390px;
     opacity: 0.6;
@@ -1174,7 +1174,7 @@ a {
     }
   }
 
-  .tableContent {
+  .table_Content {
     @media screen and (max-width: 600px) {
       display: none;
     }
@@ -1187,15 +1187,15 @@ a {
       // border-radius: 20px 20px  20px 20px !important;
     }
 
-    .tableRow {
+    .table_Row {
       height: 70px;
     }
 
-    .firstrow {
+    .column_name {
       border-radius: 20px 0px 0px 0px;
     }
 
-    .Secrow {
+    .status {
       border-radius: 0px 20px 0px 0px;
     }
 
@@ -1240,7 +1240,7 @@ a {
     width: 420px;
   }
 
-  .mobilecard {
+  .mobile_card {
     .card_top {
       width: 100%;
       display: flex;
@@ -1288,7 +1288,7 @@ a {
 
         color: #dddddd;
 
-        .spanleft {
+        .coin-name {
           font-weight: bold;
         }
 
@@ -1332,7 +1332,7 @@ a {
           color: #9f9f9f;
         }
 
-        .rightPara {
+        .right_Para {
           width: 150px;
 
           @media screen and (max-width: 440px) {
@@ -1364,7 +1364,7 @@ a {
 }
 
 @media screen and (max-width: 991px) {
-  .transactionContent {
+  .transaction_Content {
     // margin: 100px 70px;
     padding-left: 40px;
     // border: 1px solid white;

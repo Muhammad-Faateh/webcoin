@@ -790,11 +790,11 @@ a {
   color: #ffffff;
 }
 
-.transactionContent {
+.transaction_Content {
   padding-left: 140px;
   margin-top: -50px !important;
 }
-.transactionContent .tableContent .datesection {
+.transaction_Content .table_Content .date_section {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -805,7 +805,7 @@ a {
   color: #ffffff;
   opacity: 0.5;
 }
-.transactionContent .tableContent .amountsection {
+.transaction_Content .table_Content .amount_section {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -815,7 +815,7 @@ a {
   letter-spacing: 0.01em;
   color: #ffffff;
 }
-.transactionContent .tableContent .detailsection {
+.transaction_Content .table_Content .detail_section {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -826,7 +826,7 @@ a {
   color: #ffffff;
   opacity: 0.5;
 }
-.transactionContent .tableContent .typesection {
+.transaction_Content .table_Content .type_section {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -837,7 +837,7 @@ a {
   color: #ffffff;
   opacity: 0.5;
 }
-.transactionContent .tableContent .statussection {
+.transaction_Content .table_Content .status_section {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -972,12 +972,12 @@ a {
   }
 }
 @media screen and (max-width: 767px) {
-  .transactionContent {
+  .transaction_Content {
     margin: 10px 10px;
     padding-left: 0px !important;
   }
 }
-.transactionContent .transHeadingFirst {
+.transaction_Content .transaction_Heading_First {
   color: white !important;
   margin-top: 5rem;
   font-family: "Poppins";
@@ -989,53 +989,53 @@ a {
   /* identical to box height */
   color: #ffffff;
 }
-.transactionContent .transPara1 {
+.transaction_Content .transaction_Para_1 {
   color: #ffffff !important;
   width: 390px;
   opacity: 0.6;
   margin-left: 14px;
 }
 @media screen and (max-width: 600px) {
-  .transactionContent .transPara1 {
+  .transaction_Content .transaction_Para_1 {
     width: 288px;
   }
 }
 @media screen and (max-width: 600px) {
-  .transactionContent .tableContent {
+  .transaction_Content .table_Content {
     display: none;
   }
 }
-.transactionContent .tableContent table {
+.transaction_Content .table_Content table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
-.transactionContent .tableContent .tableRow {
+.transaction_Content .table_Content .table_Row {
   height: 70px;
 }
-.transactionContent .tableContent .firstrow {
+.transaction_Content .table_Content .column_name {
   border-radius: 20px 0px 0px 0px;
 }
-.transactionContent .tableContent .Secrow {
+.transaction_Content .table_Content .status {
   border-radius: 0px 20px 0px 0px;
 }
-.transactionContent .tableContent .thirdrow {
+.transaction_Content .table_Content .thirdrow {
   border-radius: 0px 0px 20px 0px;
 }
-.transactionContent .tableContent .forthrow {
+.transaction_Content .table_Content .forthrow {
   border-radius: 0px 0px 0px 20px;
 }
-.transactionContent .tableContent td,
-.transactionContent .tableContent th {
+.transaction_Content .table_Content td,
+.transaction_Content .table_Content th {
   border: none;
   text-align: center;
   padding: 8px;
 }
-.transactionContent .tableContent tr:nth-child(even) {
+.transaction_Content .table_Content tr:nth-child(even) {
   color: #dddddd;
   background-color: #141414;
 }
-.transactionContent .tableContent tr:nth-child(odd) {
+.transaction_Content .table_Content tr:nth-child(odd) {
   background-color: #0e0e0e;
   color: #dddddd;
 }
@@ -1056,11 +1056,11 @@ a {
     width: 420px;
   }
 }
-.mobview_main .mobilecard .card_top {
+.mobview_main .mobile_card .card_top {
   width: 100%;
   display: flex;
 }
-.mobview_main .mobilecard .card_top .div-img {
+.mobview_main .mobile_card .card_top .div-img {
   width: 200px !important;
   display: none;
   border-radius: 16%;
@@ -1072,33 +1072,33 @@ a {
   height: 70px;
   margin: 15px 15px 0px 15px;
 }
-.mobview_main .mobilecard .card_top .div-img img {
+.mobview_main .mobile_card .card_top .div-img img {
   width: 40.43px;
   height: 40.43px;
 }
-.mobview_main .mobilecard .card_top .img-2 {
+.mobview_main .mobile_card .card_top .img-2 {
   background-color: rgb(14, 24, 29) !important;
 }
-.mobview_main .mobilecard .card_top .card_top_left {
+.mobview_main .mobile_card .card_top .card_top_left {
   width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #dddddd;
 }
-.mobview_main .mobilecard .card_top .card_top_left .spanleft {
+.mobview_main .mobile_card .card_top .card_top_left .coin-name {
   font-weight: bold;
 }
-.mobview_main .mobilecard .card_top .card_top_left p {
+.mobview_main .mobile_card .card_top .card_top_left p {
   font-size: 15px;
   color: #9f9f9f;
 }
 @media screen and (max-width: 440px) {
-  .mobview_main .mobilecard .card_top .card_top_left {
+  .mobview_main .mobile_card .card_top .card_top_left {
     padding: 0px !important;
   }
 }
-.mobview_main .mobilecard .card_top .card_top_right {
+.mobview_main .mobile_card .card_top .card_top_right {
   width: 35%;
   display: flex;
   justify-content: flex-end;
@@ -1107,34 +1107,34 @@ a {
   padding: 22px 128px;
   margin-right: auto;
 }
-.mobview_main .mobilecard .card_top .card_top_right span {
+.mobview_main .mobile_card .card_top .card_top_right span {
   font-size: 20px;
   font-weight: bold;
   width: 120px;
   padding: 5px 35px;
 }
 @media screen and (max-width: 440px) {
-  .mobview_main .mobilecard .card_top .card_top_right span {
+  .mobview_main .mobile_card .card_top .card_top_right span {
     font-size: medium;
   }
 }
-.mobview_main .mobilecard .card_top .card_top_right p {
+.mobview_main .mobile_card .card_top .card_top_right p {
   font-size: 15px;
   color: #9f9f9f;
 }
-.mobview_main .mobilecard .card_top .card_top_right .rightPara {
+.mobview_main .mobile_card .card_top .card_top_right .right_Para {
   width: 150px;
 }
 @media screen and (max-width: 440px) {
-  .mobview_main .mobilecard .card_top .card_top_right .rightPara {
+  .mobview_main .mobile_card .card_top .card_top_right .right_Para {
     padding-right: 5px;
     font-size: 13px;
   }
 }
-.mobview_main .mobilecard .card_bottom {
+.mobview_main .mobile_card .card_bottom {
   min-height: 50px;
 }
-.mobview_main .mobilecard .card_bottom .cardPara {
+.mobview_main .mobile_card .card_bottom .cardPara {
   background-color: #0e0e0e;
   padding-left: 34px !important;
   padding-bottom: 22px;
@@ -1143,13 +1143,13 @@ a {
   opacity: 0.6;
 }
 @media screen and (max-width: 420px) {
-  .mobview_main .mobilecard {
+  .mobview_main .mobile_card {
     margin: 0px !important;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .transactionContent {
+  .transaction_Content {
     padding-left: 40px;
     margin-top: -50px !important;
   }
