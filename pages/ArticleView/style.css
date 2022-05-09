@@ -30,25 +30,25 @@ a {
   text-decoration: none;
 }
 
-.searchcontainer {
+.search_container {
   width: 100%;
   display: flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.searchcontainer .searchicon {
+.search_container .search_icon {
   position: relative;
   left: 40px;
 }
-.searchcontainer .icon {
+.search_container .icon {
   background-color: rgb(96, 94, 0);
   backdrop-filter: blur(1px);
   opacity: 0.6;
   padding: 5px 10px 10px 10px;
   border-radius: 8px;
 }
-.searchcontainer .searchinputfield {
+.search_container .search_input_field {
   background: #262626;
   border-radius: 8px;
   border: none;
@@ -58,7 +58,7 @@ a {
   color: white;
   padding-left: 60px;
 }
-.searchcontainer .secondcontainer {
+.search_container .user-profile-container {
   width: 260px;
   margin-left: 20px;
   height: 60px;
@@ -72,16 +72,16 @@ a {
   border-radius: 20px;
   display: flex;
 }
-.searchcontainer .secondcontainer .dropd {
+.search_container .user-profile-container .dropdown_container {
   position: absolute;
   right: 20px;
 }
-.searchcontainer .secondcontainer .lineclass {
+.search_container .user-profile-container .profile-info {
   position: absolute;
   top: 5px;
   left: 70px;
 }
-.searchcontainer .secondcontainer .lineclass .userprofileheading {
+.search_container .user-profile-container .profile-info .user_profile_heading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -89,7 +89,7 @@ a {
   line-height: 21px;
   color: #ffffff;
 }
-.searchcontainer .secondcontainer .lineclass .verifiedheading {
+.search_container .user-profile-container .profile-info .verified_heading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -98,16 +98,16 @@ a {
   color: #ffffff;
   opacity: 0.4;
 }
-.searchcontainer .dropdown-toggle::after {
+.search_container .dropdown-toggle::after {
   content: none !important;
 }
-.searchcontainer .dropdown_submenu {
+.search_container .dropdown_submenu {
   width: 300px;
   background: #242323;
   border-radius: 16px;
   margin-top: 10px;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo {
+.search_container .dropdown_submenu .secondcontainertwo {
   width: 260px;
   cursor: pointer;
   margin-left: 20px;
@@ -119,16 +119,16 @@ a {
   border-radius: 20px;
   display: flex;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd {
+.search_container .dropdown_submenu .secondcontainertwo .dropdown_container {
   position: absolute;
   right: 10px;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass {
+.search_container .dropdown_submenu .secondcontainertwo .profile-info {
   position: absolute;
   top: 5px;
   left: 50px;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass .userprofileheading {
+.search_container .dropdown_submenu .secondcontainertwo .profile-info .user_profile_heading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -136,7 +136,7 @@ a {
   line-height: 21px;
   color: #ffffff;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass .verifiedheading {
+.search_container .dropdown_submenu .secondcontainertwo .profile-info .verified_heading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -145,7 +145,7 @@ a {
   color: #ffffff;
   opacity: 0.4;
 }
-.searchcontainer .dropdown_submenu .addprofile {
+.search_container .dropdown_submenu .add_profile {
   display: flex;
   width: 300px;
   align-items: center;
@@ -153,7 +153,7 @@ a {
   cursor: pointer;
   padding-top: 20px;
 }
-.searchcontainer .dropdown_submenu .addprofile .addprofiletext {
+.search_container .dropdown_submenu .add_profile .add_profile_text {
   font-weight: 400;
   font-size: 11px;
   line-height: 16px;
@@ -167,14 +167,6 @@ a {
   border-radius: 14px;
   padding-left: 80px;
 }
-.row .searchIcon {
-  position: absolute;
-  left: 14.92%;
-  right: 91.38%;
-  top: 31.81%;
-  bottom: 32.93%;
-  color: #c4c4c4;
-}
 .row .imageDropDown {
   width: 260px;
   border: 1.5px solid #ffffff;
@@ -187,6 +179,10 @@ a {
 .row ::placeholder {
   color: #c4c4c4;
   text-align: left;
+}
+
+.navbar-toggler {
+  margin-right: -10px !important;
 }
 
 .line {
@@ -840,16 +836,16 @@ a {
     display: none !important;
   }
 
-  .searchcontainer .searchicon {
+  .search_container .search_icon {
     display: none;
   }
-  .searchcontainer .searchinputfield {
+  .search_container .search_input_field {
     display: none;
   }
-  .searchcontainer .icon {
+  .search_container .icon {
     display: none;
   }
-  .searchcontainer .secondcontainer {
+  .search_container .user-profile-container {
     width: 220px !important;
     margin-left: 0px !important;
     height: 42px !important;
@@ -857,17 +853,17 @@ a {
     border: none !important;
     border-radius: 0px !important;
   }
-  .searchcontainer .secondcontainer .dropd {
+  .search_container .user-profile-container .dropdown_container {
     display: none !important;
     position: absolute;
     right: 10px !important;
   }
-  .searchcontainer .secondcontainer .lineclass {
+  .search_container .user-profile-container .profile-info {
     position: absolute;
     top: 2px !important;
     left: 70px;
   }
-  .searchcontainer .secondcontainer .lineclass .userprofileheading {
+  .search_container .user-profile-container .profile-info .user_profile_heading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -875,7 +871,7 @@ a {
     line-height: 21px;
     color: #ffffff;
   }
-  .searchcontainer .secondcontainer .lineclass .verifiedheading {
+  .search_container .user-profile-container .profile-info .verified_heading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -899,58 +895,58 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  .bellIcon {
+  .bell_Icon {
     display: none;
   }
 }
 
-.section2 {
+.article_content {
   padding-left: 150px;
   padding-right: 50px;
   margin-top: 20px;
 }
 @media screen and (max-width: 860px) {
-  .section2 {
+  .article_content {
     padding: 0px 30px !important;
     margin-left: 0px;
   }
 }
 @media screen and (max-width: 767px) {
-  .section2 {
+  .article_content {
     margin: 10px !important;
     padding: 10px !important;
   }
 }
-.section2 .mobileimage {
+.article_content .mobile_image {
   display: none;
 }
-.section2 .mobileimage img {
+.article_content .mobile_image img {
   width: 35rem;
 }
 @media screen and (max-width: 600px) {
-  .section2 .mobileimage {
+  .article_content .mobile_image {
     display: flex;
     justify-content: center;
   }
 }
-.section2 .rectangle {
+.article_content .rectangle {
   margin-top: 37px;
   border-radius: 14px;
   width: 100%;
 }
 @media screen and (max-width: 600px) {
-  .section2 .rectangle {
+  .article_content .rectangle {
     display: none;
   }
 }
 @media screen and (max-width: 600px) {
-  .section2 .newDisplay {
+  .article_content .new_Display {
     display: flex;
     margin-top: -60px;
     flex-direction: column-reverse;
   }
 }
-.section2 .newDisplay .paragraph1 {
+.article_content .new_Display .paragraph1 {
   margin-top: 34px;
   font-family: "Poppins";
   font-style: normal;
@@ -961,12 +957,12 @@ a {
   opacity: 0.6;
 }
 @media screen and (max-width: 600px) {
-  .section2 .newDisplay .paragraph1 {
+  .article_content .new_Display .paragraph1 {
     margin-top: -13px;
     line-height: 20px;
   }
 }
-.section2 .newDisplay .paragraph2 {
+.article_content .new_Display .paragraph2 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -975,17 +971,17 @@ a {
   color: #ffffff;
 }
 @media screen and (max-width: 600px) {
-  .section2 .newDisplay .paragraph2 {
+  .article_content .new_Display .paragraph2 {
     font-size: 24px;
     padding-right: 72px;
   }
 }
 @media screen and (max-width: 420px) {
-  .section2 .newDisplay .paragraph2 {
+  .article_content .new_Display .paragraph2 {
     line-height: 28px;
   }
 }
-.section2 .newDisplay .heading {
+.article_content .new_Display .heading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -995,21 +991,21 @@ a {
   opacity: 0.3;
 }
 @media screen and (max-width: 600px) {
-  .section2 .newDisplay .heading {
+  .article_content .new_Display .heading {
     margin-top: 75px;
   }
 }
-.section2 .newDisplay {
+.article_content .new_Display {
   display: flex;
   flex-direction: column;
 }
 @media screen and (max-width: 600px) {
-  .section2 .newDisplay {
+  .article_content .new_Display {
     display: flex;
     flex-direction: column-reverse;
   }
 }
-.section2 .p3 {
+.article_content .p3 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -1021,7 +1017,7 @@ a {
   color: #7f7f7f;
 }
 @media screen and (max-width: 600px) {
-  .section2 .p3 {
+  .article_content .p3 {
     font-size: 12px;
     font-weight: 300;
     line-height: 20px;
@@ -1032,7 +1028,7 @@ a {
 }
 
 @media screen and (max-width: 991px) {
-  .section2 {
+  .article_content {
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 10px;
@@ -1094,23 +1090,23 @@ a {
     display: none !important;
   }
 
-  .searchcontainer .bellIcon {
+  .search_container .bell_Icon {
     display: none;
   }
 
-  .searchcontainer .searchicon {
+  .search_container .search_icon {
     display: none;
   }
 
-  .searchcontainer .secondcontainer {
+  .search_container .user-profile-container {
     display: none !important;
   }
 
-  .searchcontainer .searchinputfield {
+  .search_container .search_input_field {
     display: none;
   }
 
-  .searchcontainer .icon {
+  .search_container .icon {
     display: none;
   }
 }
