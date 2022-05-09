@@ -40,13 +40,13 @@ a {
   text-decoration: none;
 }
 
-.searchcontainer {
+.search_container {
   width: 100%;
   display: flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .searchicon {
+  .search_icon {
     position: relative;
     left: 40px;
   }
@@ -57,7 +57,7 @@ a {
     padding: 5px 10px 10px 10px;
     border-radius: 8px;
   }
-  .searchinputfield {
+  .search_input_field {
     background: #262626;
     border-radius: 8px;
     border: none;
@@ -66,9 +66,10 @@ a {
     height: 40px;
     color: white;
     padding-left: 60px;
+   
   }
 
-  .secondcontainer {
+  .user-profile-container {
     width: 260px;
     margin-left: 20px;
     height: 60px;
@@ -81,15 +82,15 @@ a {
     border: 1px solid rgb(93, 93, 93);
     border-radius: 20px;
     display: flex;
-    .dropd {
+    .dropdown_container {
       position: absolute;
       right: 20px;
     }
-    .lineclass {
+    .profile-info {
       position: absolute;
       top: 5px;
       left: 70px;
-      .userprofileheading {
+      .user_profile_heading {
         font-family: "Poppins";
         font-style: normal;
         font-weight: 500;
@@ -97,7 +98,7 @@ a {
         line-height: 21px;
         color: #ffffff;
       }
-      .verifiedheading {
+      .verified_heading {
         font-family: "Poppins";
         font-style: normal;
         font-weight: 400;
@@ -129,15 +130,15 @@ a {
       border: none;
       border-radius: 20px;
       display: flex;
-      .dropd {
+      .dropdown_container {
         position: absolute;
         right: 10px;
       }
-      .lineclass {
+      .profile-info {
         position: absolute;
         top: 5px;
         left: 50px;
-        .userprofileheading {
+        .user_profile_heading {
           font-family: "Poppins";
           font-style: normal;
           font-weight: 500;
@@ -145,7 +146,7 @@ a {
           line-height: 21px;
           color: #ffffff;
         }
-        .verifiedheading {
+        .verified_heading {
           font-family: "Poppins";
           font-style: normal;
           font-weight: 400;
@@ -156,14 +157,14 @@ a {
         }
       }
     }
-    .addprofile {
+    .add_profile {
       display: flex;
       width: 300px;
       align-items: center;
       justify-content: center;
       cursor: pointer;
       padding-top: 20px;
-      .addprofiletext {
+      .add_profile_text {
         font-weight: 400;
         font-size: 11px;
         line-height: 16px;
@@ -182,14 +183,14 @@ a {
     padding-left: 80px;
   }
 
-  .searchIcon {
-    position: absolute;
-    left: 14.92%;
-    right: 91.38%;
-    top: 31.81%;
-    bottom: 32.93%;
-    color: $lightGrey;
-  }
+  // .searchIcon {
+  //   position: absolute;
+  //   left: 14.92%;
+  //   right: 91.38%;
+  //   top: 31.81%;
+  //   bottom: 32.93%;
+  //   color: $lightGrey;
+  // }
 
   .imageDropDown {
     width: 260px;
@@ -198,14 +199,21 @@ a {
     height: 60px;
   }
 
+  
+
   .avatar {
     margin-top: 8px;
+    // margin-right: -10px;
   }
 
   ::placeholder {
     color: $lightGrey;
     text-align: left;
   }
+}
+
+.navbar-toggler{
+  margin-right: -10px !important;
 }
 
 .line {
@@ -948,12 +956,14 @@ a {
     }
   }
 
-  .searchcontainer {
-    .searchicon {
+  
+  .search_container {
+   
+    .search_icon {
       display: none;
     }
 
-    .searchinputfield {
+    .search_input_field {
       display: none;
     }
 
@@ -961,7 +971,7 @@ a {
       display: none;
     }
 
-    .secondcontainer {
+    .user-profile-container {
       width: 220px !important;
       margin-left: 0px !important;
       height: 42px !important;
@@ -969,18 +979,18 @@ a {
       border: none !important;
       border-radius: 0px !important;
 
-      .dropd {
+      .dropdown_container {
         display: none !important;
         position: absolute;
         right: 10px !important;
       }
 
-      .lineclass {
+      .profile-info {
         position: absolute;
         top: 2px !important;
         left: 70px;
 
-        .userprofileheading {
+        .user_profile_heading {
           font-family: "Poppins";
           font-style: normal;
           font-weight: 500;
@@ -990,7 +1000,7 @@ a {
           color: #ffffff;
         }
 
-        .verifiedheading {
+        .verified_heading {
           font-family: "Poppins";
           font-style: normal;
           font-weight: 400;
@@ -1017,13 +1027,13 @@ a {
   }
 }
 
-.bellIcon {
+.bell_Icon {
   @media screen and (max-width: 600px) {
     display: none;
   }
 }
 
-.section2 {
+.article_content {
   padding-left: 150px;
   padding-right: 50px;
   margin-top: 20px;
@@ -1038,7 +1048,7 @@ a {
     padding: 10px !important;
   }
 
-  .mobileimage {
+  .mobile_image {
     display: none;
 
     img {
@@ -1061,7 +1071,7 @@ a {
     }
   }
 
-  .newDisplay {
+  .new_Display {
     @media screen and (max-width: 600px) {
       display: flex;
       margin-top: -60px;
@@ -1117,7 +1127,7 @@ a {
     }
   }
 
-  .newDisplay {
+  .new_Display {
     display: flex;
     flex-direction: column;
 
@@ -1150,7 +1160,7 @@ a {
 }
 
 @media screen and (max-width: 991px) {
-  .section2 {
+  .article_content {
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 10px;
@@ -1205,25 +1215,26 @@ a {
     display: none !important;
   }
 
-  .searchcontainer .bellIcon {
+  .search_container .bell_Icon {
     display: none;
   }
 
-  .searchcontainer .searchicon {
+  .search_container .search_icon {
     display: none;
   }
 
-  .searchcontainer .secondcontainer {
+  .search_container .user-profile-container {
     display: none !important;
   }
 
-  .searchcontainer {
-    .searchinputfield {
+  .search_container {
+    
+    .search_input_field {
       display: none;
     }
   }
 
-  .searchcontainer .icon {
+  .search_container .icon {
     display: none;
   }
 }
