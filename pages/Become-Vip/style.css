@@ -74,7 +74,46 @@ a {
 }
 .searchcontainer .secondcontainer .dropd {
   position: absolute;
-  right: 20px;
+  right: 10px;
+}
+.searchcontainer .secondcontainer .dropd .main {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.searchcontainer .secondcontainer .dropd input[type=checkbox] {
+  visibility: hidden;
+}
+.searchcontainer .secondcontainer .dropd .check {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 5px;
+  background-color: rgb(57, 56, 56);
+}
+.searchcontainer .secondcontainer .dropd .main input:checked ~ .check {
+  background-color: #ffbb54;
+}
+.searchcontainer .secondcontainer .dropd .check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.searchcontainer .secondcontainer .dropd .main input:checked ~ .check:after {
+  display: block;
+}
+.searchcontainer .secondcontainer .dropd .main .check:after {
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+  border: 1px solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .searchcontainer .secondcontainer .lineclass {
   position: absolute;
@@ -122,6 +161,45 @@ a {
 .searchcontainer .dropdown_submenu .secondcontainertwo .dropd {
   position: absolute;
   right: 10px;
+}
+.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.searchcontainer .dropdown_submenu .secondcontainertwo .dropd input[type=checkbox] {
+  visibility: hidden;
+}
+.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .check {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 5px;
+  background-color: rgb(57, 56, 56);
+}
+.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main input:checked ~ .check {
+  background-color: #ffbb54;
+}
+.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main input:checked ~ .check:after {
+  display: block;
+}
+.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main .check:after {
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+  border: 1px solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .searchcontainer .dropdown_submenu .secondcontainertwo .lineclass {
   position: absolute;
@@ -444,30 +522,30 @@ a {
   height: 100vh;
 }
 
-.mainContainerText {
+.main-container-text {
   width: 100%;
   padding-left: 150px;
   padding-top: 10px;
 }
-.mainContainerText h1 {
+.main-container-text h1 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 38px;
   line-height: 57px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.mainContainerText p {
+.main-container-text p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.6;
 }
 
-.mainCard {
+.card-container {
   display: flex;
   width: 100%;
   margin-left: -50px;
@@ -475,20 +553,20 @@ a {
   justify-content: space-evenly;
   align-items: flex-start;
 }
-.mainCard .mainCardContainer {
+.card-container .sub-card-container {
   margin-top: 20px;
-  background: #0E0E0E;
+  background: #0e0e0e;
   border-radius: 14px;
   width: 437px;
   height: 746px;
 }
-.mainCard .mainCardContainer .regularcontainer {
+.card-container .sub-card-container .regular-text-container {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 30px;
 }
-.mainCard .mainCardContainer .regularcontainer button {
+.card-container .sub-card-container .regular-text-container button {
   width: auto;
   height: 21px;
   font-family: "Poppins";
@@ -502,111 +580,111 @@ a {
   line-height: 21px;
   padding: 10px 15px 30px 15px;
   letter-spacing: 0.1em;
-  color: #FFBB54;
+  color: #ffbb54;
 }
-.mainCard .mainCardContainer .basiccontainer {
+.card-container .sub-card-container .basic-header-container {
   padding: 30px 0px 0px 20px;
 }
-.mainCard .mainCardContainer .basiccontainer h1 {
+.card-container .sub-card-container .basic-header-container h1 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 38.125px;
   line-height: 57px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.mainCard .mainCardContainer .basiccontainer p {
+.card-container .sub-card-container .basic-header-container p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 17.7917px;
   line-height: 27px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.6;
 }
-.mainCard .mainCardContainer .pricecontainer {
+.card-container .sub-card-container .price-text-container {
   padding: 10px 0px 0px 20px;
   display: flex;
   align-items: center;
 }
-.mainCard .mainCardContainer .pricecontainer h1 {
+.card-container .sub-card-container .price-text-container h1 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 42px;
   line-height: 63px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.mainCard .mainCardContainer .pricecontainer p {
+.card-container .sub-card-container .price-text-container p {
   padding: 12px 0px 0px 5px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.2;
 }
-.mainCard .mainCardContainer .subscribercontainer {
+.card-container .sub-card-container .subscriber-main-container {
   padding: 0px 0px 0px 20px;
 }
-.mainCard .mainCardContainer .subscribercontainer p {
+.card-container .sub-card-container .subscriber-main-container p {
   font-family: "Coco Sharp Variable";
   font-style: normal;
   font-weight: 400;
   font-size: 17.7917px;
   line-height: 21px;
-  color: #FFBB54;
+  color: #ffbb54;
 }
-.mainCard .mainCardContainer .subscribecontainer {
+.card-container .sub-card-container .subscribe-sub-container {
   padding: 0px 0px 0px 20px;
   margin-top: -15px;
 }
-.mainCard .mainCardContainer .subscribecontainer p {
+.card-container .sub-card-container .subscribe-sub-container p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.3;
 }
-.mainCard .mainCardContainer .freetrialcontainer {
+.card-container .sub-card-container .free-trial-container {
   display: flex;
   padding: 25px 0px 20px 0px;
   align-items: center;
   justify-content: center;
 }
-.mainCard .mainCardContainer .freetrialcontainer button {
+.card-container .sub-card-container .free-trial-container button {
   position: absolute;
   width: 325px;
   border: none;
   height: 59.73px;
-  background: #FFBB54;
+  background: #ffbb54;
   border-radius: 14px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #08071B;
+  color: #08071b;
 }
-.mainCard .mainCardContainer .listcontainer {
+.card-container .sub-card-container .list-text-main-container {
   padding: 30px 0px 30px 10px;
 }
-.mainCard .mainCardContainer .listcontainer ul {
+.card-container .sub-card-container .list-text-main-container ul {
   display: grid;
   gap: 20px;
 }
-.mainCard .mainCardContainer .listcontainer ul li {
+.card-container .sub-card-container .list-text-main-container ul li {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: #FFBB54;
+  color: #ffbb54;
 }
-.mainCard .mainCardContainer .listcontainer ul li > span {
+.card-container .sub-card-container .list-text-main-container ul li > span {
   color: white;
 }
 
@@ -944,25 +1022,25 @@ a {
     display: none;
   }
 
-  .mainContainerText {
+  .main-container-text {
     width: 100%;
     padding-left: 0px;
     padding-top: 20px;
   }
-  .mainContainerText h1 {
+  .main-container-text h1 {
     padding-left: 20px;
     font-weight: 600;
     font-size: 26px;
     line-height: 39px;
   }
-  .mainContainerText p {
+  .main-container-text p {
     padding-left: 20px;
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
   }
 
-  .mainCard {
+  .card-container {
     display: flex;
     width: 100%;
     margin-left: 0px;
@@ -970,18 +1048,18 @@ a {
     justify-content: center;
     align-items: center;
   }
-  .mainCard .mainCardContainer {
+  .card-container .sub-card-container {
     width: 350px;
     height: auto;
     border-radius: 35px;
   }
-  .mainCard .mainCardContainer .regularcontainer {
+  .card-container .sub-card-container .regular-text-container {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 30px;
   }
-  .mainCard .mainCardContainer .regularcontainer button {
+  .card-container .sub-card-container .regular-text-container button {
     width: auto;
     height: 21px;
     font-family: "Poppins";
@@ -995,75 +1073,83 @@ a {
     line-height: 21px;
     padding: 10px 15px 30px 15px;
     letter-spacing: 0.1em;
-    color: #FFBB54;
+    color: #ffbb54;
   }
-  .mainCard .mainCardContainer .basiccontainer {
+  .card-container .sub-card-container .basic-header-container {
     padding: 30px 0px 0px 5px;
   }
-  .mainCard .mainCardContainer .basiccontainer h1 {
+  .card-container .sub-card-container .basic-header-container h1 {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
     font-size: 38.125px;
     line-height: 57px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
-  .mainCard .mainCardContainer .basiccontainer p {
+  .card-container .sub-card-container .basic-header-container p {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 17.7917px;
     line-height: 27px;
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 0.6;
   }
-  .mainCard .mainCardContainer .pricecontainer {
+  .card-container .sub-card-container .price-text-container {
     padding: 10px 0px 0px 5px;
     display: flex;
     align-items: center;
   }
-  .mainCard .mainCardContainer .pricecontainer h1 {
+  .card-container .sub-card-container .price-text-container h1 {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
     font-size: 42px;
     line-height: 63px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
-  .mainCard .mainCardContainer .pricecontainer p {
+  .card-container .sub-card-container .price-text-container p {
     padding: 12px 0px 0px 5px;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 0.2;
   }
-  .mainCard .mainCardContainer .subscribercontainer {
+  .card-container .sub-card-container .subscriber-main-container {
     display: none;
   }
-  .mainCard .mainCardContainer .subscribecontainer {
+  .card-container .sub-card-container .subscribe-sub-container {
     display: none;
   }
-  .mainCard .mainCardContainer .freetrialcontainer button {
+  .card-container .sub-card-container .free-trial-container button {
     width: 299px;
     height: 42px;
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
   }
-  .mainCard .mainCardContainer .listcontainer {
+  .card-container .sub-card-container .list-text-main-container {
     padding: 30px 0px 30px 10px;
   }
-  .mainCard .mainCardContainer .listcontainer ul {
+  .card-container .sub-card-container .list-text-main-container ul {
     display: grid;
     gap: 10px;
   }
-  .mainCard .mainCardContainer .listcontainer ul li {
+  .card-container .sub-card-container .list-text-main-container ul li {
     font-weight: 400;
     font-size: 10.1113px;
     line-height: 15px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .navbar-toggler {
+    position: fixed !important;
+    right: 5px !important;
+    top: 5px !important;
+    z-index: 1;
   }
 }
 

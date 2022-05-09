@@ -18,47 +18,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
-    <style>
-      .main {
-          display: block;
-          position: relative;
-          cursor: pointer;
-      }
-      input[type=checkbox] {
-          visibility: hidden;
-      }
-      .check {
-          position: absolute;
-          top: 5px;
-          left: 0;
-          height: 16px;
-          width: 16px;
-          border-radius: 5px;
-          background-color: rgb(57, 56, 56);
-      }
-      .main input:checked ~ .check {
-          background-color:  #FFBB54;
-      }
-      .check:after {
-          content: "";
-          position: absolute;
-          display: none;
-      }
-      .main input:checked ~ .check:after {
-          display: block;
-      }
-      .main .check:after {
-          left: 5px;
-          top: 1px;
-          width: 6px;
-          height: 12px;
-          border: 1px solid black;
-          border-width: 0 2px 2px 0;
-          -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-      }
-    </style>
   </head>
   <body id="body-pd">
  <!-- Navbar -->
@@ -100,7 +59,7 @@
         <a href="#">
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
-              <button class="accordion-button accorbtn" style="width: auto;" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button accorbtn" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 <i>
                   <img src="../../img/settingicon.png" alt="" />
@@ -116,7 +75,6 @@
                     </i>
                     <span>Transactions</span>
                   </div>
-  
                   <div class="inneraccor nav_link">
                     <i>
                       <img src="../../img/pres.png" alt="" />
@@ -128,7 +86,6 @@
             </div>
           </div>
         </a>
-  
         <a href="#" class="nav_link navlinkthree">
           <i>
             <img src="../../img/Vector1.png" alt="" />
@@ -221,7 +178,7 @@
     </div>
   </nav>
   <!-- Sidebar -->
-  <div class="l-navbar" id="nav-bar">
+  <div class="left-navbar" id="nav-bar">
     <nav class="nav">
       <div>
         <a href="#" class="nav_logo">
@@ -250,7 +207,6 @@
             </i>
             <span>Video Lessons</span>
           </a>
-  
           <span href="#">
             <div id="accordionExample">
               <div class="accordion-item">
@@ -262,7 +218,6 @@
                   </i>
                   <span>Auto-Trading Bot</span>
                 </button>
-  
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body accorbd">
@@ -284,8 +239,6 @@
               </div>
             </div>
           </span>
-  
-  
           <a href="#" class="nav_link navlinkthree">
             <i>
               <img src="../../img/Vector1.png" alt="" />
@@ -315,10 +268,10 @@
     </nav>
   </div>
 <!-- Video Lessons Heading Container -->
-    <div class="topdiv">
-      <div class="headmain">
-        <h4 class="videolesson">Video Lessons</h4>
-        <p class="parahead">
+    <div class="main-header-container">
+      <div class="main-sub-header-container">
+        <h4 class="video-lesson-header">Video Lessons</h4>
+        <p class="sub-header-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam
           lorem
         </p>
@@ -326,7 +279,6 @@
     </div>
 <!-- Show Videos Container -->
     <div class="maincontainer">
-      <!-- <div class="col col-lg-4"> -->
       <div class="mainCard">
         <div class="col-lg-8 col-md-4 col-xs-6 col-12 maincard">
           <div>
@@ -335,76 +287,13 @@
               Your browser does not support the video tag.
             </video>
           </div>
-          <div class="submaincontainer">
-            <p class="secondarytext">Basic</p>
-            <div class="headingcontainer">
-              <h3 class="secondaryheading">How to Start Crypto</h3>
+          <div class="sub-main-container">
+            <p class="sub-header-text">Basic</p>
+            <div class="sub-main-header-container">
+              <h3 class="secondary-header-text">How to Start Crypto</h3>
             </div>
-            <div class="headingcontainer">
-              <p class="thirdheading">by crypto accuracy</p>
-            </div>
-          </div>
-          <!-- </div> -->
-        </div>
-      </div>
-      <!-- <div class="col col-lg-4"> -->
-      <div class="mainCard">
-        <div class="col-lg-8 col-md-4 col-xs-6 col-12 maincard">
-          <div>
-            <video width="320"     class="videoclass"  poster="/img/thumbnail.png" controls>
-              <source src="./samplevideo.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="submaincontainer">
-            <p class="secondarytext">Basic</p>
-            <div class="headingcontainer">
-              <h3 class="secondaryheading">How to Start Crypto</h3>
-            </div>
-            <div class="headingcontainer">
-              <p class="thirdheading">by crypto accuracy</p>
-            </div>
-          </div>
-          <!-- </div> -->
-        </div>
-      </div>
-      <!-- <div class="col col-lg-4"> -->
-      <div class="mainCard">
-        <div class="col-lg-8 col-md-4 col-xs-6 col-12 maincard">
-          <div>
-            <video width="320"     class="videoclass"  poster="/img/thumbnail.png" controls>
-              <source src="./samplevideo.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="submaincontainer">
-            <p class="secondarytext">Basic</p>
-            <div class="headingcontainer">
-              <h3 class="secondaryheading">How to Start Crypto</h3>
-            </div>
-            <div class="headingcontainer">
-              <p class="thirdheading">by crypto accuracy</p>
-            </div>
-          </div>
-        </div>
-        <!-- </div> -->
-      </div>
-      <!-- <div class="col col-lg-4"> -->
-      <div class="mainCard">
-        <div class="col-lg-8 col-md-4 col-xs-6 col-12 maincard">
-          <div>
-            <video width="320"     class="videoclass"  poster="/img/thumbnail.png" controls>
-              <source src="./samplevideo.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="submaincontainer">
-            <p class="secondarytext">Basic</p>
-            <div class="headingcontainer">
-              <h3 class="secondaryheading">How to Start Crypto</h3>
-            </div>
-            <div class="headingcontainer">
-              <p class="thirdheading">by crypto accuracy</p>
+            <div class="sub-main-header-container">
+              <p class="final-sub-header-text">by crypto accuracy</p>
             </div>
           </div>
         </div>
@@ -417,32 +306,13 @@
               Your browser does not support the video tag.
             </video>
           </div>
-          <div class="submaincontainer">
-            <p class="secondarytext">Basic</p>
-            <div class="headingcontainer">
-              <h3 class="secondaryheading">How to Start Crypto</h3>
+          <div class="sub-main-container">
+            <p class="sub-header-text">Basic</p>
+            <div class="sub-main-header-container">
+              <h3 class="secondary-header-text">How to Start Crypto</h3>
             </div>
-            <div class="headingcontainer">
-              <p class="thirdheading">by crypto accuracy</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mainCard">
-        <div class="col-lg-8 col-md-4 col-xs-6 col-12 maincard">
-          <div>
-            <video width="320"     class="videoclass"  poster="/img/thumbnail.png" controls>
-              <source src="./samplevideo.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="submaincontainer">
-            <p class="secondarytext">Basic</p>
-            <div class="headingcontainer">
-              <h3 class="secondaryheading">How to Start Crypto</h3>
-            </div>
-            <div class="headingcontainer">
-              <p class="thirdheading">by crypto accuracy</p>
+            <div class="sub-main-header-container">
+              <p class="final-sub-header-text">by crypto accuracy</p>
             </div>
           </div>
         </div>
@@ -455,13 +325,13 @@
               Your browser does not support the video tag.
             </video>
           </div>
-          <div class="submaincontainer">
-            <p class="secondarytext">Basic</p>
-            <div class="headingcontainer">
-              <h3 class="secondaryheading">How to Start Crypto</h3>
+          <div class="sub-main-container">
+            <p class="sub-header-text">Basic</p>
+            <div class="sub-main-header-container">
+              <h3 class="secondary-header-text">How to Start Crypto</h3>
             </div>
-            <div class="headingcontainer">
-              <p class="thirdheading">by crypto accuracy</p>
+            <div class="sub-main-header-container">
+              <p class="final-sub-header-text">by crypto accuracy</p>
             </div>
           </div>
         </div>
@@ -469,23 +339,98 @@
       <div class="mainCard">
         <div class="col-lg-8 col-md-4 col-xs-6 col-12 maincard">
           <div>
-            <video width="320"     class="videoclass"  poster="/img/thumbnail.png" controls>
+            <video class="videoclass"  poster="/img/thumbnail.png" controls>
               <source src="./samplevideo.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
-          <div class="submaincontainer">
-            <p class="secondarytext">Basic</p>
-            <div class="headingcontainer">
-              <h3 class="secondaryheading">How to Start Crypto</h3>
+          <div class="sub-main-container">
+            <p class="sub-header-text">Basic</p>
+            <div class="sub-main-header-container">
+              <h3 class="secondary-header-text">How to Start Crypto</h3>
             </div>
-            <div class="headingcontainer">
-              <p class="thirdheading">by crypto accuracy</p>
+            <div class="sub-main-header-container">
+              <p class="final-sub-header-text">by crypto accuracy</p>
             </div>
           </div>
         </div>
       </div>
-      <!-- </div> -->
+      <div class="mainCard">
+        <div class="col-lg-8 col-md-4 col-xs-6 col-12 maincard">
+          <div>
+            <video class="videoclass"  poster="/img/thumbnail.png" controls>
+              <source src="./samplevideo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="sub-main-container">
+            <p class="sub-header-text">Basic</p>
+            <div class="sub-main-header-container">
+              <h3 class="secondary-header-text">How to Start Crypto</h3>
+            </div>
+            <div class="sub-main-header-container">
+              <p class="final-sub-header-text">by crypto accuracy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mainCard">
+        <div class="col-lg-8 col-md-4 col-xs-6 col-12 maincard">
+          <div>
+            <video class="videoclass"  poster="/img/thumbnail.png" controls>
+              <source src="./samplevideo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="sub-main-container">
+            <p class="sub-header-text">Basic</p>
+            <div class="sub-main-header-container">
+              <h3 class="secondary-header-text">How to Start Crypto</h3>
+            </div>
+            <div class="sub-main-header-container">
+              <p class="final-sub-header-text">by crypto accuracy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mainCard">
+        <div class="col-lg-8 col-md-4 col-xs-6 col-12 maincard">
+          <div>
+            <video class="videoclass"  poster="/img/thumbnail.png" controls>
+              <source src="./samplevideo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="sub-main-container">
+            <p class="sub-header-text">Basic</p>
+            <div class="sub-main-header-container">
+              <h3 class="secondary-header-text">How to Start Crypto</h3>
+            </div>
+            <div class="sub-main-header-container">
+              <p class="final-sub-header-text">by crypto accuracy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mainCard">
+        <div class="col-lg-8 col-md-4 col-xs-6 col-12 maincard">
+          <div>
+            <video class="videoclass"  poster="/img/thumbnail.png" controls>
+              <source src="./samplevideo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="sub-main-container">
+            <p class="sub-header-text">Basic</p>
+            <div class="sub-main-header-container">
+              <h3 class="secondary-header-text">How to Start Crypto</h3>
+            </div>
+            <div class="sub-main-header-container">
+              <p class="final-sub-header-text">by crypto accuracy</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 <!-- Scripts Js Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

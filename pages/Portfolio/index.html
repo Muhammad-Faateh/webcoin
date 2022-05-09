@@ -12,53 +12,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <style>
-    .main {
-      display: block;
-      position: relative;
-      cursor: pointer;
-    }
-
-    input[type=checkbox] {
-      visibility: hidden;
-    }
-
-    .check {
-      position: absolute;
-      top: 16px;
-      left: 0;
-      height: 16px;
-      width: 16px;
-      border-radius: 5px;
-      background-color: rgb(57, 56, 56);
-    }
-
-    .main input:checked~.check {
-      background-color: #FFBB54;
-    }
-
-    .check:after {
-      content: "";
-      position: absolute;
-      display: none;
-    }
-
-    .main input:checked~.check:after {
-      display: block;
-    }
-
-    .main .check:after {
-      left: 5px;
-      top: 1px;
-      width: 6px;
-      height: 12px;
-      border: 1px solid black;
-      border-width: 0 2px 2px 0;
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
-    }
-  </style>
 </head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <body id="body-pd">
@@ -348,7 +301,6 @@
           </div>
         </div>
       </div>
-
       <!-- Activity Container -->
       <div class="twocontainer">
         <div class="twosubcontainer">
@@ -408,15 +360,12 @@
         </div>
       </div>
     </div>
-
     <div class="assetsmainsection">
       <!-- Assests Section -->
       <div class="assetmaincontainer">
-
         <p class="assetsheading">Assets</p>
         <div class="assetsfirstcontainer">
           <div class="assets-sub-container">
-
             <img class="assets-image-one" src="../../img/coinicon.png" alt="">
             <img class="assets-image-two" src="../../img/rectangle.png" alt="">
           </div>
@@ -430,7 +379,6 @@
           </div>
           <div class="canvasgraphcontainer">
             <canvas id="myChart" class="canvasgraph"></canvas>
-
           </div>
           <div class="thirdassetcontainer">
             <p class="seconddateheading">10 Jan</p>
@@ -442,7 +390,6 @@
         </div>
         <div class="assetsfirstcontainer">
           <div class="assets-sub-container">
-
             <img class="assets-image-one" src="../../img/coinicon.png" alt="">
             <img style="position:absolute" src="../../img/rectangle.png" alt="">
           </div>
@@ -456,7 +403,6 @@
           </div>
           <div class="canvasgraphcontainer">
             <canvas id="myChart2" class="canvasgraph"></canvas>
-
           </div>
           <div class="thirdassetcontainer">
             <p class="seconddateheading">10 Jan</p>
@@ -519,7 +465,6 @@
                 <div>
                   <p class="coinnameheading">CoinName</p>
                   <div class="buysectioncontentsub">
-
                     <img src="../../img/ltc.png"  alt="">
                     <h4 class="bitcoinheading">Bitcoin/BTC</h4>
                   </div>
@@ -588,7 +533,6 @@
       </div>
     </div>
   </div>
-
   <!-- Bootstrap Scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

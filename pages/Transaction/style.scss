@@ -86,10 +86,47 @@ a {
     border-radius: 20px;
     display: flex;
     .dropd {
-      // border: 1px solid white;
-      // margin-left: 20px;
       position: absolute;
-      right: 20px;
+      right: 10px;
+      .main {
+        display: block;
+        position: relative;
+        cursor: pointer;
+      }
+      input[type=checkbox] {
+        visibility: hidden;
+      }
+      .check {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        height: 16px;
+        width: 16px;
+        border-radius: 5px;
+        background-color: rgb(57, 56, 56);
+      }
+      .main input:checked~.check {
+        background-color: #FFBB54;
+      }
+      .check:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      .main input:checked~.check:after {
+        display: block;
+      }
+      .main .check:after {
+        left: 5px;
+        top: 1px;
+        width: 6px;
+        height: 12px;
+        border: 1px solid black;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
     }
     .lineclass {
       position: absolute;
@@ -142,7 +179,47 @@ a {
       .dropd {
         position: absolute;
         right: 10px;
+        .main {
+          display: block;
+          position: relative;
+          cursor: pointer;
+        }
+        input[type=checkbox] {
+          visibility: hidden;
+        }
+        .check {
+          position: absolute;
+          top: 5px;
+          left: 0;
+          height: 16px;
+          width: 16px;
+          border-radius: 5px;
+          background-color: rgb(57, 56, 56);
+        }
+        .main input:checked~.check {
+          background-color: #FFBB54;
+        }
+        .check:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+        .main input:checked~.check:after {
+          display: block;
+        }
+        .main .check:after {
+          left: 5px;
+          top: 1px;
+          width: 6px;
+          height: 12px;
+          border: 1px solid black;
+          border-width: 0 2px 2px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
       }
+
       .lineclass {
         position: absolute;
         top: 5px;
@@ -1457,5 +1534,18 @@ a {
 
   .searchcontainer .icon {
     display: none;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 420px) {
+  .navbar-toggler{
+    position: fixed !important;
+    right: 5px !important;
+    top: 5px !important;
+    z-index: 1;
   }
 }

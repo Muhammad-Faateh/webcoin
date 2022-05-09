@@ -12,54 +12,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <!-- checkbox style -->
-  <style>
-    .main {
-      display: block;
-      position: relative;
-      cursor: pointer;
-    }
-
-    input[type=checkbox] {
-      visibility: hidden;
-    }
-
-    .check {
-      position: absolute;
-      top: 5px;
-      left: 0;
-      height: 16px;
-      width: 16px;
-      border-radius: 5px;
-      background-color: rgb(57, 56, 56);
-    }
-
-    .main input:checked~.check {
-      background-color: #FFBB54;
-    }
-
-    .check:after {
-      content: "";
-      position: absolute;
-      display: none;
-    }
-
-    .main input:checked~.check:after {
-      display: block;
-    }
-
-    .main .check:after {
-      left: 5px;
-      top: 1px;
-      width: 6px;
-      height: 12px;
-      border: 1px solid black;
-      border-width: 0 2px 2px 0;
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
-    }
-  </style>
 </head>
 
 <body id="body-pd">
@@ -111,7 +63,7 @@
               </button>
               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample">
-                <div class="accordion-body accorbd">
+                <div class="accordion-body accordion-button-sub">
                   <div class="inneraccor nav_link">
                     <i>
                       <img src="../../img/settingicon.png" alt="" />
@@ -223,7 +175,7 @@
     </div>
   </nav>
   <!-- Sidebar -->
-  <div class="l-navbar" id="nav-bar">
+  <div class="left-navbar" id="nav-bar">
     <nav class="nav">
       <div>
         <a href="#" class="nav_logo">
@@ -252,11 +204,9 @@
             </i>
             <span>Video Lessons</span>
           </a>
-
           <span href="#">
             <div id="accordionExample">
               <div class="accordion-item">
-
                 <button class="accordion-button accorbtn" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   <i>
@@ -264,10 +214,9 @@
                   </i>
                   <span>Auto-Trading Bot</span>
                 </button>
-
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                   data-bs-parent="#accordionExample">
-                  <div class="accordion-body accorbd">
+                  <div class="accordion-body accordion-button-sub">
                     <div class="inneraccor nav_link">
                       <i>
                         <img src="../../img/settingicon.png" alt="" />
@@ -286,8 +235,6 @@
               </div>
             </div>
           </span>
-
-
           <a href="#" class="nav_link navlinkthree">
             <i>
               <img src="../../img/Vector1.png" alt="" />
@@ -316,9 +263,7 @@
       </div>
     </nav>
   </div>
-
   <!-- aticle main content -->
-
   <div class="article_content">
     <div>
       <div class="new_Display">
@@ -326,14 +271,14 @@
           <img src="../../img/bitcoin-mobileviewimage.png" alt="bitcoin-mobileviewimage" />
         </div>
         <img src="../../img/artcle_view/Rectangle.svg" class="img-fluid rectangle" alt="Rectangle" />
-        <p class="paragraph1">
+        <p class="image-sub-heading">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
           aliquam lorem
         </p>
-        <p class="paragraph2">Bank of England sees CBCDs as a revolution for future money</p>
-        <h6 class="heading">09 December 2021</h6>
+        <p class="main-heading">Bank of England sees CBCDs as a revolution for future money</p>
+        <h6 class="date-heading">09 December 2021</h6>
       </div>
-      <p class="p3">
+      <p class="sub-parapraph-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio quam
         dictum sit sit eu eleifend commodo imperdiet. Commodo id magna
         justo gravida eu egestas feugiat sed. Urna, interdum vitae et
@@ -368,8 +313,6 @@
   </div>
   </div>
   </div>
-
-
   <!-- Scripts JS Jquery -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

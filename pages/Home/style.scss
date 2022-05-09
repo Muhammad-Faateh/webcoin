@@ -79,8 +79,6 @@ body {
         font-weight: 800;
         font-size: 36px;
         line-height: 54px;
-        /* identical to box height */
-
         color: #ffffff;
       }
       h1 {
@@ -981,11 +979,6 @@ body {
       .firstDiv {
         padding-top: 20px;
       }
-
-      .secondDiv {
-        .socialmainDiv {
-        }
-      }
     }
   }
 
@@ -1184,13 +1177,6 @@ body {
   }
 
   .section2 {
-    .paragraph {
-    }
-  }
-
-
-
-  .section2 {
     height: 100px;
   }
 
@@ -1253,14 +1239,8 @@ body {
     display: none;
   }
 
-  .imgsection2 {
-  }
-
   .imgsection3 {
     display: none;
-  }
-
-  .imageslider {
   }
 
   .imagelast {
@@ -1474,8 +1454,5 @@ body {
 
   .navbarMenu {
     display: none !important;
-  }
-
-  .socialIcons {
   }
 }

@@ -10,53 +10,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
-  <style>
-    .main {
-      display: block;
-      position: relative;
-      cursor: pointer;
-    }
-
-    input[type=checkbox] {
-      visibility: hidden;
-    }
-
-    .check {
-      position: absolute;
-      top: 5px;
-      left: 0;
-      height: 16px;
-      width: 16px;
-      border-radius: 5px;
-      background-color: rgb(57, 56, 56);
-    }
-
-    .main input:checked~.check {
-      background-color: #FFBB54;
-    }
-
-    .check:after {
-      content: "";
-      position: absolute;
-      display: none;
-    }
-
-    .main input:checked~.check:after {
-      display: block;
-    }
-
-    .main .check:after {
-      left: 5px;
-      top: 1px;
-      width: 6px;
-      height: 12px;
-      border: 1px solid black;
-      border-width: 0 2px 2px 0;
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
-    }
-  </style>
 </head>
 
 <body id="body-pd">
@@ -284,7 +237,6 @@
           </div>
         </span>
 
-
         <a href="#" class="nav_link navlinkthree">
           <i>
             <img src="../../img/Vector1.png" alt="" />
@@ -314,10 +266,8 @@
   </nav>
 </div>
 
-
-
   <!--Main Refer A Friend Content Container-->
-  <div class="friend">
+  <div class="friend-container">
     <div class="cont">Refer A Friend</div>
     <div class="para">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam
@@ -376,10 +326,9 @@
         <p class="copylinktext">Copy Link</p>
       </div>
     </div>
-
-
   </div>
   </div>
+  
   <!-- Scripts Js Booptstrap -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

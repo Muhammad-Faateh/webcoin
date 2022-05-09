@@ -133,6 +133,45 @@ a {
       .dropdown_container {
         position: absolute;
         right: 10px;
+          .main {
+            display: block;
+            position: relative;
+            cursor: pointer;
+          }
+          input[type=checkbox] {
+            visibility: hidden;
+          }
+          .check {
+            position: absolute;
+            top: 5px;
+            left: 0;
+            height: 16px;
+            width: 16px;
+            border-radius: 5px;
+            background-color: rgb(57, 56, 56);
+          }
+          .main input:checked~.check {
+            background-color: #FFBB54;
+          }
+          .check:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+          .main input:checked~.check:after {
+            display: block;
+          }
+          .main .check:after {
+            left: 5px;
+            top: 1px;
+            width: 6px;
+            height: 12px;
+            border: 1px solid black;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
       }
       .profile-info {
         position: absolute;
@@ -273,7 +312,7 @@ a {
   width: 40px;
 }
 
-.l-navbar {
+.left-navbar {
   position: fixed;
   top: 0;
   left: -30%;
@@ -334,7 +373,7 @@ a {
     line-height: 22px;
     align-items: center;
   }
-  .accorbd {
+  .accordion-button-sub {
     background-color: #141414;
     .inneraccor {
       margin-left: 7px;
@@ -910,7 +949,7 @@ a {
     }
   }
 
-  .l-navbar {
+  .left-navbar {
     left: 0;
     padding: 1rem 1rem 0 0;
   }
@@ -948,7 +987,7 @@ a {
     }
   }
 
-  .l-navbar {
+  .left-navbar {
     display: none !important;
 
     .nav {
@@ -1078,7 +1117,7 @@ a {
       flex-direction: column-reverse;
     }
 
-    .paragraph1 {
+    .image-sub-heading {
       margin-top: 34px;
       font-family: "Poppins";
       font-style: normal;
@@ -1094,7 +1133,7 @@ a {
       }
     }
 
-    .paragraph2 {
+    .main-heading {
       font-family: "Poppins";
       font-style: normal;
       font-weight: 600;
@@ -1112,7 +1151,7 @@ a {
       }
     }
 
-    .heading {
+    .date-heading {
       font-family: "Poppins";
       font-style: normal;
       font-weight: 400;
@@ -1137,7 +1176,7 @@ a {
     }
   }
 
-  .p3 {
+  .sub-parapraph-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1207,11 +1246,11 @@ a {
     display: none;
   }
 
-  .l-navbar {
+  .left-navbar {
     display: none !important;
   }
 
-  .l-navbar .nav {
+  .left-navbar .nav {
     display: none !important;
   }
 
@@ -1236,5 +1275,16 @@ a {
 
   .search_container .icon {
     display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 420px) {
+  .navbar-toggler{
+    position: fixed !important;
+    right: 5px !important;
+    top: 5px !important;
+    z-index: 1;
   }
 }

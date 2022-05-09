@@ -27,6 +27,12 @@ body {
   background-color: rgb(20, 20, 20) !important;
 }
 
+.navbar-collapse-button img {
+  position: fixed;
+  right: 20px;
+  top: 10px;
+}
+
 a {
   text-decoration: none;
 }
@@ -125,6 +131,45 @@ a {
 .searchcontainer .dropdown_submenu .secondcontainertwo .dropd {
   position: absolute;
   right: 10px;
+}
+.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.searchcontainer .dropdown_submenu .secondcontainertwo .dropd input[type=checkbox] {
+  visibility: hidden;
+}
+.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .check {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 5px;
+  background-color: rgb(57, 56, 56);
+}
+.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main input:checked ~ .check {
+  background-color: #FFBB54;
+}
+.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main input:checked ~ .check:after {
+  display: block;
+}
+.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main .check:after {
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+  border: 1px solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .searchcontainer .dropdown_submenu .secondcontainertwo .lineclass {
   position: absolute;
@@ -920,7 +965,7 @@ a {
 @media screen and (max-width: 767px) {
   .form_content_Div {
     padding-left: 0;
-    margin: 0px 5px;
+    margin: 0px 0px;
   }
 }
 .form_content_Div .form_support_Sec .form_Heading1 {
@@ -1061,7 +1106,7 @@ a {
 }
 .form_content_Div .form_support_Sec .form_Heading2 {
   color: #ffffff;
-  margin-left: 27px;
+  margin-left: 22px;
   font-size: 40px !important;
 }
 @media screen and (max-width: 900px) {
