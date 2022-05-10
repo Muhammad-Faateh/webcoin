@@ -31,6 +31,11 @@ a {
   text-decoration: none;
 }
 
+.accordion-item {
+  background-color: #161616 !important;
+  border: none !important;
+}
+
 .searchcontainer {
   width: 100%;
   display: flex;
@@ -59,7 +64,7 @@ a {
   height: 40px;
   padding-left: 60px;
 }
-.searchcontainer .secondcontainer {
+.searchcontainer .second-container {
   width: 260px;
   margin-left: 20px;
   height: 60px;
@@ -73,19 +78,19 @@ a {
   border-radius: 20px;
   display: flex;
 }
-.searchcontainer .secondcontainer .dropd {
+.searchcontainer .second-container .dropd {
   position: absolute;
   right: 10px;
 }
-.searchcontainer .secondcontainer .dropd .main {
+.searchcontainer .second-container .dropd .main {
   display: block;
   position: relative;
   cursor: pointer;
 }
-.searchcontainer .secondcontainer .dropd input[type=checkbox] {
+.searchcontainer .second-container .dropd input[type=checkbox] {
   visibility: hidden;
 }
-.searchcontainer .secondcontainer .dropd .check {
+.searchcontainer .second-container .dropd .check {
   position: absolute;
   top: 5px;
   left: 0;
@@ -94,18 +99,18 @@ a {
   border-radius: 5px;
   background-color: rgb(57, 56, 56);
 }
-.searchcontainer .secondcontainer .dropd .main input:checked ~ .check {
-  background-color: #FFBB54;
+.searchcontainer .second-container .dropd .main input:checked ~ .check {
+  background-color: #ffbb54;
 }
-.searchcontainer .secondcontainer .dropd .check:after {
+.searchcontainer .second-container .dropd .check:after {
   content: "";
   position: absolute;
   display: none;
 }
-.searchcontainer .secondcontainer .dropd .main input:checked ~ .check:after {
+.searchcontainer .second-container .dropd .main input:checked ~ .check:after {
   display: block;
 }
-.searchcontainer .secondcontainer .dropd .main .check:after {
+.searchcontainer .second-container .dropd .main .check:after {
   left: 5px;
   top: 1px;
   width: 6px;
@@ -116,12 +121,12 @@ a {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.searchcontainer .secondcontainer .lineclass {
+.searchcontainer .second-container .user-profile-sub-container {
   position: absolute;
   top: 5px;
   left: 70px;
 }
-.searchcontainer .secondcontainer .lineclass .userprofileheading {
+.searchcontainer .second-container .user-profile-sub-container .user-porfile-header-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -130,7 +135,7 @@ a {
   /* identical to box height */
   color: #ffffff;
 }
-.searchcontainer .secondcontainer .lineclass .verifiedheading {
+.searchcontainer .second-container .user-profile-sub-container .verified-header-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -149,7 +154,7 @@ a {
   border-radius: 16px;
   margin-top: 10px;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo {
+.searchcontainer .dropdown_submenu .second-container-sub {
   width: 260px;
   cursor: pointer;
   margin-left: 20px;
@@ -161,19 +166,19 @@ a {
   border-radius: 20px;
   display: flex;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd {
+.searchcontainer .dropdown_submenu .second-container-sub .dropd {
   position: absolute;
   right: 10px;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main {
+.searchcontainer .dropdown_submenu .second-container-sub .dropd .main {
   display: block;
   position: relative;
   cursor: pointer;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd input[type=checkbox] {
+.searchcontainer .dropdown_submenu .second-container-sub .dropd input[type=checkbox] {
   visibility: hidden;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .check {
+.searchcontainer .dropdown_submenu .second-container-sub .dropd .check {
   position: absolute;
   top: 5px;
   left: 0;
@@ -182,18 +187,18 @@ a {
   border-radius: 5px;
   background-color: rgb(57, 56, 56);
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main input:checked ~ .check {
-  background-color: #FFBB54;
+.searchcontainer .dropdown_submenu .second-container-sub .dropd .main input:checked ~ .check {
+  background-color: #ffbb54;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .check:after {
+.searchcontainer .dropdown_submenu .second-container-sub .dropd .check:after {
   content: "";
   position: absolute;
   display: none;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main input:checked ~ .check:after {
+.searchcontainer .dropdown_submenu .second-container-sub .dropd .main input:checked ~ .check:after {
   display: block;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main .check:after {
+.searchcontainer .dropdown_submenu .second-container-sub .dropd .main .check:after {
   left: 5px;
   top: 1px;
   width: 6px;
@@ -204,12 +209,12 @@ a {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass {
+.searchcontainer .dropdown_submenu .second-container-sub .user-profile-sub-container {
   position: absolute;
   top: 5px;
   left: 50px;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass .userprofileheading {
+.searchcontainer .dropdown_submenu .second-container-sub .user-profile-sub-container .user-porfile-header-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -217,7 +222,7 @@ a {
   line-height: 21px;
   color: #ffffff;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass .verifiedheading {
+.searchcontainer .dropdown_submenu .second-container-sub .user-profile-sub-container .verified-header-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -226,7 +231,7 @@ a {
   color: #ffffff;
   opacity: 0.4;
 }
-.searchcontainer .dropdown_submenu .addprofile {
+.searchcontainer .dropdown_submenu .add-profile-container {
   display: flex;
   width: 300px;
   align-items: center;
@@ -234,7 +239,7 @@ a {
   cursor: pointer;
   padding-top: 20px;
 }
-.searchcontainer .dropdown_submenu .addprofile .addprofiletext {
+.searchcontainer .dropdown_submenu .add-profile-container .add-profile-text {
   font-weight: 400;
   font-size: 11px;
   line-height: 16px;
@@ -329,7 +334,7 @@ a {
   width: 40px;
 }
 
-.l-navbar {
+.left-navabr {
   position: fixed;
   top: 0;
   left: -30%;
@@ -395,10 +400,10 @@ a {
 .accordion-item:first-of-type .accorbd {
   background-color: #141414;
 }
-.accordion-item:first-of-type .accorbd .inneraccor {
+.accordion-item:first-of-type .accorbd .sub-accordion {
   margin-left: 7px;
 }
-.accordion-item:first-of-type .accorbd .inneraccor span {
+.accordion-item:first-of-type .accorbd .sub-accordion span {
   font-size: 14px;
   margin-left: -20px;
 }
@@ -428,7 +433,7 @@ a {
   transform: rotate(180deg);
 }
 
-.nav_list .navlinkthree {
+.nav_list .sub-navllink-text {
   position: relative;
   top: 8px;
   margin-left: -28px;
@@ -822,18 +827,18 @@ a {
   background: #161616;
   border-radius: 12px;
 }
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer {
+.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecond-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   border-bottom: 1px solid black;
 }
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer {
+.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecond-container .dropdownthirdcontainer {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
 }
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .btcheading {
+.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecond-container .dropdownthirdcontainer .btcheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -842,7 +847,7 @@ a {
   /* identical to box height */
   color: #ffffff;
 }
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .numberheading {
+.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecond-container .dropdownthirdcontainer .numberheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -956,7 +961,7 @@ a {
     width: 45px;
   }
 
-  .l-navbar {
+  .left-navabr {
     left: 0;
     padding: 1rem 1rem 0 0;
   }
@@ -996,14 +1001,14 @@ a {
     display: none;
   }
 
-  .l-navbar {
+  .left-navabr {
     display: none;
   }
 
-  .l-navbar {
+  .left-navabr {
     display: none !important;
   }
-  .l-navbar .nav {
+  .left-navabr .nav {
     display: none !important;
   }
 
@@ -1019,7 +1024,7 @@ a {
   .searchcontainer .icon {
     display: none;
   }
-  .searchcontainer .secondcontainer {
+  .searchcontainer .second-container {
     width: 220px !important;
     margin-left: 0px !important;
     height: 42px !important;
@@ -1027,17 +1032,17 @@ a {
     border: none !important;
     border-radius: 0px !important;
   }
-  .searchcontainer .secondcontainer .dropd {
+  .searchcontainer .second-container .dropd {
     display: none !important;
     position: absolute;
     right: 10px !important;
   }
-  .searchcontainer .secondcontainer .lineclass {
+  .searchcontainer .second-container .user-profile-sub-container {
     position: absolute;
     top: 2px !important;
     left: 70px;
   }
-  .searchcontainer .secondcontainer .lineclass .userprofileheading {
+  .searchcontainer .second-container .user-profile-sub-container .user-porfile-header-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -1046,7 +1051,7 @@ a {
     /* identical to box height */
     color: #ffffff;
   }
-  .searchcontainer .secondcontainer .lineclass .verifiedheading {
+  .searchcontainer .second-container .user-profile-sub-container .verified-header-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1285,11 +1290,11 @@ a {
     display: none;
   }
 
-  .l-navbar {
+  .left-navabr {
     display: none !important;
   }
 
-  .l-navbar .nav {
+  .left-navabr .nav {
     display: none !important;
   }
 
@@ -1305,7 +1310,7 @@ a {
     display: none;
   }
 
-  .searchcontainer .secondcontainer {
+  .searchcontainer .second-container {
     display: none;
   }
 

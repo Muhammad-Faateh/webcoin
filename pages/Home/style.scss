@@ -16,7 +16,7 @@ $inputBg: #2d2d2d;
 $buttonWidth: 2;
 $buttonHeight: 2;
 $mobileButtonHeight: 2;
-$SocialIconSize: 4;
+$social-iconsize: 4;
 $menuLink: 0.2rem;
 $textSize: 2rem;
 $paraSize: 1rem;
@@ -27,17 +27,17 @@ body {
   overflow-x: hidden;
 }
 
-.top .ellipse {
+.main-container-wrapper .main-container-image-right {
   position: absolute;
   top: 50px;
   left: 0px;
   opacity: 1 !important;
 }
 
-.top {
+.main-container-wrapper {
   width: 100%;
   position: relative;
-  .topLeftImg {
+  .main-container-image-left {
     position: absolute;
     top: -100px;
     left: -380px;
@@ -47,7 +47,7 @@ body {
     opacity: 0.1;
   }
 
-  .ellipse {
+  .main-container-image-right {
     position: absolute;
     top: -40px;
   }
@@ -61,7 +61,7 @@ body {
   }
 
 
-  .header {
+  .main-header-container {
     width: 96%;
     max-width: 1160px;
     margin: 36px auto;
@@ -70,10 +70,10 @@ body {
     align-items: center;
     font-family: "Poppins";
 
-    .logoMenu {
+    .logo-menu-container {
       display: flex;
       align-items: center;
-      .logoheadingtwo {
+      .footer-logo-header {
         font-family: "Poppins";
         font-style: normal;
         font-weight: 800;
@@ -90,7 +90,7 @@ body {
       }
     }
 
-    .right {
+    .navbar-menu-container {
       display: flex;
       align-items: center;
       width: 100%;
@@ -118,7 +118,7 @@ body {
         }
       }
 
-      .socialIcons {
+      .social-icons {
         display: flex;
         align-items: center;
 
@@ -131,8 +131,8 @@ body {
             border: 1px solid #ffbb54;
             border-radius: 15px;
             margin: 0px 10px;
-            width: calc(#{$SocialIconSize} * 1vw);
-            height: calc(#{$SocialIconSize} * 1vw);
+            width: calc(#{$social-iconsize} * 1vw);
+            height: calc(#{$social-iconsize} * 1vw);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -150,7 +150,7 @@ body {
       }
     }
 
-    .openMobileMenu {
+    .mobile-view-navbar {
       display: none;
       cursor: pointer;
       border-radius: 5px;
@@ -164,23 +164,23 @@ body {
   }
 }
 
-.backgroundimage2 {
+.mobile-view-image-left {
   position: absolute !important;
   top: 0;
   right: 0;
   z-index: -1;
 }
 
-.backgroundimage3 {
+.mobile-view-image-right {
   display: none;
 }
 
-.section1 {
+.crypto-transaction-container {
   display: flex;
   justify-content: center;
   margin-top: 135px;
 
-  .topHeading {
+  .main-container-first-heading {
     display: flex;
     justify-content: center;
     height: 35px;
@@ -199,7 +199,7 @@ body {
   }
 }
 
-.section2 {
+.second-container {
   display: flex;
   justify-content: center;
 
@@ -217,17 +217,17 @@ body {
   }
 }
 
-.toggleText {
-  .toggleParagraph {
+.second-sub-paragraph-container {
+  .second-container-sub-paragraph {
     display: none;
   }
 }
 
-.section3 {
+.content-wrapper {
   display: flex;
   justify-content: center;
 
-  .paragraph3 {
+  .third-sub-header-text {
     margin-top: 18px;
     font-family: "Poppins";
     font-style: normal;
@@ -242,11 +242,11 @@ body {
 }
 
 
-.section4 {
+.learn-more-container {
   display: flex;
   justify-content: center;
 
-  .learnMore {
+  .learn-more-button-text {
     margin-top: 34px;
 
     background: #ffbb54;
@@ -256,7 +256,7 @@ body {
     outline: none;
   }
 
-  .learnMore:hover {
+  .learn-more-button-text:hover {
     cursor: pointer;
     background-color: #2d2d2d;
     color: #fff;
@@ -265,13 +265,13 @@ body {
   }
 }
 
-.section5 {
+.crypto-opportunity-main-wrapper {
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
 
-  .firstImageTwo {
+  .crypto-opportunity-main-container-image {
     margin-top: 88px;
     object-fit: contain;
     height: 572.42px;
@@ -286,7 +286,7 @@ body {
   }
 }
 
-.section6maincontainer {
+.crypto-opportunity-main-container {
   margin-top: 50px;
   position: relative;
   overflow: hidden;
@@ -295,7 +295,7 @@ body {
   border-bottom-left-radius: 40%;
   border-bottom-right-radius: 40%;
 
-  .firstImage {
+  .crypto-main-container-imageone {
     position: absolute;
     opacity: 0.05;
     filter: blur(2px);
@@ -303,19 +303,19 @@ body {
     width: 100%;
   }
 
-  .thirdimage {
+  .crypto-main-container-imagertwo {
     position: absolute;
     right: 0;
     top: -500px;
     z-index: 1;
   }
 
-  .section6 {
+  .crypto-oppurtunity-container {
     display: flex;
     justify-content: center;
     margin-top: 100px;
 
-    .topHeading2 {
+    .sub-header {
       margin-top: 22px;
       display: flex;
       justify-content: center;
@@ -336,7 +336,7 @@ body {
   }
 }
 
-.section7 {
+.register-users-container {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -344,13 +344,13 @@ body {
   margin-top: 46px;
 
   .row {
-    .displayrow {
+    .register-users-container-row {
       display: flex;
 
       .box {
         position: relative;
 
-        .boxHeading {
+        .price-header-first {
           position: absolute;
           top: 30px;
           left: 35%;
@@ -361,7 +361,7 @@ body {
           text-align: center;
         }
 
-        .boxHeading1 {
+        .price-header-last {
           position: absolute;
           top: 30px;
           left: 27%;
@@ -372,7 +372,7 @@ body {
           text-align: center;
         }
 
-        .BoxSubHeading {
+        .register-users-container-text {
           position: absolute;
 
           top: 55%;
@@ -395,19 +395,19 @@ body {
   }
 }
 
-.sec3 {
+.content-wrapper-sub {
   margin-top: -54px;
 }
 .sec6 {
   margin-top: -100px;
 }
 
-.section6 {
+.crypto-oppurtunity-container {
   display: flex;
   justify-content: center;
   margin-top: 100px;
 
-  .topHeading2 {
+  .sub-header {
     margin-top: 22px;
     display: flex;
     justify-content: center;
@@ -427,16 +427,16 @@ body {
   }
 }
 
-.imgsection1 {
+.token-recommendation-image-one {
   position: absolute;
   left: 0;
 }
 
-.imgsection2 {
+.token-recommendation-image-two {
   margin-top: 50px;
 }
 
-.imgsection3 {
+.token-recommendation-image-three {
   position: absolute;
   z-index: -1;
   margin-top: -150px;
@@ -469,7 +469,7 @@ body {
   }
 }
 
-.section10 {
+.crypto-transaction-container0 {
   display: flex;
   justify-content: center;
 
@@ -480,28 +480,28 @@ body {
   }
 }
 
-.imagesecondlast {
+.auto-trading-bot-image-two {
   margin-top: 60px;
 }
 
-.imagesecondlasts {
+.auto-trading-bot-image-three {
   position: absolute;
   z-index: -1;
   margin-top: -250px;
 }
 
-.imagesecondnone {
+.auto-trading-bot-image-four {
   display: none;
 }
 
-.imagesecondlastss {
+.auto-trading-bot-image-one {
   position: absolute;
   margin-left: -200px;
   z-index: -1;
   margin-top: -200px;
 }
 
-.section3sub {
+.portolfio-history-container {
   margin-top: 100px;
 }
 
@@ -529,7 +529,7 @@ body {
   z-index: -1;
 }
 
-.maindiv {
+.footer-sub-container-wrapper {
   display: none;
 }
 
@@ -541,12 +541,12 @@ body {
   width: 100%;
   margin-top: 300px;
 
-  .mainFooterDiv {
+  .sub-main-footer-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
 
-    .firstDiv {
+    .sub-footer-container {
       padding-left: 200px;
       padding-top: 50px;
       height: auto;
@@ -557,13 +557,13 @@ body {
           margin-top: 38px;
           margin-left: -16px;
           width: 100%;
-            .contentsubtext{
+            .benefits-footer-text{
               margin-left: 42px;
             }
-            .contentsubtexttwo{
+            .team-footer-text{
               margin-left: 20px;
             }
-            .contentsubtextthree{
+            .careers-footer-text{
               margin-left: 20px;
             }
           a {
@@ -584,7 +584,7 @@ body {
         }
       }
 
-      .copyright {
+      .footer-copyright-text {
         margin-top: 40px;
         font-family: "DM Sans";
         font-style: normal;
@@ -598,11 +598,11 @@ body {
       }
     }
 
-    .secondDiv {
-      .socialmainDiv {
+    .footer-social-icons-container {
+      .sub-footer-social-icons-container {
         display: flex;
 
-        .socialIcons {
+        .social-icons {
           position: relative;
           top: 150px;
           right: -30px;
@@ -633,7 +633,7 @@ body {
         }
       }
 
-      .termPolicies {
+      .termpolicies-text {
         position: relative;
         top: 330px;
         right: 100px;
@@ -656,7 +656,7 @@ body {
     }
   }
 
-  .logoMenu {
+  .logo-menu-container {
     display: flex;
     align-items: center;
 
@@ -672,18 +672,18 @@ body {
 
 
 @media screen and (max-width: 1440px) {
-  .backgroundimage2 {
+  .mobile-view-image-left {
     height: 30%;
     width: 40%;
     opacity: 0.5;
   }
 
-  .imagesecondlasts {
+  .auto-trading-bot-image-three {
     width: 90%;
     margin-top: -50px;
   }
 
-  .section6maincontainer {
+  .crypto-opportunity-main-container {
     border-bottom-left-radius: 0px;
 
     overflow: visible;
@@ -694,7 +694,7 @@ body {
     margin-top: -10px;
   }
 
-  .section7 {
+  .register-users-container {
     .box {
       width: 340px !important;
     }
@@ -702,7 +702,7 @@ body {
 }
 
 @media screen and (max-width: 1080px) {
-  .section7 {
+  .register-users-container {
     .boxBorder {
       width: 275px;
     }
@@ -719,12 +719,12 @@ body {
     width: 100%;
     margin-top: 300px;
 
-    .mainFooterDiv {
+    .sub-main-footer-container {
       display: flex;
       justify-content: space-between;
       width: 100%;
 
-      .firstDiv {
+      .sub-footer-container {
         padding-left: 50px;
         padding-top: 50px;
         height: auto;
@@ -757,7 +757,7 @@ body {
           }
         }
 
-        .copyright {
+        .footer-copyright-text {
           margin-top: 55px;
           font-family: "DM Sans";
           font-style: normal;
@@ -771,11 +771,11 @@ body {
         }
       }
 
-      .secondDiv {
-        .socialmainDiv {
+      .footer-social-icons-container {
+        .sub-footer-social-icons-container {
           display: flex;
 
-          .socialIcons {
+          .social-icons {
             position: relative;
             top: 150px;
             right: -130px;
@@ -806,7 +806,7 @@ body {
           }
         }
 
-        .termPolicies {
+        .termpolicies-text {
           position: relative;
           top: 330px;
           right: 0px;
@@ -829,7 +829,7 @@ body {
       }
     }
 
-    .logoMenu {
+    .logo-menu-container {
       display: flex;
       align-items: center;
 
@@ -843,7 +843,7 @@ body {
     }
   }
 
-  .boxHeading {
+  .price-header-first {
     position: absolute;
     top: 30px;
     left: 50%;
@@ -854,7 +854,7 @@ body {
     text-align: center;
   }
 
-  .boxHeading1 {
+  .price-header-last {
     position: absolute;
     top: 30px;
     left: 25% !important;
@@ -865,7 +865,7 @@ body {
     text-align: center;
   }
 
-  .BoxSubHeading {
+  .register-users-container-text {
     position: absolute;
     margin-top: 10px;
     top: 55%;
@@ -886,7 +886,7 @@ body {
 }
 
 @media screen and (max-width: 90px) {
-  .section7 {
+  .register-users-container {
     .boxBorder {
       width: 255px;
     }
@@ -898,24 +898,24 @@ body {
 }
 
 @media screen and (max-width: 910px) {
-  .ellipse {
+  .main-container-image-right {
     display: none;
   }
 
-  .section5 .firstImageTwo {
+  .crypto-opportunity-main-wrapper .crypto-opportunity-main-container-image {
     margin-top: 0px;
   }
 
-  .copyright > h1 {
+  .footer-copyright-text > h1 {
     font-size: 20px;
   }
 
-  .imgsection2 {
+  .token-recommendation-image-two {
     width: 80%;
     height: 80%;
   }
 
-  .section7 {
+  .register-users-container {
     display: flex !important;
     justify-content: center !important;
 
@@ -928,7 +928,7 @@ body {
     }
   }
 
-  .boxHeading {
+  .price-header-first {
     position: absolute;
     top: 30px;
     left: 36% !important;
@@ -940,7 +940,7 @@ body {
     text-align: center;
   }
 
-  .boxHeading1 {
+  .price-header-last {
     position: absolute;
     top: 30px;
     left: 24% !important;
@@ -953,7 +953,7 @@ body {
     text-align: center;
   }
 
-  .BoxSubHeading {
+  .register-users-container-text {
     position: absolute;
     margin-top: 20px !important;
     top: 55%;
@@ -975,8 +975,8 @@ body {
 
 @media screen and (max-width: 800px) {
   .footer {
-    .mainFooterDiv {
-      .firstDiv {
+    .sub-main-footer-container {
+      .sub-footer-container {
         padding-top: 20px;
       }
     }
@@ -986,7 +986,7 @@ body {
     display: none;
   }
 
-  .maindiv {
+  .footer-sub-container-wrapper {
     background: linear-gradient(180deg, #3a3434 0%, rgba(56, 50, 50, 0) 97.76%);
     color: #fff;
     margin: 50px;
@@ -994,11 +994,11 @@ body {
     display: flex;
     justify-content: center;
 
-    .boll {
+    .main-footer-sub-container {
       width: 90%;
     }
 
-    .socialIconsTwo {
+    .mobile-social-icons {
       margin-top: 50px;
       margin-bottom: 15px;
       display: flex;
@@ -1009,7 +1009,7 @@ body {
         color: #fff;
       }
 
-      .logome {
+      .footer-logo-header-text {
         font-family: "Poppins";
         font-style: normal;
         font-weight: 800;
@@ -1020,7 +1020,7 @@ body {
     }
   }
 
-  .section7 {
+  .register-users-container {
     display: flex !important;
     justify-content: center !important;
 
@@ -1034,7 +1034,7 @@ body {
     }
   }
 
-  .boxHeading {
+  .price-header-first {
     position: absolute;
     top: 30px;
     left: 27% !important;
@@ -1046,7 +1046,7 @@ body {
     text-align: center;
   }
 
-  .boxHeading1 {
+  .price-header-last {
     position: absolute;
     top: 30px;
     left: 19% !important;
@@ -1059,7 +1059,7 @@ body {
     text-align: center;
   }
 
-  .BoxSubHeading {
+  .register-users-container-text {
     position: absolute;
     margin-top: 20px !important;
     top: 55%;
@@ -1080,7 +1080,7 @@ body {
 }
 
 @media screen and (max-width: 668px) {
-  .section7 {
+  .register-users-container {
     display: flex !important;
     justify-content: center !important;
 
@@ -1095,7 +1095,7 @@ body {
     }
   }
 
-  .boxHeading {
+  .price-header-first {
     position: absolute;
     top: 30px;
     left: 27% !important;
@@ -1107,7 +1107,7 @@ body {
     text-align: center;
   }
 
-  .boxHeading1 {
+  .price-header-last {
     position: absolute;
     top: 30px;
     left: 18% !important;
@@ -1120,7 +1120,7 @@ body {
     text-align: center;
   }
 
-  .BoxSubHeading {
+  .register-users-container-text {
     position: absolute;
     margin-top: 1px !important;
     top: 55%;
@@ -1141,11 +1141,11 @@ body {
 }
 
 @media screen and (max-width: 602px) {
-  .section4 {
+  .learn-more-container {
     display: flex;
     justify-content: center;
 
-    .learnMore {
+    .learn-more-button-text {
       margin-top: 50px;
 
       background: #ffbb54;
@@ -1156,40 +1156,40 @@ body {
     }
   }
 
-  .section5 {
-    .firstImageTwo {
+  .crypto-opportunity-main-wrapper {
+    .crypto-opportunity-main-container-image {
       padding-left: 20px;
       margin-top: -140px;
       width: 90%;
     }
   }
 
-  .section6maincontainer {
+  .crypto-opportunity-main-container {
     margin-top: -200px;
   }
 
-  .section6 {
+  .crypto-oppurtunity-container {
     margin-top: 70px;
   }
 
-  .section77 {
+  .sub-container-one {
     margin-top: -20px;
   }
 
-  .section2 {
+  .second-container {
     height: 100px;
   }
 
-  .section3subcontainer {
+  .portolfio-history-containercontainer {
     margin-top: -80px !important;
     margin-bottom: 50px;
   }
 
-  .section3subcontainer2 {
+  .portolfio-history-sub-container {
     margin-bottom: 50px;
   }
 
-  .backgroundimage2 {
+  .mobile-view-image-left {
     display: none;
 
     border-top-left-radius: 0px !important;
@@ -1200,18 +1200,18 @@ body {
     width: 70%;
   }
 
-  .backgroundimage3 {
+  .mobile-view-image-right {
     display: block;
     position: absolute;
     right: 0;
     margin-top: 50px;
   }
 
-  .section5 {
+  .crypto-opportunity-main-wrapper {
     margin-top: 72px;
   }
 
-  .section7 {
+  .register-users-container {
     display: flex !important;
     justify-content: center !important;
 
@@ -1227,19 +1227,19 @@ body {
     }
   }
 
-  .firstImage {
+  .crypto-main-container-imageone {
     opacity: 0.1 !important;
   }
 
-  .thirdimage {
+  .crypto-main-container-imagertwo {
     display: none;
   }
 
-  .imgsection1 {
+  .token-recommendation-image-one {
     display: none;
   }
 
-  .imgsection3 {
+  .token-recommendation-image-three {
     display: none;
   }
 
@@ -1262,24 +1262,24 @@ body {
     display: block;
   }
 
-  .imagesecondlast {
+  .auto-trading-bot-image-two {
     width: 70%;
   }
 
-  .imagesecondlasts {
+  .auto-trading-bot-image-three {
     display: none;
     transform: rotate(10deg);
     margin-top: 110px;
   }
 
-  .imagesecondnone {
+  .auto-trading-bot-image-four {
     display: block;
     position: absolute;
     z-index: -1;
     width: 100%;
   }
 
-  .imagesecondlastss {
+  .auto-trading-bot-image-one {
     display: none;
   }
 
@@ -1287,8 +1287,8 @@ body {
     display: none;
   }
 
-  .top {
-    .topLeftImg {
+  .main-container-wrapper {
+    .main-container-image-left {
       top: -140px !important;
       left: -80px !important;
       z-index: -1;
@@ -1297,23 +1297,23 @@ body {
       width: 300px !important;
     }
 
-    .header {
-      .right {
+    .main-header-container {
+      .navbar-menu-container {
         display: none !important;
       }
 
-      .openMobileMenu {
+      .mobile-view-navbar {
         display: block;
       }
     }
   }
 
 
-  .toggleText {
+  .second-sub-paragraph-container {
     display: flex;
     justify-content: center;
     margin-top: -40px;
-    .toggleParagraph {
+    .second-container-sub-paragraph {
       display: block;
       font-family: "Poppins";
       font-style: normal;
@@ -1340,13 +1340,13 @@ body {
 
 @media screen and (max-width: 669px) {
 
-  .section1 {
+  .crypto-transaction-container {
     display: flex;
     justify-content: center;
     margin-top: 60px;
   }
 
-  .section2 {
+  .second-container {
     display: flex;
     justify-content: center;
 
@@ -1368,11 +1368,11 @@ body {
     }
   }
 
-  .section3 {
+  .content-wrapper {
     display: flex;
     justify-content: center;
 
-    .paragraph3 {
+    .third-sub-header-text {
       width: 297px;
       height: 47px;
       left: 59px;
@@ -1394,12 +1394,12 @@ body {
     }
   }
 
-  .displayrow {
+  .register-users-container-row {
     flex-direction: column;
   }
 
-  .top {
-    .topLeftImg {
+  .main-container-wrapper {
+    .main-container-image-left {
       top: -120px;
     }
 
@@ -1416,7 +1416,7 @@ body {
         }
       }
 
-      .privacyCopyRight {
+      .privacyfooter-copyright-text {
         margin-top: 20px;
       }
 
@@ -1441,18 +1441,18 @@ body {
       }
     }
 
-    .privacyCopyRight {
+    .privacyfooter-copyright-text {
       margin-top: calc(#{$mobileButtonHeight} * 20px);
     }
   }
 }
 
 @media (max-width: 768px) {
-  .openMobileMenu {
+  .mobile-view-navbar {
     display: block !important;
   }
 
-  .navbarMenu {
+  .navbar-menu {
     display: none !important;
   }
 }

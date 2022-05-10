@@ -30,25 +30,25 @@ a {
   text-decoration: none;
 }
 
-.searchcontainer {
+.search-container {
   width: 100%;
   display: flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.searchcontainer .searchicon {
+.search-container .search-icon {
   position: relative;
   left: 40px;
 }
-.searchcontainer .icon {
+.search-container .icon {
   background-color: rgb(96, 94, 0);
   backdrop-filter: blur(1px);
   opacity: 0.6;
   padding: 5px 10px 10px 10px;
   border-radius: 8px;
 }
-.searchcontainer .searchinputfield {
+.search-container .search-input-field {
   background: #262626;
   border-radius: 8px;
   border: none;
@@ -58,7 +58,7 @@ a {
   height: 40px;
   padding-left: 60px;
 }
-.searchcontainer .secondcontainer {
+.search-container .second-container {
   width: 260px;
   cursor: pointer;
   margin-left: 20px;
@@ -72,19 +72,19 @@ a {
   border-radius: 20px;
   display: flex;
 }
-.searchcontainer .secondcontainer .dropd {
+.search-container .second-container .dropd {
   position: absolute;
   right: 10px;
 }
-.searchcontainer .secondcontainer .dropd .main {
+.search-container .second-container .dropd .main {
   display: block;
   position: relative;
   cursor: pointer;
 }
-.searchcontainer .secondcontainer .dropd input[type=checkbox] {
+.search-container .second-container .dropd input[type=checkbox] {
   visibility: hidden;
 }
-.searchcontainer .secondcontainer .dropd .check {
+.search-container .second-container .dropd .check {
   position: absolute;
   top: 5px;
   left: 0;
@@ -93,18 +93,18 @@ a {
   border-radius: 5px;
   background-color: rgb(57, 56, 56);
 }
-.searchcontainer .secondcontainer .dropd .main input:checked ~ .check {
+.search-container .second-container .dropd .main input:checked ~ .check {
   background-color: #ffbb54;
 }
-.searchcontainer .secondcontainer .dropd .check:after {
+.search-container .second-container .dropd .check:after {
   content: "";
   position: absolute;
   display: none;
 }
-.searchcontainer .secondcontainer .dropd .main input:checked ~ .check:after {
+.search-container .second-container .dropd .main input:checked ~ .check:after {
   display: block;
 }
-.searchcontainer .secondcontainer .dropd .main .check:after {
+.search-container .second-container .dropd .main .check:after {
   left: 5px;
   top: 1px;
   width: 6px;
@@ -115,12 +115,12 @@ a {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.searchcontainer .secondcontainer .lineclass {
+.search-container .second-container .user-profile-sub-container {
   position: absolute;
   top: 5px;
   left: 70px;
 }
-.searchcontainer .secondcontainer .lineclass .userprofileheading {
+.search-container .second-container .user-profile-sub-container .user-profile-header-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -128,7 +128,7 @@ a {
   line-height: 21px;
   color: #ffffff;
 }
-.searchcontainer .secondcontainer .lineclass .verifiedheading {
+.search-container .second-container .user-profile-sub-container .verified-header-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -137,16 +137,16 @@ a {
   color: #ffffff;
   opacity: 0.4;
 }
-.searchcontainer .dropdown-toggle::after {
+.search-container .dropdown-toggle::after {
   content: none !important;
 }
-.searchcontainer .dropdown_submenu {
+.search-container .dropdown_submenu {
   width: 300px;
   background: #242323;
   border-radius: 16px;
   margin-top: 10px;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo {
+.search-container .dropdown_submenu .sub-second-container {
   width: 260px;
   cursor: pointer;
   margin-left: 20px;
@@ -158,19 +158,19 @@ a {
   border-radius: 20px;
   display: flex;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd {
+.search-container .dropdown_submenu .sub-second-container .dropd {
   position: absolute;
   right: 10px;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main {
+.search-container .dropdown_submenu .sub-second-container .dropd .main {
   display: block;
   position: relative;
   cursor: pointer;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd input[type=checkbox] {
+.search-container .dropdown_submenu .sub-second-container .dropd input[type=checkbox] {
   visibility: hidden;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .check {
+.search-container .dropdown_submenu .sub-second-container .dropd .check {
   position: absolute;
   top: 5px;
   left: 0;
@@ -179,18 +179,18 @@ a {
   border-radius: 5px;
   background-color: rgb(57, 56, 56);
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main input:checked ~ .check {
+.search-container .dropdown_submenu .sub-second-container .dropd .main input:checked ~ .check {
   background-color: #FFBB54;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .check:after {
+.search-container .dropdown_submenu .sub-second-container .dropd .check:after {
   content: "";
   position: absolute;
   display: none;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main input:checked ~ .check:after {
+.search-container .dropdown_submenu .sub-second-container .dropd .main input:checked ~ .check:after {
   display: block;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main .check:after {
+.search-container .dropdown_submenu .sub-second-container .dropd .main .check:after {
   left: 5px;
   top: 1px;
   width: 6px;
@@ -201,12 +201,12 @@ a {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass {
+.search-container .dropdown_submenu .sub-second-container .user-profile-sub-container {
   position: absolute;
   top: 5px;
   left: 50px;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass .userprofileheading {
+.search-container .dropdown_submenu .sub-second-container .user-profile-sub-container .user-profile-header-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -214,7 +214,7 @@ a {
   line-height: 21px;
   color: #ffffff;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass .verifiedheading {
+.search-container .dropdown_submenu .sub-second-container .user-profile-sub-container .verified-header-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -223,7 +223,7 @@ a {
   color: #ffffff;
   opacity: 0.4;
 }
-.searchcontainer .dropdown_submenu .addprofile {
+.search-container .dropdown_submenu .add-profile-container {
   display: flex;
   width: 300px;
   align-items: center;
@@ -231,7 +231,7 @@ a {
   cursor: pointer;
   padding-top: 20px;
 }
-.searchcontainer .dropdown_submenu .addprofile .addprofiletext {
+.search-container .dropdown_submenu .add-profile-container .add-profile-text {
   font-weight: 400;
   font-size: 11px;
   line-height: 16px;
@@ -245,7 +245,7 @@ a {
   border-radius: 14px;
   padding-left: 80px;
 }
-.row .searchIcon {
+.row .search-icon {
   position: absolute;
   left: 14.92%;
   right: 91.38%;
@@ -275,7 +275,7 @@ a {
   border: 1px solid #ffffff;
 }
 
-.navlist_twoclass {
+.navlist_two {
   display: none;
 }
 
@@ -390,10 +390,10 @@ a {
 .accordion-item:first-of-type .accorbd {
   background-color: #141414;
 }
-.accordion-item:first-of-type .accorbd .inneraccor {
+.accordion-item:first-of-type .accorbd .sub-accordion {
   margin-left: 7px;
 }
-.accordion-item:first-of-type .accorbd .inneraccor span {
+.accordion-item:first-of-type .accorbd .sub-accordion span {
   font-size: 14px;
   margin-left: -20px;
 }
@@ -423,7 +423,7 @@ a {
   transform: rotate(180deg);
 }
 
-.nav_list .navlinkthree {
+.nav_list .sub-navlink-text {
   position: relative;
   top: 8px;
   margin-left: -28px;
@@ -502,6 +502,11 @@ a {
 
 .show {
   left: 0;
+}
+
+.accordion-item {
+  background-color: #161616 !important;
+  border: none !important;
 }
 
 .active {
@@ -616,7 +621,7 @@ a {
   opacity: 0.6;
 }
 
-.maincontainer {
+.main-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -690,16 +695,16 @@ a {
     display: none !important;
   }
 
-  .searchcontainer .searchicon {
+  .search-container .search-icon {
     display: none;
   }
-  .searchcontainer .searchinputfield {
+  .search-container .search-input-field {
     display: none;
   }
-  .searchcontainer .icon {
+  .search-container .icon {
     display: none;
   }
-  .searchcontainer .secondcontainer {
+  .search-container .second-container {
     width: 220px !important;
     margin-left: 0px !important;
     height: 42px !important;
@@ -707,17 +712,17 @@ a {
     border: none !important;
     border-radius: 0px !important;
   }
-  .searchcontainer .secondcontainer .dropd {
+  .search-container .second-container .dropd {
     display: none !important;
     position: absolute;
     right: 10px !important;
   }
-  .searchcontainer .secondcontainer .lineclass {
+  .search-container .second-container .user-profile-sub-container {
     position: absolute;
     top: 2px !important;
     left: 70px;
   }
-  .searchcontainer .secondcontainer .lineclass .userprofileheading {
+  .search-container .second-container .user-profile-sub-container .user-profile-header-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -725,7 +730,7 @@ a {
     line-height: 21px;
     color: #ffffff;
   }
-  .searchcontainer .secondcontainer .lineclass .verifiedheading {
+  .search-container .second-container .user-profile-sub-container .verified-header-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -742,7 +747,7 @@ a {
     display: none !important;
   }
 
-  .maincontainer {
+  .main-container {
     margin-left: -20px;
     padding-left: 0px;
     margin-top: -10px;
@@ -754,12 +759,12 @@ a {
     padding-left: 20px;
   }
 
-  .navlist_twoclass {
+  .navlist_two {
     display: block !important;
     padding-left: 80px;
     padding-top: 40px;
   }
-  .navlist_twoclass a {
+  .navlist_two a {
     text-decoration: none !important;
   }
 
@@ -785,23 +790,23 @@ a {
     display: none !important;
   }
 
-  .searchcontainer .bellIcon {
+  .search-container .bellIcon {
     display: none;
   }
 
-  .searchcontainer .searchicon {
+  .search-container .search-icon {
     display: none;
   }
 
-  .searchcontainer .searchinputfield {
+  .search-container .search-input-field {
     display: none;
   }
 
-  .searchcontainer .secondcontainer {
+  .search-container .second-container {
     display: none;
   }
 
-  .searchcontainer .icon {
+  .search-container .icon {
     display: none;
   }
 }

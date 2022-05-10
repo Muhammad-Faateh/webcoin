@@ -40,13 +40,13 @@ a {
   text-decoration: none;
 }
 
-.searchcontainer {
+.search-container {
   width: 100%;
   display: flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .searchicon {
+  .search-icon {
     position: relative;
     left: 40px;
   }
@@ -57,7 +57,7 @@ a {
     padding: 5px 10px 10px 10px;
     border-radius: 8px;
   }
-  .searchinputfield {
+  .search-input-field {
     background: #262626;
     border-radius: 8px;
     border: none;
@@ -68,7 +68,7 @@ a {
     padding-left: 60px;
   }
 
-  .secondcontainer {
+  .second-container {
     width: 260px;
     cursor: pointer;
     margin-left: 20px;
@@ -124,11 +124,11 @@ a {
         transform: rotate(45deg);
       }
     }
-    .lineclass {
+    .user-profile-sub-container {
       position: absolute;
       top: 5px;
       left: 70px;
-      .userprofileheading {
+      .user-profile-header-text {
         font-family: "Poppins";
         font-style: normal;
         font-weight: 500;
@@ -136,7 +136,7 @@ a {
         line-height: 21px;
         color: #ffffff;
       }
-      .verifiedheading {
+      .verified-header-text {
         font-family: "Poppins";
         font-style: normal;
         font-weight: 400;
@@ -156,7 +156,7 @@ a {
     background: #242323;
     border-radius: 16px;
     margin-top: 10px;
-    .secondcontainertwo {
+    .sub-second-container {
       width: 260px;
       cursor: pointer;
       margin-left: 20px;
@@ -211,11 +211,11 @@ a {
         }
       }
 
-      .lineclass {
+      .user-profile-sub-container {
         position: absolute;
         top: 5px;
         left: 50px;
-        .userprofileheading {
+        .user-profile-header-text {
           font-family: "Poppins";
           font-style: normal;
           font-weight: 500;
@@ -223,7 +223,7 @@ a {
           line-height: 21px;
           color: #ffffff;
         }
-        .verifiedheading {
+        .verified-header-text {
           font-family: "Poppins";
           font-style: normal;
           font-weight: 400;
@@ -234,14 +234,14 @@ a {
         }
       }
     }
-    .addprofile {
+    .add-profile-container {
       display: flex;
       width: 300px;
       align-items: center;
       justify-content: center;
       cursor: pointer;
       padding-top: 20px;
-      .addprofiletext {
+      .add-profile-text {
         font-weight: 400;
         font-size: 11px;
         line-height: 16px;
@@ -260,7 +260,7 @@ a {
     padding-left: 80px;
   }
 
-  .searchIcon {
+  .search-icon {
     position: absolute;
     left: 14.92%;
     right: 91.38%;
@@ -294,7 +294,7 @@ a {
   border: 1px solid #ffffff;
 }
 
-.navlist_twoclass {
+.navlist_two {
   display: none;
 }
 
@@ -406,7 +406,7 @@ a {
   }
   .accorbd {
     background-color: #141414;
-    .inneraccor {
+    .sub-accordion {
       margin-left: 7px;
       span {
         font-size: 14px;
@@ -449,7 +449,7 @@ a {
 }
 
 .nav_list {
-  .navlinkthree {
+  .sub-navlink-text {
     position: relative;
     top: 8px;
     margin-left: -28px;
@@ -532,6 +532,11 @@ a {
 
 .show {
   left: 0;
+}
+
+.accordion-item{
+  background-color: #161616 !important;
+  border: none !important;
 }
 
 .active {
@@ -648,7 +653,7 @@ a {
   }
 }
 
-.maincontainer {
+.main-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -728,18 +733,18 @@ a {
     }
   }
 
-  .searchcontainer {
-    .searchicon {
+  .search-container {
+    .search-icon {
       display: none;
     }
-    .searchinputfield {
+    .search-input-field {
       display: none;
     }
     .icon {
       display: none;
     }
 
-    .secondcontainer {
+    .second-container {
       width: 220px !important;
       margin-left: 0px !important;
       height: 42px !important ;
@@ -751,11 +756,11 @@ a {
         position: absolute;
         right: 10px !important;
       }
-      .lineclass {
+      .user-profile-sub-container {
         position: absolute;
         top: 2px !important;
         left: 70px;
-        .userprofileheading {
+        .user-profile-header-text {
           font-family: "Poppins";
           font-style: normal;
           font-weight: 500;
@@ -763,7 +768,7 @@ a {
           line-height: 21px;
           color: #ffffff;
         }
-        .verifiedheading {
+        .verified-header-text {
           font-family: "Poppins";
           font-style: normal;
           font-weight: 400;
@@ -783,7 +788,7 @@ a {
   .newcontainer {
     display: none !important;
   }
-  .maincontainer {
+  .main-container {
     margin-left: -20px;
     padding-left: 0px;
     margin-top: -10px;
@@ -793,7 +798,7 @@ a {
     top: -10px;
     padding-left: 20px;
   }
-  .navlist_twoclass {
+  .navlist_two {
     display: block !important;
     padding-left: 80px;
     padding-top: 40px;
@@ -823,27 +828,27 @@ a {
     display: none !important;
   }
 
-  .searchcontainer .bellIcon {
+  .search-container .bellIcon {
     display: none;
   }
 
-  .searchcontainer .searchicon {
+  .search-container .search-icon {
     display: none;
   }
 
-  .searchcontainer {
-    .searchinputfield {
+  .search-container {
+    .search-input-field {
       display: none;
     }
   }
 
-  .searchcontainer {
-    .secondcontainer {
+  .search-container {
+    .second-container {
       display: none;
     }
   }
 
-  .searchcontainer .icon {
+  .search-container .icon {
     display: none;
   }
 }

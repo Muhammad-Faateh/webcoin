@@ -41,6 +41,11 @@ body {
 a {
   text-decoration: none;
 }
+.accordion-item{
+  background-color: #161616 !important;
+  border: none !important;
+}
+
 
 .searchcontainer {
   width: 100%;
@@ -71,7 +76,8 @@ a {
     padding-left: 60px;
   }
 
-  .secondcontainer {
+  
+  .second-container {
     width: 260px;
     margin-left: 20px;
     height: 60px;
@@ -93,7 +99,7 @@ a {
         position: relative;
         cursor: pointer;
       }
-      input[type=checkbox] {
+      input[type="checkbox"] {
         visibility: hidden;
       }
       .check {
@@ -105,15 +111,15 @@ a {
         border-radius: 5px;
         background-color: rgb(57, 56, 56);
       }
-      .main input:checked~.check {
-        background-color: #FFBB54;
+      .main input:checked ~ .check {
+        background-color: #ffbb54;
       }
       .check:after {
         content: "";
         position: absolute;
         display: none;
       }
-      .main input:checked~.check:after {
+      .main input:checked ~ .check:after {
         display: block;
       }
       .main .check:after {
@@ -128,11 +134,11 @@ a {
         transform: rotate(45deg);
       }
     }
-    .lineclass {
+    .user-profile-sub-container {
       position: absolute;
       top: 5px;
       left: 70px;
-      .userprofileheading {
+      .user-porfile-header-text {
         font-family: "Poppins";
         font-style: normal;
         font-weight: 500;
@@ -142,7 +148,7 @@ a {
 
         color: #ffffff;
       }
-      .verifiedheading {
+      .verified-header-text {
         font-family: "Poppins";
         font-style: normal;
         font-weight: 400;
@@ -165,7 +171,7 @@ a {
     background: #242323;
     border-radius: 16px;
     margin-top: 10px;
-    .secondcontainertwo {
+    .second-container-sub {
       width: 260px;
       cursor: pointer;
       margin-left: 20px;
@@ -184,7 +190,7 @@ a {
           position: relative;
           cursor: pointer;
         }
-        input[type=checkbox] {
+        input[type="checkbox"] {
           visibility: hidden;
         }
         .check {
@@ -196,15 +202,15 @@ a {
           border-radius: 5px;
           background-color: rgb(57, 56, 56);
         }
-        .main input:checked~.check {
-          background-color: #FFBB54;
+        .main input:checked ~ .check {
+          background-color: #ffbb54;
         }
         .check:after {
           content: "";
           position: absolute;
           display: none;
         }
-        .main input:checked~.check:after {
+        .main input:checked ~ .check:after {
           display: block;
         }
         .main .check:after {
@@ -220,11 +226,11 @@ a {
         }
       }
 
-      .lineclass {
+      .user-profile-sub-container {
         position: absolute;
         top: 5px;
         left: 50px;
-        .userprofileheading {
+        .user-porfile-header-text {
           font-family: "Poppins";
           font-style: normal;
           font-weight: 500;
@@ -232,7 +238,7 @@ a {
           line-height: 21px;
           color: #ffffff;
         }
-        .verifiedheading {
+        .verified-header-text {
           font-family: "Poppins";
           font-style: normal;
           font-weight: 400;
@@ -243,14 +249,14 @@ a {
         }
       }
     }
-    .addprofile {
+    .add-profile-container {
       display: flex;
       width: 300px;
       align-items: center;
       justify-content: center;
       cursor: pointer;
       padding-top: 20px;
-      .addprofiletext {
+      .add-profile-text {
         font-weight: 400;
         font-size: 11px;
         line-height: 16px;
@@ -305,7 +311,6 @@ a {
   border: 1px solid #ffffff;
 }
 
-
 .navlist_twoclass {
   display: none;
 }
@@ -355,7 +360,7 @@ a {
   width: 40px;
 }
 
-.l-navbar {
+.left-navabr {
   position: fixed;
   top: 0;
   left: -30%;
@@ -418,7 +423,7 @@ a {
   }
   .accorbd {
     background-color: #141414;
-    .inneraccor {
+    .sub-accordion {
       margin-left: 7px;
       span {
         font-size: 14px;
@@ -427,20 +432,19 @@ a {
     }
   }
 
-    .accorbtn {
-      background-color: #141414 !important;
+  .accorbtn {
+    background-color: #141414 !important;
     border: none;
     outline: none;
     width: 280px;
     color: #ffffff;
-      span{
-        margin-left: 38px !important;
-      }
+    span {
+      margin-left: 38px !important;
+    }
     .nav_nameTwo {
       margin-left: 40px;
     }
   }
-
 
   .accorbtn:hover {
     background: radial-gradient(
@@ -462,7 +466,7 @@ a {
 }
 
 .nav_list {
-  .navlinkthree {
+  .sub-navllink-text {
     position: relative;
     top: 8px;
     margin-left: -28px;
@@ -487,7 +491,7 @@ a {
   grid-template-columns: max-content max-content;
   align-items: center;
   text-decoration: none;
-    align-items: center;
+  align-items: center;
   column-gap: 2.4rem;
   padding: 0.5rem 0rem 0.5rem 1.5rem;
 }
@@ -564,9 +568,6 @@ a {
 .height-100 {
   height: 100vh;
 }
-
-
-
 
 .mainCard {
   .videoclass {
@@ -930,7 +931,7 @@ a {
         background: #161616;
         border-radius: 12px;
 
-        .dropdownsecondcontainer {
+        .dropdownsecond-container {
           display: flex;
           align-items: center;
           justify-content: space-evenly;
@@ -1098,7 +1099,7 @@ a {
     }
   }
 
-  .l-navbar {
+  .left-navabr {
     left: 0;
     padding: 1rem 1rem 0 0;
   }
@@ -1141,11 +1142,11 @@ a {
     display: none;
   }
 
-  .l-navbar {
+  .left-navabr {
     display: none;
   }
 
-  .l-navbar {
+  .left-navabr {
     display: none !important;
 
     .nav {
@@ -1171,7 +1172,7 @@ a {
       display: none;
     }
 
-    .secondcontainer {
+    .second-container {
       width: 220px !important;
       margin-left: 0px !important;
       height: 42px !important;
@@ -1193,12 +1194,12 @@ a {
         right: 10px !important;
       }
 
-      .lineclass {
+      .user-profile-sub-container {
         position: absolute;
         top: 2px !important;
         left: 70px;
 
-        .userprofileheading {
+        .user-porfile-header-text {
           font-family: "Poppins";
           font-style: normal;
           font-weight: 500;
@@ -1209,7 +1210,7 @@ a {
           color: #ffffff;
         }
 
-        .verifiedheading {
+        .verified-header-text {
           font-family: "Poppins";
           font-style: normal;
           font-weight: 400;
@@ -1482,7 +1483,7 @@ a {
     display: block !important;
     padding-left: 80px;
     padding-top: 40px;
-    a{
+    a {
       text-decoration: none !important;
     }
     // border: 1px solid white !important;
@@ -1502,11 +1503,11 @@ a {
     display: none;
   }
 
-  .l-navbar {
+  .left-navabr {
     display: none !important;
   }
 
-  .l-navbar .nav {
+  .left-navabr .nav {
     display: none !important;
   }
 
@@ -1527,7 +1528,7 @@ a {
   }
 
   .searchcontainer {
-    .secondcontainer {
+    .second-container {
       display: none;
     }
   }
@@ -1537,12 +1538,8 @@ a {
   }
 }
 
-
-
-
-
 @media screen and (max-width: 420px) {
-  .navbar-toggler{
+  .navbar-toggler {
     position: fixed !important;
     right: 5px !important;
     top: 5px !important;

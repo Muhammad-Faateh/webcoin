@@ -29,7 +29,7 @@ a {
   text-decoration: none;
 }
 
-.navlist_twoclass {
+.navlist_two {
   display: none;
 }
 
@@ -80,6 +80,11 @@ a {
   display: flex;
 }
 
+.accordion-item {
+  background-color: #161616 !important;
+  border: none !important;
+}
+
 .search-container .bellIcon {
   margin-left: 12px;
 }
@@ -108,6 +113,45 @@ a {
 .search-container .dropdown_submenu .user-sub-profile-container .drop-down-container {
   position: absolute;
   right: 10px;
+}
+.search-container .dropdown_submenu .user-sub-profile-container .drop-down-container .main {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.search-container .dropdown_submenu .user-sub-profile-container .drop-down-container input[type=checkbox] {
+  visibility: hidden;
+}
+.search-container .dropdown_submenu .user-sub-profile-container .drop-down-container .check {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 5px;
+  background-color: rgb(57, 56, 56);
+}
+.search-container .dropdown_submenu .user-sub-profile-container .drop-down-container .main input:checked ~ .check {
+  background-color: #FFBB54;
+}
+.search-container .dropdown_submenu .user-sub-profile-container .drop-down-container .check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.search-container .dropdown_submenu .user-sub-profile-container .drop-down-container .main input:checked ~ .check:after {
+  display: block;
+}
+.search-container .dropdown_submenu .user-sub-profile-container .drop-down-container .main .check:after {
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+  border: 1px solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .search-container .dropdown_submenu .user-sub-profile-container .lineclass {
   position: absolute;
@@ -146,9 +190,88 @@ a {
   color: #bdbbbb;
 }
 
+.sub-dropdown-show-container .main {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.sub-dropdown-show-container input[type=checkbox] {
+  visibility: hidden;
+}
+.sub-dropdown-show-container .check {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 5px;
+  background-color: rgb(57, 56, 56);
+}
+.sub-dropdown-show-container .main input:checked ~ .check {
+  background-color: #FFBB54;
+}
+.sub-dropdown-show-container .check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.sub-dropdown-show-container .main input:checked ~ .check:after {
+  display: block;
+}
+.sub-dropdown-show-container .main .check:after {
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+  border: 1px solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 .search-container .user-profile-container .drop-down-container {
   position: absolute;
   right: 20px;
+}
+.search-container .user-profile-container .drop-down-container .main {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.search-container .user-profile-container .drop-down-container input[type=checkbox] {
+  visibility: hidden;
+}
+.search-container .user-profile-container .drop-down-container .check {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 5px;
+  background-color: rgb(57, 56, 56);
+}
+.search-container .user-profile-container .drop-down-container .main input:checked ~ .check {
+  background-color: #FFBB54;
+}
+.search-container .user-profile-container .drop-down-container .check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.search-container .user-profile-container .drop-down-container .main input:checked ~ .check:after {
+  display: block;
+}
+.search-container .user-profile-container .drop-down-container .main .check:after {
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+  border: 1px solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .search-container .user-profile-container .lineclass {
@@ -217,7 +340,7 @@ a {
   border: 1px solid #ffffff;
 }
 
-.navlist_twoclass {
+.navlist_two {
   display: none;
 }
 
@@ -332,27 +455,27 @@ a {
 .accordion-item:first-of-type .accorbd {
   background-color: #141414;
 }
-.accordion-item:first-of-type .accorbd .inneraccor {
+.accordion-item:first-of-type .accorbd .sub-accordion {
   margin-left: 7px;
 }
-.accordion-item:first-of-type .accorbd .inneraccor span {
+.accordion-item:first-of-type .accorbd .sub-accordion span {
   font-size: 14px;
   margin-left: -20px;
 }
-.accordion-item:first-of-type .accorbtn {
+.accordion-item:first-of-type .accord-button {
   background-color: #141414 !important;
   border: none;
   outline: none;
   width: 280px;
   color: #ffffff;
 }
-.accordion-item:first-of-type .accorbtn span {
+.accordion-item:first-of-type .accord-button span {
   margin-left: 38px !important;
 }
-.accordion-item:first-of-type .accorbtn .nav_nameTwo {
+.accordion-item:first-of-type .accord-button .nav_nameTwo {
   margin-left: 40px;
 }
-.accordion-item:first-of-type .accorbtn:hover {
+.accordion-item:first-of-type .accord-button:hover {
   background: radial-gradient(354.23% 3112.34% at -29.41% 333.8%, rgba(255, 187, 84, 0.2) 50.63%, rgba(255, 187, 84, 0) 100%) !important;
   color: #ffbb54 !important;
 }
@@ -365,7 +488,7 @@ a {
   transform: rotate(180deg);
 }
 
-.nav_list .navlinkthree {
+.nav_list .nav-link-three {
   position: relative;
   top: 8px;
   margin-left: -28px;
@@ -529,7 +652,7 @@ a {
   width: 320px;
 }
 
-.maincard .submaincontainer {
+.maincard .submain-sub-container {
   padding: 0px 32px;
 }
 
@@ -545,13 +668,13 @@ a {
   border-radius: 14px;
 }
 
-.topdiv {
+.main-header-text-container {
   position: relative;
   top: 0px;
   padding-left: 145px;
 }
 
-.topdiv .headmain .videolesson {
+.main-header-text-container .sub-main-header-text-container .main-header-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -560,7 +683,7 @@ a {
   color: #ffffff;
 }
 
-.topdiv .headmain .parahead {
+.main-header-text-container .sub-main-header-text-container .main-header-secondary-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -577,7 +700,7 @@ a {
   margin-left: 130px !important;
 }
 
-.main-container .mainContainer {
+.main-container .main-sub-container {
   margin-top: 0px;
   width: 100%;
   display: flex;
@@ -586,7 +709,7 @@ a {
   align-items: center;
 }
 
-.main-container .mainContainer .secondmaincontainer {
+.main-container .main-sub-container .available-balance-main-container {
   padding: 40px;
   height: 335px;
   border-radius: 30px;
@@ -597,31 +720,31 @@ a {
   background: #0e0e0e;
 }
 
-.main-container .mainContainer .secondmaincontainer .containerimage1 {
+.main-container .main-sub-container .available-balance-main-container .main-container-background-image-one {
   position: absolute;
   left: 40%;
   top: 0;
 }
 
-.main-container .mainContainer .secondmaincontainer .containerimage2 {
+.main-container .main-sub-container .available-balance-main-container .main-container-background-image-two {
   position: absolute;
   right: 0;
   bottom: 0;
 }
 
-.main-container .mainContainer .secondmaincontainer .thirdcontainer {
+.main-container .main-sub-container .available-balance-main-container .thirdcontainer {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.main-container .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer {
+.main-container .main-sub-container .available-balance-main-container .thirdcontainer .sub-balance-container {
   display: flex;
   margin-top: 10px;
 }
 
-.main-container .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .thirdsubsubcontainer {
+.main-container .main-sub-container .available-balance-main-container .thirdcontainer .sub-balance-container .sub-balance-container-main {
   background: #323232;
   border-radius: 14px;
   padding: 10px 20px;
@@ -630,11 +753,11 @@ a {
   flex-direction: column;
 }
 
-.main-container .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .transactions {
+.main-container .main-sub-container .available-balance-main-container .thirdcontainer .sub-balance-container .transactions {
   margin-left: 14px;
 }
 
-.main-container .mainContainer .secondmaincontainer .paratext {
+.main-container .main-sub-container .available-balance-main-container .paratext {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -643,7 +766,7 @@ a {
   color: #ffffff;
 }
 
-.main-container .mainContainer .secondmaincontainer .paratexttwo {
+.main-container .main-sub-container .available-balance-main-container .sub-balance-container-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -654,7 +777,7 @@ a {
   opacity: 0.55;
 }
 
-.main-container .mainContainer .secondmaincontainer .headertext {
+.main-container .main-sub-container .available-balance-main-container .sub-balance-container-number {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -663,7 +786,7 @@ a {
   color: #ffffff;
 }
 
-.main-container .mainContainer .secondmaincontainer .parayellowtext {
+.main-container .main-sub-container .available-balance-main-container .sub-balance-number-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -672,7 +795,7 @@ a {
   color: #ffbb54;
 }
 
-.main-container .twocontainer {
+.main-container .activity-main-container {
   background: #0e0e0e;
   border-radius: 18px;
   width: 70%;
@@ -682,12 +805,12 @@ a {
   margin-right: 30px;
 }
 
-.main-container .twocontainer .twosubcontainer {
+.main-container .activity-main-container .activity-sub-scontainer-wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.main-container .twocontainer .twosubcontainer .paratexttwo {
+.main-container .activity-main-container .activity-sub-scontainer-wrapper .sub-balance-container-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -697,17 +820,17 @@ a {
   opacity: 0.55;
 }
 
-.main-container .twocontainer .twosubcontainer .dropdownmaincontainer {
+.main-container .activity-main-container .activity-sub-scontainer-wrapper .bitcoin-dropdown-container {
   width: 90px;
 }
 
-.main-container .twocontainer .twosubcontainer .dropdownmaincontainer .dropdownbutton {
+.main-container .activity-main-container .activity-sub-scontainer-wrapper .bitcoin-dropdown-container .drop-down-button {
   background: #0e0e0e;
   border: 1.5px solid #494949;
   border-radius: 10px;
 }
 
-.main-container .twocontainer .twosubcontainer .dropdownshowcontainer {
+.main-container .activity-main-container .activity-sub-scontainer-wrapper .drop-down-show-container {
   width: 20%;
   position: relative;
   left: -200px;
@@ -715,20 +838,20 @@ a {
   border-radius: 12px;
 }
 
-.main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer {
+.main-container .activity-main-container .activity-sub-scontainer-wrapper .drop-down-show-container .sub-dropdown-show-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   border-bottom: 1px solid black;
 }
 
-.main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer {
+.main-container .activity-main-container .activity-sub-scontainer-wrapper .drop-down-show-container .sub-dropdown-show-container .sub-dropdown-data-container {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
 }
 
-.main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .btcheading {
+.main-container .activity-main-container .activity-sub-scontainer-wrapper .drop-down-show-container .sub-dropdown-show-container .sub-dropdown-data-container .btcheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -737,7 +860,7 @@ a {
   color: #ffffff;
 }
 
-.main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .numberheading {
+.main-container .activity-main-container .activity-sub-scontainer-wrapper .drop-down-show-container .sub-dropdown-show-container .sub-dropdown-data-container .dropdown-number {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -749,12 +872,12 @@ a {
   color: #aeb6ce;
 }
 
-.main-container .twosubcontainervalue {
+.main-container .sub-activity-data-container {
   display: flex;
   align-items: center;
 }
 
-.main-container .twosubcontainervalue .greenrating {
+.main-container .sub-activity-data-container .main-activity-number {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -765,7 +888,7 @@ a {
   color: #3ed10a;
 }
 
-.main-container .twosubcontainervalue .headertext {
+.main-container .sub-activity-data-container .sub-balance-container-number {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -774,30 +897,30 @@ a {
   color: #ffffff;
 }
 
-.main-container .canvasfirstcontainer {
+.main-container .activity-container-graph {
   width: 100%;
   height: 215px;
   padding: 10px;
 }
 
-.main-container .canvasfirstcontainer .subcanvascontainer {
+.main-container .activity-container-graph .activity-sub-container-graph {
   width: 100% !important;
   height: 160px !important;
 }
 
-.main-container .assetsmainsection {
+.main-container .assets-main-container-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.main-container .assetsmainsection .assetmaincontainer {
+.main-container .assets-main-container-wrapper .assets-main-container {
   width: 100%;
   margin-top: 30px;
   padding-left: 20px;
 }
 
-.main-container .assetsmainsection .assetmaincontainer .assetsheading {
+.main-container .assets-main-container-wrapper .assets-main-container .assests-header-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -806,7 +929,7 @@ a {
   color: #ffffff;
 }
 
-.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer {
+.main-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper {
   display: flex;
   padding: 10px 30px 10px 30px;
   justify-content: space-evenly;
@@ -832,24 +955,24 @@ a {
   position: absolute;
 }
 
-.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer {
+.main-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-secondary-container {
   display: flex;
   margin-left: 70px;
   flex-direction: column;
 }
 
-.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .canvasgraphcontainer {
+.main-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-secondary-container .asssets-main-graph-container {
   width: 100%;
   margin-left: 30px;
   margin-right: 30px;
 }
 
-.canvasgraphcontainer .canvasgraph {
+.asssets-main-graph-container .assets-sub-graph-container {
   width: 100%;
   height: 140px;
 }
 
-.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .bitcoinheading {
+.main-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-secondary-container .bit-coin-header-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -858,7 +981,7 @@ a {
   color: #ffffff;
 }
 
-.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .BTCheading {
+.main-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-secondary-container .BTCheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -868,7 +991,7 @@ a {
   opacity: 0.8;
 }
 
-.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .sellheading {
+.main-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-secondary-container .sell-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -878,7 +1001,7 @@ a {
   margin-left: 10px;
 }
 
-.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .price-text {
+.main-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-secondary-container .price-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -887,25 +1010,25 @@ a {
   color: #ffffff;
 }
 
-.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer {
+.main-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-date-container {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
-.thirdassetcontainer > div {
+.assets-date-container > div {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
 }
 
-.buysectioncontentsub > img {
+.buy-sub-content-container > img {
   width: 40px;
   height: 40px;
 }
 
-.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .seconddateheading {
+.main-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-date-container .assets-date-container {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -918,7 +1041,7 @@ a {
   opacity: 0.6;
 }
 
-.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .coinbaseheading {
+.main-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-date-container .assets-coinbase-header {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -930,7 +1053,7 @@ a {
   opacity: 0.4;
 }
 
-.main-container .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .lastdateheading {
+.main-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-date-container .assets-coinbase-currency {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -939,7 +1062,7 @@ a {
   color: #14bd6c;
 }
 
-.main-container .assetsmainsection .tabscontainer {
+.main-container .assets-main-container-wrapper .tabs-container-wrapper {
   margin-left: 30px;
   margin-right: 30px;
   height: auto;
@@ -949,7 +1072,7 @@ a {
   border-radius: 18px;
 }
 
-.main-container .assetsmainsection .tabscontainer .tabsmaincontainer {
+.main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-main-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -957,7 +1080,7 @@ a {
   padding-bottom: 16px;
 }
 
-.main-container .assetsmainsection .tabscontainer .tabsmaincontainer .navitemclass {
+.main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-main-container .navitemclass {
   text-decoration: none;
   list-style-type: none;
   list-style: none;
@@ -970,20 +1093,20 @@ a {
   color: #ffffff;
 }
 
-.main-container .assetsmainsection .tabscontainer .tabscontentcontainer {
+.main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 20px 7px;
 }
 
-.main-container .assetsmainsection .tabscontainer .tabscontentcontainer .buysectionsecond {
+.main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second {
   border-radius: 14px;
   background: #272727;
   margin-top: 10px;
 }
 
-.main-container .assetsmainsection .tabscontainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond {
+.main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section {
   display: flex;
   width: 100%;
   background: #272727;
@@ -993,7 +1116,47 @@ a {
   padding: 10px 20px 16px 10px;
 }
 
-.main-container .assetsmainsection .tabscontainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .coinnameheading {
+.main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section .main {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section input[type=checkbox] {
+  visibility: hidden;
+}
+.main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section .check {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 5px;
+  background-color: rgb(57, 56, 56);
+}
+.main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section .main input:checked ~ .check {
+  background-color: #ffbb54;
+}
+.main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section .check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section .main input:checked ~ .check:after {
+  display: block;
+}
+.main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section .main .check:after {
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+  border: 1px solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section .coinname-header-tabs {
   font-family: "Poppins";
   font-style: normal;
   margin-left: 10px;
@@ -1006,13 +1169,13 @@ a {
   opacity: 0.6;
 }
 
-.main-container .assetsmainsection .tabscontainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .buysectioncontentsub {
+.main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section .buy-sub-content-container {
   display: flex;
   align-items: center;
   padding: 0px 10px;
 }
 
-.main-container .assetsmainsection .tabscontainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .buysectioncontentsub .bitcoinheading {
+.main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section .buy-sub-content-container .bit-coin-header-text {
   margin-left: 10px;
   font-family: "Poppins";
   font-style: normal;
@@ -1023,7 +1186,7 @@ a {
   color: #ffffff;
 }
 
-.main-container .assetsmainsection .tabscontainer .tabscontentcontainer .buysubsectionfirst {
+.main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-sub-container {
   display: flex;
   width: 100%;
   background: #272727;
@@ -1033,7 +1196,7 @@ a {
   padding: 10px 20px 16px 10px;
 }
 
-.main-container .assetsmainsection .tabscontainer .tabscontentcontainer .buysubsectionfirst .coinnameheading {
+.main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-sub-container .coinname-header-tabs {
   font-family: "Poppins";
   font-style: normal;
   margin-left: 10px;
@@ -1047,14 +1210,14 @@ a {
   opacity: 0.6;
 }
 
-.main-container .assetsmainsection .tabscontainer .tabscontentcontainer .buysubsectionfirst .buysectioncontentsub {
+.main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-sub-container .buy-sub-content-container {
   display: flex;
   margin-left: 10px;
   align-items: center;
   width: 100%;
 }
 
-.main-container .assetsmainsection .tabscontainer .tabscontentcontainer .buysubsectionfirst .buysectioncontentsub .bitcoinheading {
+.main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-sub-container .buy-sub-content-container .bit-coin-header-text {
   margin-left: 10px;
   font-family: "Poppins";
   font-style: normal;
@@ -1116,12 +1279,12 @@ a {
     margin-left: 20px;
   }
 
-  .navlist_twoclass {
+  .navlist_two {
     display: block !important;
     padding-left: 80px;
     padding-top: 40px;
   }
-  .navlist_twoclass a {
+  .navlist_two a {
     text-decoration: none !important;
   }
 
@@ -1206,15 +1369,15 @@ a {
     opacity: 0.4;
   }
 
-  .topdiv {
+  .main-header-text-container {
     padding-left: 10px;
   }
 
-  .topdiv .headmain .videolesson {
+  .main-header-text-container .sub-main-header-text-container .main-header-text {
     font-size: 26px;
   }
 
-  .topdiv .headmain .parahead {
+  .main-header-text-container .sub-main-header-text-container .main-header-secondary-text {
     margin-top: -18px;
   }
 
@@ -1226,12 +1389,12 @@ a {
     margin-left: 0 !important;
   }
 
-  .main-container .mainContainer {
+  .main-container .main-sub-container {
     margin-top: 0px;
     flex-direction: column;
   }
 
-  .main-container .mainContainer .secondmaincontainer {
+  .main-container .main-sub-container .available-balance-main-container {
     padding: 40px;
     border-radius: 30px;
     width: 100%;
@@ -1239,31 +1402,31 @@ a {
     background: #0e0e0e;
   }
 
-  .main-container .mainContainer .secondmaincontainer .containerimage1 {
+  .main-container .main-sub-container .available-balance-main-container .main-container-background-image-one {
     position: absolute;
     left: 40%;
     top: 0;
   }
 
-  .main-container .mainContainer .secondmaincontainer .containerimage2 {
+  .main-container .main-sub-container .available-balance-main-container .main-container-background-image-two {
     position: absolute;
     right: 0;
     bottom: 0;
   }
 
-  .main-container .mainContainer .secondmaincontainer .thirdcontainer {
+  .main-container .main-sub-container .available-balance-main-container .thirdcontainer {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
   }
 
-  .main-container .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer {
+  .main-container .main-sub-container .available-balance-main-container .thirdcontainer .sub-balance-container {
     display: flex;
     margin-top: 10px;
   }
 
-  .main-container .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .thirdsubsubcontainer {
+  .main-container .main-sub-container .available-balance-main-container .thirdcontainer .sub-balance-container .sub-balance-container-main {
     background: #323232;
     border-radius: 14px;
     padding: 10px 20px;
@@ -1272,11 +1435,11 @@ a {
     flex-direction: column;
   }
 
-  .main-container .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .transactions {
+  .main-container .main-sub-container .available-balance-main-container .thirdcontainer .sub-balance-container .transactions {
     margin-left: 14px;
   }
 
-  .main-container .mainContainer .secondmaincontainer .paratext {
+  .main-container .main-sub-container .available-balance-main-container .paratext {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1285,7 +1448,7 @@ a {
     color: #ffffff;
   }
 
-  .main-container .mainContainer .secondmaincontainer .paratexttwo {
+  .main-container .main-sub-container .available-balance-main-container .sub-balance-container-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1296,7 +1459,7 @@ a {
     opacity: 0.55;
   }
 
-  .main-container .mainContainer .secondmaincontainer .headertext {
+  .main-container .main-sub-container .available-balance-main-container .sub-balance-container-number {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -1305,7 +1468,7 @@ a {
     color: #ffffff;
   }
 
-  .main-container .mainContainer .secondmaincontainer .parayellowtext {
+  .main-container .main-sub-container .available-balance-main-container .sub-balance-number-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -1314,7 +1477,7 @@ a {
     color: #ffbb54;
   }
 
-  .main-container .twocontainer {
+  .main-container .activity-main-container {
     background: #0e0e0e;
     border-radius: 18px;
     width: 100%;
@@ -1324,13 +1487,13 @@ a {
     margin-right: 0px;
   }
 
-  .main-container .twocontainer .twosubcontainer {
+  .main-container .activity-main-container .activity-sub-scontainer-wrapper {
     display: flex;
     justify-content: space-between;
     padding: 20px 20px;
   }
 
-  .main-container .twocontainer .twosubcontainer .paratexttwo {
+  .main-container .activity-main-container .activity-sub-scontainer-wrapper .sub-balance-container-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1340,16 +1503,16 @@ a {
     opacity: 0.55;
   }
 
-  .main-container .twocontainer .twosubcontainer .dropdownmaincontainer {
+  .main-container .activity-main-container .activity-sub-scontainer-wrapper .bitcoin-dropdown-container {
     width: 90px;
   }
 
-  .main-container .twocontainer .twosubcontainer .dropdownmaincontainer .dropdownbutton {
+  .main-container .activity-main-container .activity-sub-scontainer-wrapper .bitcoin-dropdown-container .drop-down-button {
     background: #0e0e0e;
     border-radius: 18px;
   }
 
-  .main-container .twocontainer .twosubcontainer .dropdownshowcontainer {
+  .main-container .activity-main-container .activity-sub-scontainer-wrapper .drop-down-show-container {
     width: 20%;
     position: relative;
     left: -200px;
@@ -1357,20 +1520,20 @@ a {
     border-radius: 12px;
   }
 
-  .main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer {
+  .main-container .activity-main-container .activity-sub-scontainer-wrapper .drop-down-show-container .sub-dropdown-show-container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     border-bottom: 1px solid black;
   }
 
-  .main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer {
+  .main-container .activity-main-container .activity-sub-scontainer-wrapper .drop-down-show-container .sub-dropdown-show-container .sub-dropdown-data-container {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
   }
 
-  .main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .btcheading {
+  .main-container .activity-main-container .activity-sub-scontainer-wrapper .drop-down-show-container .sub-dropdown-show-container .sub-dropdown-data-container .btcheading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -1379,25 +1542,24 @@ a {
     color: #ffffff;
   }
 
-  .main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .numberheading {
+  .main-container .activity-main-container .activity-sub-scontainer-wrapper .drop-down-show-container .sub-dropdown-show-container .sub-dropdown-data-container .dropdown-number {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    /* identical to box height, or 133% */
     display: flex;
     align-items: center;
     color: #aeb6ce;
   }
 
-  .main-container .twosubcontainervalue {
+  .main-container .sub-activity-data-container {
     margin-left: 20px;
     display: flex;
     align-items: center;
   }
 
-  .main-container .twosubcontainervalue .greenrating {
+  .main-container .sub-activity-data-container .main-activity-number {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -1408,7 +1570,7 @@ a {
     color: #3ed10a;
   }
 
-  .main-container .twosubcontainervalue .headertext {
+  .main-container .sub-activity-data-container .sub-balance-container-number {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -1417,18 +1579,18 @@ a {
     color: #ffffff;
   }
 
-  .assetsmainsection {
+  .assets-main-container-wrapper {
     width: 100%;
     flex-direction: column;
   }
 
-  .assetsmainsection .assetmaincontainer {
+  .assets-main-container-wrapper .assets-main-container {
     width: 100%;
     margin-top: 30px;
     padding-left: 20px;
   }
 
-  .assetsmainsection .assetmaincontainer .assetsheading {
+  .assets-main-container-wrapper .assets-main-container .assests-header-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -1437,28 +1599,28 @@ a {
     color: #ffffff;
   }
 
-  .assetsmainsection .assetmaincontainer .assetsfirstcontainer {
+  .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper {
     display: flex;
     padding: 10px 30px 10px 30px;
     justify-content: space-evenly;
     background: #0e0e0e;
     border-radius: 18px;
-    margin-left: -5px;
+    margin-left: -20px !important;
   }
 
-  .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer {
+  .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-secondary-container {
     display: flex;
     margin-left: 70px;
     flex-direction: column;
   }
 
-  .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .canvasgraphcontainer {
+  .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-secondary-container .asssets-main-graph-container {
     width: 100%;
     margin-left: 30px;
     margin-right: 30px;
   }
 
-  .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .bitcoinheading {
+  .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-secondary-container .bit-coin-header-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -1467,7 +1629,7 @@ a {
     color: #ffffff;
   }
 
-  .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .BTCheading {
+  .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-secondary-container .BTCheading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1477,7 +1639,7 @@ a {
     opacity: 0.8;
   }
 
-  .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .sellheading {
+  .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-secondary-container .sell-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1487,7 +1649,7 @@ a {
     margin-left: 10px;
   }
 
-  .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .price-text {
+  .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-secondary-container .price-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -1496,13 +1658,13 @@ a {
     color: #ffffff;
   }
 
-  .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer {
+  .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-date-container {
     align-items: center;
     display: flex;
     flex-direction: column;
   }
 
-  .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .seconddateheading {
+  .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-date-container .assets-date-container {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1515,7 +1677,7 @@ a {
     opacity: 0.6;
   }
 
-  .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .coinbaseheading {
+  .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-date-container .assets-coinbase-header {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1527,7 +1689,7 @@ a {
     opacity: 0.4;
   }
 
-  .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .lastdateheading {
+  .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-date-container .assets-coinbase-currency {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -1536,14 +1698,14 @@ a {
     color: #14bd6c;
   }
 
-  .assetsmainsection .tabscontainer {
+  .assets-main-container-wrapper .tabs-container-wrapper {
     margin-left: 0px;
     margin-right: 0px;
     width: 100% !important;
     margin-top: 20px !important;
   }
 
-  .assetsmainsection .tabscontainer .tabsmaincontainer {
+  .assets-main-container-wrapper .tabs-container-wrapper .tabs-main-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -1552,7 +1714,7 @@ a {
     padding-bottom: 16px;
   }
 
-  .assetsmainsection .tabscontainer .tabsmaincontainer .navitemclass {
+  .assets-main-container-wrapper .tabs-container-wrapper .tabs-main-container .navitemclass {
     text-decoration: none;
     list-style-type: none;
     list-style: none;
@@ -1565,7 +1727,7 @@ a {
     color: #ffffff;
   }
 
-  .assetsmainsection .tabscontainer .tabscontentcontainer {
+  .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container {
     display: flex;
     align-items: center;
     width: 100%;
@@ -1573,13 +1735,13 @@ a {
     padding: 20px 7px;
   }
 
-  .assetsmainsection .tabscontainer .tabscontentcontainer .buysectionsecond {
+  .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second {
     border-radius: 14px;
     background: #272727;
     margin-top: 10px;
   }
 
-  .assetsmainsection .tabscontainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond {
+  .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section {
     display: flex;
     width: 100%;
     align-items: center;
@@ -1587,7 +1749,7 @@ a {
     padding: 8px 10px;
   }
 
-  .assetsmainsection .tabscontainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .coinnameheading {
+  .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section .coinname-header-tabs {
     font-family: "Poppins";
     font-style: normal;
     margin-left: 10px;
@@ -1598,13 +1760,13 @@ a {
     opacity: 0.6;
   }
 
-  .assetsmainsection .tabscontainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .buysectioncontentsub {
+  .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section .buy-sub-content-container {
     display: flex;
     align-items: center;
     padding: 0px 10px;
   }
 
-  .assetsmainsection .tabscontainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .buysectioncontentsub .bitcoinheading {
+  .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section .buy-sub-content-container .bit-coin-header-text {
     margin-left: 10px;
     font-family: "Poppins";
     font-style: normal;
@@ -1615,7 +1777,7 @@ a {
     color: #ffffff;
   }
 
-  .assetsmainsection .tabscontainer .tabscontentcontainer .buysubsectionfirst {
+  .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-sub-container {
     display: flex;
     width: 100%;
     background: #272727;
@@ -1625,7 +1787,7 @@ a {
     padding: 8px 10px;
   }
 
-  .assetsmainsection .tabscontainer .tabscontentcontainer .buysubsectionfirst .coinnameheading {
+  .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-sub-container .coinname-header-tabs {
     font-family: "Poppins";
     font-style: normal;
     margin-left: 10px;
@@ -1636,14 +1798,14 @@ a {
     opacity: 0.6;
   }
 
-  .assetsmainsection .tabscontainer .tabscontentcontainer .buysubsectionfirst .buysectioncontentsub {
+  .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-sub-container .buy-sub-content-container {
     display: flex;
     margin-left: 10px;
     align-items: center;
     width: 100%;
   }
 
-  .assetsmainsection .tabscontainer .tabscontentcontainer .buysubsectionfirst .buysectioncontentsub .bitcoinheading {
+  .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-sub-container .buy-sub-content-container .bit-coin-header-text {
     margin-left: 10px;
     font-family: "Poppins";
     font-style: normal;
@@ -1655,15 +1817,15 @@ a {
   }
 }
 @media screen and (max-width: 500px) {
-  .topdiv {
+  .main-header-text-container {
     padding-left: 10px;
   }
 
-  .topdiv .headmain .videolesson {
+  .main-header-text-container .sub-main-header-text-container .main-header-text {
     font-size: 26px;
   }
 
-  .topdiv .headmain .parahead {
+  .main-header-text-container .sub-main-header-text-container .main-header-secondary-text {
     margin-top: -18px;
   }
 
@@ -1675,17 +1837,17 @@ a {
     margin-left: 0 !important;
   }
 
-  .main-container .mainContainer {
+  .main-container .main-sub-container {
     margin-top: 0px;
     width: 100%;
   }
 
-  .main-container .mainContainer .tabscontainer {
+  .main-container .main-sub-container .tabs-container-wrapper {
     margin-right: 0px;
     margin-left: 0px;
   }
 
-  .main-container .mainContainer .tabscontainer .tabsmaincontainer {
+  .main-container .main-sub-container .tabs-container-wrapper .tabs-main-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -1693,7 +1855,7 @@ a {
     padding-bottom: 16px;
   }
 
-  .main-container .mainContainer .tabscontainer .tabsmaincontainer .navitemclass {
+  .main-container .main-sub-container .tabs-container-wrapper .tabs-main-container .navitemclass {
     text-decoration: none;
     list-style-type: none;
     list-style: none;
@@ -1706,20 +1868,20 @@ a {
     color: #ffffff;
   }
 
-  .main-container .mainContainer .tabscontentcontainer {
+  .main-container .main-sub-container .tabs-content-container {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 20px 7px;
   }
 
-  .main-container .mainContainer .tabscontentcontainer .buysectionsecond {
+  .main-container .main-sub-container .tabs-content-container .buy-section-second {
     border-radius: 14px;
     background: #272727;
     margin-top: 10px;
   }
 
-  .main-container .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond {
+  .main-container .main-sub-container .tabs-content-container .buy-section-second .buy-sub-section {
     display: flex;
     width: 100%;
     align-items: center;
@@ -1727,7 +1889,7 @@ a {
     padding: 8px 10px;
   }
 
-  .main-container .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .coinnameheading {
+  .main-container .main-sub-container .tabs-content-container .buy-section-second .buy-sub-section .coinname-header-tabs {
     font-family: "Poppins";
     font-style: normal;
     margin-left: 10px;
@@ -1738,13 +1900,13 @@ a {
     opacity: 0.6;
   }
 
-  .main-container .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .buysectioncontentsub {
+  .main-container .main-sub-container .tabs-content-container .buy-section-second .buy-sub-section .buy-sub-content-container {
     display: flex;
     align-items: center;
     padding: 0px 10px;
   }
 
-  .main-container .mainContainer .tabscontentcontainer .buysectionsecond .buysubsectionsecond .buysectioncontentsub .bitcoinheading {
+  .main-container .main-sub-container .tabs-content-container .buy-section-second .buy-sub-section .buy-sub-content-container .bit-coin-header-text {
     margin-left: 10px;
     font-family: "Poppins";
     font-style: normal;
@@ -1755,7 +1917,7 @@ a {
     color: #ffffff;
   }
 
-  .main-container .mainContainer .tabscontentcontainer .buysubsectionfirst {
+  .main-container .main-sub-container .tabs-content-container .buy-sub-container {
     display: flex;
     width: 400px !important;
     background: #272727;
@@ -1765,7 +1927,7 @@ a {
     padding: 8px 10px;
   }
 
-  .main-container .mainContainer .tabscontentcontainer .buysubsectionfirst .coinnameheading {
+  .main-container .main-sub-container .tabs-content-container .buy-sub-container .coinname-header-tabs {
     font-family: "Poppins";
     font-style: normal;
     margin-left: 10px;
@@ -1776,14 +1938,14 @@ a {
     opacity: 0.6;
   }
 
-  .main-container .mainContainer .tabscontentcontainer .buysubsectionfirst .buysectioncontentsub {
+  .main-container .main-sub-container .tabs-content-container .buy-sub-container .buy-sub-content-container {
     display: flex;
     margin-left: 10px;
     align-items: center;
     width: 100%;
   }
 
-  .main-container .mainContainer .tabscontentcontainer .buysubsectionfirst .buysectioncontentsub .bitcoinheading {
+  .main-container .main-sub-container .tabs-content-container .buy-sub-container .buy-sub-content-container .bit-coin-header-text {
     margin-left: 10px;
     font-family: "Poppins";
     font-style: normal;
@@ -1794,7 +1956,7 @@ a {
     color: #ffffff;
   }
 
-  .main-container .mainContainer .secondmaincontainer {
+  .main-container .main-sub-container .available-balance-main-container {
     padding: 40px;
     border-radius: 30px;
     width: 100%;
@@ -1802,31 +1964,31 @@ a {
     background: #0e0e0e;
   }
 
-  .main-container .mainContainer .secondmaincontainer .containerimage1 {
+  .main-container .main-sub-container .available-balance-main-container .main-container-background-image-one {
     position: absolute;
     left: 40%;
     top: 0;
   }
 
-  .main-container .mainContainer .secondmaincontainer .containerimage2 {
+  .main-container .main-sub-container .available-balance-main-container .main-container-background-image-two {
     position: absolute;
     right: 0;
     bottom: 0;
   }
 
-  .main-container .mainContainer .secondmaincontainer .thirdcontainer {
+  .main-container .main-sub-container .available-balance-main-container .thirdcontainer {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
   }
 
-  .main-container .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer {
+  .main-container .main-sub-container .available-balance-main-container .thirdcontainer .sub-balance-container {
     display: flex;
     margin-top: 10px;
   }
 
-  .main-container .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .thirdsubsubcontainer {
+  .main-container .main-sub-container .available-balance-main-container .thirdcontainer .sub-balance-container .sub-balance-container-main {
     background: #323232;
     border-radius: 14px;
     padding: 14px 10px 0px 10px;
@@ -1835,11 +1997,11 @@ a {
     flex-direction: column;
   }
 
-  .main-container .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .transactions {
+  .main-container .main-sub-container .available-balance-main-container .thirdcontainer .sub-balance-container .transactions {
     margin-left: 14px;
   }
 
-  .main-container .mainContainer .secondmaincontainer .paratext {
+  .main-container .main-sub-container .available-balance-main-container .paratext {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1848,7 +2010,7 @@ a {
     color: #ffffff;
   }
 
-  .main-container .mainContainer .secondmaincontainer .paratexttwo {
+  .main-container .main-sub-container .available-balance-main-container .sub-balance-container-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1859,7 +2021,7 @@ a {
     opacity: 0.55;
   }
 
-  .main-container .mainContainer .secondmaincontainer .lastactivityclass {
+  .main-container .main-sub-container .available-balance-main-container .last-activity-container {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -1867,7 +2029,7 @@ a {
     font-size: 10px;
   }
 
-  .main-container .mainContainer .secondmaincontainer .headertext {
+  .main-container .main-sub-container .available-balance-main-container .sub-balance-container-number {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -1876,7 +2038,7 @@ a {
     color: #ffffff;
   }
 
-  .main-container .mainContainer .secondmaincontainer .parayellowtext {
+  .main-container .main-sub-container .available-balance-main-container .sub-balance-number-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -1885,17 +2047,17 @@ a {
     color: #ffbb54;
   }
 
-  .main-container .mainContainer .assetsmainsection {
+  .main-container .main-sub-container .assets-main-container-wrapper {
     display: flex;
     flex-direction: column;
     padding: 0px 20px;
   }
 
-  .main-container .mainContainer .assetsmainsection .assetmaincontainer {
+  .main-container .main-sub-container .assets-main-container-wrapper .assets-main-container {
     margin-top: 30px;
   }
 
-  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsheading {
+  .main-container .main-sub-container .assets-main-container-wrapper .assets-main-container .assests-header-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -1904,7 +2066,7 @@ a {
     color: #ffffff;
   }
 
-  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsmain-container {
+  .main-container .main-sub-container .assets-main-container-wrapper .assets-main-container .assetsmain-container {
     display: flex;
     padding: 10px 30px 10px 30px;
     justify-content: space-evenly;
@@ -1912,24 +2074,24 @@ a {
     border-radius: 18px;
   }
 
-  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer {
+  .main-container .main-sub-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-secondary-container {
     display: flex;
     margin-left: 20px;
     flex-direction: column;
   }
 
-  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .canvasgraphcontainer {
+  .main-container .main-sub-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-secondary-container .asssets-main-graph-container {
     width: 100%;
     margin-left: 30px;
     margin-right: 30px;
   }
 
-  .canvasgraphcontainer .canvasgraph {
+  .asssets-main-graph-container .assets-sub-graph-container {
     height: 140px !important;
     width: 180px !important;
   }
 
-  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .bitcoinheading {
+  .main-container .main-sub-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-secondary-container .bit-coin-header-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -1938,7 +2100,7 @@ a {
     color: #ffffff;
   }
 
-  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .BTCheading {
+  .main-container .main-sub-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-secondary-container .BTCheading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1948,7 +2110,7 @@ a {
     opacity: 0.8;
   }
 
-  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .sellheading {
+  .main-container .main-sub-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-secondary-container .sell-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1958,7 +2120,7 @@ a {
     margin-left: 10px;
   }
 
-  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .price-text {
+  .main-container .main-sub-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-secondary-container .price-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -1967,13 +2129,13 @@ a {
     color: #ffffff;
   }
 
-  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer {
+  .main-container .main-sub-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-date-container {
     align-items: center;
     display: flex;
     flex-direction: column;
   }
 
-  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .seconddateheading {
+  .main-container .main-sub-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-date-container .assets-date-container {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1984,7 +2146,7 @@ a {
     opacity: 0.6;
   }
 
-  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .coinbaseheading {
+  .main-container .main-sub-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-date-container .assets-coinbase-header {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1994,7 +2156,7 @@ a {
     opacity: 0.4;
   }
 
-  .main-container .mainContainer .assetsmainsection .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .lastdateheading {
+  .main-container .main-sub-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-date-container .assets-coinbase-currency {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -2003,7 +2165,7 @@ a {
     color: #14bd6c;
   }
 
-  .main-container .twocontainer {
+  .main-container .activity-main-container {
     background: #0e0e0e;
     border-radius: 18px;
     width: 100%;
@@ -2012,13 +2174,13 @@ a {
     margin-left: 0px;
   }
 
-  .main-container .twocontainer .twosubcontainer {
+  .main-container .activity-main-container .activity-sub-scontainer-wrapper {
     display: flex;
     justify-content: space-between;
     padding: 20px 20px;
   }
 
-  .main-container .twocontainer .twosubcontainer .paratexttwo {
+  .main-container .activity-main-container .activity-sub-scontainer-wrapper .sub-balance-container-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -2028,16 +2190,16 @@ a {
     opacity: 0.55;
   }
 
-  .main-container .twocontainer .twosubcontainer .dropdownmaincontainer {
+  .main-container .activity-main-container .activity-sub-scontainer-wrapper .bitcoin-dropdown-container {
     width: 90px;
   }
 
-  .main-container .twocontainer .twosubcontainer .dropdownmaincontainer .dropdownbutton {
+  .main-container .activity-main-container .activity-sub-scontainer-wrapper .bitcoin-dropdown-container .drop-down-button {
     background: #0e0e0e;
     border-radius: 18px;
   }
 
-  .main-container .twocontainer .twosubcontainer .dropdownshowcontainer {
+  .main-container .activity-main-container .activity-sub-scontainer-wrapper .drop-down-show-container {
     width: 20%;
     position: relative;
     left: -200px;
@@ -2045,20 +2207,20 @@ a {
     border-radius: 12px;
   }
 
-  .main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer {
+  .main-container .activity-main-container .activity-sub-scontainer-wrapper .drop-down-show-container .sub-dropdown-show-container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     border-bottom: 1px solid black;
   }
 
-  .main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer {
+  .main-container .activity-main-container .activity-sub-scontainer-wrapper .drop-down-show-container .sub-dropdown-show-container .sub-dropdown-data-container {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
   }
 
-  .main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .btcheading {
+  .main-container .activity-main-container .activity-sub-scontainer-wrapper .drop-down-show-container .sub-dropdown-show-container .sub-dropdown-data-container .btcheading {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -2067,7 +2229,7 @@ a {
     color: #ffffff;
   }
 
-  .main-container .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .numberheading {
+  .main-container .activity-main-container .activity-sub-scontainer-wrapper .drop-down-show-container .sub-dropdown-show-container .sub-dropdown-data-container .dropdown-number {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -2079,13 +2241,13 @@ a {
     color: #aeb6ce;
   }
 
-  .main-container .twosubcontainervalue {
+  .main-container .sub-activity-data-container {
     margin-left: 20px;
     display: flex;
     align-items: center;
   }
 
-  .main-container .twosubcontainervalue .greenrating {
+  .main-container .sub-activity-data-container .main-activity-number {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -2096,7 +2258,7 @@ a {
     color: #3ed10a;
   }
 
-  .main-container .twosubcontainervalue .headertext {
+  .main-container .sub-activity-data-container .sub-balance-container-number {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -2105,7 +2267,13 @@ a {
     color: #ffffff;
   }
 }
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.scss.map */
+@media screen and (max-width: 420px) {
+  .navbar-toggler {
+    position: fixed !important;
+    right: 5px !important;
+    top: 5px !important;
+    z-index: 1;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

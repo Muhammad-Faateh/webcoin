@@ -26,29 +26,34 @@ body {
   background-color: rgb(20, 20, 20) !important;
 }
 
+.accordion-item {
+  background-color: #161616 !important;
+  border: none !important;
+}
+
 a {
   text-decoration: none;
 }
 
-.searchcontainer {
+.search-container {
   width: 100%;
   display: flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.searchcontainer .searchicon {
+.search-container .search-icon {
   position: relative;
   left: 40px;
 }
-.searchcontainer .icon {
+.search-container .icon {
   background-color: rgb(96, 94, 0);
   backdrop-filter: blur(1px);
   opacity: 0.6;
   padding: 5px 10px 10px 10px;
   border-radius: 8px;
 }
-.searchcontainer .searchinputfield {
+.search-container .search-inputfield {
   background: #262626;
   border-radius: 8px;
   border: none;
@@ -58,7 +63,7 @@ a {
   height: 40px;
   padding-left: 60px;
 }
-.searchcontainer .secondcontainer {
+.search-container .sub-container {
   width: 260px;
   margin-left: 20px;
   height: 60px;
@@ -72,16 +77,16 @@ a {
   border-radius: 20px;
   display: flex;
 }
-.searchcontainer .secondcontainer .dropd {
+.search-container .sub-container .dropd {
   position: absolute;
   right: 20px;
 }
-.searchcontainer .secondcontainer .lineclass {
+.search-container .sub-container .main-content-text-container {
   position: absolute;
   top: 5px;
   left: 70px;
 }
-.searchcontainer .secondcontainer .lineclass .userprofileheading {
+.search-container .sub-container .main-content-text-container .user-profile-header-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -89,7 +94,7 @@ a {
   line-height: 21px;
   color: #ffffff;
 }
-.searchcontainer .secondcontainer .lineclass .verifiedheading {
+.search-container .sub-container .main-content-text-container .verified-header-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -98,16 +103,16 @@ a {
   color: #ffffff;
   opacity: 0.4;
 }
-.searchcontainer .dropdown-toggle::after {
+.search-container .dropdown-toggle::after {
   content: none !important;
 }
-.searchcontainer .dropdown_submenu {
+.search-container .dropdown_submenu {
   width: 300px;
   background: #242323;
   border-radius: 16px;
   margin-top: 10px;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo {
+.search-container .dropdown_submenu .sub-second-container {
   width: 260px;
   cursor: pointer;
   margin-left: 20px;
@@ -119,19 +124,19 @@ a {
   border-radius: 20px;
   display: flex;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd {
+.search-container .dropdown_submenu .sub-second-container .dropd {
   position: absolute;
   right: 10px;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main {
+.search-container .dropdown_submenu .sub-second-container .dropd .main {
   display: block;
   position: relative;
   cursor: pointer;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd input[type=checkbox] {
+.search-container .dropdown_submenu .sub-second-container .dropd input[type=checkbox] {
   visibility: hidden;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .check {
+.search-container .dropdown_submenu .sub-second-container .dropd .check {
   position: absolute;
   top: 5px;
   left: 0;
@@ -140,18 +145,18 @@ a {
   border-radius: 5px;
   background-color: rgb(57, 56, 56);
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main input:checked ~ .check {
+.search-container .dropdown_submenu .sub-second-container .dropd .main input:checked ~ .check {
   background-color: #ffbb54;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .check:after {
+.search-container .dropdown_submenu .sub-second-container .dropd .check:after {
   content: "";
   position: absolute;
   display: none;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main input:checked ~ .check:after {
+.search-container .dropdown_submenu .sub-second-container .dropd .main input:checked ~ .check:after {
   display: block;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main .check:after {
+.search-container .dropdown_submenu .sub-second-container .dropd .main .check:after {
   left: 5px;
   top: 1px;
   width: 6px;
@@ -162,12 +167,12 @@ a {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass {
+.search-container .dropdown_submenu .sub-second-container .main-content-text-container {
   position: absolute;
   top: 5px;
   left: 50px;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass .userprofileheading {
+.search-container .dropdown_submenu .sub-second-container .main-content-text-container .user-profile-header-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -175,7 +180,7 @@ a {
   line-height: 21px;
   color: #ffffff;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass .verifiedheading {
+.search-container .dropdown_submenu .sub-second-container .main-content-text-container .verified-header-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -184,7 +189,7 @@ a {
   color: #ffffff;
   opacity: 0.4;
 }
-.searchcontainer .dropdown_submenu .addprofile {
+.search-container .dropdown_submenu .addprofile {
   display: flex;
   width: 300px;
   align-items: center;
@@ -192,7 +197,7 @@ a {
   cursor: pointer;
   padding-top: 20px;
 }
-.searchcontainer .dropdown_submenu .addprofile .addprofiletext {
+.search-container .dropdown_submenu .addprofile .add-profile-text {
   font-weight: 400;
   font-size: 11px;
   line-height: 16px;
@@ -206,7 +211,7 @@ a {
   border-radius: 14px;
   padding-left: 80px;
 }
-.row .searchIcon {
+.row .search-icon {
   position: absolute;
   left: 14.92%;
   right: 91.38%;
@@ -384,7 +389,7 @@ a {
   transform: rotate(180deg);
 }
 
-.nav_list .navlinkthree {
+.nav_list .sub-navlink-text {
   position: relative;
   top: 8px;
   margin-left: -28px;
@@ -766,18 +771,18 @@ a {
   background: #161616;
   border-radius: 12px;
 }
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer {
+.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsub-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   border-bottom: 1px solid black;
 }
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer {
+.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsub-container .dropdownthirdcontainer {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
 }
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .btcheading {
+.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsub-container .dropdownthirdcontainer .btcheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -785,7 +790,7 @@ a {
   line-height: 21px;
   color: #ffffff;
 }
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .numberheading {
+.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsub-container .dropdownthirdcontainer .numberheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -819,20 +824,20 @@ a {
   color: #ffffff;
 }
 
-.settingMain {
-  padding-left: 150px;
+.main-setting-container-wrapper {
+  padding-left: 160px;
   padding-top: 10px;
   padding-bottom: 30px;
   padding-right: 100px;
 }
-.settingMain .buttoncontainer {
+.main-setting-container-wrapper .button-container {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin-top: 40px;
 }
-.settingMain .buttoncontainer .cancelButton {
+.main-setting-container-wrapper .button-container .cancel-button {
   background: #41301e;
   border: none;
   width: 181px;
@@ -848,7 +853,7 @@ a {
   color: #ffbb54;
   border-radius: 14px;
 }
-.settingMain .buttoncontainer .cancelButton::before {
+.main-setting-container-wrapper .button-container .cancel-button::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -862,12 +867,12 @@ a {
   border-radius: 10px 10px 10px 10px;
   transition: 0.6s;
 }
-.settingMain .buttoncontainer .cancelButton:hover::before {
+.main-setting-container-wrapper .button-container .cancel-button:hover::before {
   width: 100%;
   right: 0px;
   top: 0px;
 }
-.settingMain .buttoncontainer .saveButton {
+.main-setting-container-wrapper .button-container .save-button {
   background: #ffbb54;
   border-radius: 14px;
   border: none;
@@ -882,7 +887,7 @@ a {
   width: 181px;
   height: 54px;
 }
-.settingMain .buttoncontainer .saveButton::before {
+.main-setting-container-wrapper .button-container .save-button::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -896,7 +901,7 @@ a {
   border-radius: 10px 10px 10px 10px;
   transition: 0.6s;
 }
-.settingMain .buttoncontainer .saveButton:hover::before {
+.main-setting-container-wrapper .button-container .save-button:hover::before {
   width: 100%;
   right: 0px;
   top: 0px;
@@ -946,7 +951,7 @@ a {
 }
 
 @media screen and (max-width: 860px) {
-  .settingMain {
+  .main-setting-container-wrapper {
     padding-left: 60px;
     padding-top: 20px;
     padding-right: 100px;
@@ -972,19 +977,19 @@ a {
     display: none !important;
   }
 
-  .searchcontainer .bellIcon {
+  .search-container .bell-icon {
     display: none;
   }
-  .searchcontainer .searchicon {
+  .search-container .search-icon {
     display: none;
   }
-  .searchcontainer .searchinputfield {
+  .search-container .search-inputfield {
     display: none;
   }
-  .searchcontainer .icon {
+  .search-container .icon {
     display: none;
   }
-  .searchcontainer .secondcontainer {
+  .search-container .sub-container {
     width: 220px !important;
     margin-left: 0px !important;
     height: 42px !important;
@@ -992,17 +997,17 @@ a {
     border: none !important;
     border-radius: 0px !important;
   }
-  .searchcontainer .secondcontainer .dropd {
+  .search-container .sub-container .dropd {
     display: none !important;
     position: absolute;
     right: 10px !important;
   }
-  .searchcontainer .secondcontainer .lineclass {
+  .search-container .sub-container .main-content-text-container {
     position: absolute;
     top: 2px !important;
     left: 70px;
   }
-  .searchcontainer .secondcontainer .lineclass .userprofileheading {
+  .search-container .sub-container .main-content-text-container .user-profile-header-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -1010,7 +1015,7 @@ a {
     line-height: 21px;
     color: #ffffff;
   }
-  .searchcontainer .secondcontainer .lineclass .verifiedheading {
+  .search-container .sub-container .main-content-text-container .verified-header-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -1031,7 +1036,7 @@ a {
   border: 1px solid #ffffff;
 }
 
-.section1 .settings {
+.sub-setting-container-wrapper .setting-text {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -1039,7 +1044,7 @@ a {
   line-height: 57px;
   color: #ffffff;
 }
-.section1 .subHeading {
+.sub-setting-container-wrapper .sub-header-text {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1048,7 +1053,7 @@ a {
   color: #ffffff;
   opacity: 0.6;
 }
-.section1 .infoButton {
+.sub-setting-container-wrapper .personal-info-button {
   width: auto;
   height: 42px;
   padding: 5px 15px;
@@ -1065,7 +1070,7 @@ a {
   color: #ffffff;
   border: 1px solid #ffffff;
 }
-.section1 .infoButton::before {
+.sub-setting-container-wrapper .personal-info-button::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -1079,12 +1084,12 @@ a {
   border-radius: 10px 10px 10px 10px;
   transition: 0.6s;
 }
-.section1 .infoButton:hover::before {
+.sub-setting-container-wrapper .personal-info-button:hover::before {
   width: 100%;
   right: 0px;
   top: 0px;
 }
-.section1 .passwordButton {
+.sub-setting-container-wrapper .password-button {
   width: 100%;
   min-height: 35px;
   color: #ffbb54;
@@ -1100,7 +1105,7 @@ a {
   border: none;
   position: relative;
 }
-.section1 .passwordButton::before {
+.sub-setting-container-wrapper .password-button::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -1114,16 +1119,16 @@ a {
   border-radius: 10px 10px 10px 10px;
   transition: 0.6s;
 }
-.section1 .passwordButton:hover::before {
+.sub-setting-container-wrapper .password-button:hover::before {
   width: 100%;
   right: 0px;
   top: 0px;
 }
 
-.section2 {
+.change-password-content-container {
   margin-top: 70px;
 }
-.section2 .changePassword {
+.change-password-content-container .change-password-text {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 28px;
@@ -1131,7 +1136,7 @@ a {
   line-height: 30px;
   color: #ffffff;
 }
-.section2 .subHeading {
+.change-password-content-container .sub-header-text {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1141,54 +1146,54 @@ a {
   opacity: 0.6;
 }
 
-.formDiv {
+.form-container {
   width: 100%;
 }
-.formDiv form {
+.form-container form {
   width: 100%;
   font-family: "Poppins";
   font-style: normal;
 }
-.formDiv form label {
+.form-container form label {
   color: #4f4f4f;
 }
-.formDiv form input {
+.form-container form input {
   width: 90%;
   background-color: #202020;
   border: none;
   height: 60px;
   border-radius: 10px;
 }
-.formDiv form .firstRow {
+.form-container form .old-password-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.formDiv form .firstRow .row-left,
-.formDiv form .firstRow .row-right {
+.form-container form .old-password-container .row-left,
+.form-container form .old-password-container .row-right {
   width: 100%;
   margin-top: 20px !important;
   display: flex;
   flex-direction: column;
 }
-.formDiv form .firstRow .row-left .inputFeilds,
-.formDiv form .firstRow .row-right .inputFeilds {
+.form-container form .old-password-container .row-left .input-field,
+.form-container form .old-password-container .row-right .input-field {
   color: #ffffff;
   padding-left: 20px;
 }
-.formDiv form .secRow {
+.form-container form .confirm-password-container {
   width: 100%;
   margin-top: 20px !important;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.formDiv form .secRow .inputFeilds {
+.form-container form .confirm-password-container .input-field {
   color: #ffffff;
   padding-left: 20px;
   width: 45%;
 }
-.formDiv form .twoButtons {
+.form-container form .twoButtons {
   width: 100%;
   text-align: right;
   font-family: "Poppins";
@@ -1198,7 +1203,7 @@ a {
   line-height: 24px;
   margin-top: 40px;
 }
-.formDiv form .twoButtons .cancelButton {
+.form-container form .twoButtons .cancel-button {
   background: rgba(255, 187, 84, 0.1);
   width: 181px;
   height: 54px;
@@ -1212,7 +1217,7 @@ a {
   font-size: 16px;
   line-height: 24px;
 }
-.formDiv form .twoButtons .saveButton {
+.form-container form .twoButtons .save-button {
   background: #ffbb54;
   width: 181px;
   height: 54px;
@@ -1228,21 +1233,21 @@ a {
 }
 
 @media screen and (max-width: 700px) {
-  .buttoncontainer {
+  .button-container {
     width: 100% !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     margin-top: 40px;
   }
-  .buttoncontainer .cancelButton {
+  .button-container .cancel-button {
     width: 160px !important;
     height: 50px !important;
     font-weight: 600 !important;
     font-size: 14px !important;
     line-height: 21px !important;
   }
-  .buttoncontainer .saveButton {
+  .button-container .save-button {
     font-weight: 600 !important;
     font-size: 14px !important;
     line-height: 21px !important;
@@ -1250,14 +1255,14 @@ a {
     height: 50px !important;
   }
 
-  .settingMain {
+  .main-setting-container-wrapper {
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 20px;
   }
 }
-.section1 .settings {
+.sub-setting-container-wrapper .setting-text {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -1265,7 +1270,7 @@ a {
   line-height: 57px;
   color: #ffffff;
 }
-.section1 .subHeading {
+.sub-setting-container-wrapper .sub-header-text {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1274,7 +1279,7 @@ a {
   color: #ffffff;
   opacity: 0.6;
 }
-.section1 .infoButton {
+.sub-setting-container-wrapper .personal-info-button {
   width: auto;
   height: 42px;
   padding: 5px 15px;
@@ -1290,7 +1295,7 @@ a {
   color: #ffffff;
   border: 1px solid #ffffff;
 }
-.section1 .passwordButton {
+.sub-setting-container-wrapper .password-button {
   width: 126px;
   height: 42px;
   color: #ffbb54;
@@ -1305,10 +1310,10 @@ a {
   border: none;
 }
 
-.section2 {
+.change-password-content-container {
   margin-top: 70px;
 }
-.section2 .changePassword {
+.change-password-content-container .change-password-text {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 28px;
@@ -1316,7 +1321,7 @@ a {
   line-height: 30px;
   color: #ffffff;
 }
-.section2 .subHeading {
+.change-password-content-container .sub-header-text {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1326,50 +1331,50 @@ a {
   opacity: 0.6;
 }
 
-.formDiv {
+.form-container {
   width: 100%;
 }
-.formDiv form {
+.form-container form {
   width: 100%;
   font-family: "Poppins";
   font-style: normal;
 }
-.formDiv form label {
+.form-container form label {
   color: #4f4f4f;
 }
-.formDiv form input {
+.form-container form input {
   width: 90%;
   background-color: #202020;
   border: none;
   height: 60px;
   border-radius: 10px;
 }
-.formDiv form .firstRow {
+.form-container form .old-password-container {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.formDiv form .firstRow .row-left,
-.formDiv form .firstRow .row-right {
+.form-container form .old-password-container .row-left,
+.form-container form .old-password-container .row-right {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.formDiv form .firstRow .row-left .inputFeilds,
-.formDiv form .firstRow .row-right .inputFeilds {
+.form-container form .old-password-container .row-left .input-field,
+.form-container form .old-password-container .row-right .input-field {
   color: #ffffff;
   padding-left: 20px;
   width: 100%;
 }
-.formDiv form .secRow {
+.form-container form .confirm-password-container {
   width: 100%;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.formDiv form .secRow .inputFeilds {
+.form-container form .confirm-password-container .input-field {
   color: #ffffff;
   padding-left: 20px;
   width: 100%;
@@ -1423,23 +1428,23 @@ a {
     display: none !important;
   }
 
-  .searchcontainer .bellIcon {
+  .search-container .bell-icon {
     display: none;
   }
 
-  .searchcontainer .searchicon {
+  .search-container .search-icon {
     display: none;
   }
 
-  .searchcontainer .searchinputfield {
+  .search-container .search-inputfield {
     display: none;
   }
 
-  .searchcontainer .secondcontainer {
+  .search-container .sub-container {
     display: none;
   }
 
-  .searchcontainer .icon {
+  .search-container .icon {
     display: none;
   }
 }

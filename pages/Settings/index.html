@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title> Settings </title>
   <link rel="stylesheet" href="./setting.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  </head>
+  <!-- Boostrap Links -->
+  <link rel="stylesheet" href="../../Bootstrap/bootstrap5/css/bootstrap.css">
+  <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.css">
+</head>
 
 <body id="body-pd">
   <!-- Navbar -->
@@ -21,8 +20,7 @@
         <img class="avatar" src="../../img/settings/avatar.svg" alt="avatar" />
       </div>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
       <img src="../../img/Group45.png" alt="">
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup" id="header">
@@ -54,14 +52,13 @@
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <button class="accordion-button accorbtn" style="width: auto;" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                data-bs-target="#collapseOne">
                 <i>
                   <img src="../../img/settingicon.png" alt="" />
                 </i>
                 <span>Auto-Trading Bot</span>
               </button>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body accorbd">
                   <div class="inneraccor nav_link">
                     <i>
@@ -80,45 +77,44 @@
             </div>
           </div>
         </a>
-        <a href="#" class="nav_link navlinkthree">
+        <a href="#" class="nav_link sub-navlink-text">
           <i>
             <img src="../../img/Vector1.png" alt="" />
           </i>
           <span>Setting</span>
         </a>
-        <a href="#" class="nav_link navlinkthree">
+        <a href="#" class="nav_link sub-navlink-text">
           <i>
             <img src="../../img/Vector2.png" alt="" />
           </i>
           <span>Support</span>
         </a>
-        <a href="#" class="nav_link navlinkthree">
+        <a href="#" class="nav_link sub-navlink-text">
           <i>
             <img src="../../img/profile.png" alt="" />
           </i>
           <span>Refer a friend</span>
         </a>
-        <a href="#" class="nav_link navlinkthree">
+        <a href="#" class="nav_link sub-navlink-text">
           <i>
             <img src="../../img/Vector1.png" alt="" />
           </i>
           <span>Become VIP</span>
         </a>
       </div>
-      <div class="searchcontainer" id="header">
-        <img src="../../img/Vector.png" alt="" class="searchicon">
-        <input type="text" placeholder="Search..." class="searchinputfield" />
+      <div class="search-container" id="header">
+        <img src="../../img/Vector.png" alt="" class="search-icon">
+        <input type="text" placeholder="Search..." class="search-inputfield" />
         <div style="display: flex;">
           <div class="dropdown">
-            <a class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="true">
-              <div class="secondcontainer">
+            <a class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown">
+              <div class="sub-container">
                 <div>
                   <img class="avatar" src="../../img/settings/avatar.svg" alt="avatar" />
                 </div>
-                <div class="lineclass">
-                  <h6 class="userprofileheading">User Profile Name</h6>
-                  <p class="verifiedheading">Verified</p>
+                <div class="main-content-text-container">
+                  <h6 class="user-profile-header-text">User Profile Name</h6>
+                  <p class="verified-header-text">Verified</p>
                 </div>
                 <div class="dropd">
                   <img class="dropDown" src="../../img/settings/dropdown.svg" alt="dropdown" />
@@ -126,28 +122,28 @@
               </div>
             </a>
             <div class="dropdown-menu dropdown_submenu">
-              <div class="secondcontainertwo ">
+              <div class="sub-second-container ">
                 <div>
                   <img class="avatar" src="../../img/settings/avatar.svg" alt="avatar" />
                 </div>
-                <div class="lineclass">
-                  <h6 class="userprofileheading">User Profile Name</h6>
-                  <p class="verifiedheading">Verified</p>
+                <div class="main-content-text-container">
+                  <h6 class="user-profile-header-text">User Profile Name</h6>
+                  <p class="verified-header-text">Verified</p>
                 </div>
                 <div class="dropd">
                   <label class="main">
                     <input type="checkbox">
                     <span class="check"></span>
                   </label>
-                </div> 
+                </div>
               </div>
-              <div class="secondcontainertwo ">
+              <div class="sub-second-container ">
                 <div>
                   <img class="avatar" src="../../img/profile2.png" alt="avatar" />
                 </div>
-                <div class="lineclass">
-                  <h6 class="userprofileheading">User Profile Name</h6>
-                  <p class="verifiedheading">Verified</p>
+                <div class="main-content-text-container">
+                  <h6 class="user-profile-header-text">User Profile Name</h6>
+                  <p class="verified-header-text">Verified</p>
                 </div>
                 <div class="dropd">
                   <label class="main">
@@ -156,12 +152,12 @@
                   </label>
                 </div>
               </div>
-              <div class="addprofile">
-                <p class="addprofiletext">+ Add Profile</p>
+              <div class="add-profile-container">
+                <p class="add-profile-text">+ Add Profile</p>
               </div>
             </div>
           </div>
-          <img class="bellIcon" src="../../img/belliconimage.png" />
+          <img class="bell-icon" src="../../img/belliconimage.png" />
         </div>
       </div>
     </div>
@@ -201,14 +197,13 @@
             <div id="accordionExample">
               <div class="accordion-item">
                 <button class="accordion-button accorbtn" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  data-bs-target="#collapseOne">
                   <i>
                     <img src="../../img/pres.png" alt="" />
                   </i>
                   <span>Auto-Trading Bot</span>
                 </button>
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample">
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body accorbd">
                     <div class="inneraccor nav_link">
                       <i>
@@ -216,7 +211,7 @@
                       </i>
                       <span>Transactions</span>
                     </div>
-  
+
                     <div class="inneraccor nav_link">
                       <i>
                         <img src="../../img/settingicon.png" alt="" />
@@ -228,25 +223,25 @@
               </div>
             </div>
           </span>
-          <a href="#" class="nav_link navlinkthree">
+          <a href="#" class="nav_link sub-navlink-text">
             <i>
               <img src="../../img/Vector1.png" alt="" />
             </i>
             <span>Setting</span>
           </a>
-          <a href="#" class="nav_link navlinkthree">
+          <a href="#" class="nav_link sub-navlink-text">
             <i>
               <img src="../../img/Vector2.png" alt="" />
             </i>
             <span>Support</span>
           </a>
-          <a href="#" class="nav_link navlinkthree">
+          <a href="#" class="nav_link sub-navlink-text">
             <i>
               <img src="../../img/profile.png" alt="" />
             </i>
             <span>Refer a friend</span>
           </a>
-          <a href="#" class="nav_link navlinkthree">
+          <a href="#" class="nav_link sub-navlink-text">
             <i>
               <img src="../../img/Vector1.png" alt="" />
             </i>
@@ -257,64 +252,58 @@
     </nav>
   </div>
   <!-- Main Setting content -->
-   <div class="settingMain">
-    <div class="section1">
-      <h1 class="settings">Settings</h1>
-      <p class="subHeading">
+  <div class="main-setting-container-wrapper">
+    <div class="sub-setting-container-wrapper">
+      <h1 class="setting-text">Settings</h1>
+      <p class="sub-header-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam
         lorem
       </p>
       <div>
-        <button class="infoButton">Personal Information</button>
-        <button class="passwordButton">Password</button>
+        <button class="personal-info-button">Personal Information</button>
+        <button class="password-button">Password</button>
       </div>
     </div>
-    <div class="section2">
-      <h1 class="changePassword">Change Password</h1>
-      <p class="subHeading">
+    <div class="change-password-content-container">
+      <h1 class="change-password-text">Change Password</h1>
+      <p class="sub-header-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </p>
     </div>
-    <div class="formDiv">
+    <div class="form-container">
       <form>
-        <div class="firstRow">
+        <div class="old-password-container">
           <div class="row-left">
             <label class="label">Old password</label>
-            <input id="email" name="email" class="inputFeilds" placeholder="******" type="password" />
+            <input id="email" name="email" class="input-field" placeholder="******" type="password" />
           </div>
 
           <div class="row-right">
             <label class="label">New password</label>
-            <input id="email" name="email" class="inputFeilds" placeholder="******" type="password" />
+            <input id="email" name="email" class="input-field" placeholder="******" type="password" />
           </div>
         </div>
-        <div class="secRow">
+        <div class="confirm-password-container">
           <label class="label">Confirm password</label>
-          <input id="email" name="email" class="inputFeilds" placeholder="******" type="password" />
+          <input id="email" name="email" class="input-field" placeholder="******" type="password" />
         </div>
       </form>
     </div>
-    <div class="buttoncontainer">
-         <button class="cancelButton">
-           Canel
-         </button>
-         <button class="saveButton" >
-           Save
-         </button>
-       </div>
+    <div class="button-container">
+      <button class="cancel-button">
+        Canel
+      </button>
+      <button class="save-button">
+        Save
+      </button>
+    </div>
   </div>
-  <!-- Scripts Js Bootstrap -->
+  <!-- Bootstrap Javascript-Jquery -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-  crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../../Bootstrap/js/bootstrap.js"> </script>
+  <script type="text/javascript" src="../../Bootstrap/bootstrap5/js/bootstrap.js"> </script>
   <script>
     document.addEventListener("DOMContentLoaded", function (event) {
       const showNavbar = (toggleId, navId, bodyId, headerId) => {

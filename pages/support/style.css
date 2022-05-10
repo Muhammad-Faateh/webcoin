@@ -20,7 +20,6 @@
 body {
   position: relative;
   margin: var(--header-height) 0 0 0;
-  /* padding: 0 1rem; */
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   transition: 0.5s;
@@ -37,25 +36,25 @@ a {
   text-decoration: none;
 }
 
-.searchcontainer {
+.search-container {
   width: 100%;
   display: flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.searchcontainer .searchicon {
+.search-container .search-icon {
   position: relative;
   left: 40px;
 }
-.searchcontainer .icon {
+.search-container .icon {
   background-color: rgb(96, 94, 0);
   backdrop-filter: blur(1px);
   opacity: 0.6;
   padding: 5px 10px 10px 10px;
   border-radius: 8px;
 }
-.searchcontainer .searchinputfield {
+.search-container .searchinputfield {
   background: #262626;
   border-radius: 8px;
   border: none;
@@ -65,7 +64,7 @@ a {
   height: 40px;
   padding-left: 60px;
 }
-.searchcontainer .secondcontainer {
+.search-container .second-container {
   width: 260px;
   cursor: pointer;
   margin-left: 20px;
@@ -79,44 +78,42 @@ a {
   border-radius: 20px;
   display: flex;
 }
-.searchcontainer .secondcontainer .dropd {
+.search-container .second-container .dropd {
   position: absolute;
   right: 20px;
 }
-.searchcontainer .secondcontainer .lineclass {
+.search-container .second-container .content-container {
   position: absolute;
   top: 5px;
   left: 70px;
 }
-.searchcontainer .secondcontainer .lineclass .userprofileheading {
+.search-container .second-container .content-container .user-profile-header-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   color: #ffffff;
 }
-.searchcontainer .secondcontainer .lineclass .verifiedheading {
+.search-container .second-container .content-container .verified-heading-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 11px;
   line-height: 16px;
-  /* identical to box height */
   color: #ffffff;
   opacity: 0.4;
 }
-.searchcontainer .dropdown-toggle::after {
+.search-container .dropdown-toggle::after {
   content: none !important;
 }
-.searchcontainer .dropdown_submenu {
+.search-container .dropdown_submenu {
   width: 300px;
   background: #242323;
   border-radius: 16px;
   margin-top: 10px;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo {
+.search-container .dropdown_submenu .sub-second-container {
   width: 260px;
   cursor: pointer;
   margin-left: 20px;
@@ -128,19 +125,19 @@ a {
   border-radius: 20px;
   display: flex;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd {
+.search-container .dropdown_submenu .sub-second-container .dropd {
   position: absolute;
   right: 10px;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main {
+.search-container .dropdown_submenu .sub-second-container .dropd .main {
   display: block;
   position: relative;
   cursor: pointer;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd input[type=checkbox] {
+.search-container .dropdown_submenu .sub-second-container .dropd input[type=checkbox] {
   visibility: hidden;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .check {
+.search-container .dropdown_submenu .sub-second-container .dropd .check {
   position: absolute;
   top: 5px;
   left: 0;
@@ -149,18 +146,18 @@ a {
   border-radius: 5px;
   background-color: rgb(57, 56, 56);
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main input:checked ~ .check {
-  background-color: #FFBB54;
+.search-container .dropdown_submenu .sub-second-container .dropd .main input:checked ~ .check {
+  background-color: #ffbb54;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .check:after {
+.search-container .dropdown_submenu .sub-second-container .dropd .check:after {
   content: "";
   position: absolute;
   display: none;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main input:checked ~ .check:after {
+.search-container .dropdown_submenu .sub-second-container .dropd .main input:checked ~ .check:after {
   display: block;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .dropd .main .check:after {
+.search-container .dropdown_submenu .sub-second-container .dropd .main .check:after {
   left: 5px;
   top: 1px;
   width: 6px;
@@ -171,12 +168,12 @@ a {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass {
+.search-container .dropdown_submenu .sub-second-container .content-container {
   position: absolute;
   top: 5px;
   left: 50px;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass .userprofileheading {
+.search-container .dropdown_submenu .sub-second-container .content-container .user-profile-header-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -184,7 +181,7 @@ a {
   line-height: 21px;
   color: #ffffff;
 }
-.searchcontainer .dropdown_submenu .secondcontainertwo .lineclass .verifiedheading {
+.search-container .dropdown_submenu .sub-second-container .content-container .verified-heading-text {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -193,7 +190,7 @@ a {
   color: #ffffff;
   opacity: 0.4;
 }
-.searchcontainer .dropdown_submenu .addprofile {
+.search-container .dropdown_submenu .add-profile {
   display: flex;
   width: 300px;
   align-items: center;
@@ -201,7 +198,7 @@ a {
   cursor: pointer;
   padding-top: 20px;
 }
-.searchcontainer .dropdown_submenu .addprofile .addprofiletext {
+.search-container .dropdown_submenu .add-profile .add-profile-container {
   font-weight: 400;
   font-size: 11px;
   line-height: 16px;
@@ -215,7 +212,7 @@ a {
   border-radius: 14px;
   padding-left: 80px;
 }
-.row .searchIcon {
+.row .search-icon {
   position: absolute;
   left: 14.92%;
   right: 91.38%;
@@ -224,10 +221,8 @@ a {
   color: #c4c4c4;
 }
 .row .imageDropDown {
-  /* opacity: 0.1; */
   width: 260px;
   border: 1.5px solid #ffffff;
-  /* box-sizing: border-box; */
   border-radius: 16px;
   height: 60px;
 }
@@ -296,7 +291,7 @@ a {
   width: 40px;
 }
 
-.l-navbar {
+.left-navbar {
   position: fixed;
   top: 0;
   left: -30%;
@@ -306,6 +301,9 @@ a {
   padding: 0.5rem 1rem 0 0;
   transition: 0.5s;
   z-index: var(--z-fixed);
+}
+.left-navbar a {
+  text-decoration: none !important;
 }
 
 .nav {
@@ -347,6 +345,11 @@ a {
   box-shadow: none !important;
 }
 
+.accordion-item {
+  background-color: #161616 !important;
+  border: none !important;
+}
+
 .accordion-item:first-of-type .accordion-button {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
@@ -362,10 +365,10 @@ a {
 .accordion-item:first-of-type .accorbd {
   background-color: #141414;
 }
-.accordion-item:first-of-type .accorbd .inneraccor {
+.accordion-item:first-of-type .accorbd .sub-accordion-inner {
   margin-left: 7px;
 }
-.accordion-item:first-of-type .accorbd .inneraccor span {
+.accordion-item:first-of-type .accorbd .sub-accordion-inner span {
   font-size: 14px;
   margin-left: -20px;
 }
@@ -395,12 +398,21 @@ a {
   transform: rotate(180deg);
 }
 
-.nav_list .navlinkthree {
+.nav_list .sub-navlink-text-friend {
+  margin-top: 24px;
+  margin-bottom: 6px;
+}
+.nav_list .sub-navlink-text-friend span {
+  margin-left: -2px;
+}
+.nav_list .sub-navlink-text {
   position: relative;
   top: 8px;
   margin-left: -28px;
   text-decoration: none;
-  left: px;
+}
+.nav_list .sub-navlink-text span {
+  margin-left: 1px;
 }
 .nav_list .nav_link {
   font-family: "Poppins";
@@ -510,7 +522,6 @@ a {
   font-weight: 600;
   font-size: 38px;
   line-height: 57px;
-  /* identical to box height */
   color: #ffffff;
 }
 
@@ -520,7 +531,6 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  /* identical to box height, or 214% */
   color: #ffffff;
   opacity: 0.6;
 }
@@ -531,7 +541,6 @@ a {
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
-  /* identical to box height, or 165% */
   color: #ffffff;
 }
 
@@ -541,7 +550,6 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   color: #ffffff;
   opacity: 0.6;
 }
@@ -629,7 +637,6 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   color: #ffffff;
 }
 .firstcontainer .mainContainer .secondmaincontainer .paratexttwo {
@@ -639,7 +646,6 @@ a {
   margin-bottom: 5px;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   color: #ffffff;
   opacity: 0.55;
 }
@@ -649,7 +655,6 @@ a {
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
-  /* identical to box height */
   color: #ffffff;
 }
 .firstcontainer .mainContainer .secondmaincontainer .parayellowtext {
@@ -658,7 +663,6 @@ a {
   font-weight: 600;
   font-size: 50px;
   line-height: 75px;
-  /* identical to box height */
   color: #ffbb54;
 }
 .firstcontainer .mainContainer .assetmaincontainer {
@@ -690,7 +694,6 @@ a {
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
-  /* identical to box height */
   color: #ffffff;
 }
 .firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .BTCheading {
@@ -699,7 +702,6 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   color: #ffffff;
   opacity: 0.8;
 }
@@ -709,7 +711,6 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   color: #14bd6c;
   margin-left: 10px;
 }
@@ -719,7 +720,6 @@ a {
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
-  /* identical to box height */
   color: #ffffff;
 }
 .firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer {
@@ -733,7 +733,6 @@ a {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  /* identical to box height */
   text-align: right;
   color: #ffffff;
   opacity: 0.6;
@@ -744,7 +743,6 @@ a {
   font-weight: 400;
   font-size: 10px;
   line-height: 15px;
-  /* identical to box height */
   color: #ffffff;
   opacity: 0.4;
 }
@@ -754,7 +752,6 @@ a {
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
-  /* identical to box height */
   color: #14bd6c;
 }
 .firstcontainer .twocontainer {
@@ -792,33 +789,31 @@ a {
   background: #161616;
   border-radius: 12px;
 }
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer {
+.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecond-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   border-bottom: 1px solid black;
 }
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer {
+.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecond-container .dropdownthirdcontainer {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
 }
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .btcheading {
+.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecond-container .dropdownthirdcontainer .btcheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   color: #ffffff;
 }
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .numberheading {
+.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecond-container .dropdownthirdcontainer .numberheading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  /* identical to box height, or 133% */
   display: flex;
   align-items: center;
   color: #aeb6ce;
@@ -835,7 +830,6 @@ a {
   font-size: 10px;
   line-height: 15px;
   margin-left: 20px;
-  /* identical to box height */
   margin-top: 10px;
   color: #3ed10a;
 }
@@ -851,7 +845,6 @@ a {
 @media screen and (min-width: 768px) {
   body {
     margin: calc(var(--header-height) + 1rem) 0 0 0;
-    /* padding-left: calc(var(--nav-width) + 2rem) */
   }
 
   .header {
@@ -867,7 +860,7 @@ a {
     width: 45px;
   }
 
-  .l-navbar {
+  .left-navbar {
     left: 0;
     padding: 1rem 1rem 0 0;
   }
@@ -878,7 +871,6 @@ a {
 }
 @media screen and (max-width: 767px) {
   .body-pd {
-    /* padding-left: calc(var(--nav-width) + 188px) */
     padding-left: 0px;
   }
 }
@@ -903,23 +895,23 @@ a {
     right: 20px;
   }
 
-  .l-navbar {
+  .left-navbar {
     display: none !important;
   }
-  .l-navbar .nav {
+  .left-navbar .nav {
     display: none !important;
   }
 
-  .searchcontainer .searchicon {
+  .search-container .search-icon {
     display: none;
   }
-  .searchcontainer .searchinputfield {
+  .search-container .searchinputfield {
     display: none;
   }
-  .searchcontainer .icon {
+  .search-container .icon {
     display: none;
   }
-  .searchcontainer .secondcontainer {
+  .search-container .second-container {
     width: 220px !important;
     margin-left: 0px !important;
     height: 42px !important;
@@ -927,89 +919,85 @@ a {
     border: none !important;
     border-radius: 0px !important;
   }
-  .searchcontainer .secondcontainer .dropd {
+  .search-container .second-container .dropd {
     display: none !important;
     position: absolute;
     right: 10px !important;
   }
-  .searchcontainer .secondcontainer .lineclass {
+  .search-container .second-container .content-container {
     position: absolute;
     top: 2px !important;
     left: 70px;
   }
-  .searchcontainer .secondcontainer .lineclass .userprofileheading {
+  .search-container .second-container .content-container .user-profile-header-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
     color: #ffffff;
   }
-  .searchcontainer .secondcontainer .lineclass .verifiedheading {
+  .search-container .second-container .content-container .verified-heading-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 11px;
     line-height: 16px;
-    /* identical to box height */
     position: absolute;
     bottom: -23px;
     color: #ffffff;
     opacity: 0.4;
   }
 }
-.form_content_Div {
+.main-form-container {
   padding: 0px 50px 50px 130px;
 }
 @media screen and (max-width: 767px) {
-  .form_content_Div {
+  .main-form-container {
     padding-left: 0;
     margin: 0px 0px;
   }
 }
-.form_content_Div .form_support_Sec .form_Heading1 {
+.main-form-container .sub-form-container .form_Heading1 {
   padding: 3% 0% 0% 1.6%;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 38px;
   line-height: 14px;
-  /* identical to box height */
   color: #ffffff;
 }
 @media screen and (max-width: 900px) {
-  .form_content_Div .form_support_Sec .form_Heading1 {
+  .main-form-container .sub-form-container .form_Heading1 {
     line-height: 20px;
     font-size: 33px;
   }
 }
 @media screen and (max-width: 600px) {
-  .form_content_Div .form_support_Sec .form_Heading1 {
+  .main-form-container .sub-form-container .form_Heading1 {
     font-size: 25px;
     padding-left: 25px;
   }
 }
-.form_content_Div .form_support_Sec .form_Para_1 {
+.main-form-container .sub-form-container .form_Para_1 {
   margin: 24px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  /* or 214% */
   color: #ffffff;
   opacity: 0.6;
 }
 @media screen and (max-width: 600px) {
-  .form_content_Div .form_support_Sec .form_Para_1 {
+  .main-form-container .sub-form-container .form_Para_1 {
     font-size: 12px;
   }
 }
-.form_content_Div .form_support_Sec .form_buttons {
+.main-form-container .sub-form-container .form_buttons {
   margin: 24px;
   padding-bottom: 24px;
 }
-.form_content_Div .form_support_Sec .form_buttons .ticket {
+.main-form-container .sub-form-container .form_buttons .ticket {
   background: #141414;
   color: white;
   border-radius: 15px;
@@ -1021,12 +1009,12 @@ a {
   border: 1px #e5e5e5;
   border-style: solid;
   border-width: thin !important;
-  border-color: #E5E5E5;
+  border-color: #e5e5e5;
   margin-right: 20px;
   overflow: hidden;
   position: relative;
 }
-.form_content_Div .form_support_Sec .form_buttons .ticket::before {
+.main-form-container .sub-form-container .form_buttons .ticket::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -1040,26 +1028,26 @@ a {
   border-radius: 10px 10px 10px 10px;
   transition: 0.6s;
 }
-.form_content_Div .form_support_Sec .form_buttons .ticket:hover::before {
+.main-form-container .sub-form-container .form_buttons .ticket:hover::before {
   width: 100%;
   right: 0px;
   top: 0px;
 }
 @media screen and (max-width: 800px) {
-  .form_content_Div .form_support_Sec .form_buttons .ticket {
+  .main-form-container .sub-form-container .form_buttons .ticket {
     width: 116px !important;
     font-size: 12px !important;
     height: 40px;
   }
 }
 @media screen and (max-width: 430px) {
-  .form_content_Div .form_support_Sec .form_buttons .ticket {
+  .main-form-container .sub-form-container .form_buttons .ticket {
     width: 80px !important;
     margin-right: 15px;
     font-size: 10px !important;
   }
 }
-.form_content_Div .form_support_Sec .form_buttons .open-new {
+.main-form-container .sub-form-container .form_buttons .open-new {
   color: #ffbb54;
   border: none;
   border-radius: 15px;
@@ -1072,7 +1060,7 @@ a {
   overflow: hidden;
   position: relative;
 }
-.form_content_Div .form_support_Sec .form_buttons .open-new::before {
+.main-form-container .sub-form-container .form_buttons .open-new::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -1086,42 +1074,42 @@ a {
   border-radius: 10px 10px 10px 10px;
   transition: 0.6s;
 }
-.form_content_Div .form_support_Sec .form_buttons .open-new:hover::before {
+.main-form-container .sub-form-container .form_buttons .open-new:hover::before {
   width: 100%;
   right: 0px;
   top: 0px;
 }
 @media screen and (max-width: 800px) {
-  .form_content_Div .form_support_Sec .form_buttons .open-new {
+  .main-form-container .sub-form-container .form_buttons .open-new {
     width: 150px !important;
     height: 40px;
     font-size: 12px !important;
   }
 }
 @media screen and (max-width: 430px) {
-  .form_content_Div .form_support_Sec .form_buttons .open-new {
+  .main-form-container .sub-form-container .form_buttons .open-new {
     width: 120px !important;
     font-size: 10px !important;
   }
 }
-.form_content_Div .form_support_Sec .form_Heading2 {
+.main-form-container .sub-form-container .form_Heading2 {
   color: #ffffff;
   margin-left: 22px;
   font-size: 40px !important;
 }
 @media screen and (max-width: 900px) {
-  .form_content_Div .form_support_Sec .form_Heading2 {
+  .main-form-container .sub-form-container .form_Heading2 {
     line-height: 10px;
     font-size: 27px !important;
   }
 }
 @media screen and (max-width: 600px) {
-  .form_content_Div .form_support_Sec .form_Heading2 {
+  .main-form-container .sub-form-container .form_Heading2 {
     line-height: 10px;
     font-size: 20px !important;
   }
 }
-.form_content_Div .form_support_Sec .form_Para2 {
+.main-form-container .sub-form-container .form_Para2 {
   margin: 10px 24px;
   font-family: "Poppins";
   font-style: normal;
@@ -1133,20 +1121,20 @@ a {
   width: 335px;
 }
 @media screen and (max-width: 600px) {
-  .form_content_Div .form_support_Sec .form_Para2 {
+  .main-form-container .sub-form-container .form_Para2 {
     width: 100%;
     font-size: 12px;
     padding-right: 20px;
   }
 }
-.form_content_Div .form_support_Sec .input_Form {
+.main-form-container .sub-form-container .input_Form {
   margin: 20px;
 }
-.form_content_Div .form_support_Sec .input_Form form .form-group label {
+.main-form-container .sub-form-container .input_Form form .form-group label {
   font-size: 16px;
   color: rgb(143, 141, 141);
 }
-.form_content_Div .form_support_Sec .input_Form form .form-group .form-control {
+.main-form-container .sub-form-container .input_Form form .form-group .form-control {
   color: white;
   height: 61px;
   background-color: #202020;
@@ -1156,35 +1144,35 @@ a {
   border-radius: 10px;
 }
 @media screen and (max-width: 900px) {
-  .form_content_Div .form_support_Sec .input_Form form .form-group .num_ticket_Input,
-.form_content_Div .form_support_Sec .input_Form form .form-group .subject_Input {
+  .main-form-container .sub-form-container .input_Form form .form-group .num_ticket_Input,
+.main-form-container .sub-form-container .input_Form form .form-group .subject_Input {
     height: 48px !important;
   }
 }
 @media screen and (max-width: 500px) {
-  .form_content_Div .form_support_Sec .input_Form form .form-group .num_ticket_Input,
-.form_content_Div .form_support_Sec .input_Form form .form-group .subject_Input {
+  .main-form-container .sub-form-container .input_Form form .form-group .num_ticket_Input,
+.main-form-container .sub-form-container .input_Form form .form-group .subject_Input {
     height: 35px !important;
   }
 }
-.form_content_Div .form_support_Sec .input_Form form .form-group .question_input {
+.main-form-container .sub-form-container .input_Form form .form-group .question_input {
   height: 200px;
   padding: 20px 128px 10px 10px;
 }
 @media screen and (max-width: 900px) {
-  .form_content_Div .form_support_Sec .input_Form form .form-group .question_input {
+  .main-form-container .sub-form-container .input_Form form .form-group .question_input {
     padding: 4px 102px 0px 8px;
     font-size: 11px;
   }
 }
 @media screen and (max-width: 414px) {
-  .form_content_Div .form_support_Sec .input_Form form .form-group .question_input {
+  .main-form-container .sub-form-container .input_Form form .form-group .question_input {
     height: 300px !important;
     font-size: 11px !important;
     padding: 5px 10px 10px 2px;
   }
 }
-.form_content_Div .form_support_Sec .input_Form form .form-group .ticketButton button {
+.main-form-container .sub-form-container .input_Form form .form-group .ticketButton button {
   float: right;
   margin: 1.875rem 0.938rem 2.5rem auto;
   width: 175px;
@@ -1197,7 +1185,7 @@ a {
   overflow: hidden;
   position: relative;
 }
-.form_content_Div .form_support_Sec .input_Form form .form-group .ticketButton button::before {
+.main-form-container .sub-form-container .input_Form form .form-group .ticketButton button::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -1211,38 +1199,38 @@ a {
   border-radius: 10px 10px 10px 10px;
   transition: 0.6s;
 }
-.form_content_Div .form_support_Sec .input_Form form .form-group .ticketButton button:hover::before {
+.main-form-container .sub-form-container .input_Form form .form-group .ticketButton button:hover::before {
   width: 100%;
   right: 0px;
   top: 0px;
 }
 @media screen and (max-width: 800px) {
-  .form_content_Div .form_support_Sec .input_Form form .form-group .ticketButton button {
+  .main-form-container .sub-form-container .input_Form form .form-group .ticketButton button {
     width: 116px !important;
     font-size: 12px !important;
     height: 40px;
   }
 }
 @media screen and (max-width: 430px) {
-  .form_content_Div .form_support_Sec .input_Form form .form-group .ticketButton button {
+  .main-form-container .sub-form-container .input_Form form .form-group .ticketButton button {
     width: 80px !important;
     margin-right: 15px;
     font-size: 10px !important;
   }
 }
 @media screen and (max-width: 800px) {
-  .form_content_Div .form_support_Sec .input_Form form .form-group .ticketButton {
+  .main-form-container .sub-form-container .input_Form form .form-group .ticketButton {
     height: 40px;
   }
 }
 @media screen and (max-width: 600px) {
-  .form_content_Div .form_support_Sec .input_Form form .form-group .ticketButton {
+  .main-form-container .sub-form-container .input_Form form .form-group .ticketButton {
     font-size: small !important;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .form_content_Div {
+  .main-form-container {
     padding: 0px 0px 0px 0px;
   }
 
@@ -1285,32 +1273,40 @@ a {
     display: none;
   }
 
-  .l-navbar {
+  .left-navbar {
     display: none !important;
   }
 
-  .l-navbar .nav {
+  .left-navbar .nav {
     display: none !important;
   }
 
-  .searchcontainer .bellIcon {
+  .search-container .bell-icon {
     display: none;
   }
 
-  .searchcontainer .searchicon {
+  .search-container .search-icon {
     display: none;
   }
 
-  .searchcontainer .searchinputfield {
+  .search-container .searchinputfield {
     display: none;
   }
 
-  .searchcontainer .secondcontainer {
+  .search-container .second-container {
     display: none;
   }
 
-  .searchcontainer .icon {
+  .search-container .icon {
     display: none;
+  }
+}
+@media screen and (max-width: 420px) {
+  .navbar-toggler {
+    position: fixed !important;
+    right: 5px !important;
+    top: 5px !important;
+    z-index: 1;
   }
 }
 

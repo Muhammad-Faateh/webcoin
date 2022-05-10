@@ -11,18 +11,18 @@ body {
   overflow-x: hidden;
 }
 
-.top .ellipse {
+.main-container-wrapper .main-container-image-right {
   position: absolute;
   top: 50px;
   left: 0px;
   opacity: 1 !important;
 }
 
-.top {
+.main-container-wrapper {
   width: 100%;
   position: relative;
 }
-.top .topLeftImg {
+.main-container-wrapper .main-container-image-left {
   position: absolute;
   top: -100px;
   left: -380px;
@@ -31,18 +31,18 @@ body {
   height: 700px;
   opacity: 0.1;
 }
-.top .ellipse {
+.main-container-wrapper .main-container-image-right {
   position: absolute;
   top: -40px;
 }
-.top .maskGroup {
+.main-container-wrapper .maskGroup {
   z-index: -1;
   position: absolute;
   right: 0px;
   bottom: 40px;
   opacity: 0.2;
 }
-.top .header {
+.main-container-wrapper .main-header-container {
   width: 96%;
   max-width: 1160px;
   margin: 36px auto;
@@ -51,34 +51,33 @@ body {
   align-items: center;
   font-family: "Poppins";
 }
-.top .header .logoMenu {
+.main-container-wrapper .main-header-container .logo-menu-container {
   display: flex;
   align-items: center;
 }
-.top .header .logoMenu .logoheadingtwo {
+.main-container-wrapper .main-header-container .logo-menu-container .footer-logo-header {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
   font-size: 36px;
   line-height: 54px;
-  /* identical to box height */
   color: #ffffff;
 }
-.top .header .logoMenu h1 {
+.main-container-wrapper .main-header-container .logo-menu-container h1 {
   margin-right: 40px;
   color: #fff;
   font-family: inherit;
   font-size: calc(2rem + 1vw);
   font-weight: 400;
 }
-.top .header .right {
+.main-container-wrapper .main-header-container .navbar-menu-container {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-between;
   align-items: center;
 }
-.top .header .right .menu a {
+.main-container-wrapper .main-header-container .navbar-menu-container .menu a {
   padding: 0px 20px;
   text-decoration: none;
   font-family: "Poppins";
@@ -90,21 +89,21 @@ body {
   color: #fff;
   opacity: 0.6;
 }
-.top .header .right .menu a.feature {
+.main-container-wrapper .main-header-container .navbar-menu-container .menu a.feature {
   padding-left: 50px;
   border-left: 1px solid #fff;
   opacity: 0.6;
 }
-.top .header .right .socialIcons {
+.main-container-wrapper .main-header-container .navbar-menu-container .social-icons {
   display: flex;
   align-items: center;
 }
-.top .header .right .socialIcons a {
+.main-container-wrapper .main-header-container .navbar-menu-container .social-icons a {
   text-decoration: none;
   color: #ffbb54;
   text-decoration: none;
 }
-.top .header .right .socialIcons a .icons {
+.main-container-wrapper .main-header-container .navbar-menu-container .social-icons a .icons {
   border: 1px solid #ffbb54;
   border-radius: 15px;
   margin: 0px 10px;
@@ -117,39 +116,39 @@ body {
   cursor: pointer;
   transition: 0.4s;
 }
-.top .header .right .socialIcons a .icons:hover {
+.main-container-wrapper .main-header-container .navbar-menu-container .social-icons a .icons:hover {
   cursor: pointer;
   background-color: #ffbb54;
   color: #000;
 }
-.top .header .openMobileMenu {
+.main-container-wrapper .main-header-container .mobile-view-navbar {
   display: none;
   cursor: pointer;
   border-radius: 5px;
   background-color: #2d2d2d;
 }
-.top .header .openMobileMenu img {
+.main-container-wrapper .main-header-container .mobile-view-navbar img {
   vertical-align: middle;
   padding: 7px;
 }
 
-.backgroundimage2 {
+.mobile-view-image-left {
   position: absolute !important;
   top: 0;
   right: 0;
   z-index: -1;
 }
 
-.backgroundimage3 {
+.mobile-view-image-right {
   display: none;
 }
 
-.section1 {
+.crypto-transaction-container {
   display: flex;
   justify-content: center;
   margin-top: 135px;
 }
-.section1 .topHeading {
+.crypto-transaction-container .main-container-first-heading {
   display: flex;
   justify-content: center;
   height: 35px;
@@ -167,11 +166,11 @@ body {
   padding: 20px;
 }
 
-.section2 {
+.second-container {
   display: flex;
   justify-content: center;
 }
-.section2 .paragraph {
+.second-container .paragraph {
   display: flex;
   justify-content: center;
   font-family: "Poppins";
@@ -184,15 +183,15 @@ body {
   margin-top: 12px;
 }
 
-.toggleText .toggleParagraph {
+.second-sub-paragraph-container .second-container-sub-paragraph {
   display: none;
 }
 
-.section3 {
+.content-wrapper {
   display: flex;
   justify-content: center;
 }
-.section3 .paragraph3 {
+.content-wrapper .third-sub-header-text {
   margin-top: 18px;
   font-family: "Poppins";
   font-style: normal;
@@ -205,11 +204,11 @@ body {
   opacity: 0.6;
 }
 
-.section4 {
+.learn-more-container {
   display: flex;
   justify-content: center;
 }
-.section4 .learnMore {
+.learn-more-container .learn-more-button-text {
   margin-top: 34px;
   background: #ffbb54;
   border-radius: 14px;
@@ -217,7 +216,7 @@ body {
   padding: 15px 34px;
   outline: none;
 }
-.section4 .learnMore:hover {
+.learn-more-container .learn-more-button-text:hover {
   cursor: pointer;
   background-color: #2d2d2d;
   color: #fff;
@@ -225,13 +224,13 @@ body {
   outline: none;
 }
 
-.section5 {
+.crypto-opportunity-main-wrapper {
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
 }
-.section5 .firstImageTwo {
+.crypto-opportunity-main-wrapper .crypto-opportunity-main-container-image {
   margin-top: 88px;
   object-fit: contain;
   height: 572.42px;
@@ -245,7 +244,7 @@ body {
   align-content: center;
 }
 
-.section6maincontainer {
+.crypto-opportunity-main-container {
   margin-top: 50px;
   position: relative;
   overflow: hidden;
@@ -253,25 +252,25 @@ body {
   border-bottom-left-radius: 40%;
   border-bottom-right-radius: 40%;
 }
-.section6maincontainer .firstImage {
+.crypto-opportunity-main-container .crypto-main-container-imageone {
   position: absolute;
   opacity: 0.05;
   filter: blur(2px);
   object-fit: contain;
   width: 100%;
 }
-.section6maincontainer .thirdimage {
+.crypto-opportunity-main-container .crypto-main-container-imagertwo {
   position: absolute;
   right: 0;
   top: -500px;
   z-index: 1;
 }
-.section6maincontainer .section6 {
+.crypto-opportunity-main-container .crypto-oppurtunity-container {
   display: flex;
   justify-content: center;
   margin-top: 100px;
 }
-.section6maincontainer .section6 .topHeading2 {
+.crypto-opportunity-main-container .crypto-oppurtunity-container .sub-header {
   margin-top: 22px;
   display: flex;
   justify-content: center;
@@ -290,20 +289,20 @@ body {
   padding: 20px;
 }
 
-.section7 {
+.register-users-container {
   display: flex;
   justify-content: center;
   flex-direction: row;
   width: 100%;
   margin-top: 46px;
 }
-.section7 .row .displayrow {
+.register-users-container .row .register-users-container-row {
   display: flex;
 }
-.section7 .row .displayrow .box {
+.register-users-container .row .register-users-container-row .box {
   position: relative;
 }
-.section7 .row .displayrow .box .boxHeading {
+.register-users-container .row .register-users-container-row .box .price-header-first {
   position: absolute;
   top: 30px;
   left: 35%;
@@ -313,7 +312,7 @@ body {
   color: #ffffff;
   text-align: center;
 }
-.section7 .row .displayrow .box .boxHeading1 {
+.register-users-container .row .register-users-container-row .box .price-header-last {
   position: absolute;
   top: 30px;
   left: 27%;
@@ -323,7 +322,7 @@ body {
   color: #ffffff;
   text-align: center;
 }
-.section7 .row .displayrow .box .BoxSubHeading {
+.register-users-container .row .register-users-container-row .box .register-users-container-text {
   position: absolute;
   top: 55%;
   left: 35%;
@@ -339,7 +338,7 @@ body {
   opacity: 0.4;
 }
 
-.sec3 {
+.content-wrapper-sub {
   margin-top: -54px;
 }
 
@@ -347,12 +346,12 @@ body {
   margin-top: -100px;
 }
 
-.section6 {
+.crypto-oppurtunity-container {
   display: flex;
   justify-content: center;
   margin-top: 100px;
 }
-.section6 .topHeading2 {
+.crypto-oppurtunity-container .sub-header {
   margin-top: 22px;
   display: flex;
   justify-content: center;
@@ -371,16 +370,16 @@ body {
   padding: 20px;
 }
 
-.imgsection1 {
+.token-recommendation-image-one {
   position: absolute;
   left: 0;
 }
 
-.imgsection2 {
+.token-recommendation-image-two {
   margin-top: 50px;
 }
 
-.imgsection3 {
+.token-recommendation-image-three {
   position: absolute;
   z-index: -1;
   margin-top: -150px;
@@ -411,38 +410,38 @@ body {
   height: 946px;
 }
 
-.section10 {
+.crypto-transaction-container0 {
   display: flex;
   justify-content: center;
 }
-.section10 .image4 {
+.crypto-transaction-container0 .image4 {
   margin-left: -248px;
   width: 901.08px;
   height: 973.16px;
 }
 
-.imagesecondlast {
+.auto-trading-bot-image-two {
   margin-top: 60px;
 }
 
-.imagesecondlasts {
+.auto-trading-bot-image-three {
   position: absolute;
   z-index: -1;
   margin-top: -250px;
 }
 
-.imagesecondnone {
+.auto-trading-bot-image-four {
   display: none;
 }
 
-.imagesecondlastss {
+.auto-trading-bot-image-one {
   position: absolute;
   margin-left: -200px;
   z-index: -1;
   margin-top: -200px;
 }
 
-.section3sub {
+.portolfio-history-container {
   margin-top: 100px;
 }
 
@@ -470,7 +469,7 @@ body {
   z-index: -1;
 }
 
-.maindiv {
+.footer-sub-container-wrapper {
   display: none;
 }
 
@@ -482,32 +481,32 @@ body {
   width: 100%;
   margin-top: 300px;
 }
-.footer .mainFooterDiv {
+.footer .sub-main-footer-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.footer .mainFooterDiv .firstDiv {
+.footer .sub-main-footer-container .sub-footer-container {
   padding-left: 200px;
   padding-top: 50px;
   height: auto;
   width: 100%;
 }
-.footer .mainFooterDiv .firstDiv .content .menu {
+.footer .sub-main-footer-container .sub-footer-container .content .menu {
   margin-top: 38px;
   margin-left: -16px;
   width: 100%;
 }
-.footer .mainFooterDiv .firstDiv .content .menu .contentsubtext {
+.footer .sub-main-footer-container .sub-footer-container .content .menu .benefits-footer-text {
   margin-left: 42px;
 }
-.footer .mainFooterDiv .firstDiv .content .menu .contentsubtexttwo {
+.footer .sub-main-footer-container .sub-footer-container .content .menu .team-footer-text {
   margin-left: 20px;
 }
-.footer .mainFooterDiv .firstDiv .content .menu .contentsubtextthree {
+.footer .sub-main-footer-container .sub-footer-container .content .menu .careers-footer-text {
   margin-left: 20px;
 }
-.footer .mainFooterDiv .firstDiv .content .menu a {
+.footer .sub-main-footer-container .sub-footer-container .content .menu a {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
@@ -518,11 +517,11 @@ body {
   padding: 0px 20px;
   text-decoration: none;
 }
-.footer .mainFooterDiv .firstDiv .content .menu a.feature {
+.footer .sub-main-footer-container .sub-footer-container .content .menu a.feature {
   padding-left: 50px;
   opacity: 0.6;
 }
-.footer .mainFooterDiv .firstDiv .copyright {
+.footer .sub-main-footer-container .sub-footer-container .footer-copyright-text {
   margin-top: 40px;
   font-family: "DM Sans";
   font-style: normal;
@@ -534,21 +533,21 @@ body {
   mix-blend-mode: normal;
   opacity: 0.5;
 }
-.footer .mainFooterDiv .secondDiv .socialmainDiv {
+.footer .sub-main-footer-container .footer-social-icons-container .sub-footer-social-icons-container {
   display: flex;
 }
-.footer .mainFooterDiv .secondDiv .socialmainDiv .socialIcons {
+.footer .sub-main-footer-container .footer-social-icons-container .sub-footer-social-icons-container .social-icons {
   position: relative;
   top: 150px;
   right: -30px;
   display: flex;
 }
-.footer .mainFooterDiv .secondDiv .socialmainDiv .socialIcons a {
+.footer .sub-main-footer-container .footer-social-icons-container .sub-footer-social-icons-container .social-icons a {
   text-decoration: none;
   color: #ffbb54;
   text-decoration: none;
 }
-.footer .mainFooterDiv .secondDiv .socialmainDiv .socialIcons a .icons {
+.footer .sub-main-footer-container .footer-social-icons-container .sub-footer-social-icons-container .social-icons a .icons {
   border-radius: 15px;
   margin: 0px 10px;
   width: 19.56px;
@@ -560,17 +559,17 @@ body {
   cursor: pointer;
   transition: 0.4s;
 }
-.footer .mainFooterDiv .secondDiv .socialmainDiv .socialIcons a .icons:hover {
+.footer .sub-main-footer-container .footer-social-icons-container .sub-footer-social-icons-container .social-icons a .icons:hover {
   color: #ffbb54 !important;
 }
-.footer .mainFooterDiv .secondDiv .termPolicies {
+.footer .sub-main-footer-container .footer-social-icons-container .termpolicies-text {
   position: relative;
   top: 330px;
   right: 100px;
   display: flex;
   position: relative;
 }
-.footer .mainFooterDiv .secondDiv .termPolicies .term {
+.footer .sub-main-footer-container .footer-social-icons-container .termpolicies-text .term {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
@@ -582,11 +581,11 @@ body {
   letter-spacing: -0.204545px;
   color: #ffffff;
 }
-.footer .logoMenu {
+.footer .logo-menu-container {
   display: flex;
   align-items: center;
 }
-.footer .logoMenu h1 {
+.footer .logo-menu-container h1 {
   margin-right: 40px;
   color: #fff;
   font-family: inherit;
@@ -595,18 +594,18 @@ body {
 }
 
 @media screen and (max-width: 1440px) {
-  .backgroundimage2 {
+  .mobile-view-image-left {
     height: 30%;
     width: 40%;
     opacity: 0.5;
   }
 
-  .imagesecondlasts {
+  .auto-trading-bot-image-three {
     width: 90%;
     margin-top: -50px;
   }
 
-  .section6maincontainer {
+  .crypto-opportunity-main-container {
     border-bottom-left-radius: 0px;
     overflow: visible;
     border-bottom-right-radius: 0px;
@@ -616,15 +615,15 @@ body {
     margin-top: -10px;
   }
 
-  .section7 .box {
+  .register-users-container .box {
     width: 340px !important;
   }
 }
 @media screen and (max-width: 1080px) {
-  .section7 .boxBorder {
+  .register-users-container .boxBorder {
     width: 275px;
   }
-  .section7 .box {
+  .register-users-container .box {
     width: 300px !important;
   }
 
@@ -635,23 +634,23 @@ body {
     width: 100%;
     margin-top: 300px;
   }
-  .footer .mainFooterDiv {
+  .footer .sub-main-footer-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
-  .footer .mainFooterDiv .firstDiv {
+  .footer .sub-main-footer-container .sub-footer-container {
     padding-left: 50px;
     padding-top: 50px;
     height: auto;
     width: 100%;
   }
-  .footer .mainFooterDiv .firstDiv .content .menu {
+  .footer .sub-main-footer-container .sub-footer-container .content .menu {
     margin-top: 38px;
     margin-left: -16px;
     width: 100%;
   }
-  .footer .mainFooterDiv .firstDiv .content .menu a {
+  .footer .sub-main-footer-container .sub-footer-container .content .menu a {
     padding: 0px 20px;
     text-decoration: none;
     font-family: "Poppins";
@@ -664,11 +663,11 @@ body {
     font-size: 15px;
     letter-spacing: -0.204545px;
   }
-  .footer .mainFooterDiv .firstDiv .content .menu a.feature {
+  .footer .sub-main-footer-container .sub-footer-container .content .menu a.feature {
     padding-left: 50px;
     opacity: 0.6;
   }
-  .footer .mainFooterDiv .firstDiv .copyright {
+  .footer .sub-main-footer-container .sub-footer-container .footer-copyright-text {
     margin-top: 55px;
     font-family: "DM Sans";
     font-style: normal;
@@ -680,21 +679,21 @@ body {
     mix-blend-mode: normal;
     opacity: 0.5;
   }
-  .footer .mainFooterDiv .secondDiv .socialmainDiv {
+  .footer .sub-main-footer-container .footer-social-icons-container .sub-footer-social-icons-container {
     display: flex;
   }
-  .footer .mainFooterDiv .secondDiv .socialmainDiv .socialIcons {
+  .footer .sub-main-footer-container .footer-social-icons-container .sub-footer-social-icons-container .social-icons {
     position: relative;
     top: 150px;
     right: -130px;
     display: flex;
   }
-  .footer .mainFooterDiv .secondDiv .socialmainDiv .socialIcons a {
+  .footer .sub-main-footer-container .footer-social-icons-container .sub-footer-social-icons-container .social-icons a {
     text-decoration: none;
     color: #ffbb54;
     text-decoration: none;
   }
-  .footer .mainFooterDiv .secondDiv .socialmainDiv .socialIcons a .icons {
+  .footer .sub-main-footer-container .footer-social-icons-container .sub-footer-social-icons-container .social-icons a .icons {
     border-radius: 15px;
     margin: 0px 10px;
     width: 19.56px;
@@ -706,17 +705,17 @@ body {
     cursor: pointer;
     transition: 0.4s;
   }
-  .footer .mainFooterDiv .secondDiv .socialmainDiv .socialIcons a .icons:hover {
+  .footer .sub-main-footer-container .footer-social-icons-container .sub-footer-social-icons-container .social-icons a .icons:hover {
     color: #ffbb54 !important;
   }
-  .footer .mainFooterDiv .secondDiv .termPolicies {
+  .footer .sub-main-footer-container .footer-social-icons-container .termpolicies-text {
     position: relative;
     top: 330px;
     right: 0px;
     display: flex;
     position: relative;
   }
-  .footer .mainFooterDiv .secondDiv .termPolicies .term {
+  .footer .sub-main-footer-container .footer-social-icons-container .termpolicies-text .term {
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 400;
@@ -728,11 +727,11 @@ body {
     letter-spacing: -0.204545px;
     color: #ffffff;
   }
-  .footer .logoMenu {
+  .footer .logo-menu-container {
     display: flex;
     align-items: center;
   }
-  .footer .logoMenu h1 {
+  .footer .logo-menu-container h1 {
     margin-right: 40px;
     color: #fff;
     font-family: inherit;
@@ -740,7 +739,7 @@ body {
     font-weight: 400;
   }
 
-  .boxHeading {
+  .price-header-first {
     position: absolute;
     top: 30px;
     left: 50%;
@@ -751,7 +750,7 @@ body {
     text-align: center;
   }
 
-  .boxHeading1 {
+  .price-header-last {
     position: absolute;
     top: 30px;
     left: 25% !important;
@@ -762,7 +761,7 @@ body {
     text-align: center;
   }
 
-  .BoxSubHeading {
+  .register-users-container-text {
     position: absolute;
     margin-top: 10px;
     top: 55%;
@@ -780,43 +779,43 @@ body {
   }
 }
 @media screen and (max-width: 90px) {
-  .section7 .boxBorder {
+  .register-users-container .boxBorder {
     width: 255px;
   }
-  .section7 .box {
+  .register-users-container .box {
     width: 300px !important;
   }
 }
 @media screen and (max-width: 910px) {
-  .ellipse {
+  .main-container-image-right {
     display: none;
   }
 
-  .section5 .firstImageTwo {
+  .crypto-opportunity-main-wrapper .crypto-opportunity-main-container-image {
     margin-top: 0px;
   }
 
-  .copyright > h1 {
+  .footer-copyright-text > h1 {
     font-size: 20px;
   }
 
-  .imgsection2 {
+  .token-recommendation-image-two {
     width: 80%;
     height: 80%;
   }
 
-  .section7 {
+  .register-users-container {
     display: flex !important;
     justify-content: center !important;
   }
-  .section7 .boxBorder {
+  .register-users-container .boxBorder {
     width: 225px;
   }
-  .section7 .box {
+  .register-users-container .box {
     width: 250px !important;
   }
 
-  .boxHeading {
+  .price-header-first {
     position: absolute;
     top: 30px;
     left: 36% !important;
@@ -828,7 +827,7 @@ body {
     text-align: center;
   }
 
-  .boxHeading1 {
+  .price-header-last {
     position: absolute;
     top: 30px;
     left: 24% !important;
@@ -840,7 +839,7 @@ body {
     text-align: center;
   }
 
-  .BoxSubHeading {
+  .register-users-container-text {
     position: absolute;
     margin-top: 20px !important;
     top: 55%;
@@ -858,14 +857,15 @@ body {
   }
 }
 @media screen and (max-width: 800px) {
-  .footer .mainFooterDiv .firstDiv {
+  .footer .sub-main-footer-container .sub-footer-container {
     padding-top: 20px;
   }
+
   .footer {
     display: none;
   }
 
-  .maindiv {
+  .footer-sub-container-wrapper {
     background: linear-gradient(180deg, #3a3434 0%, rgba(56, 50, 50, 0) 97.76%);
     color: #fff;
     margin: 50px;
@@ -873,20 +873,20 @@ body {
     display: flex;
     justify-content: center;
   }
-  .maindiv .boll {
+  .footer-sub-container-wrapper .main-footer-sub-container {
     width: 90%;
   }
-  .maindiv .socialIconsTwo {
+  .footer-sub-container-wrapper .mobile-social-icons {
     margin-top: 50px;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
     gap: 47px;
   }
-  .maindiv .socialIconsTwo a {
+  .footer-sub-container-wrapper .mobile-social-icons a {
     color: #fff;
   }
-  .maindiv .socialIconsTwo .logome {
+  .footer-sub-container-wrapper .mobile-social-icons .footer-logo-header-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 800;
@@ -895,19 +895,19 @@ body {
     color: #ffffff;
   }
 
-  .section7 {
+  .register-users-container {
     display: flex !important;
     justify-content: center !important;
   }
-  .section7 .boxBorder {
+  .register-users-container .boxBorder {
     width: 185px;
   }
-  .section7 .box {
+  .register-users-container .box {
     margin-right: -15px;
     width: 230px !important;
   }
 
-  .boxHeading {
+  .price-header-first {
     position: absolute;
     top: 30px;
     left: 27% !important;
@@ -919,7 +919,7 @@ body {
     text-align: center;
   }
 
-  .boxHeading1 {
+  .price-header-last {
     position: absolute;
     top: 30px;
     left: 19% !important;
@@ -931,7 +931,7 @@ body {
     text-align: center;
   }
 
-  .BoxSubHeading {
+  .register-users-container-text {
     position: absolute;
     margin-top: 20px !important;
     top: 55%;
@@ -949,20 +949,20 @@ body {
   }
 }
 @media screen and (max-width: 668px) {
-  .section7 {
+  .register-users-container {
     display: flex !important;
     justify-content: center !important;
   }
-  .section7 .boxBorder {
+  .register-users-container .boxBorder {
     width: 317px !important;
     margin-left: -70px !important;
   }
-  .section7 .box {
+  .register-users-container .box {
     margin-right: -15px !important;
     width: 230px !important;
   }
 
-  .boxHeading {
+  .price-header-first {
     position: absolute;
     top: 30px;
     left: 27% !important;
@@ -974,7 +974,7 @@ body {
     text-align: center;
   }
 
-  .boxHeading1 {
+  .price-header-last {
     position: absolute;
     top: 30px;
     left: 18% !important;
@@ -986,7 +986,7 @@ body {
     text-align: center;
   }
 
-  .BoxSubHeading {
+  .register-users-container-text {
     position: absolute;
     margin-top: 1px !important;
     top: 55%;
@@ -1004,11 +1004,11 @@ body {
   }
 }
 @media screen and (max-width: 602px) {
-  .section4 {
+  .learn-more-container {
     display: flex;
     justify-content: center;
   }
-  .section4 .learnMore {
+  .learn-more-container .learn-more-button-text {
     margin-top: 50px;
     background: #ffbb54;
     border-radius: 14px;
@@ -1017,38 +1017,38 @@ body {
     outline: none;
   }
 
-  .section5 .firstImageTwo {
+  .crypto-opportunity-main-wrapper .crypto-opportunity-main-container-image {
     padding-left: 20px;
     margin-top: -140px;
     width: 90%;
   }
 
-  .section6maincontainer {
+  .crypto-opportunity-main-container {
     margin-top: -200px;
   }
 
-  .section6 {
+  .crypto-oppurtunity-container {
     margin-top: 70px;
   }
 
-  .section77 {
+  .sub-container-one {
     margin-top: -20px;
   }
 
-  .section2 {
+  .second-container {
     height: 100px;
   }
 
-  .section3subcontainer {
+  .portolfio-history-containercontainer {
     margin-top: -80px !important;
     margin-bottom: 50px;
   }
 
-  .section3subcontainer2 {
+  .portolfio-history-sub-container {
     margin-bottom: 50px;
   }
 
-  .backgroundimage2 {
+  .mobile-view-image-left {
     display: none;
     border-top-left-radius: 0px !important;
     border-top-right-radius: 30% !important;
@@ -1058,44 +1058,44 @@ body {
     width: 70%;
   }
 
-  .backgroundimage3 {
+  .mobile-view-image-right {
     display: block;
     position: absolute;
     right: 0;
     margin-top: 50px;
   }
 
-  .section5 {
+  .crypto-opportunity-main-wrapper {
     margin-top: 72px;
   }
 
-  .section7 {
+  .register-users-container {
     display: flex !important;
     justify-content: center !important;
   }
-  .section7 .boxBorder {
+  .register-users-container .boxBorder {
     display: flex !important;
     justify-content: center !important;
     width: 317px;
   }
-  .section7 .box {
+  .register-users-container .box {
     margin-right: 125px;
     width: 230px !important;
   }
 
-  .firstImage {
+  .crypto-main-container-imageone {
     opacity: 0.1 !important;
   }
 
-  .thirdimage {
+  .crypto-main-container-imagertwo {
     display: none;
   }
 
-  .imgsection1 {
+  .token-recommendation-image-one {
     display: none;
   }
 
-  .imgsection3 {
+  .token-recommendation-image-three {
     display: none;
   }
 
@@ -1118,24 +1118,24 @@ body {
     display: block;
   }
 
-  .imagesecondlast {
+  .auto-trading-bot-image-two {
     width: 70%;
   }
 
-  .imagesecondlasts {
+  .auto-trading-bot-image-three {
     display: none;
     transform: rotate(10deg);
     margin-top: 110px;
   }
 
-  .imagesecondnone {
+  .auto-trading-bot-image-four {
     display: block;
     position: absolute;
     z-index: -1;
     width: 100%;
   }
 
-  .imagesecondlastss {
+  .auto-trading-bot-image-one {
     display: none;
   }
 
@@ -1143,7 +1143,7 @@ body {
     display: none;
   }
 
-  .top .topLeftImg {
+  .main-container-wrapper .main-container-image-left {
     top: -140px !important;
     left: -80px !important;
     z-index: -1;
@@ -1151,19 +1151,19 @@ body {
     height: 300px !important;
     width: 300px !important;
   }
-  .top .header .right {
+  .main-container-wrapper .main-header-container .navbar-menu-container {
     display: none !important;
   }
-  .top .header .openMobileMenu {
+  .main-container-wrapper .main-header-container .mobile-view-navbar {
     display: block;
   }
 
-  .toggleText {
+  .second-sub-paragraph-container {
     display: flex;
     justify-content: center;
     margin-top: -40px;
   }
-  .toggleText .toggleParagraph {
+  .second-sub-paragraph-container .second-container-sub-paragraph {
     display: block;
     font-family: "Poppins";
     font-style: normal;
@@ -1185,17 +1185,17 @@ body {
 }
 
 @media screen and (max-width: 669px) {
-  .section1 {
+  .crypto-transaction-container {
     display: flex;
     justify-content: center;
     margin-top: 60px;
   }
 
-  .section2 {
+  .second-container {
     display: flex;
     justify-content: center;
   }
-  .section2 .paragraph {
+  .second-container .paragraph {
     display: flex;
     justify-content: center;
     width: 309px;
@@ -1212,11 +1212,11 @@ body {
     margin-top: 12px;
   }
 
-  .section3 {
+  .content-wrapper {
     display: flex;
     justify-content: center;
   }
-  .section3 .paragraph3 {
+  .content-wrapper .third-sub-header-text {
     width: 297px;
     height: 47px;
     left: 59px;
@@ -1234,50 +1234,50 @@ body {
     opacity: 0.6;
   }
 
-  .displayrow {
+  .register-users-container-row {
     flex-direction: column;
   }
 
-  .top .topLeftImg {
+  .main-container-wrapper .main-container-image-left {
     top: -120px;
   }
-  .top .login .socialLogin {
+  .main-container-wrapper .login .socialLogin {
     margin-top: 40px;
     margin-bottom: 40px;
     flex-wrap: wrap;
   }
-  .top .login .socialLogin button {
+  .main-container-wrapper .login .socialLogin button {
     width: 100%;
     margin: 10px 0px;
     height: calc(2 * 20px);
   }
-  .top .login .privacyCopyRight {
+  .main-container-wrapper .login .privacyfooter-copyright-text {
     margin-top: 20px;
   }
-  .top .login h1 {
+  .main-container-wrapper .login h1 {
     font-size: 24px;
     line-height: 30px;
   }
-  .top .login p {
+  .main-container-wrapper .login p {
     font-size: 14px;
     line-height: 17px;
   }
-  .top .login .notYetMember {
+  .main-container-wrapper .login .notYetMember {
     margin-bottom: 50px;
   }
-  .top .login .loginCredentialTop input {
+  .main-container-wrapper .login .loginCredentialTop input {
     height: 40px;
   }
-  .top .privacyCopyRight {
+  .main-container-wrapper .privacyfooter-copyright-text {
     margin-top: calc(2 * 20px);
   }
 }
 @media (max-width: 768px) {
-  .openMobileMenu {
+  .mobile-view-navbar {
     display: block !important;
   }
 
-  .navbarMenu {
+  .navbar-menu {
     display: none !important;
   }
 }
