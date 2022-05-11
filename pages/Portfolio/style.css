@@ -671,6 +671,18 @@ a {
   border-radius: 14px;
 }
 
+.seperator {
+  margin-top: 24px;
+  opacity: 0.05;
+  border: 1px solid #FFFFFF;
+  margin-bottom: 17px;
+}
+@media screen and (max-width: 600px) {
+  .seperator {
+    display: none;
+  }
+}
+
 .main-header-text-container {
   position: relative;
   top: 0px;

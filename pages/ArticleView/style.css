@@ -952,6 +952,17 @@ a {
   }
 }
 
+.seperator {
+  margin-top: 24px;
+  opacity: 0.05;
+  border: 1px solid #FFFFFF;
+}
+@media screen and (max-width: 600px) {
+  .seperator {
+    display: none;
+  }
+}
+
 .article_content {
   padding-left: 130px;
   padding-right: 50px;
@@ -981,7 +992,7 @@ a {
   }
 }
 .article_content .rectangle {
-  margin-top: 37px;
+  margin-top: 23px;
   border-radius: 14px;
   width: 100%;
 }
@@ -998,7 +1009,8 @@ a {
   }
 }
 .article_content .new_Display .image-sub-heading {
-  margin-top: 34px;
+  margin-top: 19px;
+  margin-bottom: 5px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -1040,6 +1052,7 @@ a {
   line-height: 24px;
   color: #ffffff;
   opacity: 0.3;
+  margin-block-start: auto;
 }
 @media screen and (max-width: 600px) {
   .article_content .new_Display .date-heading {
