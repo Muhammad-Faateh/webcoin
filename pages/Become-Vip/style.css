@@ -542,6 +542,18 @@ a {
   height: 100vh;
 }
 
+.seperator {
+  margin-top: 24px;
+  opacity: 0.05;
+  border: 1px solid #FFFFFF;
+  margin-bottom: 28px;
+}
+@media screen and (max-width: 600px) {
+  .seperator {
+    display: none;
+  }
+}
+
 .main-container-text {
   width: 100%;
   padding-left: 135px;
@@ -554,6 +566,7 @@ a {
   font-size: 38px;
   line-height: 57px;
   color: #ffffff;
+  padding-left: 15px;
 }
 .main-container-text p {
   font-family: "Poppins";
@@ -563,6 +576,7 @@ a {
   line-height: 30px;
   color: #ffffff;
   opacity: 0.6;
+  padding-left: 15px;
 }
 
 .card-container {
@@ -603,7 +617,7 @@ a {
   color: #ffbb54;
 }
 .card-container .sub-card-container .basic-header-container {
-  padding: 30px 0px 0px 20px;
+  padding: 30px 0px 0px 30px;
 }
 .card-container .sub-card-container .basic-header-container h1 {
   font-family: "Poppins";
@@ -612,6 +626,7 @@ a {
   font-size: 38.125px;
   line-height: 57px;
   color: #ffffff;
+  margin-bottom: -3px;
 }
 .card-container .sub-card-container .basic-header-container p {
   font-family: "Poppins";
@@ -623,7 +638,7 @@ a {
   opacity: 0.6;
 }
 .card-container .sub-card-container .price-text-container {
-  padding: 10px 0px 0px 20px;
+  padding: 0px 0px 0px 30px;
   display: flex;
   align-items: center;
 }
@@ -634,6 +649,7 @@ a {
   font-size: 42px;
   line-height: 63px;
   color: #ffffff;
+  margin-bottom: 5px;
 }
 .card-container .sub-card-container .price-text-container p {
   padding: 12px 0px 0px 5px;
@@ -646,7 +662,7 @@ a {
   opacity: 0.2;
 }
 .card-container .sub-card-container .subscriber-main-container {
-  padding: 0px 0px 0px 20px;
+  padding: 10px 0px 0px 30px;
 }
 .card-container .sub-card-container .subscriber-main-container p {
   font-family: "Coco Sharp Variable";
@@ -657,7 +673,7 @@ a {
   color: #ffbb54;
 }
 .card-container .sub-card-container .subscribe-sub-container {
-  padding: 0px 0px 0px 20px;
+  padding: 0px 0px 0px 30px;
   margin-top: -15px;
 }
 .card-container .sub-card-container .subscribe-sub-container p {
@@ -677,7 +693,7 @@ a {
 }
 .card-container .sub-card-container .free-trial-container button {
   position: absolute;
-  width: 325px;
+  width: 380px;
   border: none;
   height: 59.73px;
   background: #ffbb54;
@@ -690,7 +706,7 @@ a {
   color: #08071b;
 }
 .card-container .sub-card-container .list-text-main-container {
-  padding: 30px 0px 30px 10px;
+  padding: 30px 0px 30px 18px;
 }
 .card-container .sub-card-container .list-text-main-container ul {
   display: grid;

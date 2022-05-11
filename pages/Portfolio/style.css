@@ -95,12 +95,14 @@ a {
 .search-container .dropdown-toggle::after {
   content: none !important;
 }
+
 .search-container .dropdown_submenu {
   width: 300px;
   background: #242323;
   border-radius: 16px;
   margin-top: 10px;
 }
+
 .search-container .dropdown_submenu .user-sub-profile-container {
   width: 260px;
   cursor: pointer;
@@ -113,18 +115,22 @@ a {
   border-radius: 20px;
   display: flex;
 }
+
 .search-container .dropdown_submenu .user-sub-profile-container .drop-down-container {
   position: absolute;
   right: 10px;
 }
+
 .search-container .dropdown_submenu .user-sub-profile-container .drop-down-container .main {
   display: block;
   position: relative;
   cursor: pointer;
 }
+
 .search-container .dropdown_submenu .user-sub-profile-container .drop-down-container input[type=checkbox] {
   visibility: hidden;
 }
+
 .search-container .dropdown_submenu .user-sub-profile-container .drop-down-container .check {
   position: absolute;
   top: 5px;
@@ -134,17 +140,21 @@ a {
   border-radius: 5px;
   background-color: rgb(57, 56, 56);
 }
+
 .search-container .dropdown_submenu .user-sub-profile-container .drop-down-container .main input:checked ~ .check {
   background-color: #FFBB54;
 }
+
 .search-container .dropdown_submenu .user-sub-profile-container .drop-down-container .check:after {
   content: "";
   position: absolute;
   display: none;
 }
+
 .search-container .dropdown_submenu .user-sub-profile-container .drop-down-container .main input:checked ~ .check:after {
   display: block;
 }
+
 .search-container .dropdown_submenu .user-sub-profile-container .drop-down-container .main .check:after {
   left: 5px;
   top: 1px;
@@ -156,11 +166,13 @@ a {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 .search-container .dropdown_submenu .user-sub-profile-container .lineclass {
   position: absolute;
   top: 5px;
   left: 50px;
 }
+
 .search-container .dropdown_submenu .user-sub-profile-container .lineclass .user-profile-heading {
   font-family: "Poppins";
   font-style: normal;
@@ -169,6 +181,7 @@ a {
   line-height: 21px;
   color: #ffffff;
 }
+
 .search-container .dropdown_submenu .user-sub-profile-container .lineclass .verified-heading {
   font-family: "Poppins";
   font-style: normal;
@@ -178,6 +191,7 @@ a {
   color: #ffffff;
   opacity: 0.4;
 }
+
 .search-container .dropdown_submenu .addprofile {
   display: flex;
   width: 300px;
@@ -186,6 +200,7 @@ a {
   cursor: pointer;
   padding-top: 20px;
 }
+
 .search-container .dropdown_submenu .addprofile .addprofiletext {
   font-weight: 400;
   font-size: 11px;
@@ -198,9 +213,11 @@ a {
   position: relative;
   cursor: pointer;
 }
+
 .sub-dropdown-show-container input[type=checkbox] {
   visibility: hidden;
 }
+
 .sub-dropdown-show-container .check {
   position: absolute;
   top: 5px;
@@ -210,17 +227,21 @@ a {
   border-radius: 5px;
   background-color: rgb(57, 56, 56);
 }
+
 .sub-dropdown-show-container .main input:checked ~ .check {
   background-color: #FFBB54;
 }
+
 .sub-dropdown-show-container .check:after {
   content: "";
   position: absolute;
   display: none;
 }
+
 .sub-dropdown-show-container .main input:checked ~ .check:after {
   display: block;
 }
+
 .sub-dropdown-show-container .main .check:after {
   left: 5px;
   top: 1px;
@@ -237,14 +258,17 @@ a {
   position: absolute;
   right: 20px;
 }
+
 .search-container .user-profile-container .drop-down-container .main {
   display: block;
   position: relative;
   cursor: pointer;
 }
+
 .search-container .user-profile-container .drop-down-container input[type=checkbox] {
   visibility: hidden;
 }
+
 .search-container .user-profile-container .drop-down-container .check {
   position: absolute;
   top: 5px;
@@ -254,17 +278,21 @@ a {
   border-radius: 5px;
   background-color: rgb(57, 56, 56);
 }
+
 .search-container .user-profile-container .drop-down-container .main input:checked ~ .check {
   background-color: #FFBB54;
 }
+
 .search-container .user-profile-container .drop-down-container .check:after {
   content: "";
   position: absolute;
   display: none;
 }
+
 .search-container .user-profile-container .drop-down-container .main input:checked ~ .check:after {
   display: block;
 }
+
 .search-container .user-profile-container .drop-down-container .main .check:after {
   left: 5px;
   top: 1px;
@@ -458,13 +486,16 @@ a {
   line-height: 22px;
   align-items: center;
 }
+
 .accordion-item:first-of-type .accorbd {
   background-color: #141414;
 }
+
 .accordion-item:first-of-type .accorbd .sub-accordion span {
   font-size: 14px;
   margin-left: -20px;
 }
+
 .accordion-item:first-of-type .accord-button {
   background-color: #141414 !important;
   border: none;
@@ -472,17 +503,21 @@ a {
   width: 300px;
   color: #ffffff;
 }
+
 .accordion-item:first-of-type .accord-button span {
   margin-left: 24px !important;
 }
+
 .accordion-item:first-of-type .accord-button .nav_nameTwo {
   margin-left: 40px;
 }
+
 .accordion-item:first-of-type .accord-button:hover {
   background: linear-gradient(to right, rgba(255, 187, 84, 0.2) 50.63%, rgba(255, 187, 84, 0) 100%) !important;
   color: #ffbb54 !important;
   position: relative;
 }
+
 .accordion-item:first-of-type .accordion-button::after {
   content: "";
   background-image: url(../../img/vectorarrow.png) !important;
@@ -497,21 +532,25 @@ a {
   top: 8px;
   margin-left: -25.5px;
 }
+
 .nav_list .nav-link-three {
   position: relative;
   top: 8px;
   margin-left: -28px;
   text-decoration: none;
 }
+
 .nav_list .nav_link_refer_a_friend {
   margin-left: -30px;
   position: relative;
   top: 8px;
   text-decoration: none;
 }
+
 .nav_list .nav_link_refer_a_friend span {
   margin-left: -2px;
 }
+
 .nav_list .nav_link {
   font-family: "Poppins";
   font-style: normal;
@@ -523,6 +562,7 @@ a {
   padding-bottom: 10px;
   color: #ffffff;
 }
+
 .nav_list .nav_link span {
   margin-left: -15px;
 }
@@ -688,12 +728,12 @@ a {
   border: 1px solid #FFFFFF;
   margin-bottom: 17px;
 }
+
 @media screen and (max-width: 600px) {
   .seperator {
     display: none;
   }
 }
-
 .main-header-text-container {
   position: relative;
   top: 0px;
@@ -1147,9 +1187,11 @@ a {
   position: relative;
   cursor: pointer;
 }
+
 .main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section input[type=checkbox] {
   visibility: hidden;
 }
+
 .main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section .check {
   position: absolute;
   top: 5px;
@@ -1159,17 +1201,21 @@ a {
   border-radius: 5px;
   background-color: rgb(57, 56, 56);
 }
+
 .main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section .main input:checked ~ .check {
   background-color: #ffbb54;
 }
+
 .main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section .check:after {
   content: "";
   position: absolute;
   display: none;
 }
+
 .main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section .main input:checked ~ .check:after {
   display: block;
 }
+
 .main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section .main .check:after {
   left: 5px;
   top: 1px;
@@ -1280,7 +1326,7 @@ a {
   }
 
   .show-navbar {
-    width: calc(var(--nav-width) + -8px);
+    width: calc(var(--nav-width) - 8px);
   }
 }
 @media screen and (max-width: 767px) {
@@ -1310,6 +1356,7 @@ a {
     padding-left: 80px;
     padding-top: 40px;
   }
+
   .navlist_two a {
     text-decoration: none !important;
   }

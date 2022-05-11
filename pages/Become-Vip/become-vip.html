@@ -6,9 +6,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="stylesheet" href="./style.css" />
-    <!-- Boostrap Links -->
-    <link rel="stylesheet" href="../../Bootstrap/bootstrap5/css/bootstrap.css">
-    <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.css">
+  <!-- Boostrap Links -->
+  <link rel="stylesheet" href="../../Bootstrap/bootstrap5/css/bootstrap.css">
+  <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.css">
 </head>
 
 <body id="body-pd">
@@ -262,6 +262,10 @@
       </div>
     </nav>
   </div>
+  <!-- divider -->
+
+  <div class="seperator"></div>
+
 
   <!-- Become-Vip Content heading -->
   <div class="main-container-text">
@@ -311,7 +315,7 @@
           </button>
         </div>
         <div class="basic-header-container">
-          <h1>Basic</h1>
+          <h1>Pro</h1>
           <p>Ultrices curabitur donec nunc vel.</p>
         </div>
         <div class="price-text-container">
@@ -344,7 +348,7 @@
           </button>
         </div>
         <div class="basic-header-container">
-          <h1>Basic</h1>
+          <h1>Beginner</h1>
           <p>Ultrices curabitur donec nunc vel.</p>
         </div>
         <div class="price-text-container">
@@ -377,7 +381,7 @@
           </button>
         </div>
         <div class="basic-header-container">
-          <h1>Basic</h1>
+          <h1>Standard</h1>
           <p>Ultrices curabitur donec nunc vel.</p>
         </div>
         <div class="price-text-container">
@@ -404,39 +408,40 @@
       </div>
     </div>
   </div>
- <!-- Bootstrap Javascript-Jquery -->
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
- integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
- crossorigin="anonymous"></script>
-<script type="text/javascript" src="../../Bootstrap/js/bootstrap.js"> </script>
-<script type="text/javascript" src="../../Bootstrap/bootstrap5/js/bootstrap.js"> </script>
-<script>
- document.addEventListener("DOMContentLoaded", function (event) {
-   const showNavbar = (toggleId, navId, bodyId, headerId) => {
-     const toggle = document.getElementById(toggleId),
-       nav = document.getElementById(navId),
-       bodypd = document.getElementById(bodyId),
-       headerpd = document.getElementById(headerId);
-     if (toggle && nav && bodypd && headerpd) {
-       toggle.addEventListener("click", () => {
-         toggle.classList.toggle("checkToggle");
-         nav.classList.toggle("show");
-         toggle.classList.toggle("bx-x");
-         bodypd.classList.toggle("body-pd");
-         headerpd.classList.toggle("body-pd");
-       });
-     }
-   };
-   showNavbar("header-toggle", "nav-bar", "body-pd", "header");
-   const linkColor = document.querySelectorAll(".nav_link");
-   function colorLink() {
-     if (linkColor) {
-       linkColor.forEach((l) => l.classList.remove("active"));
-       this.classList.add("active");
-     }
-   }
-   linkColor.forEach((l) => l.addEventListener("click", colorLink));
- });
-</script>
+  <!-- Bootstrap Javascript-Jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../../Bootstrap/js/bootstrap.js"> </script>
+  <script type="text/javascript" src="../../Bootstrap/bootstrap5/js/bootstrap.js"> </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      const showNavbar = (toggleId, navId, bodyId, headerId) => {
+        const toggle = document.getElementById(toggleId),
+          nav = document.getElementById(navId),
+          bodypd = document.getElementById(bodyId),
+          headerpd = document.getElementById(headerId);
+        if (toggle && nav && bodypd && headerpd) {
+          toggle.addEventListener("click", () => {
+            toggle.classList.toggle("checkToggle");
+            nav.classList.toggle("show");
+            toggle.classList.toggle("bx-x");
+            bodypd.classList.toggle("body-pd");
+            headerpd.classList.toggle("body-pd");
+          });
+        }
+      };
+      showNavbar("header-toggle", "nav-bar", "body-pd", "header");
+      const linkColor = document.querySelectorAll(".nav_link");
+      function colorLink() {
+        if (linkColor) {
+          linkColor.forEach((l) => l.classList.remove("active"));
+          this.classList.add("active");
+        }
+      }
+      linkColor.forEach((l) => l.addEventListener("click", colorLink));
+    });
+  </script>
 </body>
+
 </html>
