@@ -36,9 +36,12 @@ a {
 .search-container {
   width: 100%;
   display: flex;
+  padding-top: 20px;
   display: flex;
+  margin-right: 20px;
   justify-content: space-between;
   align-items: center;
+  margin-left: 40px;
 }
 
 .search-container .search-icon {
@@ -60,8 +63,8 @@ a {
   border: none;
   outline: none;
   color: white;
-  width: 100%;
-  height: 40px;
+  width: 571px;
+  height: 60px;
   padding-left: 60px;
 }
 
@@ -367,12 +370,13 @@ a {
 .header_toggle {
   color: white;
   font-size: 1.5rem;
+  z-index: 1;
   cursor: pointer;
   background-color: rgb(81, 80, 80);
-  position: relative;
-  left: 0;
+  position: fixed;
+  left: 50px;
   padding: 10px 6px 10px 6px;
-  margin-left: 20px;
+  margin-left: 40px;
   border-radius: 0px 10px 10px 0px;
 }
 
@@ -476,7 +480,7 @@ a {
   margin-left: 40px;
 }
 .accordion-item:first-of-type .accord-button:hover {
-  background: radial-gradient(354.23% 3112.34% at -29.41% 333.8%, rgba(255, 187, 84, 0.2) 50.63%, rgba(255, 187, 84, 0) 100%) !important;
+  background: linear-gradient(to right, rgba(255, 187, 84, 0.2) 50.63%, rgba(255, 187, 84, 0) 100%) !important;
   color: #ffbb54 !important;
 }
 .accordion-item:first-of-type .accordion-button::after {
@@ -526,9 +530,8 @@ a {
 }
 
 .nav_link:hover {
-  background: radial-gradient(354.23% 3112.34% at -29.41% 333.8%, rgba(255, 187, 84, 0.2) 50.63%, rgba(255, 187, 84, 0) 100%) !important;
+  background: linear-gradient(to right, rgba(255, 187, 84, 0.2) 50.63%, rgba(255, 187, 84, 0) 100%) !important;
   color: #ffbb54 !important;
-  width: 100% !important;
   height: 100% !important;
 }
 
@@ -1269,7 +1272,7 @@ a {
 }
 
 .checkToggle {
-  margin-left: 220px;
+  margin-left: 230px;
   border-radius: 10px 0px 0px 10px;
   transform: rotate(180deg);
 }
@@ -2235,7 +2238,6 @@ a {
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    /* identical to box height, or 133% */
     display: flex;
     align-items: center;
     color: #aeb6ce;
@@ -2273,6 +2275,11 @@ a {
     right: 5px !important;
     top: 5px !important;
     z-index: 1;
+  }
+}
+@media screen and (max-width: 1106px) {
+  .search-container .search-input-field {
+    width: 400px;
   }
 }
 

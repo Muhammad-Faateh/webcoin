@@ -38,6 +38,7 @@ a {
   width: 100%;
   display: flex;
   display: flex;
+  margin-left: 34px;
   justify-content: space-between;
   align-items: center;
 }
@@ -232,8 +233,9 @@ a {
   font-size: 1.5rem;
   cursor: pointer;
   background-color: rgb(81, 80, 80);
-  position: relative;
-  left: 0;
+  position: fixed;
+  z-index: 1;
+  left: 50px;
   padding: 10px 6px 10px 6px;
   margin-left: 40px;
   border-radius: 0px 10px 10px 0px;
@@ -390,7 +392,6 @@ a {
 .nav_link:hover {
   background: radial-gradient(354.23% 3112.34% at -29.41% 333.8%, rgba(255, 187, 84, 0.2) 50.63%, rgba(255, 187, 84, 0) 100%) !important;
   color: #ffbb54 !important;
-  width: 100% !important;
   height: 100% !important;
 }
 
@@ -458,9 +459,9 @@ a {
 }
 
 .friend-container {
-  padding: 0px 20px 20px 65px;
+  padding: 0px 20px 20px 50px;
   position: relative;
-  top: -50px;
+  top: -70px;
 }
 .friend-container .sub-container-wrapper {
   width: 100%;
@@ -636,7 +637,7 @@ a {
 }
 
 .checkToggle {
-  margin-left: 240px;
+  margin-left: 237px;
   border-radius: 10px 0px 0px 10px;
   transform: rotate(180deg);
 }

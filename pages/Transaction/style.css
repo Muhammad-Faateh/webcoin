@@ -40,6 +40,7 @@ a {
   width: 100%;
   display: flex;
   display: flex;
+  margin-left: 40px;
   justify-content: space-between;
   align-items: center;
 }
@@ -314,10 +315,11 @@ a {
   font-size: 1.5rem;
   cursor: pointer;
   background-color: rgb(81, 80, 80);
-  position: relative;
-  left: 0;
+  position: fixed;
+  left: 50px;
+  z-index: 1;
   padding: 10px 6px 10px 6px;
-  margin-left: 20px;
+  margin-left: 40px;
   border-radius: 0px 10px 10px 0px;
 }
 
@@ -433,6 +435,13 @@ a {
   transform: rotate(180deg);
 }
 
+.nav_list .sub-navllink-text-friend {
+  margin-top: 22px;
+  margin-bottom: 5px;
+}
+.nav_list .sub-navllink-text-friend span {
+  margin-left: -4px;
+}
 .nav_list .sub-navllink-text {
   position: relative;
   top: 8px;
@@ -465,7 +474,6 @@ a {
 .nav_link:hover {
   background: radial-gradient(354.23% 3112.34% at -29.41% 333.8%, rgba(255, 187, 84, 0.2) 50.63%, rgba(255, 187, 84, 0) 100%) !important;
   color: #ffbb54 !important;
-  width: 100% !important;
   height: 100% !important;
 }
 
@@ -884,8 +892,8 @@ a {
 }
 
 .transaction_Content {
-  padding-left: 140px;
-  margin-top: -50px !important;
+  padding-left: 124px;
+  margin-top: -70px !important;
 }
 .transaction_Content .table_Content .date_section {
   font-family: "Poppins";
@@ -982,7 +990,7 @@ a {
 }
 
 .checkToggle {
-  margin-left: 220px;
+  margin-left: 240px;
   border-radius: 10px 0px 0px 10px;
   transform: rotate(180deg);
 }

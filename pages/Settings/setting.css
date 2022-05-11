@@ -41,6 +41,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 40px;
 }
 .search-container .search-icon {
   position: relative;
@@ -268,10 +269,11 @@ a {
 .header_toggle {
   color: white;
   font-size: 1.5rem;
+  z-index: 1;
   cursor: pointer;
   background-color: rgb(81, 80, 80);
-  position: relative;
-  left: 0;
+  position: fixed;
+  left: 50px;
   padding: 10px 6px 10px 6px;
   margin-left: 40px;
   border-radius: 0px 10px 10px 0px;
@@ -389,6 +391,13 @@ a {
   transform: rotate(180deg);
 }
 
+.nav_list .sub-navlink-text-friend {
+  margin-top: 22px;
+  margin-bottom: 3px;
+}
+.nav_list .sub-navlink-text-friend span {
+  margin-left: -4px;
+}
 .nav_list .sub-navlink-text {
   position: relative;
   top: 8px;
@@ -421,7 +430,6 @@ a {
 .nav_link:hover {
   background: radial-gradient(354.23% 3112.34% at -29.41% 333.8%, rgba(255, 187, 84, 0.2) 50.63%, rgba(255, 187, 84, 0) 100%) !important;
   color: #ffbb54 !important;
-  width: 100% !important;
   height: 100% !important;
 }
 
@@ -825,7 +833,7 @@ a {
 }
 
 .main-setting-container-wrapper {
-  padding-left: 160px;
+  padding-left: 134px;
   padding-top: 10px;
   padding-bottom: 30px;
   padding-right: 100px;
@@ -858,7 +866,7 @@ a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #08071b;
+  background-color: #ffbb54;
   z-index: 100;
   opacity: 0.4;
   bottom: 0px;
@@ -945,7 +953,7 @@ a {
 }
 
 .checkToggle {
-  margin-left: 220px;
+  margin-left: 240px;
   border-radius: 10px 0px 0px 10px;
   transform: rotate(180deg);
 }
@@ -1054,8 +1062,10 @@ a {
   opacity: 0.6;
 }
 .sub-setting-container-wrapper .personal-info-button {
-  width: auto;
+  width: 217px;
   height: 42px;
+  background: rgba(255, 187, 84, 0.1);
+  border-radius: 10px;
   padding: 5px 15px;
   border-radius: 10px;
   border: none;
@@ -1075,7 +1085,7 @@ a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #08071b;
+  background-color: #ffbb54;
   z-index: 100;
   opacity: 0.4;
   left: 0px;
@@ -1110,7 +1120,7 @@ a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #08071b;
+  background-color: #ffbb54;
   z-index: 100;
   opacity: 0.4;
   left: 0px;
@@ -1280,34 +1290,32 @@ a {
   opacity: 0.6;
 }
 .sub-setting-container-wrapper .personal-info-button {
-  width: auto;
+  width: 217px;
   height: 42px;
   padding: 5px 15px;
   border-radius: 10px;
   border: none;
   margin-right: 10px;
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 24px;
-  background-color: #141414;
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: #FFBB54;
+  background: rgba(255, 187, 84, 0.1);
 }
 .sub-setting-container-wrapper .password-button {
   width: 126px;
   height: 42px;
-  color: #ffbb54;
   padding: 9px 24px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 24px;
-  background: rgba(255, 187, 84, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  background: #141414;
   border-radius: 10px;
-  border: none;
+  border: 1px solid rgb(101, 101, 101);
 }
 
 .change-password-content-container {
@@ -1454,6 +1462,21 @@ a {
     right: 5px !important;
     top: 5px !important;
     z-index: 1;
+  }
+
+  .sub-setting-container-wrapper .personal-info-button {
+    width: 185px;
+    height: 42px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .sub-setting-container-wrapper .password-button {
+    width: 126px;
+    height: 42px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 

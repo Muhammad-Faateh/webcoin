@@ -48,6 +48,7 @@ a {
 .searchcontainer {
   width: 100%;
   display: flex;
+  margin-left: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -327,12 +328,13 @@ a {
 .header_toggle {
   color: white;
   font-size: 1.5rem;
+  z-index: 1;
   cursor: pointer;
   background-color: rgb(81, 80, 80);
-  position: relative;
-  left: 0;
+  position: fixed;
+  left: 50px;
   padding: 10px 6px 10px 6px;
-  margin-left: 20px;
+  margin-left: 40px;
   border-radius: 0px 10px 10px 00px;
 }
 
@@ -455,6 +457,21 @@ a {
 }
 
 .nav_list {
+  .nav-link-sub-friend{
+    margin-top: 20px;
+    margin-bottom: 2px;
+    span{
+      margin-left: -4.2px;
+    }
+  }
+  .nav-link-sub-vip{
+    margin-top: 10px;
+    margin-left: -29px;
+    // margin-bottom: 2px;
+    span{
+      margin-left: -2px;
+    }
+  }
   .navlinkthree {
     position: relative;
     top: 8px;
@@ -492,7 +509,7 @@ a {
     rgba(255, 187, 84, 0) 100%
   ) !important;
   color: #ffbb54 !important;
-  width: 100% !important;
+  // width: 100% !important;
   height: 100% !important;
 }
 .nav_logo {
@@ -560,7 +577,7 @@ a {
 
 .main-container-text {
   width: 100%;
-  padding-left: 150px;
+  padding-left: 135px;
   padding-top: 10px;
   h1 {
     font-family: "Poppins";
@@ -766,7 +783,7 @@ a {
 }
 
 .checkToggle {
-  margin-left: 220px;
+  margin-left: 235px;
   border-radius: 10px 0px 0px 10px;
   transform: rotate(180deg);
 }
