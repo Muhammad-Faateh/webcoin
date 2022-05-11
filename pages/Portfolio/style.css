@@ -41,7 +41,7 @@ a {
   margin-right: 20px;
   justify-content: space-between;
   align-items: center;
-  margin-left: 40px;
+  margin-left: 80px;
 }
 
 .search-container .search-icon {
@@ -327,7 +327,7 @@ a {
 }
 
 .row .avatar {
-  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .row ::placeholder {
@@ -374,9 +374,11 @@ a {
   cursor: pointer;
   background-color: rgb(81, 80, 80);
   position: fixed;
-  left: 50px;
+  /* border: 1px solid white; */
+  left: 270px;
+  margin-top: 10px;
   padding: 10px 6px 10px 6px;
-  margin-left: 40px;
+  margin-left: 100px;
   border-radius: 0px 10px 10px 0px;
 }
 
@@ -397,7 +399,7 @@ a {
   position: fixed;
   top: 0;
   left: -30%;
-  width: 90px;
+  width: 374px;
   height: 100%;
   background-color: #141414;
   padding: 0.5rem 1rem 0 0;
@@ -451,16 +453,13 @@ a {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  margin-left: -26.5px;
+  padding-left: 40px;
   background-color: transparent !important;
   line-height: 22px;
   align-items: center;
 }
 .accordion-item:first-of-type .accorbd {
   background-color: #141414;
-}
-.accordion-item:first-of-type .accorbd .sub-accordion {
-  margin-left: 7px;
 }
 .accordion-item:first-of-type .accorbd .sub-accordion span {
   font-size: 14px;
@@ -470,11 +469,11 @@ a {
   background-color: #141414 !important;
   border: none;
   outline: none;
-  width: 280px;
+  width: 300px;
   color: #ffffff;
 }
 .accordion-item:first-of-type .accord-button span {
-  margin-left: 38px !important;
+  margin-left: 24px !important;
 }
 .accordion-item:first-of-type .accord-button .nav_nameTwo {
   margin-left: 40px;
@@ -482,6 +481,7 @@ a {
 .accordion-item:first-of-type .accord-button:hover {
   background: linear-gradient(to right, rgba(255, 187, 84, 0.2) 50.63%, rgba(255, 187, 84, 0) 100%) !important;
   color: #ffbb54 !important;
+  position: relative;
 }
 .accordion-item:first-of-type .accordion-button::after {
   content: "";
@@ -492,6 +492,11 @@ a {
   transform: rotate(180deg);
 }
 
+.nav_list .nav-link-support {
+  position: relative;
+  top: 8px;
+  margin-left: -25.5px;
+}
 .nav_list .nav-link-three {
   position: relative;
   top: 8px;
@@ -510,11 +515,16 @@ a {
 .nav_list .nav_link {
   font-family: "Poppins";
   font-style: normal;
+  padding-left: 70px;
   font-weight: 500;
   text-decoration: none !important;
   font-size: 16px;
   line-height: 27px;
+  padding-bottom: 10px;
   color: #ffffff;
+}
+.nav_list .nav_link span {
+  margin-left: -15px;
 }
 
 .nav_logo,
@@ -543,7 +553,7 @@ a {
   font-size: 36px;
   text-decoration: none !important;
   line-height: 54px;
-  margin-left: -45px;
+  margin-left: -10px;
   color: #ffffff;
 }
 
@@ -557,6 +567,7 @@ a {
   font-weight: 800;
   letter-spacing: 5px;
   margin-left: 13px;
+  margin-top: 20px;
 }
 
 .nav_link {
@@ -580,7 +591,7 @@ a {
   left: 0;
 }
 
-.active {
+.active::before .active {
   color: var(--white-color);
 }
 
@@ -590,7 +601,7 @@ a {
   left: 0;
   top: 0px;
   width: 2px;
-  height: 45px;
+  height: 44px;
   background-color: #ffbb54;
 }
 
@@ -669,6 +680,18 @@ a {
   left: 419px;
   background: url(image.png);
   border-radius: 14px;
+}
+
+.seperator {
+  margin-top: 24px;
+  opacity: 0.05;
+  border: 1px solid #FFFFFF;
+  margin-bottom: 17px;
+}
+@media screen and (max-width: 600px) {
+  .seperator {
+    display: none;
+  }
 }
 
 .main-header-text-container {
@@ -1256,8 +1279,8 @@ a {
     padding: 1rem 1rem 0 0;
   }
 
-  .show {
-    width: calc(var(--nav-width) + 150px);
+  .show-navbar {
+    width: calc(var(--nav-width) + -8px);
   }
 }
 @media screen and (max-width: 767px) {
@@ -1272,7 +1295,7 @@ a {
 }
 
 .checkToggle {
-  margin-left: 230px;
+  margin-left: -150px;
   border-radius: 10px 0px 0px 10px;
   transform: rotate(180deg);
 }

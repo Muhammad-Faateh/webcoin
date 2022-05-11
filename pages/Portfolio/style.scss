@@ -42,7 +42,7 @@ a {
   margin-right: 20px;
   justify-content: space-between;
   align-items: center;
-  margin-left: 40px;
+  margin-left: 80px;
 }
 
 .search-container .search-icon {
@@ -336,9 +336,8 @@ a {
 }
 
 .row .avatar {
-  margin-top: 8px;
+  margin-bottom: 8px;
 }
-
 .row ::placeholder {
   color: #c4c4c4;
   text-align: left;
@@ -351,6 +350,8 @@ a {
   opacity: 0.1;
   border: 1px solid #ffffff;
 }
+
+
 
 .navlist_two {
   display: none;
@@ -383,9 +384,10 @@ a {
   cursor: pointer;
   background-color: rgb(81, 80, 80);
   position: fixed;
-  left: 50px;
+  left: 275px;
+  margin-top: 10px;
   padding: 10px 6px 10px 6px;
-  margin-left: 40px;
+  margin-left: 100px;
   border-radius: 0px 10px 10px 00px;
 }
 
@@ -406,7 +408,7 @@ a {
   position: fixed;
   top: 0;
   left: -30%;
-  width: 90px;
+  width: 374px;
   height: 100%;
   background-color: #141414;
   padding: 0.5rem 1rem 0 0;
@@ -415,7 +417,7 @@ a {
 }
 
 .nav {
-  height: 100%;
+  height: 100%; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -458,7 +460,7 @@ a {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    margin-left: -26.5px;
+    padding-left: 40px;
     background-color: transparent !important;
     line-height: 22px;
     align-items: center;
@@ -466,7 +468,8 @@ a {
   .accorbd {
     background-color: #141414;
     .sub-accordion {
-      margin-left: 7px;
+      // margin-left: 0px;
+      // // border: 1px solid white;
       span {
         font-size: 14px;
         margin-left: -20px;
@@ -478,10 +481,10 @@ a {
     background-color: #141414 !important;
     border: none;
     outline: none;
-    width: 280px;
+    width: 300px;
     color: #ffffff;
     span {
-      margin-left: 38px !important;
+      margin-left: 24px !important;
     }
     .nav_nameTwo {
       margin-left: 40px;
@@ -489,9 +492,11 @@ a {
   }
 
   .accord-button:hover {
-    background: linear-gradient(to right ,rgba(255, 187, 84, 0.2) 50.63%, rgba(255, 187, 84, 0) 100%) !important;
-    color: #ffbb54 !important;
-  }
+     background: linear-gradient(to right ,rgba(255, 187, 84, 0.2) 50.63%, rgba(255, 187, 84, 0) 100%) !important;
+     color: #ffbb54 !important;
+     position: relative;
+     
+    }
 
   .accordion-button::after {
     content: "";
@@ -504,6 +509,11 @@ a {
 }
 
 .nav_list {
+  .nav-link-support{
+    position: relative;
+    top: 8px;
+    margin-left: -25.5px;
+  }
   .nav-link-three {
     position: relative;
     top: 8px;
@@ -523,11 +533,16 @@ a {
   .nav_link {
     font-family: "Poppins";
     font-style: normal;
+    padding-left: 70px;
     font-weight: 500;
     text-decoration: none !important;
     font-size: 16px;
     line-height: 27px;
+    padding-bottom: 10px;
     color: #ffffff;
+    span{
+      margin-left: -15px;
+    }
   }
 }
 
@@ -539,6 +554,7 @@ a {
   align-items: center;
   text-decoration: none;
   align-items: center;
+
   column-gap: 2.4rem;
   padding: 0.5rem 0rem 0.5rem 1.5rem;
 }
@@ -557,7 +573,8 @@ a {
   font-size: 36px;
   text-decoration: none !important;
   line-height: 54px;
-  margin-left: -45px;
+  
+  margin-left: -10px;
   color: #ffffff;
 }
 
@@ -570,11 +587,14 @@ a {
   color: var(--white-color);
   font-weight: 800;
   letter-spacing: 5px;
+ 
   margin-left: 13px;
+  margin-top: 20px;
 }
 
 .nav_link {
   position: relative;
+ 
   color: var(--first-color-light);
   margin-bottom: 1rem;
   left: 0;
@@ -592,7 +612,7 @@ a {
 
 .show {
   left: 0;
-}
+}.active::before
 
 .active {
   color: var(--white-color);
@@ -604,13 +624,16 @@ a {
   left: 0;
   top: 0px;
   width: 2px;
-  height: 45px;
+  height: 44px;
   background-color: #ffbb54;
 }
 
 .height-100 {
   height: 100vh;
 }
+
+
+
 
 .mainCard {
   margin-left: 30px;
@@ -684,7 +707,15 @@ a {
   background: url(image.png);
   border-radius: 14px;
 }
-
+.seperator{
+  margin-top: 24px;
+  opacity: 0.05;
+  border: 1px solid #FFFFFF;
+  margin-bottom: 17px;
+  @media screen and (max-width:600px) {
+    display:none;
+  }
+  }
 .main-header-text-container {
   position: relative;
   top: 00px;

@@ -84,9 +84,11 @@ body {
       h1 {
         margin-right: 40px;
         color: $white;
+        // border: 1px solid white !important;
         font-family: inherit;
         font-size: calc(#{$textSize} + 1vw);
-        font-weight: 400;
+        font-weight: 800;
+        
       }
     }
 
@@ -96,8 +98,9 @@ body {
       width: 100%;
       justify-content: space-between;
       align-items: center;
-
+  
       .menu {
+        
         a {
           padding: 0px 20px;
           text-decoration: none;
@@ -107,6 +110,7 @@ body {
           font-size: calc(#{$menuLink} + 1vw);
           line-height: 22px;
           font-family: inherit;
+          
           color: $white;
           opacity: 0.6;
 
@@ -131,8 +135,8 @@ body {
             border: 1px solid #ffbb54;
             border-radius: 15px;
             margin: 0px 10px;
-            width: calc(#{$social-iconsize} * 1vw);
-            height: calc(#{$social-iconsize} * 1vw);
+            width: 54px;
+            height: 54px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -248,7 +252,6 @@ body {
 
   .learn-more-button-text {
     margin-top: 34px;
-
     background: #ffbb54;
     border-radius: 14px;
     border: none;
@@ -429,7 +432,9 @@ body {
 
 .token-recommendation-image-one {
   position: absolute;
-  left: 0;
+  left: -600px;
+  width: 100%;
+  height: 100%;
 }
 
 .token-recommendation-image-two {
@@ -558,16 +563,16 @@ body {
           margin-left: -16px;
           width: 100%;
             .benefits-footer-text{
-              margin-left: 42px;
+              margin-left: 48px;
             }
             .team-footer-text{
-              margin-left: 20px;
+              margin-left: 30px;
             }
             .careers-footer-text{
-              margin-left: 20px;
+              margin-left: 25px;
             }
           a {
-            font-family: 'DM Sans';
+            font-family: 'Poppins';
             font-style: normal;
             font-weight: 400;
             font-size: 15px;
@@ -641,16 +646,23 @@ body {
         position: relative;
 
         .term {
-          font-family: "DM Sans";
+          font-family: "Poppins";
           font-style: normal;
+          // font-weight: 400;
+          width: 130px;
+          // border: 1px solid white;
           font-weight: 400;
-          width: 110px;
           font-size: 15px;
           line-height: 20px;
           /* identical to box height */
-          margin-right: 39px;
+          margin-right:10px;
           letter-spacing: -0.204545px;
           color: #ffffff;
+          
+        }
+        .term-condition-text{
+          position: relative;
+          left: -25 px;
         }
       }
     }
@@ -663,20 +675,16 @@ body {
     h1 {
       margin-right: 40px;
       color: $white;
-      font-family: inherit;
-      font-size: calc(#{$textSize} + 1vw);
-      font-weight: 400;
+      font-weight: 800;
+    
+      font-size: 36px;
+      line-height: 54px;
     }
   }
 }
 
 
 @media screen and (max-width: 1440px) {
-  .mobile-view-image-left {
-    height: 30%;
-    width: 40%;
-    opacity: 0.5;
-  }
 
   .auto-trading-bot-image-three {
     width: 90%;
@@ -702,6 +710,12 @@ body {
 }
 
 @media screen and (max-width: 1080px) {
+  .mobile-view-image-left {
+    height: 30%;
+    width: 40%;
+    opacity: 0.5;
+  }
+
   .register-users-container {
     .boxBorder {
       width: 275px;
@@ -837,6 +851,7 @@ body {
         margin-right: 40px;
         color: $white;
         font-family: inherit;
+        
         font-size: calc(#{$textSize} + 1vw);
         font-weight: 400;
       }
@@ -973,7 +988,7 @@ body {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 818px) {
   .footer {
     .sub-main-footer-container {
       .sub-footer-container {
@@ -1186,7 +1201,9 @@ body {
   }
 
   .portolfio-history-sub-container {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
+    margin-top: 50px !important;
+    // border: 1px solid white;
   }
 
   .mobile-view-image-left {
@@ -1298,6 +1315,9 @@ body {
     }
 
     .main-header-container {
+        h1 {
+          margin-left: 10px;
+        }
       .navbar-menu-container {
         display: none !important;
       }
@@ -1338,8 +1358,7 @@ body {
   margin-top: 20px;
 }
 
-@media screen and (max-width: 669px) {
-
+@media screen and (max-width: 600px) {
   .crypto-transaction-container {
     display: flex;
     justify-content: center;
@@ -1351,22 +1370,22 @@ body {
     justify-content: center;
 
     .paragraph {
-      display: flex;
-      justify-content: center;
-      width: 309px;
+      width: 320px;
       height: 101px;
-      left: 53px;
-      top: 134px;
-      font-family: "Poppins";
-      font-style: normal;
       font-weight: 600;
       font-size: 24px;
       line-height: 33px;
-      text-align: center;
-      color: #ffffff;
       margin-top: 12px;
     }
+  }.auto-trading-bot-container{
+    margin-top: 40px ;
+    margin-bottom: 20px;
   }
+
+
+.make-crypto-sub-text{
+  margin-top: 40px !important;
+}
 
   .content-wrapper {
     display: flex;
@@ -1377,7 +1396,7 @@ body {
       height: 47px;
       left: 59px;
       top: 249px;
-      margin-top: 60px;
+      margin-top: 10px;
       font-family: "Poppins";
       font-style: normal;
       font-weight: 400;
