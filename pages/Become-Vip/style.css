@@ -897,17 +897,7 @@ a {
 
 @media screen and (max-width: 991px) {
   .accordion-item:first-of-type .accordion-button {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    width: auto !important;
-    font-size: 16px;
-    padding-left: 40px;
-    background-color: transparent !important;
-    line-height: 22px;
-    align-items: center;
+    width: 100% !important;
   }
 
   .section2 {

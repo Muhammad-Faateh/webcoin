@@ -45,6 +45,9 @@ a {
   text-decoration: none;
 }
 
+
+
+
 .search-container{
   width: 100%;
   display: flex;
@@ -471,9 +474,6 @@ a {
   height: 44px;
   background-color: #ffbb54;
 }
-
-
- 
 
 .seperator{
   margin-top: 24px;
@@ -924,23 +924,11 @@ a {
 }
 
 @media screen and (max-width: 991px) {
-
-
   .accordion-item:first-of-type .accordion-button {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    width: auto !important;
-    font-size: 16px;
-    padding-left: 40px;
-    background-color: transparent !important;
-    line-height: 22px;
-    align-items: center;
+   
+    width: 100% !important;
+  
 }
-
-
   .section2 {
     padding-left: 20px;
     padding-right: 20px;
@@ -977,26 +965,14 @@ a {
   .header {
     padding: 40px 20px;
   }
-
   .header .openMobileMono {
     display: block !important;
     position: absolute;
     right: 20px;
   }
-
-
-
-
-
-
-
-
-
-
   .avatar {
     margin-left: 20px;
   }
-
   .navlist_two {
     display: block !important;
     padding-left: 80px;
@@ -1005,57 +981,39 @@ a {
   .navlist_two a {
     text-decoration: none !important;
   }
-
   .header {
     padding: 40px 20px;
   }
-
   .header .openMobileMono {
     display: block !important;
     position: absolute;
     right: 20px;
   }
-
   .header_toggle {
     display: none;
   }
-
   .left-navbar {
     display: none !important;
   }
-
   .left-navbar .nav {
     display: none !important;
   }
-
-
-
-
-
-
-
-
   .search-container .bellIcon {
     display: none;
   }
-
   .search-container .search-icon {
     display: none;
   }
-
   .search-container .search-input-field {
     display: none;
   }
-
   .search-container .icon {
     display: none;
   }
-
   .search-container .user-profile-container {
 
     display: none !important;
   }
-
   .search-container {
 
     display: none !important;
@@ -1065,16 +1023,9 @@ a {
     padding-left: 0px;
     padding-top: 40px;
 }
-
-
-
-
-
-
   .header_toggle {
     display: none;
   }
-
   .l-navbar {
     display: none !important;
   }
@@ -1229,18 +1180,6 @@ a {
     }
   }
 }
-
-@media screen and (max-width: 420px) {
-  .navbar-toggler {
-    // position: fixed !important;
-    // right: 5px !important;
-    // top: 5px !important;
-    // z-index: 1;
-  }
-}
-
-
-
 
 @media screen and (max-width: 1145px) {
   .search-container .search-input-field {

@@ -1214,6 +1214,10 @@ a {
 }
 
 @media screen and (max-width: 991px) {
+  .accordion-item:first-of-type .accordion-button {
+    width: 100% !important;
+  }
+
   .avatar {
     margin-left: 20px;
   }
