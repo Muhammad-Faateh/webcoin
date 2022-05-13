@@ -31,7 +31,7 @@
           <i><img src="../../img/frame.png" alt="" /></i>
           <span>Portfolio Tracker</span>
         </a>
-        <a href="articleview.html" class="nav_link">
+        <a href="article-view.html" class="nav_link">
           <i>
             <img src="../../img/article-icon-logo.png" alt="" />
           </i>
@@ -43,7 +43,7 @@
           </i>
           <span>Crypto Suggest</span>
         </a>
-        <a href="videolessons.html" class="nav_link">
+        <a href="video-lessons.html" class="nav_link">
           <i>
             <img src="../../img/vid.png" alt="" />
           </i>
@@ -70,7 +70,7 @@
                       <span>Transactions</span>
                     </a>
                   </div>
-                  <div class="sub-accordion nav_link">
+                  <div class="sub-accordion nav_link nav-link-trading">
                     <a href="settings.html">
   
                       <i>
@@ -97,7 +97,7 @@
           </i>
           <span>Support</span>
         </a>
-        <a href="referafriend.html" class="nav_link nav_link_refer_a_friend">
+        <a href="refer-a-friend.html" class="nav_link nav_link_refer_a_friend">
           <i>
             <img src="../../img/profile.png" alt="" />
           </i>
@@ -189,7 +189,7 @@
             <i><img src="../../img/frame.png" alt="" /></i>
             <span>Portfolio Tracker</span>
           </a>
-          <a href="articleview.html" class="nav_link">
+          <a href="article-view.html" class="nav_link">
             <i>
               <img src="../../img/article-icon-logo.png" alt="" />
             </i>
@@ -201,7 +201,7 @@
             </i>
             <span>Crypto Suggest</span>
           </a>
-          <a href="videolessons.html" class="nav_link">
+          <a href="video-lessons.html" class="nav_link">
             <i>
               <img src="../../img/vid.png" alt="" />
             </i>
@@ -260,7 +260,7 @@
             </i>
             <span>Support</span>
           </a>
-          <a href="referafriend.html" class="nav_link nav_link_refer_a_friend">
+          <a href="refer-a-friend.html" class="nav_link nav_link_refer_a_friend">
             <i>
               <img src="../../img/profile.png" alt="" />
             </i>
@@ -276,12 +276,9 @@
       </div>
     </nav>
   </div>
-
-
-
   <!-- <div class="seperator"></div> -->
   <!-- Overview Header Section -->
-  <div class="main-header-text-container">
+  <div class="main-header-text-container" id="mainContainerId7">
     <div class="sub-main-header-text-container">
       <h4 class="main-header-text">Overview</h4>
       <p class="main-header-secondary-text">
@@ -291,7 +288,7 @@
     </div>
   </div>
   <!-- Main Content Section -->
-  <div class="main-container">
+  <div class="main-container" id="mainContainerId8">
     <div class="main-sub-container">
       <!-- Available Balance Container -->
       <div class="available-balance-main-container">
@@ -457,7 +454,7 @@
       <div class="tabs-container-wrapper">
         <nav>
           <div class="nav flex-row nav-tabs tabs-main-container" id="nav-tab" role="tablist">
-            <a class="navitemclass" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab">Buy</a>
+            <a class="navitemclass"  id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab">Buy</a>
             <a class="navitemclass" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab">Sell</a>
           </div>
         </nav>
@@ -557,8 +554,6 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
   <script>
     var xValues = [];
     var yValues = [10, 10, 10, 10, 50, 10, 30, 20, 50, 10, 10, 50, 10, 30, 20, 50, 10, 10];
@@ -592,7 +587,6 @@
       }
     }
   </script>
-
   <script>
     var xValues = [];
     var yValues = [10, 10, 10, 10, 50, 10, 30, 20, 50, 10, 10, 50, 10, 30, 20, 50, 10, 10];
@@ -626,7 +620,6 @@
       }
     }
   </script>
-
   <script>
     var xValues = [];
     var yValues = [10, 10, 10, 10, 50, 10, 30, 20, 50, 10, 10, 50, 10, 30, 20, 50, 10, 10];
@@ -660,7 +653,6 @@
       }
     }
   </script>
-
   <script>
     var xValues = [];
     var yValues = [10, 10, 10, 10, 50, 10, 30, 20, 50, 10, 10, 50, 10, 30, 20, 50, 10, 10];
@@ -694,7 +686,6 @@
       }
     }
   </script>
-
   <script>
     google.charts.load('current', { packages: ['corechart'] });
     google.charts.setOnLoadCallback(drawChart);
@@ -716,7 +707,6 @@
       chart.draw(data, options);
     }
   </script>
-
   <script>
     document.addEventListener("DOMContentLoaded", function (event) {
       const showNavbar = (toggleId, navId, bodyId, headerId) => {
@@ -747,7 +737,34 @@
 
     });
   </script>
+   <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        const homeTab = document.getElementById("nav-home-tab");
+        const profileTab = document.getElementById("nav-profile-tab");
+        homeTab.style.borderBottom = "1px solid white";
+          homeTab.addEventListener("click", ()=>{
+            homeTab.style.borderBottom = "1px solid white";
+            profileTab.style.borderBottom = "none";
+          })
+          profileTab.addEventListener("click", ()=>{
+            homeTab.style.border = "none";
+            profileTab.style.borderBottom = "1px solid white";
+          })
+      })
+   </script>
+
+<script>
+  $('#header-toggle').click(function(){
+    var padding = $('#mainContainerId7').css('padding');
+var newPadding = (padding=='0px 100px 0px 380px')?'0px 100px 0px 180px':'0px 100px 0px 380px';
+$('#mainContainerId7').css('padding',newPadding);
+
+var paddingtwo = $('#mainContainerId8').css('padding');
+var newPaddingtwo = (paddingtwo =='0px 10px 0px 200px')?'0px 0px 0px 00px':'0px 10px 0px 200px';
+$('#mainContainerId8').css('padding',newPaddingtwo);
+})
+
+</script>
 
 </body>
-
 </html>

@@ -29,7 +29,7 @@
         <i><img src="../../img/frame.png" alt="" /></i>
         <span>Portfolio Tracker</span>
       </a>
-      <a href="articleview.html" class="nav_link active-link">
+      <a href="article-view.html" class="nav_link active-link">
         <i>
           <img src="../../img/article-icon-logo.png" alt="" />
         </i>
@@ -41,7 +41,7 @@
         </i>
         <span>Crypto Suggest</span>
       </a>
-      <a href="videolessons.html" class="nav_link">
+      <a href="video-lessons.html" class="nav_link">
         <i>
           <img src="../../img/vid.png" alt="" />
         </i>
@@ -68,7 +68,7 @@
                     <span>Transactions</span>
                   </a>
                 </div>
-                <div class="sub-accordion nav_link">
+                <div class="sub-accordion nav_link nav-link-trading">
                   <a href="settings.html">
 
                     <i>
@@ -95,7 +95,7 @@
         </i>
         <span>Support</span>
       </a>
-      <a href="referafriend.html" class="nav_link nav_link_refer_a_friend">
+      <a href="refer-a-friend.html" class="nav_link nav_link_refer_a_friend">
         <i>
           <img src="../../img/profile.png" alt="" />
         </i>
@@ -187,7 +187,7 @@
           <i><img src="../../img/frame.png" alt="" /></i>
           <span>Portfolio Tracker</span>
         </a>
-        <a href="articleview.html" class="nav_link active-link">
+        <a href="article-view.html" class="nav_link active-link">
           <i>
             <img src="../../img/article-icon-logo.png" alt="" />
           </i>
@@ -199,7 +199,7 @@
           </i>
           <span>Crypto Suggest</span>
         </a>
-        <a href="videolessons.html" class="nav_link">
+        <a href="video-lessons.html" class="nav_link">
           <i>
             <img src="../../img/vid.png" alt="" />
           </i>
@@ -258,7 +258,7 @@
           </i>
           <span>Support</span>
         </a>
-        <a href="referafriend.html" class="nav_link nav_link_refer_a_friend">
+        <a href="refer-a-friend.html" class="nav_link nav_link_refer_a_friend">
           <i>
             <img src="../../img/profile.png" alt="" />
           </i>
@@ -277,7 +277,7 @@
 
   <div class="seperator"></div>
   <!-- aticle main content -->
-  <div class="article_content">
+  <div class="article_content" id="mainContainerId5">
     <div>
       <div class="new_Display">
         <div class="mobile_image">
@@ -358,6 +358,14 @@
       linkColor.forEach((l) => l.addEventListener("click", colorLink));
     });
   </script>
+
+<script>
+  $('#header-toggle').click(function(){
+    var padding = $('#mainContainerId5').css('padding');
+var newPadding = (padding=='0px 40px 0px 380px')?'0px 50px 0px 175px':'0px 40px 0px 380px';
+$('#mainContainerId5').css('padding',newPadding);
+})
+</script>
 </body>
 
 </html>

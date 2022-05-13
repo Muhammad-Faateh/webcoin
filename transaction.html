@@ -32,7 +32,7 @@
         <i><img src="../../img/frame.png" alt="" /></i>
         <span>Portfolio Tracker</span>
       </a>
-      <a href="articleview.html" class="nav_link">
+      <a href="article-view.html" class="nav_link">
         <i>
           <img src="../../img/article-icon-logo.png" alt="" />
         </i>
@@ -44,7 +44,7 @@
         </i>
         <span>Crypto Suggest</span>
       </a>
-      <a href="videolessons.html" class="nav_link">
+      <a href="video-lessons.html" class="nav_link">
         <i>
           <img src="../../img/vid.png" alt="" />
         </i>
@@ -71,7 +71,7 @@
                     <span>Transactions</span>
                   </a>
                 </div>
-                <div class="sub-accordion nav_link">
+                <div class="sub-accordion nav_link nav-link-trading">
                   <a href="#">
 
                     <i>
@@ -98,7 +98,7 @@
         </i>
         <span>Support</span>
       </a>
-      <a href="referafriend.html" class="nav_link nav_link_refer_a_friend ">
+      <a href="refer-a-friend.html" class="nav_link nav_link_refer_a_friend ">
         <i>
           <img src="../../img/profile.png" alt="" />
         </i>
@@ -190,7 +190,7 @@
           <i><img src="../../img/frame.png" alt="" /></i>
           <span>Portfolio Tracker</span>
         </a>
-        <a href="articleview.html" class="nav_link">
+        <a href="article-view.html" class="nav_link">
           <i>
             <img src="../../img/article-icon-logo.png" alt="" />
           </i>
@@ -202,7 +202,7 @@
           </i>
           <span>Crypto Suggest</span>
         </a>
-        <a href="videolessons.html" class="nav_link">
+        <a href="video-lessons.html" class="nav_link">
           <i>
             <img src="../../img/vid.png" alt="" />
           </i>
@@ -261,7 +261,7 @@
           </i>
           <span>Support</span>
         </a>
-        <a href="referafriend.html" class="nav_link nav_link_refer_a_friend">
+        <a href="refer-a-friend.html" class="nav_link nav_link_refer_a_friend">
           <i>
             <img src="../../img/profile.png" alt="" />
           </i>
@@ -279,7 +279,7 @@
 </div>
 
   <!--Transaction Main Container-->
-  <div class="transaction_Content">
+  <div class="transaction_Content" id="mainContainerId0">
     <h1 class="transaction_Heading_First">Transaction</h1>
     <p class="transaction_Para_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam lorem</p>
     <div class="table_Content">
@@ -505,6 +505,16 @@
       linkColor.forEach((l) => l.addEventListener("click", colorLink));
     });
   </script>
+
+
+
+<script>
+  $('#header-toggle').click(function(){
+    var padding = $('#mainContainerId0').css('padding');
+var newPadding = (padding=='0px 50px 0px 340px')?'0px 50px 0px 130px':'0px 50px 0px 340px';
+$('#mainContainerId0').css('padding',newPadding);
+})
+</script>
 </body>
 
 </html>
