@@ -33,6 +33,39 @@ a {
   text-decoration: none;
 }
 
+.main-toggler-container {
+  display: flex;
+  align-items: center;
+}
+
+.bell-icon-button {
+  display: none !important;
+  margin-right: 10px;
+}
+@media screen and (max-width: 991px) {
+  .bell-icon-button {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 420px) {
+  .bell-icon-button {
+    margin-right: 80px !important;
+    margin-top: 2px !important;
+  }
+}
+
+.navbar-close-icon {
+  display: none;
+}
+
+.navbar-toggler-open {
+  display: none !important;
+}
+
+.main-icon-button {
+  display: flex;
+}
+
 #mainContainerId5 {
   padding: 0px 40px 0px 380px;
 }
@@ -83,9 +116,6 @@ a {
   display: block;
   position: relative;
   cursor: pointer;
-}
-.search-container .user-profile-container .drop-down-container input[type=checkbox] {
-  visibility: hidden;
 }
 .search-container .user-profile-container .lineclass {
   position: absolute;
@@ -183,7 +213,7 @@ a {
   display: none;
 }
 .search-container .dropdown-submenu .user-sub-profile-container .drop-down-container .main input:checked ~ .check {
-  background-color: #FFBB54;
+  background-color: #ffbb54;
 }
 .search-container .dropdown-submenu .user-sub-profile-container .drop-down-container .check {
   position: absolute;
@@ -496,445 +526,6 @@ a {
   background-color: #ffbb54;
 }
 
-.mainCard {
-  margin-left: 30px;
-  margin-top: 20px;
-  background-color: #0e0e0e;
-  border-radius: 28px;
-}
-.mainCard .videoclass {
-  width: 320px;
-}
-
-.videoheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 38px;
-  line-height: 57px;
-  color: #ffffff;
-}
-
-.secondarytext {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-  color: #ffffff;
-  opacity: 0.6;
-}
-
-.secondaryheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 28px;
-  color: #ffffff;
-}
-
-.thirdheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  opacity: 0.6;
-}
-
-.headingcontainer {
-  width: 200px;
-}
-
-.maincard .videoclass {
-  width: 320px;
-}
-.maincard .submaincontainer {
-  padding: 0px 32px;
-}
-
-.datadiv {
-  background-color: #0e0e0e !important;
-  padding: 30px;
-}
-
-.videodiv {
-  width: 332px;
-  left: 419px;
-  background: url(image.png);
-  border-radius: 14px;
-}
-
-.firstcontainer {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 200px !important;
-}
-.firstcontainer .mainContainer {
-  margin-top: 100px;
-  width: 100%;
-}
-.firstcontainer .mainContainer .tabscontainer {
-  border: 1px solid white;
-  margin-right: -500px;
-  margin-left: 50px;
-  height: 300px;
-  margin-top: -50px;
-}
-.firstcontainer .mainContainer .secondmaincontainer {
-  padding: 40px;
-  border-radius: 30px;
-  width: 100%;
-  position: relative;
-  background: #0e0e0e;
-}
-.firstcontainer .mainContainer .secondmaincontainer .containerimage1 {
-  position: absolute;
-  left: 40%;
-  top: 0;
-}
-.firstcontainer .mainContainer .secondmaincontainer .containerimage2 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-.firstcontainer .mainContainer .secondmaincontainer .thirdcontainer {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer {
-  display: flex;
-  margin-top: 10px;
-}
-.firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .thirdsubsubcontainer {
-  background: #323232;
-  border-radius: 14px;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .transactions {
-  margin-left: 14px;
-}
-.firstcontainer .mainContainer .secondmaincontainer .paratext {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-}
-.firstcontainer .mainContainer .secondmaincontainer .paratexttwo {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  margin-bottom: 5px;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  opacity: 0.55;
-}
-.firstcontainer .mainContainer .secondmaincontainer .headertext {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
-  color: #ffffff;
-}
-.firstcontainer .mainContainer .secondmaincontainer .parayellowtext {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 50px;
-  line-height: 75px;
-  color: #ffbb54;
-}
-.firstcontainer .mainContainer .assetmaincontainer {
-  margin-top: 30px;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #ffffff;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer {
-  display: flex;
-  padding: 10px 30px 10px 30px;
-  justify-content: space-evenly;
-  background: #0e0e0e;
-  border-radius: 18px;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer {
-  display: flex;
-  margin-left: 70px;
-  flex-direction: column;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .bitcoinheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  color: #ffffff;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .BTCheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  opacity: 0.8;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .sellheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #14bd6c;
-  margin-left: 10px;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .firstnumberheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  color: #ffffff;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .seconddateheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-  text-align: right;
-  color: #ffffff;
-  opacity: 0.6;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .coinbaseheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 15px;
-  color: #ffffff;
-  opacity: 0.4;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .lastdateheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-  color: #14bd6c;
-}
-.firstcontainer .twocontainer {
-  background: #0e0e0e;
-  border-radius: 18px;
-  width: 70%;
-  height: 100%;
-  margin-left: 50px;
-}
-.firstcontainer .twocontainer .twosubcontainer {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 20px;
-}
-.firstcontainer .twocontainer .twosubcontainer .paratexttwo {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  opacity: 0.55;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownmaincontainer {
-  width: 90px;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownmaincontainer .dropdownbutton {
-  background: #0e0e0e;
-  border-radius: 18px;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer {
-  width: 20%;
-  position: relative;
-  left: -200px;
-  background: #161616;
-  border-radius: 12px;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  border-bottom: 1px solid black;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .btcheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecondcontainer .dropdownthirdcontainer .numberheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
-  color: #aeb6ce;
-}
-.firstcontainer .twosubcontainervalue {
-  margin-left: 20px;
-  display: flex;
-  align-items: center;
-}
-.firstcontainer .twosubcontainervalue .greenrating {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 10px;
-  line-height: 15px;
-  margin-left: 20px;
-  margin-top: 10px;
-  color: #3ed10a;
-}
-.firstcontainer .twosubcontainervalue .headertext {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  color: #ffffff;
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    margin: calc(var(--header-height) + 1rem) 0 0 0;
-    /* padding-left: calc(var(--nav-width) + 2rem) */
-  }
-
-  .header {
-    height: calc(var(--header-height) + 1rem);
-    padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
-  }
-
-  .header-img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .header-img img {
-    width: 45px;
-  }
-
-  .left-navbar {
-    left: 0;
-    padding: 1rem 0.5rem 0 0;
-  }
-
-  .show-navbar {
-    width: calc(var(--nav-width) - 5px);
-  }
-}
-@media screen and (max-width: 767px) {
-  .body-pd {
-    padding-left: 0px;
-  }
-}
-.test {
-  padding-left: -100px;
-  z-index: 1;
-}
-
-@media screen and (max-width: 860px) {
-  .header {
-    padding: 40px 20px;
-  }
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .left-navbar {
-    display: none !important;
-  }
-  .left-navbar .nav {
-    display: none !important;
-  }
-
-  .search-container .search-icon {
-    display: none;
-  }
-  .search-container .search-input-field {
-    display: none;
-  }
-  .search-container .icon {
-    display: none;
-  }
-  .search-container .user-profile-container {
-    width: 220px !important;
-    margin-left: 0px !important;
-    height: 42px !important;
-    padding-left: 10px !important;
-    border: none !important;
-    border-radius: 0px !important;
-  }
-  .search-container .user-profile-container .dropdown-container {
-    display: none !important;
-    position: absolute;
-    right: 10px !important;
-  }
-  .search-container .user-profile-container .profile-info {
-    position: absolute;
-    top: 2px !important;
-    left: 70px;
-  }
-  .search-container .user-profile-container .profile-info .user-profile-heading {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    color: #ffffff;
-  }
-  .search-container .user-profile-container .profile-info .verified-heading {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 16px;
-    position: absolute;
-    bottom: -23px;
-    color: #ffffff;
-    opacity: 0.4;
-  }
-}
 .article {
   display: none;
 }
@@ -955,7 +546,7 @@ a {
 .seperator {
   margin-top: 24px;
   opacity: 0.05;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 @media screen and (max-width: 600px) {
   .seperator {
@@ -1075,7 +666,6 @@ a {
   font-weight: 400;
   font-size: 17px;
   line-height: 37px;
-  /* or 218% */
   padding-right: 50px;
   letter-spacing: 0.02em;
   color: #7f7f7f;
@@ -1148,26 +738,11 @@ a {
 
   .avatar {
     margin-left: 20px;
-  }
-
-  .navlist-two {
-    display: block !important;
-    padding-left: 20px;
-    padding-top: 40px;
+    margin-top: 10px;
   }
 
   .navlist-two a {
     text-decoration: none !important;
-  }
-
-  .header {
-    padding: 40px 20px;
-  }
-
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
   }
 
   .header-toggle {
@@ -1182,28 +757,8 @@ a {
     display: none !important;
   }
 
-  .search-container .bellIcon {
-    display: none;
-  }
-
-  .search-container .search-icon {
-    display: none;
-  }
-
-  .search-container .search-input-field {
-    display: none;
-  }
-
-  .search-container .icon {
-    display: none;
-  }
-
-  .search-container .user-profile-container {
-    display: none !important;
-  }
-
   .search-container {
-    display: none !important;
+    display: none;
   }
 
   .navlist-two {
@@ -1217,82 +772,6 @@ a {
     padding-right: 20px;
     margin-top: 10px;
   }
-
-  .transactionContent {
-    padding-left: 40px;
-    margin-top: -50px !important;
-  }
-
-  .formcontentDiv {
-    padding: 20px 20px 20px 20px;
-  }
-
-  .newcontainer {
-    display: none !important;
-  }
-
-  .maincontainer {
-    margin-left: -20px;
-    padding-left: 0px;
-    margin-top: -10px;
-  }
-
-  .topdiv {
-    position: relative;
-    top: -10px;
-    padding-left: 20px;
-  }
-
-  .navlist-twoclass {
-    display: block !important;
-    padding-left: 80px;
-    padding-top: 40px;
-  }
-  .navlist-twoclass a {
-    text-decoration: none !important;
-  }
-
-  .header {
-    padding: 40px 20px;
-  }
-
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .header-toggle {
-    display: none;
-  }
-
-  .left-navbar {
-    display: none !important;
-  }
-
-  .left-navbar .nav {
-    display: none !important;
-  }
-
-  .search-container .bell-Icon {
-    display: none;
-  }
-
-  .search-container .search-icon {
-    display: none;
-  }
-
-  .search-container .user-profile-container {
-    display: none !important;
-  }
-
-  .search-container .search-input-field {
-    display: none;
-  }
-
-  .search-container .icon {
-    display: none;
-  }
 }
 @media screen and (max-width: 420px) {
   .navbar-toggler {
@@ -1300,11 +779,6 @@ a {
     right: 5px !important;
     top: 5px !important;
     z-index: 1;
-  }
-}
-@media screen and (max-width: 1145px) {
-  .search-container .search-input-field {
-    width: 400px;
   }
 }
 #mainContainerId4 {
@@ -1316,18 +790,6 @@ a {
     padding: 30px 10px 0px 10px !important;
   }
 }
-.seperator {
-  margin-top: 24px;
-  opacity: 0.05;
-  border: 1px solid #FFFFFF;
-  margin-bottom: 28px;
-}
-@media screen and (max-width: 600px) {
-  .seperator {
-    display: none;
-  }
-}
-
 .main-container-text {
   width: 100%;
   padding-left: 165px;
@@ -1479,6 +941,25 @@ a {
   line-height: 24px;
   color: #08071b;
 }
+.card-container .sub-card-container .free-trial-container button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 100;
+  opacity: 0.4;
+  bottom: 0px;
+  left: 0px;
+  width: 0px;
+  border-radius: 10px 10px 10px 10px;
+  transition: 0.6s;
+}
+.card-container .sub-card-container .free-trial-container button:hover::before {
+  width: 100%;
+  right: 0px;
+  top: 0px;
+}
 .card-container .sub-card-container .list-text-main-container {
   padding: 30px 0px 30px 18px;
 }
@@ -1498,94 +979,6 @@ a {
   color: white;
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    margin: calc(var(--header-height) + 1rem) 0 0 0;
-    /* padding-left: calc(var(--nav-width) + 2rem) */
-  }
-
-  .header {
-    height: calc(var(--header-height) + 1rem);
-    padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
-  }
-
-  .header-img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .header-img img {
-    width: 45px;
-  }
-
-  .left-navbar {
-    left: 0;
-    padding: 1rem 1rem 0 0;
-  }
-
-  .show-navbar {
-    width: calc(var(--nav-width) - 5px);
-  }
-}
-@media screen and (max-width: 767px) {
-  .body-pd {
-    /* padding-left: calc(var(--nav-width) + 188px) */
-    padding-left: 0px;
-  }
-}
-.test {
-  padding-left: -100px;
-  z-index: 1;
-}
-
-@media screen and (max-width: 860px) {
-  .searchcontainer .searchicon {
-    display: none;
-  }
-  .searchcontainer .searchinputfield {
-    display: none;
-  }
-  .searchcontainer .icon {
-    display: none;
-  }
-  .searchcontainer .secondcontainer {
-    width: 220px !important;
-    margin-left: 0px !important;
-    height: 42px !important;
-    padding-left: 10px !important;
-    border: none !important;
-    border-radius: 0px !important;
-  }
-  .searchcontainer .secondcontainer .dropd {
-    display: none !important;
-    position: absolute;
-    right: 10px !important;
-  }
-  .searchcontainer .secondcontainer .lineclass {
-    position: absolute;
-    top: 2px !important;
-    left: 70px;
-  }
-  .searchcontainer .secondcontainer .lineclass .userprofileheading {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    color: #ffffff;
-  }
-  .searchcontainer .secondcontainer .lineclass .verifiedheading {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 16px;
-    position: absolute;
-    bottom: -23px;
-    color: #ffffff;
-    opacity: 0.4;
-  }
-}
 .article {
   display: none;
 }
@@ -1594,12 +987,6 @@ a {
     display: block;
     color: white;
     width: 158%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .bellIcon {
-    display: none;
   }
 }
 
@@ -1714,7 +1101,6 @@ a {
   font-weight: 400;
   font-size: 17px;
   line-height: 37px;
-  /* or 218% */
   padding-right: 50px;
   letter-spacing: 0.02em;
   color: #7f7f7f;
@@ -1731,158 +1117,6 @@ a {
 }
 
 @media screen and (max-width: 991px) {
-  .accordion-item:first-of-type .accordion-button {
-    width: 100% !important;
-  }
-
-  .section2 {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 10px;
-  }
-
-  .transactionContent {
-    padding-left: 40px;
-    margin-top: -50px !important;
-  }
-
-  .formcontentDiv {
-    padding: 20px 20px 20px 20px;
-  }
-
-  .newcontainer {
-    display: none !important;
-  }
-
-  .maincontainer {
-    margin-left: -20px;
-    padding-left: 0px;
-    margin-top: -10px;
-  }
-
-  .topdiv {
-    position: relative;
-    top: -10px;
-    padding-left: 20px;
-  }
-
-  .navlist-twoclass {
-    display: block !important;
-    padding-left: 40px;
-    padding-top: 40px;
-  }
-  .navlist-twoclass a {
-    text-decoration: none !important;
-  }
-
-  .header {
-    padding: 40px 20px;
-  }
-
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .avatar {
-    margin-left: 20px;
-  }
-
-  .navlist-two {
-    display: block !important;
-    padding-left: 20px;
-    padding-top: 40px;
-  }
-
-  .navlist-two a {
-    text-decoration: none !important;
-  }
-
-  .header {
-    padding: 40px 20px;
-  }
-
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .header-toggle {
-    display: none;
-  }
-
-  .left-navbar {
-    display: none !important;
-  }
-
-  .left-navbar .nav {
-    display: none !important;
-  }
-
-  .search-container .bellIcon {
-    display: none;
-  }
-
-  .search-container .search-icon {
-    display: none;
-  }
-
-  .search-container .search-input-field {
-    display: none;
-  }
-
-  .search-container .icon {
-    display: none;
-  }
-
-  .search-container .user-profile-container {
-    display: none !important;
-  }
-
-  .search-container {
-    display: none !important;
-  }
-
-  .navlist-two {
-    display: block !important;
-    padding-left: 0px;
-    padding-top: 40px;
-  }
-
-  .header-toggle {
-    display: none;
-  }
-
-  .l-navbar {
-    display: none !important;
-  }
-
-  .l-navbar .nav {
-    display: none !important;
-  }
-
-  .searchcontainer .bellIcon {
-    display: none;
-  }
-
-  .searchcontainer .searchicon {
-    display: none;
-  }
-
-  .searchcontainer .secondcontainer {
-    display: none !important;
-  }
-
-  .searchcontainer .searchinputfield {
-    display: none;
-  }
-
-  .searchcontainer .icon {
-    display: none;
-  }
-
   .main-container-text {
     width: 100%;
     padding-left: 0px;
@@ -2044,7 +1278,7 @@ a {
 }
 
 .sub-dropdown-show-container .main input:checked ~ .check {
-  background-color: #FFBB54;
+  background-color: #ffbb54;
 }
 
 .sub-dropdown-show-container .check:after {
@@ -2149,7 +1383,7 @@ a {
 .seperator {
   margin-top: 24px;
   opacity: 0.05;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   margin-bottom: 17px;
 }
 
@@ -2357,7 +1591,6 @@ a {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  /* identical to box height, or 133% */
   display: flex;
   align-items: center;
   color: #aeb6ce;
@@ -2728,146 +1961,7 @@ a {
   color: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    margin: calc(var(--header-height) + 1rem) 0 0 0;
-    /* padding-left: calc(var(--nav-width) + 2rem) */
-  }
-
-  .header {
-    height: calc(var(--header-height) + 1rem);
-    padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
-  }
-
-  .header-img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .header-img img {
-    width: 45px;
-  }
-
-  .left-navbar {
-    left: 0;
-    padding: 1rem 0.5rem 0 0;
-  }
-
-  .show-navbar {
-    width: calc(var(--nav-width) - 8px);
-  }
-}
-@media screen and (max-width: 767px) {
-  .body-pd {
-    /* padding-left: calc(var(--nav-width) + 188px) */
-    padding-left: 0px;
-  }
-}
-.test {
-  padding-left: -100px;
-  z-index: 1;
-}
-
 @media screen and (max-width: 991px) {
-  .accordion-item:first-of-type .accordion-button {
-    width: 100% !important;
-  }
-
-  .avatar {
-    margin-left: 20px;
-  }
-
-  .navlist-two {
-    display: block !important;
-    padding-left: 20px;
-    padding-top: 40px;
-  }
-
-  .navlist-two a {
-    text-decoration: none !important;
-  }
-
-  .header {
-    padding: 40px 20px;
-  }
-
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .header-toggle {
-    display: none;
-  }
-
-  .left-navbar {
-    display: none !important;
-  }
-
-  .left-navbar .nav {
-    display: none !important;
-  }
-
-  .search-container .bellIcon {
-    display: none;
-  }
-
-  .search-container .search-icon {
-    display: none;
-  }
-
-  .search-container .search-input-field {
-    display: none;
-  }
-
-  .search-container .icon {
-    display: none;
-  }
-
-  .search-container .user-profile-container {
-    width: 220px !important;
-    margin-left: 0px !important;
-    height: 42px !important;
-    padding-left: 10px !important;
-    display: none !important;
-    border: none !important;
-    border-radius: 0px !important;
-  }
-
-  .search-container .user-profile-container .drop-down-container {
-    display: none !important;
-    position: absolute;
-    right: 10px !important;
-  }
-
-  .search-container .user-profile-container .lineclass {
-    position: absolute;
-    top: 2px !important;
-    left: 70px;
-  }
-
-  .search-container .user-profile-container .lineclass .user-profile-heading {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    color: #ffffff;
-  }
-
-  .search-container .user-profile-container .lineclass .verified-heading {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 16px;
-    position: absolute;
-    bottom: -23px;
-    color: #ffffff;
-    opacity: 0.4;
-  }
-
   .main-header-text-container {
     padding-left: 10px;
   }
@@ -3764,14 +2858,6 @@ a {
     color: #ffffff;
   }
 }
-@media screen and (max-width: 420px) {
-  .navbar-toggler {
-    position: fixed !important;
-    right: 5px !important;
-    top: 5px !important;
-    z-index: 1;
-  }
-}
 @media screen and (max-width: 1380px) {
   .main-container .main-sub-container .available-balance-main-container .last-activity-container {
     display: flex;
@@ -3785,16 +2871,6 @@ a {
 @media screen and (max-width: 1386px) {
   .search-container .search-input-field {
     width: 35vw;
-  }
-
-  .search-container .user-profile-container {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .search-container .search-input-field {
-    width: 25vw;
   }
 }
 #mainContainerId3 {
@@ -3984,107 +3060,7 @@ a {
   color: #ffbb54;
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    margin: calc(var(--header-height) + 1rem) 0 0 0;
-    /* padding-left: calc(var(--nav-width) + 2rem) */
-  }
-
-  .header {
-    height: calc(var(--header-height) + 1rem);
-    padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
-  }
-
-  .header-img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .header-img img {
-    width: 45px;
-  }
-
-  .left-navbar {
-    left: 0;
-    padding: 1rem 1rem 0 0;
-  }
-
-  .show-navbar {
-    width: calc(var(--nav-width) - 5px);
-  }
-}
 @media screen and (max-width: 767px) {
-  .header {
-    height: 80px;
-  }
-
-  .header-toggle {
-    display: none;
-  }
-
-  .left-navbar {
-    display: none;
-  }
-
-  .search-container .bellIcon {
-    display: none;
-  }
-  .search-container .search-icon {
-    display: none;
-  }
-  .search-container .navbar-input-field {
-    background: #262626;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    width: 100%;
-    height: 40px;
-    display: none;
-    padding-left: 0px;
-  }
-  .search-container .secondcontainer {
-    width: 230px;
-    margin-left: -10px;
-    height: 60px;
-    margin-top: 2px;
-    border: none;
-  }
-  .search-container .secondcontainer .dropd {
-    position: absolute;
-    right: 20px;
-    display: none;
-  }
-  .search-container .secondcontainer .user-profile-main-container {
-    position: absolute;
-    top: 5px;
-    left: 70px;
-  }
-  .search-container .secondcontainer .user-profile-main-container .user-profile-header-text {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    color: #ffffff;
-  }
-  .search-container .secondcontainer .user-profile-main-container .verified-header-text {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 16px;
-    color: #ffffff;
-    opacity: 0.4;
-  }
-
-  .body-pd {
-    padding-left: 0px;
-  }
-
-  .header .openMobileMono {
-    display: block;
-  }
-
   .friend-container .sub-container-wrapper {
     width: 100%;
     display: flex;
@@ -4298,209 +3274,6 @@ a {
     padding-left: 10px;
   }
 }
-@media screen and (max-width: 991px) {
-  .accordion-item:first-of-type .accordion-button {
-    width: 100% !important;
-  }
-
-  .section2 {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 10px;
-  }
-
-  .transactionContent {
-    padding-left: 40px;
-    margin-top: -50px !important;
-  }
-
-  .formcontentDiv {
-    padding: 20px 20px 20px 20px;
-  }
-
-  .newcontainer {
-    display: none !important;
-  }
-
-  .maincontainer {
-    margin-left: -20px;
-    padding-left: 0px;
-    margin-top: -10px;
-  }
-
-  .topdiv {
-    position: relative;
-    top: -10px;
-    padding-left: 20px;
-  }
-
-  .navlist-twoclass {
-    display: block !important;
-    padding-left: 80px;
-    padding-top: 40px;
-  }
-  .navlist-twoclass a {
-    text-decoration: none !important;
-  }
-
-  .header {
-    padding: 40px 20px;
-  }
-
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .avatar {
-    margin-left: 20px;
-  }
-
-  .navlist-two {
-    display: block !important;
-    padding-left: 20px;
-    padding-top: 40px;
-  }
-
-  .navlist-two a {
-    text-decoration: none !important;
-  }
-
-  .header {
-    padding: 40px 20px;
-  }
-
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .header-toggle {
-    display: none;
-  }
-
-  .left-navbar {
-    display: none !important;
-  }
-
-  .left-navbar .nav {
-    display: none !important;
-  }
-
-  .search-container .bellIcon {
-    display: none;
-  }
-
-  .search-container .search-icon {
-    display: none;
-  }
-
-  .search-container .search-input-field {
-    display: none;
-  }
-
-  .search-container .icon {
-    display: none;
-  }
-
-  .search-container .user-profile-container {
-    display: none !important;
-  }
-
-  .search-container {
-    display: none !important;
-  }
-
-  .navlist-two {
-    display: block !important;
-    padding-left: 0px;
-    padding-top: 40px;
-  }
-
-  .friend-container {
-    padding: 0px 20px 10px 10px;
-    position: relative;
-    top: -50px;
-    margin-left: 10px;
-  }
-
-  .newcontainer {
-    display: none !important;
-  }
-
-  .maincontainer {
-    margin-left: -20px;
-    padding-left: 0px;
-    margin-top: -10px;
-  }
-
-  .topdiv {
-    position: relative;
-    top: -10px;
-    padding-left: 20px;
-  }
-
-  .navlist-twoclass {
-    display: block !important;
-    padding-left: 80px;
-    padding-top: 40px;
-  }
-  .navlist-twoclass a {
-    text-decoration: none !important;
-  }
-
-  .header {
-    padding: 40px 20px;
-  }
-
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .header-toggle {
-    display: none;
-  }
-
-  .left-navbar {
-    display: none !important;
-  }
-
-  .left-navbar .nav {
-    display: none !important;
-  }
-
-  .search-container .bellIcon {
-    display: none;
-  }
-
-  .search-container .search-icon {
-    display: none;
-  }
-
-  .search-container .navbar-input-field {
-    display: none;
-  }
-
-  .search-container .secondcontainer {
-    display: none;
-  }
-
-  .search-container .icon {
-    display: none;
-  }
-}
-@media screen and (max-width: 420px) {
-  .navbar-toggler {
-    position: fixed !important;
-    right: 5px !important;
-    top: 5px !important;
-    z-index: 1;
-  }
-}
 #mainContainerId {
   padding: 0px 100px 0px 380px;
 }
@@ -4510,342 +3283,6 @@ a {
     padding: 30px 20px 0px 20px !important;
   }
 }
-.mainCard {
-  margin-left: 30px;
-  margin-top: 20px;
-  background-color: #0e0e0e;
-  border-radius: 28px;
-}
-.mainCard .videoclass {
-  width: 320px;
-}
-
-.videoheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 38px;
-  line-height: 57px;
-  color: #ffffff;
-}
-
-.secondarytext {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-  color: #ffffff;
-  opacity: 0.6;
-}
-
-.secondaryheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 28px;
-  color: #ffffff;
-}
-
-.thirdheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  opacity: 0.6;
-}
-
-.headingcontainer {
-  width: 200px;
-}
-
-.maincard .videoclass {
-  width: 320px;
-}
-.maincard .submaincontainer {
-  padding: 0px 32px;
-}
-
-.datadiv {
-  background-color: #0e0e0e !important;
-  padding: 30px;
-}
-
-.videodiv {
-  width: 332px;
-  left: 419px;
-  background: url(image.png);
-  border-radius: 14px;
-}
-
-.firstcontainer {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 200px !important;
-}
-.firstcontainer .mainContainer {
-  margin-top: 100px;
-  width: 100%;
-}
-.firstcontainer .mainContainer .tabscontainer {
-  border: 1px solid white;
-  margin-right: -500px;
-  margin-left: 50px;
-  height: 300px;
-  margin-top: -50px;
-}
-.firstcontainer .mainContainer .secondmaincontainer {
-  padding: 40px;
-  border-radius: 30px;
-  width: 100%;
-  position: relative;
-  background: #0e0e0e;
-}
-.firstcontainer .mainContainer .secondmaincontainer .containerimage1 {
-  position: absolute;
-  left: 40%;
-  top: 0;
-}
-.firstcontainer .mainContainer .secondmaincontainer .containerimage2 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-.firstcontainer .mainContainer .secondmaincontainer .thirdcontainer {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer {
-  display: flex;
-  margin-top: 10px;
-}
-.firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .thirdsubsubcontainer {
-  background: #323232;
-  border-radius: 14px;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .transactions {
-  margin-left: 14px;
-}
-.firstcontainer .mainContainer .secondmaincontainer .paratext {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-}
-.firstcontainer .mainContainer .secondmaincontainer .paratexttwo {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  margin-bottom: 5px;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  opacity: 0.55;
-}
-.firstcontainer .mainContainer .secondmaincontainer .headertext {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
-  color: #ffffff;
-}
-.firstcontainer .mainContainer .secondmaincontainer .parayellowtext {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 50px;
-  line-height: 75px;
-  color: #ffbb54;
-}
-.firstcontainer .mainContainer .assetmaincontainer {
-  margin-top: 30px;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #ffffff;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer {
-  display: flex;
-  padding: 10px 30px 10px 30px;
-  justify-content: space-evenly;
-  background: #0e0e0e;
-  border-radius: 18px;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer {
-  display: flex;
-  margin-left: 70px;
-  flex-direction: column;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .bitcoinheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  color: #ffffff;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .BTCheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  opacity: 0.8;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .sellheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #14bd6c;
-  margin-left: 10px;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .firstnumberheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  color: #ffffff;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .seconddateheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-  text-align: right;
-  color: #ffffff;
-  opacity: 0.6;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .coinbaseheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 15px;
-  color: #ffffff;
-  opacity: 0.4;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .lastdateheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-  color: #14bd6c;
-}
-.firstcontainer .twocontainer {
-  background: #0e0e0e;
-  border-radius: 18px;
-  width: 70%;
-  height: 100%;
-  margin-left: 50px;
-}
-.firstcontainer .twocontainer .twosubcontainer {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 20px;
-}
-.firstcontainer .twocontainer .twosubcontainer .paratexttwo {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  opacity: 0.55;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownmaincontainer {
-  width: 90px;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownmaincontainer .dropdownbutton {
-  background: #0e0e0e;
-  border-radius: 18px;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer {
-  width: 20%;
-  position: relative;
-  left: -200px;
-  background: #161616;
-  border-radius: 12px;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsub-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  border-bottom: 1px solid black;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsub-container .dropdownthirdcontainer {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsub-container .dropdownthirdcontainer .btcheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsub-container .dropdownthirdcontainer .numberheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
-  color: #aeb6ce;
-}
-.firstcontainer .twosubcontainervalue {
-  margin-left: 20px;
-  display: flex;
-  align-items: center;
-}
-.firstcontainer .twosubcontainervalue .greenrating {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 10px;
-  line-height: 15px;
-  margin-left: 20px;
-  margin-top: 10px;
-  color: #3ed10a;
-}
-.firstcontainer .twosubcontainervalue .headertext {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  color: #ffffff;
-}
-
 .main-setting-container-wrapper {
   padding-left: 185px;
   padding-top: 10px;
@@ -4929,130 +3366,11 @@ a {
   top: 0px;
 }
 
-.seperator {
-  margin-top: 24px;
-  opacity: 0.05;
-  border: 1px solid #FFFFFF;
-}
-@media screen and (max-width: 600px) {
-  .seperator {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    margin: calc(var(--header-height) + 1rem) 0 0 0;
-  }
-
-  .header {
-    height: calc(var(--header-height) + 1rem);
-    padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
-  }
-
-  .header-img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .header-img img {
-    width: 45px;
-  }
-
-  .left-navbar {
-    left: 0;
-    padding: 1rem 1rem 0 0;
-  }
-
-  .show-navbar {
-    width: calc(var(--nav-width) - 5px);
-  }
-}
-@media screen and (max-width: 767px) {
-  .body-pd {
-    padding-left: 0px;
-  }
-}
-.test {
-  padding-left: -100px;
-  z-index: 1;
-}
-
 @media screen and (max-width: 860px) {
   .main-setting-container-wrapper {
     padding-left: 60px;
     padding-top: 20px;
     padding-right: 100px;
-  }
-
-  .header {
-    padding: 40px 20px;
-  }
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .header-toggle {
-    display: none;
-  }
-
-  .left-navbar {
-    display: none !important;
-  }
-  .left-navbar .nav {
-    display: none !important;
-  }
-
-  .search-container .bell-icon {
-    display: none;
-  }
-  .search-container .search-icon {
-    display: none;
-  }
-  .search-container .search-inputfield {
-    display: none;
-  }
-  .search-container .icon {
-    display: none;
-  }
-  .search-container .sub-container {
-    width: 220px !important;
-    margin-left: 0px !important;
-    height: 42px !important;
-    padding-left: 10px !important;
-    border: none !important;
-    border-radius: 0px !important;
-  }
-  .search-container .sub-container .dropd {
-    display: none !important;
-    position: absolute;
-    right: 10px !important;
-  }
-  .search-container .sub-container .main-content-text-container {
-    position: absolute;
-    top: 2px !important;
-    left: 70px;
-  }
-  .search-container .sub-container .main-content-text-container .user-profile-header-text {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    color: #ffffff;
-  }
-  .search-container .sub-container .main-content-text-container .verified-header-text {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 16px;
-    position: absolute;
-    bottom: -23px;
-    color: #ffffff;
-    opacity: 0.4;
   }
 }
 .line {
@@ -5320,7 +3638,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #FFBB54;
+  color: #ffbb54;
   background: rgba(255, 187, 84, 0.1);
 }
 .sub-setting-container-wrapper .password-button {
@@ -5408,202 +3726,7 @@ a {
   width: 100%;
 }
 
-@media screen and (max-width: 991px) {
-  .accordion-item:first-of-type .accordion-button {
-    width: 100% !important;
-  }
-
-  .section2 {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 10px;
-  }
-
-  .transactionContent {
-    padding-left: 40px;
-    margin-top: -50px !important;
-  }
-
-  .formcontentDiv {
-    padding: 20px 20px 20px 20px;
-  }
-
-  .newcontainer {
-    display: none !important;
-  }
-
-  .maincontainer {
-    margin-left: -20px;
-    padding-left: 0px;
-    margin-top: -10px;
-  }
-
-  .topdiv {
-    position: relative;
-    top: -10px;
-    padding-left: 20px;
-  }
-
-  .navlist-twoclass {
-    display: block !important;
-    padding-left: 40px;
-    padding-top: 40px;
-  }
-  .navlist-twoclass a {
-    text-decoration: none !important;
-  }
-
-  .header {
-    padding: 40px 20px;
-  }
-
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .avatar {
-    margin-left: 20px;
-  }
-
-  .navlist-two {
-    display: block !important;
-    padding-left: 20px;
-    padding-top: 40px;
-  }
-
-  .navlist-two a {
-    text-decoration: none !important;
-  }
-
-  .header {
-    padding: 40px 20px;
-  }
-
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .header-toggle {
-    display: none;
-  }
-
-  .left-navbar {
-    display: none !important;
-  }
-
-  .left-navbar .nav {
-    display: none !important;
-  }
-
-  .search-container .bellIcon {
-    display: none;
-  }
-
-  .search-container .search-icon {
-    display: none;
-  }
-
-  .search-container .search-input-field {
-    display: none;
-  }
-
-  .search-container .icon {
-    display: none;
-  }
-
-  .search-container .user-profile-container {
-    display: none !important;
-  }
-
-  .search-container {
-    display: none !important;
-  }
-
-  .navlist-two {
-    display: block !important;
-    padding-left: 0px;
-    padding-top: 40px;
-  }
-
-  .newcontainer {
-    display: none !important;
-  }
-
-  .maincontainer {
-    margin-left: -20px;
-    padding-left: 0px;
-    margin-top: -10px;
-  }
-
-  .topdiv {
-    position: relative;
-    top: -10px;
-    padding-left: 20px;
-  }
-
-  .navlist-twoclass {
-    display: block !important;
-    padding-left: 80px;
-    padding-top: 40px;
-  }
-  .navlist-twoclass a {
-    text-decoration: none !important;
-  }
-
-  .header {
-    padding: 40px 20px;
-  }
-
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .header-toggle {
-    display: none;
-  }
-
-  .left-navbar {
-    display: none !important;
-  }
-
-  .left-navbar .nav {
-    display: none !important;
-  }
-
-  .search-container .bell-icon {
-    display: none;
-  }
-
-  .search-container .search-icon {
-    display: none;
-  }
-
-  .search-container .search-inputfield {
-    display: none;
-  }
-
-  .search-container .sub-container {
-    display: none;
-  }
-
-  .search-container .icon {
-    display: none;
-  }
-}
 @media screen and (max-width: 420px) {
-  .navbar-toggler {
-    position: fixed !important;
-    right: 5px !important;
-    top: 5px !important;
-    z-index: 1;
-  }
-
   .sub-setting-container-wrapper .personal-info-button {
     width: 185px;
     height: 42px;
@@ -5619,65 +3742,6 @@ a {
     line-height: 21px;
   }
 }
-.mainCard {
-  margin-left: 30px;
-  margin-top: 20px;
-  background-color: #0e0e0e;
-  border-radius: 28px;
-}
-.mainCard .videoclass {
-  width: 320px;
-}
-
-.videoheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 38px;
-  line-height: 57px;
-  color: #ffffff;
-}
-
-.secondarytext {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-  color: #ffffff;
-  opacity: 0.6;
-}
-
-.secondaryheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 28px;
-  color: #ffffff;
-}
-
-.thirdheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  opacity: 0.6;
-}
-
-.headingcontainer {
-  width: 200px;
-}
-
-.maincard .videoclass {
-  width: 320px;
-}
-.maincard .submaincontainer {
-  padding: 0px 32px;
-}
-
 #mainContainerId {
   padding: 0px 100px 0px 380px;
 }
@@ -5685,386 +3749,6 @@ a {
 @media screen and (max-width: 991px) {
   #mainContainerId {
     padding: 30px 10px 0px 10px !important;
-  }
-}
-.datadiv {
-  background-color: #0e0e0e !important;
-  padding: 30px;
-}
-
-.videodiv {
-  width: 332px;
-  left: 419px;
-  background: url(image.png);
-  border-radius: 14px;
-}
-
-.firstcontainer {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 200px !important;
-}
-.firstcontainer .mainContainer {
-  margin-top: 100px;
-  width: 100%;
-}
-.firstcontainer .mainContainer .tabscontainer {
-  border: 1px solid white;
-  margin-right: -500px;
-  margin-left: 50px;
-  height: 300px;
-  margin-top: -50px;
-}
-.firstcontainer .mainContainer .secondmaincontainer {
-  padding: 40px;
-  border-radius: 30px;
-  width: 100%;
-  position: relative;
-  background: #0e0e0e;
-}
-.firstcontainer .mainContainer .secondmaincontainer .containerimage1 {
-  position: absolute;
-  left: 40%;
-  top: 0;
-}
-.firstcontainer .mainContainer .secondmaincontainer .containerimage2 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-.firstcontainer .mainContainer .secondmaincontainer .thirdcontainer {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer {
-  display: flex;
-  margin-top: 10px;
-}
-.firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .thirdsubsubcontainer {
-  background: #323232;
-  border-radius: 14px;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.firstcontainer .mainContainer .secondmaincontainer .thirdcontainer .thirdsubcontainer .transactions {
-  margin-left: 14px;
-}
-.firstcontainer .mainContainer .secondmaincontainer .paratext {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-}
-.firstcontainer .mainContainer .secondmaincontainer .paratexttwo {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  margin-bottom: 5px;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  opacity: 0.55;
-}
-.firstcontainer .mainContainer .secondmaincontainer .headertext {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
-  color: #ffffff;
-}
-.firstcontainer .mainContainer .secondmaincontainer .parayellowtext {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 50px;
-  line-height: 75px;
-  color: #ffbb54;
-}
-.firstcontainer .mainContainer .assetmaincontainer {
-  margin-top: 30px;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #ffffff;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer {
-  display: flex;
-  padding: 10px 30px 10px 30px;
-  justify-content: space-evenly;
-  background: #0e0e0e;
-  border-radius: 18px;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer {
-  display: flex;
-  margin-left: 70px;
-  flex-direction: column;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .bitcoinheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  color: #ffffff;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .BTCheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  opacity: 0.8;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .sellheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #14bd6c;
-  margin-left: 10px;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .assetsubfirstcontainer .firstnumberheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  color: #ffffff;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .seconddateheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-  text-align: right;
-  color: #ffffff;
-  opacity: 0.6;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .coinbaseheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 15px;
-  color: #ffffff;
-  opacity: 0.4;
-}
-.firstcontainer .mainContainer .assetmaincontainer .assetsfirstcontainer .thirdassetcontainer .lastdateheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-  color: #14bd6c;
-}
-.firstcontainer .twocontainer {
-  background: #0e0e0e;
-  border-radius: 18px;
-  width: 70%;
-  height: 100%;
-  margin-left: 50px;
-}
-.firstcontainer .twocontainer .twosubcontainer {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 20px;
-}
-.firstcontainer .twocontainer .twosubcontainer .paratexttwo {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  opacity: 0.55;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownmaincontainer {
-  width: 90px;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownmaincontainer .dropdownbutton {
-  background: #0e0e0e;
-  border-radius: 18px;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer {
-  width: 20%;
-  position: relative;
-  left: -200px;
-  background: #161616;
-  border-radius: 12px;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecond-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  border-bottom: 1px solid black;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecond-container .dropdownthirdcontainer {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecond-container .dropdownthirdcontainer .btcheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-}
-.firstcontainer .twocontainer .twosubcontainer .dropdownshowcontainer .dropdownsecond-container .dropdownthirdcontainer .numberheading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
-  color: #aeb6ce;
-}
-.firstcontainer .twosubcontainervalue {
-  margin-left: 20px;
-  display: flex;
-  align-items: center;
-}
-.firstcontainer .twosubcontainervalue .greenrating {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 10px;
-  line-height: 15px;
-  margin-left: 20px;
-  margin-top: 10px;
-  color: #3ed10a;
-}
-.firstcontainer .twosubcontainervalue .headertext {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  color: #ffffff;
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    margin: calc(var(--header-height) + 1rem) 0 0 0;
-    /* padding-left: calc(var(--nav-width) + 2rem) */
-  }
-
-  .header {
-    height: calc(var(--header-height) + 1rem);
-    padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
-  }
-
-  .header-img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .header-img img {
-    width: 45px;
-  }
-
-  .left-navbar {
-    left: 0;
-    padding: 1rem 1rem 0 0;
-  }
-
-  .show-navbar {
-    width: calc(var(--nav-width) - 8px);
-  }
-}
-@media screen and (max-width: 767px) {
-  .body-pd {
-    padding-left: 0px;
-  }
-}
-.test {
-  padding-left: -100px;
-  z-index: 1;
-}
-
-@media screen and (max-width: 860px) {
-  .header {
-    padding: 40px 20px;
-  }
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .left-navbar {
-    display: none !important;
-  }
-  .left-navbar .nav {
-    display: none !important;
-  }
-
-  .search-container .search-icon {
-    display: none;
-  }
-  .search-container .searchinputfield {
-    display: none;
-  }
-  .search-container .icon {
-    display: none;
-  }
-  .search-container .second-container {
-    width: 220px !important;
-    margin-left: 0px !important;
-    height: 42px !important;
-    padding-left: 10px !important;
-    border: none !important;
-    border-radius: 0px !important;
-  }
-  .search-container .second-container .dropd {
-    display: none !important;
-    position: absolute;
-    right: 10px !important;
-  }
-  .search-container .second-container .content-container {
-    position: absolute;
-    top: 2px !important;
-    left: 70px;
-  }
-  .search-container .second-container .content-container .user-profile-header-text {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    color: #ffffff;
-  }
-  .search-container .second-container .content-container .verified-heading-text {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 16px;
-    position: absolute;
-    bottom: -23px;
-    color: #ffffff;
-    opacity: 0.4;
   }
 }
 .main-form-container {
@@ -6347,206 +4031,6 @@ a {
   }
 }
 
-@media screen and (max-width: 991px) {
-  .accordion-item:first-of-type .accordion-button {
-    width: 100% !important;
-  }
-
-  .section2 {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 10px;
-  }
-
-  .transactionContent {
-    padding-left: 40px;
-    margin-top: -50px !important;
-  }
-
-  .formcontentDiv {
-    padding: 20px 20px 20px 20px;
-  }
-
-  .newcontainer {
-    display: none !important;
-  }
-
-  .maincontainer {
-    margin-left: -20px;
-    padding-left: 0px;
-    margin-top: -10px;
-  }
-
-  .topdiv {
-    position: relative;
-    top: -10px;
-    padding-left: 20px;
-  }
-
-  .navlist-twoclass {
-    display: block !important;
-    padding-left: 40px;
-    padding-top: 40px;
-  }
-  .navlist-twoclass a {
-    text-decoration: none !important;
-  }
-
-  .header {
-    padding: 40px 20px;
-  }
-
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .avatar {
-    margin-left: 20px;
-  }
-
-  .navlist-two {
-    display: block !important;
-    padding-left: 20px;
-    padding-top: 40px;
-  }
-
-  .navlist-two a {
-    text-decoration: none !important;
-  }
-
-  .header {
-    padding: 40px 20px;
-  }
-
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .header-toggle {
-    display: none;
-  }
-
-  .left-navbar {
-    display: none !important;
-  }
-
-  .left-navbar .nav {
-    display: none !important;
-  }
-
-  .search-container .bellIcon {
-    display: none;
-  }
-
-  .search-container .search-icon {
-    display: none;
-  }
-
-  .search-container .search-input-field {
-    display: none;
-  }
-
-  .search-container .icon {
-    display: none;
-  }
-
-  .search-container .user-profile-container {
-    display: none !important;
-  }
-
-  .search-container {
-    display: none !important;
-  }
-
-  .navlist-two {
-    display: block !important;
-    padding-left: 0px;
-    padding-top: 40px;
-  }
-
-  .main-form-container {
-    padding: 0px 0px 0px 0px;
-  }
-
-  .newcontainer {
-    display: none !important;
-  }
-
-  .maincontainer {
-    margin-left: -20px;
-    padding-left: 0px;
-    margin-top: -10px;
-  }
-
-  .topdiv {
-    position: relative;
-    top: -10px;
-    padding-left: 20px;
-  }
-
-  .navlist-twoclass {
-    display: block !important;
-    padding-left: 80px;
-    padding-top: 40px;
-  }
-  .navlist-twoclass a {
-    text-decoration: none !important;
-  }
-
-  .header {
-    padding: 40px 20px;
-  }
-
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .header-toggle {
-    display: none;
-  }
-
-  .left-navbar {
-    display: none !important;
-  }
-
-  .left-navbar .nav {
-    display: none !important;
-  }
-
-  .search-container .bell-icon {
-    display: none;
-  }
-
-  .search-container .search-icon {
-    display: none;
-  }
-
-  .search-container .searchinputfield {
-    display: none;
-  }
-
-  .search-container .second-container {
-    display: none;
-  }
-
-  .search-container .icon {
-    display: none;
-  }
-}
-@media screen and (max-width: 420px) {
-  .navbar-toggler {
-    position: fixed !important;
-    right: 5px !important;
-    top: 5px !important;
-    z-index: 1;
-  }
-}
 #mainContainerId0 {
   padding: 0px 50px 0px 340px;
 }
@@ -6588,7 +4072,6 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   letter-spacing: 0.01em;
   color: #ffffff;
   opacity: 0.5;
@@ -6599,7 +4082,6 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   letter-spacing: 0.01em;
   color: #ffffff;
   opacity: 0.5;
@@ -6610,125 +4092,11 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   letter-spacing: 0.01em;
   color: #ffffff;
   opacity: 0.5;
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    margin: calc(var(--header-height) + 1rem) 0 0 0;
-  }
-
-  .header {
-    height: calc(var(--header-height) + 1rem);
-    padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
-  }
-
-  .header-img {
-    width: 40px;
-    height: 40px;
-  }
-  .header-img img {
-    width: 45px;
-  }
-
-  .left-navbar {
-    left: 0;
-    padding: 1rem 1rem 0 0;
-  }
-
-  .show-navbar {
-    width: calc(var(--nav-width) - 5px);
-  }
-}
-@media screen and (max-width: 767px) {
-  .body-pd {
-    /* padding-left: calc(var(--nav-width) + 188px) */
-    padding-left: 0px;
-  }
-}
-.test {
-  padding-left: -100px;
-  z-index: 1;
-}
-
-@media screen and (max-width: 860px) {
-  .header {
-    padding: 40px 20px;
-  }
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .header-toggle {
-    display: none;
-  }
-
-  .left-navabr {
-    display: none;
-  }
-
-  .left-navabr {
-    display: none !important;
-  }
-  .left-navabr .nav {
-    display: none !important;
-  }
-
-  .searchcontainer .bellIcon {
-    display: none;
-  }
-  .searchcontainer .searchicon {
-    display: none;
-  }
-  .searchcontainer .searchinputfield {
-    display: none;
-  }
-  .searchcontainer .icon {
-    display: none;
-  }
-  .searchcontainer .second-container {
-    width: 220px !important;
-    margin-left: 0px !important;
-    height: 42px !important;
-    padding-left: 10px !important;
-    border: none !important;
-    border-radius: 0px !important;
-  }
-  .searchcontainer .second-container .dropd {
-    display: none !important;
-    position: absolute;
-    right: 10px !important;
-  }
-  .searchcontainer .second-container .user-profile-sub-container {
-    position: absolute;
-    top: 2px !important;
-    left: 70px;
-  }
-  .searchcontainer .second-container .user-profile-sub-container .user-porfile-header-text {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    color: #ffffff;
-  }
-  .searchcontainer .second-container .user-profile-sub-container .verified-header-text {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 16px;
-    position: absolute;
-    bottom: -23px;
-    color: #ffffff;
-    opacity: 0.4;
-  }
-}
 @media screen and (max-width: 767px) {
   .transaction-Content {
     margin: 10px 10px;
@@ -6912,76 +4280,6 @@ a {
 }
 
 @media screen and (max-width: 991px) {
-  .accordion-item:first-of-type .accordion-button {
-    width: 100% !important;
-  }
-
-  .search-container {
-    display: none !important;
-  }
-
-  .avatar {
-    margin-left: 8px;
-  }
-
-  .navlist-two {
-    display: block !important;
-    padding-left: 20px;
-    padding-top: 40px;
-  }
-
-  .navlist-two a {
-    text-decoration: none !important;
-  }
-
-  .header {
-    padding: 40px 20px;
-  }
-
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .header-toggle {
-    display: none;
-  }
-
-  .left-navbar {
-    display: none !important;
-  }
-
-  .left-navbar .nav {
-    display: none !important;
-  }
-
-  .search-container .bellIcon {
-    display: none;
-  }
-
-  .search-container .search-icon {
-    display: none;
-  }
-
-  .search-container .search-input-field {
-    display: none;
-  }
-
-  .search-container .icon {
-    display: none;
-  }
-
-  .search-container .user-profile-container {
-    width: 220px !important;
-    margin-left: 0px !important;
-    height: 42px !important;
-    padding-left: 10px !important;
-    display: none !important;
-    border: none !important;
-    border-radius: 0px !important;
-  }
-
   .transaction-Content {
     padding-left: 40px;
     margin-top: -90px !important;
@@ -6993,77 +4291,6 @@ a {
 
   .newcontainer {
     display: none !important;
-  }
-
-  .maincontainer {
-    margin-left: -20px;
-    padding-left: 0px;
-    margin-top: -10px;
-  }
-
-  .topdiv {
-    position: relative;
-    top: -10px;
-    padding-left: 20px;
-  }
-
-  .navlist-twoclass {
-    display: block !important;
-    padding-left: 80px;
-    padding-top: 40px;
-  }
-  .navlist-twoclass a {
-    text-decoration: none !important;
-  }
-
-  .header {
-    padding: 40px 20px;
-  }
-
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .header-toggle {
-    display: none;
-  }
-
-  .left-navabr {
-    display: none !important;
-  }
-
-  .left-navabr .nav {
-    display: none !important;
-  }
-
-  .searchcontainer .bellIcon {
-    display: none;
-  }
-
-  .searchcontainer .searchicon {
-    display: none;
-  }
-
-  .searchcontainer .searchinputfield {
-    display: none;
-  }
-
-  .searchcontainer .second-container {
-    display: none;
-  }
-
-  .searchcontainer .icon {
-    display: none;
-  }
-}
-@media screen and (max-width: 420px) {
-  .navbar-toggler {
-    position: fixed !important;
-    right: 5px !important;
-    top: 5px !important;
-    z-index: 1;
   }
 }
 .header-toggle {
@@ -7078,14 +4305,6 @@ a {
   padding: 20px 8px 20px 8px;
   margin-left: 58px;
   border-radius: 14px 0px 0px 14px;
-}
-.header-toggle .header-img {
-  width: 35px;
-  height: 35px;
-  display: flex;
-  justify-content: center;
-  border-radius: 50%;
-  overflow: hidden;
 }
 
 #header {
@@ -7104,7 +4323,7 @@ a {
 
 @media screen and (max-width: 991px) {
   #mainContainerId {
-    padding: 30px 10px 0px 30px !important;
+    padding: 30px 5px 0px 10px !important;
   }
 }
 #mainContainerId2 {
@@ -7195,7 +4414,7 @@ a {
 .seperator {
   margin-top: 35px;
   opacity: 0.05;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 @media screen and (max-width: 600px) {
   .seperator {
@@ -7236,16 +4455,6 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    margin: calc(var(--header-height) + 1rem) 0 0 0;
-    /* padding-left: calc(var(--nav-width) + 2rem) */
-  }
-
-  .header {
-    height: calc(var(--header-height) + 1rem);
-    padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
-  }
-
   .header-img {
     width: 40px;
     height: 40px;
@@ -7264,16 +4473,6 @@ a {
     width: calc(var(--nav-width) - 8px);
   }
 }
-@media screen and (max-width: 767px) {
-  .body-pd {
-    padding-left: 0px;
-  }
-}
-.test {
-  padding-left: -100px;
-  z-index: 1;
-}
-
 @media screen and (max-width: 860px) {
   .header {
     padding: 40px 20px;
@@ -7288,182 +4487,8 @@ a {
     font-size: 26px !important;
     margin-bottom: -10px !important;
   }
-
-  .left-navbar {
-    display: none !important;
-  }
-  .left-navbar .nav {
-    display: none !important;
-  }
-
-  .search-container .search-icon {
-    display: none;
-  }
-  .search-container .search-input-field {
-    display: none;
-  }
-  .search-container .icon {
-    display: none;
-  }
-  .search-container .second-container {
-    width: 220px !important;
-    margin-left: 0px !important;
-    height: 42px !important;
-    padding-left: 10px !important;
-    border: none !important;
-    border-radius: 0px !important;
-  }
-  .search-container .second-container .dropd {
-    display: none !important;
-    position: absolute;
-    right: 10px !important;
-  }
-  .search-container .second-container .user-profile-sub-container {
-    position: absolute;
-    top: 2px !important;
-    left: 70px;
-  }
-  .search-container .second-container .user-profile-sub-container .user-profile-header-text {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    color: #ffffff;
-  }
-  .search-container .second-container .user-profile-sub-container .verified-header-text {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 16px;
-    position: absolute;
-    bottom: -23px;
-    color: #ffffff;
-    opacity: 0.4;
-  }
 }
 @media screen and (max-width: 991px) {
-  .accordion-item:first-of-type .accordion-button {
-    width: 100% !important;
-  }
-
-  .section2 {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 10px;
-  }
-
-  .transactionContent {
-    padding-left: 40px;
-    margin-top: -50px !important;
-  }
-
-  .formcontentDiv {
-    padding: 20px 20px 20px 20px;
-  }
-
-  .newcontainer {
-    display: none !important;
-  }
-
-  .main-container-video-lessons {
-    margin-left: -20px;
-    padding-left: 0px;
-    margin-top: -10px;
-  }
-
-  .topdiv {
-    position: relative;
-    top: -10px;
-    padding-left: 20px;
-  }
-
-  .navlist-twoclass {
-    display: block !important;
-    padding-left: 40px;
-    padding-top: 40px;
-  }
-  .navlist-twoclass a {
-    text-decoration: none !important;
-  }
-
-  .header {
-    padding: 40px 20px;
-  }
-
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .avatar {
-    margin-left: 20px;
-  }
-
-  .navlist-two {
-    display: block !important;
-    padding-left: 20px;
-    padding-top: 40px;
-  }
-
-  .navlist-two a {
-    text-decoration: none !important;
-  }
-
-  .header {
-    padding: 40px 20px;
-  }
-
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .header-toggle {
-    display: none;
-  }
-
-  .left-navbar {
-    display: none !important;
-  }
-
-  .left-navbar .nav {
-    display: none !important;
-  }
-
-  .search-container .bellIcon {
-    display: none;
-  }
-
-  .search-container .search-icon {
-    display: none;
-  }
-
-  .search-container .search-input-field {
-    display: none;
-  }
-
-  .search-container .icon {
-    display: none;
-  }
-
-  .search-container .user-profile-container {
-    display: none !important;
-  }
-
-  .search-container {
-    display: none !important;
-  }
-
-  .navlist-two {
-    display: block !important;
-    padding-left: 0px;
-    padding-top: 40px;
-  }
-
   .newcontainer {
     display: none !important;
   }
@@ -7479,57 +4504,6 @@ a {
     top: -10px;
     padding-left: 20px;
   }
-
-  .navlist-two {
-    display: block !important;
-    padding-left: 20px;
-    padding-top: 40px;
-  }
-  .navlist-two a {
-    text-decoration: none !important;
-  }
-
-  .header {
-    padding: 40px 20px;
-  }
-
-  .header .openMobileMono {
-    display: block !important;
-    position: absolute;
-    right: 20px;
-  }
-
-  .header-toggle {
-    display: none;
-  }
-
-  .left-navbar {
-    display: none !important;
-  }
-
-  .left-navbar .nav {
-    display: none !important;
-  }
-
-  .search-container .bellIcon {
-    display: none;
-  }
-
-  .search-container .search-icon {
-    display: none;
-  }
-
-  .search-container .search-input-field {
-    display: none;
-  }
-
-  .search-container .second-container {
-    display: none;
-  }
-
-  .search-container .icon {
-    display: none;
-  }
 }
 @media screen and (max-width: 679px) {
   .main-header-container .main-sub-header-container .video-lesson-header {
@@ -7537,7 +4511,7 @@ a {
   }
 
   .mainCard {
-    background-color: #141414;
+    background-color: rgba(21, 21, 21, 0.4666666667) !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7555,14 +4529,6 @@ a {
   .maincard .sub-main-container {
     padding: 0px 0px;
     padding-left: 20px;
-  }
-}
-@media screen and (max-width: 420px) {
-  .navbar-toggler {
-    position: fixed !important;
-    right: 5px !important;
-    top: 5px !important;
-    z-index: 1;
   }
 }
 * {
@@ -7592,7 +4558,7 @@ body {
   left: 0px;
   opacity: 0.2;
 }
-.main-container-wrapper .maskGroup {
+.main-container-wrapper .mask-group {
   z-index: -1;
   position: absolute;
   right: 0px;
@@ -7619,14 +4585,14 @@ body {
   font-size: calc(2rem + 1vw);
   font-weight: 400;
 }
-.main-container-wrapper .main-container-header .right {
+.main-container-wrapper .main-container-header .main-auth-container {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-between;
   align-items: center;
 }
-.main-container-wrapper .main-container-header .right .menu a {
+.main-container-wrapper .main-container-header .main-auth-container .menu a {
   padding: 0px 20px;
   text-decoration: none;
   font-family: "Poppins";
@@ -7638,21 +4604,21 @@ body {
   color: #fff;
   opacity: 0.6;
 }
-.main-container-wrapper .main-container-header .right .menu a.feature {
+.main-container-wrapper .main-container-header .main-auth-container .menu a.feature {
   padding-left: 50px;
   border-left: 1px solid #fff;
   opacity: 0.6;
 }
-.main-container-wrapper .main-container-header .right .socialIcons {
+.main-container-wrapper .main-container-header .main-auth-container .socialIcons {
   display: flex;
   align-items: center;
 }
-.main-container-wrapper .main-container-header .right .socialIcons a {
+.main-container-wrapper .main-container-header .main-auth-container .socialIcons a {
   text-decoration: none;
   color: #ffbb54;
   text-decoration: none;
 }
-.main-container-wrapper .main-container-header .right .socialIcons a .icons {
+.main-container-wrapper .main-container-header .main-auth-container .socialIcons a .icons {
   border: 1px solid #ffbb54;
   border-radius: 15px;
   margin: 0px 10px;
@@ -7665,7 +4631,7 @@ body {
   cursor: pointer;
   transition: 0.4s;
 }
-.main-container-wrapper .main-container-header .right .socialIcons a .icons:hover {
+.main-container-wrapper .main-container-header .main-auth-container .socialIcons a .icons:hover {
   background-color: #ffbb54;
   color: #000;
 }
@@ -7710,20 +4676,20 @@ body {
   color: #ffffff;
   opacity: 0.6;
 }
-.main-container-wrapper .login .socialLogin,
+.main-container-wrapper .login .social-login-wrapper,
 .main-container-wrapper .login .socialCreate,
-.main-container-wrapper .resetTop .resetAccount .socialLogin,
+.main-container-wrapper .resetTop .resetAccount .social-login-wrapper,
 .main-container-wrapper .resetTop .resetAccount .socialCreate,
-.main-container-wrapper .createAccount .socialLogin,
+.main-container-wrapper .createAccount .social-login-wrapper,
 .main-container-wrapper .createAccount .socialCreate {
   display: flex;
   justify-content: space-between;
 }
-.main-container-wrapper .login .socialLogin button,
+.main-container-wrapper .login .social-login-wrapper button,
 .main-container-wrapper .login .socialCreate button,
-.main-container-wrapper .resetTop .resetAccount .socialLogin button,
+.main-container-wrapper .resetTop .resetAccount .social-login-wrapper button,
 .main-container-wrapper .resetTop .resetAccount .socialCreate button,
-.main-container-wrapper .createAccount .socialLogin button,
+.main-container-wrapper .createAccount .social-login-wrapper button,
 .main-container-wrapper .createAccount .socialCreate button {
   display: flex;
   width: calc(2 * 24%);
@@ -7737,21 +4703,21 @@ body {
   cursor: pointer;
   margin: 20px 0px;
 }
-.main-container-wrapper .login .socialLogin button p,
+.main-container-wrapper .login .social-login-wrapper button p,
 .main-container-wrapper .login .socialCreate button p,
-.main-container-wrapper .resetTop .resetAccount .socialLogin button p,
+.main-container-wrapper .resetTop .resetAccount .social-login-wrapper button p,
 .main-container-wrapper .resetTop .resetAccount .socialCreate button p,
-.main-container-wrapper .createAccount .socialLogin button p,
+.main-container-wrapper .createAccount .social-login-wrapper button p,
 .main-container-wrapper .createAccount .socialCreate button p {
   color: #ffbb54;
   opacity: 1;
   font-size: calc(0.8rem + 0.1vw);
 }
-.main-container-wrapper .login .socialLogin button img,
+.main-container-wrapper .login .social-login-wrapper button img,
 .main-container-wrapper .login .socialCreate button img,
-.main-container-wrapper .resetTop .resetAccount .socialLogin button img,
+.main-container-wrapper .resetTop .resetAccount .social-login-wrapper button img,
 .main-container-wrapper .resetTop .resetAccount .socialCreate button img,
-.main-container-wrapper .createAccount .socialLogin button img,
+.main-container-wrapper .createAccount .social-login-wrapper button img,
 .main-container-wrapper .createAccount .socialCreate button img {
   width: 25px;
   height: 25px;
@@ -7777,24 +4743,24 @@ body {
   padding: 0 2rem;
   font-family: "Poppins";
 }
-.main-container-wrapper .login .loginCredentialTop,
+.main-container-wrapper .login .login-credential-top,
 .main-container-wrapper .login .resetCredentialTop,
 .main-container-wrapper .login .createCredentialTop,
-.main-container-wrapper .resetTop .resetAccount .loginCredentialTop,
+.main-container-wrapper .resetTop .resetAccount .login-credential-top,
 .main-container-wrapper .resetTop .resetAccount .resetCredentialTop,
 .main-container-wrapper .resetTop .resetAccount .createCredentialTop,
-.main-container-wrapper .createAccount .loginCredentialTop,
+.main-container-wrapper .createAccount .login-credential-top,
 .main-container-wrapper .createAccount .resetCredentialTop,
 .main-container-wrapper .createAccount .createCredentialTop {
   margin-top: 20px;
 }
-.main-container-wrapper .login .loginCredentialTop input,
+.main-container-wrapper .login .login-credential-top input,
 .main-container-wrapper .login .resetCredentialTop input,
 .main-container-wrapper .login .createCredentialTop input,
-.main-container-wrapper .resetTop .resetAccount .loginCredentialTop input,
+.main-container-wrapper .resetTop .resetAccount .login-credential-top input,
 .main-container-wrapper .resetTop .resetAccount .resetCredentialTop input,
 .main-container-wrapper .resetTop .resetAccount .createCredentialTop input,
-.main-container-wrapper .createAccount .loginCredentialTop input,
+.main-container-wrapper .createAccount .login-credential-top input,
 .main-container-wrapper .createAccount .resetCredentialTop input,
 .main-container-wrapper .createAccount .createCredentialTop input {
   display: block;
@@ -7809,48 +4775,48 @@ body {
   padding: 0px 32px;
   margin-bottom: 10px;
 }
-.main-container-wrapper .login .loginCredentialTop input:focus,
+.main-container-wrapper .login .login-credential-top input:focus,
 .main-container-wrapper .login .resetCredentialTop input:focus,
 .main-container-wrapper .login .createCredentialTop input:focus,
-.main-container-wrapper .resetTop .resetAccount .loginCredentialTop input:focus,
+.main-container-wrapper .resetTop .resetAccount .login-credential-top input:focus,
 .main-container-wrapper .resetTop .resetAccount .resetCredentialTop input:focus,
 .main-container-wrapper .resetTop .resetAccount .createCredentialTop input:focus,
-.main-container-wrapper .createAccount .loginCredentialTop input:focus,
+.main-container-wrapper .createAccount .login-credential-top input:focus,
 .main-container-wrapper .createAccount .resetCredentialTop input:focus,
 .main-container-wrapper .createAccount .createCredentialTop input:focus {
   color: #fff;
   background-color: #2d2d2d;
 }
-.main-container-wrapper .login .remeberForgotPass,
-.main-container-wrapper .resetTop .resetAccount .remeberForgotPass,
-.main-container-wrapper .createAccount .remeberForgotPass {
+.main-container-wrapper .login .remember-forget-password,
+.main-container-wrapper .resetTop .resetAccount .remember-forget-password,
+.main-container-wrapper .createAccount .remember-forget-password {
   display: flex;
   justify-content: space-between;
   font-family: "Poppins";
 }
-.main-container-wrapper .login .remeberForgotPass ul,
-.main-container-wrapper .resetTop .resetAccount .remeberForgotPass ul,
-.main-container-wrapper .createAccount .remeberForgotPass ul {
+.main-container-wrapper .login .remember-forget-password ul,
+.main-container-wrapper .resetTop .resetAccount .remember-forget-password ul,
+.main-container-wrapper .createAccount .remember-forget-password ul {
   list-style: none;
 }
-.main-container-wrapper .login .remeberForgotPass ul .styled-checkbox,
-.main-container-wrapper .resetTop .resetAccount .remeberForgotPass ul .styled-checkbox,
-.main-container-wrapper .createAccount .remeberForgotPass ul .styled-checkbox {
+.main-container-wrapper .login .remember-forget-password ul .styled-checkbox,
+.main-container-wrapper .resetTop .resetAccount .remember-forget-password ul .styled-checkbox,
+.main-container-wrapper .createAccount .remember-forget-password ul .styled-checkbox {
   position: absolute;
   opacity: 0;
 }
-.main-container-wrapper .login .remeberForgotPass ul .styled-checkbox + label,
-.main-container-wrapper .resetTop .resetAccount .remeberForgotPass ul .styled-checkbox + label,
-.main-container-wrapper .createAccount .remeberForgotPass ul .styled-checkbox + label {
+.main-container-wrapper .login .remember-forget-password ul .styled-checkbox + label,
+.main-container-wrapper .resetTop .resetAccount .remember-forget-password ul .styled-checkbox + label,
+.main-container-wrapper .createAccount .remember-forget-password ul .styled-checkbox + label {
   font-size: calc(1rem + 0.1vw);
   font-weight: 200;
   position: relative;
   cursor: pointer;
   padding: 0;
 }
-.main-container-wrapper .login .remeberForgotPass ul .styled-checkbox + label:before,
-.main-container-wrapper .resetTop .resetAccount .remeberForgotPass ul .styled-checkbox + label:before,
-.main-container-wrapper .createAccount .remeberForgotPass ul .styled-checkbox + label:before {
+.main-container-wrapper .login .remember-forget-password ul .styled-checkbox + label:before,
+.main-container-wrapper .resetTop .resetAccount .remember-forget-password ul .styled-checkbox + label:before,
+.main-container-wrapper .createAccount .remember-forget-password ul .styled-checkbox + label:before {
   content: "";
   margin-right: 10px;
   display: inline-block;
@@ -7860,24 +4826,24 @@ body {
   background: #2d2d2d;
   border-radius: 3px;
 }
-.main-container-wrapper .login .remeberForgotPass ul .styled-checkbox:hover + label:before,
-.main-container-wrapper .resetTop .resetAccount .remeberForgotPass ul .styled-checkbox:hover + label:before,
-.main-container-wrapper .createAccount .remeberForgotPass ul .styled-checkbox:hover + label:before {
+.main-container-wrapper .login .remember-forget-password ul .styled-checkbox:hover + label:before,
+.main-container-wrapper .resetTop .resetAccount .remember-forget-password ul .styled-checkbox:hover + label:before,
+.main-container-wrapper .createAccount .remember-forget-password ul .styled-checkbox:hover + label:before {
   background: #ffbb54;
 }
-.main-container-wrapper .login .remeberForgotPass ul .styled-checkbox:focus + label:before,
-.main-container-wrapper .resetTop .resetAccount .remeberForgotPass ul .styled-checkbox:focus + label:before,
-.main-container-wrapper .createAccount .remeberForgotPass ul .styled-checkbox:focus + label:before {
+.main-container-wrapper .login .remember-forget-password ul .styled-checkbox:focus + label:before,
+.main-container-wrapper .resetTop .resetAccount .remember-forget-password ul .styled-checkbox:focus + label:before,
+.main-container-wrapper .createAccount .remember-forget-password ul .styled-checkbox:focus + label:before {
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
 }
-.main-container-wrapper .login .remeberForgotPass ul .styled-checkbox:checked + label:before,
-.main-container-wrapper .resetTop .resetAccount .remeberForgotPass ul .styled-checkbox:checked + label:before,
-.main-container-wrapper .createAccount .remeberForgotPass ul .styled-checkbox:checked + label:before {
+.main-container-wrapper .login .remember-forget-password ul .styled-checkbox:checked + label:before,
+.main-container-wrapper .resetTop .resetAccount .remember-forget-password ul .styled-checkbox:checked + label:before,
+.main-container-wrapper .createAccount .remember-forget-password ul .styled-checkbox:checked + label:before {
   background: #ffbb54;
 }
-.main-container-wrapper .login .remeberForgotPass ul .styled-checkbox:checked + label:after,
-.main-container-wrapper .resetTop .resetAccount .remeberForgotPass ul .styled-checkbox:checked + label:after,
-.main-container-wrapper .createAccount .remeberForgotPass ul .styled-checkbox:checked + label:after {
+.main-container-wrapper .login .remember-forget-password ul .styled-checkbox:checked + label:after,
+.main-container-wrapper .resetTop .resetAccount .remember-forget-password ul .styled-checkbox:checked + label:after,
+.main-container-wrapper .createAccount .remember-forget-password ul .styled-checkbox:checked + label:after {
   content: "";
   position: absolute;
   left: 5px;
@@ -7888,19 +4854,19 @@ body {
   box-shadow: 2px 0 0 black, 4px 0 0 black, 4px -2px 0 black, 4px -4px 0 black, 4px -6px 0 black, 4px -8px 0 black;
   transform: rotate(45deg);
 }
-.main-container-wrapper .login .remeberForgotPass a,
-.main-container-wrapper .resetTop .resetAccount .remeberForgotPass a,
-.main-container-wrapper .createAccount .remeberForgotPass a {
+.main-container-wrapper .login .remember-forget-password a,
+.main-container-wrapper .resetTop .resetAccount .remember-forget-password a,
+.main-container-wrapper .createAccount .remember-forget-password a {
   text-decoration: none;
   color: #ffbb54;
   font-size: calc(1rem + 0.1vw);
   font-weight: 200;
 }
-.main-container-wrapper .login .loginToAccount,
+.main-container-wrapper .login .login-to-account,
 .main-container-wrapper .login .createToAccount,
-.main-container-wrapper .resetTop .resetAccount .loginToAccount,
+.main-container-wrapper .resetTop .resetAccount .login-to-account,
 .main-container-wrapper .resetTop .resetAccount .createToAccount,
-.main-container-wrapper .createAccount .loginToAccount,
+.main-container-wrapper .createAccount .login-to-account,
 .main-container-wrapper .createAccount .createToAccount {
   width: 100%;
   min-height: 35px;
@@ -7923,11 +4889,11 @@ body {
   overflow: hidden;
   position: relative;
 }
-.main-container-wrapper .login .loginToAccount::before,
+.main-container-wrapper .login .login-to-account::before,
 .main-container-wrapper .login .createToAccount::before,
-.main-container-wrapper .resetTop .resetAccount .loginToAccount::before,
+.main-container-wrapper .resetTop .resetAccount .login-to-account::before,
 .main-container-wrapper .resetTop .resetAccount .createToAccount::before,
-.main-container-wrapper .createAccount .loginToAccount::before,
+.main-container-wrapper .createAccount .login-to-account::before,
 .main-container-wrapper .createAccount .createToAccount::before {
   content: "";
   position: absolute;
@@ -7941,18 +4907,18 @@ body {
   border-radius: 20px 20px 20px 20px;
   transition: 0.6s;
 }
-.main-container-wrapper .login .loginToAccount:hover::before,
+.main-container-wrapper .login .login-to-account:hover::before,
 .main-container-wrapper .login .createToAccount:hover::before,
-.main-container-wrapper .resetTop .resetAccount .loginToAccount:hover::before,
+.main-container-wrapper .resetTop .resetAccount .login-to-account:hover::before,
 .main-container-wrapper .resetTop .resetAccount .createToAccount:hover::before,
-.main-container-wrapper .createAccount .loginToAccount:hover::before,
+.main-container-wrapper .createAccount .login-to-account:hover::before,
 .main-container-wrapper .createAccount .createToAccount:hover::before {
   width: 100%;
   right: 0px;
 }
-.main-container-wrapper .login .notYetMember,
-.main-container-wrapper .resetTop .resetAccount .notYetMember,
-.main-container-wrapper .createAccount .notYetMember {
+.main-container-wrapper .login .not-yet-member,
+.main-container-wrapper .resetTop .resetAccount .not-yet-member,
+.main-container-wrapper .createAccount .not-yet-member {
   margin-top: 20px;
   display: flex;
   align-items: center;
@@ -7960,25 +4926,25 @@ body {
   font-size: calc(1rem + 0.1vw);
   font-weight: 200;
 }
-.main-container-wrapper .login .notYetMember a,
-.main-container-wrapper .resetTop .resetAccount .notYetMember a,
-.main-container-wrapper .createAccount .notYetMember a {
+.main-container-wrapper .login .not-yet-member a,
+.main-container-wrapper .resetTop .resetAccount .not-yet-member a,
+.main-container-wrapper .createAccount .not-yet-member a {
   color: #ffbb54;
   font-family: "Poppins";
   margin-left: 10px;
   text-decoration: none;
 }
-.main-container-wrapper .login .privacyCopyRight,
-.main-container-wrapper .resetTop .resetAccount .privacyCopyRight,
-.main-container-wrapper .createAccount .privacyCopyRight {
+.main-container-wrapper .login .privacy-copyright,
+.main-container-wrapper .resetTop .resetAccount .privacy-copyright,
+.main-container-wrapper .createAccount .privacy-copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
 }
-.main-container-wrapper .login .privacyCopyRight a,
-.main-container-wrapper .resetTop .resetAccount .privacyCopyRight a,
-.main-container-wrapper .createAccount .privacyCopyRight a {
+.main-container-wrapper .login .privacy-copyright a,
+.main-container-wrapper .resetTop .resetAccount .privacy-copyright a,
+.main-container-wrapper .createAccount .privacy-copyright a {
   text-decoration: none;
   color: #ffbb54;
   font-family: "Poppins";
@@ -7987,7 +4953,7 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-  .main-container-wrapper .main-container-header .right {
+  .main-container-wrapper .main-container-header .main-auth-container {
     display: none !important;
   }
   .main-container-wrapper .main-container-header .openMobileMenu {
@@ -7999,17 +4965,17 @@ body {
     top: -120px;
     left: -120px;
   }
-  .main-container-wrapper .login .socialLogin {
+  .main-container-wrapper .login .social-login-wrapper {
     margin-top: 40px;
     margin-bottom: 40px;
     flex-wrap: wrap;
   }
-  .main-container-wrapper .login .socialLogin button {
+  .main-container-wrapper .login .social-login-wrapper button {
     width: 100%;
     margin: 10px 0px;
     height: calc(2 * 20px);
   }
-  .main-container-wrapper .login .privacyCopyRight {
+  .main-container-wrapper .login .privacy-copyright {
     margin-top: 20px;
   }
   .main-container-wrapper .login h1 {
@@ -8020,13 +4986,13 @@ body {
     font-size: 14px;
     line-height: 17px;
   }
-  .main-container-wrapper .login .notYetMember {
+  .main-container-wrapper .login .not-yet-member {
     margin-bottom: 50px;
   }
-  .main-container-wrapper .login .loginCredentialTop input {
+  .main-container-wrapper .login .login-credential-top input {
     height: 40px;
   }
-  .main-container-wrapper .privacyCopyRight {
+  .main-container-wrapper .privacy-copyright {
     margin-top: calc(2 * 20px);
   }
 }
@@ -8065,7 +5031,7 @@ body {
   position: absolute;
   top: -64px;
 }
-.main-container-wrapper-home .maskGroup {
+.main-container-wrapper-home .mask-group {
   z-index: -1;
   position: absolute;
   right: 0px;
@@ -8381,7 +5347,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -8564,7 +5529,7 @@ body {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.204545px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 0px 20px;
   text-decoration: none;
 }
@@ -8627,7 +5592,6 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
-  /* identical to box height */
   margin-right: 10px;
   letter-spacing: -0.204545px;
   color: #ffffff;
@@ -8775,7 +5739,6 @@ body {
     width: 110px;
     font-size: 15px;
     line-height: 20px;
-    /* identical to box height */
     margin-right: 39px;
     letter-spacing: -0.204545px;
     color: #ffffff;
@@ -8824,7 +5787,6 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
@@ -8902,7 +5864,6 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
@@ -8994,7 +5955,6 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
@@ -9036,7 +5996,6 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
@@ -9100,7 +6059,6 @@ body {
     font-weight: 400;
     font-size: 10px;
     line-height: 150%;
-    /* or 15px */
     text-align: center;
     letter-spacing: 0.03em;
     color: #ffffff;
@@ -9114,12 +6072,12 @@ body {
   .main-container-wrapper-home .main-container-image-left {
     top: -120px;
   }
-  .main-container-wrapper-home .login .socialLogin {
+  .main-container-wrapper-home .login .social-login-wrapper {
     margin-top: 40px;
     margin-bottom: 40px;
     flex-wrap: wrap;
   }
-  .main-container-wrapper-home .login .socialLogin button {
+  .main-container-wrapper-home .login .social-login-wrapper button {
     width: 100%;
     margin: 10px 0px;
     height: calc(2 * 20px);
@@ -9135,10 +6093,10 @@ body {
     font-size: 14px;
     line-height: 17px;
   }
-  .main-container-wrapper-home .login .notYetMember {
+  .main-container-wrapper-home .login .not-yet-member {
     margin-bottom: 50px;
   }
-  .main-container-wrapper-home .login .loginCredentialTop input {
+  .main-container-wrapper-home .login .login-credential-top input {
     height: 40px;
   }
   .main-container-wrapper-home .privacyfooter-copyright-text {
