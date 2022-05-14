@@ -3044,6 +3044,10 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px 16px 10px;
+  .buy-sell-dropdown-img {
+    margin-top: 25px;
+  }
+  
 }
 
 .main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-sub-container .coinname-header-tabs {
@@ -3945,7 +3949,8 @@ a {
 
   .asssets-main-graph-container .assets-sub-graph-container {
     height: 140px !important;
-    width: 180px !important;
+    width: 150px !important;
+    // border:2px solid green;
   }
 
   .main-container .main-sub-container .assets-main-container-wrapper .assets-main-container .assests-sub-container-wrapper .assets-secondary-container .bit-coin-header-text {
@@ -4454,7 +4459,7 @@ a {
       display: none;
     }
 
-    .icon {}
+   
 
     .navbar-input-field {
       background: #262626;
