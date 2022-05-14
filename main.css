@@ -433,7 +433,8 @@ a {
   background-color: #ffbb54;
 }
 
-.nav_logo, .nav_link {
+.nav_logo,
+.nav_link {
   cursor: pointer;
   display: grid;
   grid-template-columns: max-content max-content;
