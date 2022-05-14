@@ -338,6 +338,9 @@ a {
   color: #ffbb54 !important;
   position: relative;
 }
+.accordion-item:first-of-type .accord-button:hover img {
+  filter: invert(25%) sepia(33%) saturate(803%) hue-rotate(343deg) brightness(100%) contrast(103%);
+}
 .accordion-item:first-of-type .accordion-button {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
@@ -390,6 +393,9 @@ a {
   color: #ffbb54 !important;
   height: 100% !important;
 }
+.nav_list .nav_link:hover img {
+  filter: invert(25%) sepia(33%) saturate(803%) hue-rotate(343deg) brightness(100%) contrast(103%);
+}
 .nav_list .nav-link-support {
   position: relative;
   top: 8px;
@@ -413,6 +419,9 @@ a {
 .nav_list .active-link {
   background: linear-gradient(to right, rgba(255, 187, 84, 0.2) 50.63%, rgba(255, 187, 84, 0) 100%) !important;
   color: rgb(255, 187, 84);
+}
+.nav_list .active-link img {
+  filter: invert(25%) sepia(33%) saturate(803%) hue-rotate(343deg) brightness(100%) contrast(103%);
 }
 .nav_list .active-link::before {
   content: "";
@@ -2561,7 +2570,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 20px 0px 0px 0px;
+  padding: 20px 0px 0px 0px !important;
   padding-bottom: 16px;
 }
 
@@ -2613,7 +2622,7 @@ a {
 
 .main-container .assets-main-container-wrapper .tabs-container-wrapper .tabs-content-container .buy-section-second .buy-sub-section .check {
   position: absolute;
-  top: 5px;
+  top: 21px;
   left: 0;
   height: 16px;
   width: 16px;

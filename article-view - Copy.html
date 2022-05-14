@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Article View </title>
+  <title> Article View  copy</title>
   <link rel="stylesheet" href="./main.css" />
   <!-- Boostrap Links -->
   <link rel="stylesheet" href="../../Bootstrap/bootstrap5/css/bootstrap.css">
@@ -13,7 +13,7 @@
 
 <body id="body-pd">
  <!-- Navbar -->
- <div> <nav class="navbar navbar-expand-lg">
+ <nav class="navbar navbar-expand-lg">
   <a class="navbar-brand" href="#">
     <div>
       <img class="avatar main-navbar-logo" src="../../img/settings/avatar.svg" alt="avatar" />
@@ -26,10 +26,13 @@
     <img class="header_toggle" src="../../img/arrowcircle.png" id="header-toggle" alt="">
     <div class="nav_list navlist_two">
       <a href="portfolio.html" class="nav_link active">
-        <i><img src="../../img/frame.png" alt="" /></i>
+        <i>
+          <!-- <img src="../../img/frame.png" alt="" /> -->
+          <img src="./img/Vector.svg" alt="" />
+        </i>
         <span>Portfolio Tracker</span>
       </a>
-      <a href="articleview.html" class="nav_link active-link">
+      <a href="article-view.html" class="nav_link active-link">
         <i>
           <img src="../../img/article-icon-logo.png" alt="" />
         </i>
@@ -41,7 +44,7 @@
         </i>
         <span>Crypto Suggest</span>
       </a>
-      <a href="videolessons.html" class="nav_link">
+      <a href="video-lessons.html" class="nav_link">
         <i>
           <img src="../../img/vid.png" alt="" />
         </i>
@@ -68,7 +71,7 @@
                     <span>Transactions</span>
                   </a>
                 </div>
-                <div class="sub-accordion nav_link">
+                <div class="sub-accordion nav_link nav-link-trading">
                   <a href="settings.html">
 
                     <i>
@@ -95,7 +98,7 @@
         </i>
         <span>Support</span>
       </a>
-      <a href="referafriend.html" class="nav_link nav_link_refer_a_friend">
+      <a href="refer-a-friend.html" class="nav_link nav_link_refer_a_friend">
         <i>
           <img src="../../img/profile.png" alt="" />
         </i>
@@ -187,7 +190,7 @@
           <i><img src="../../img/frame.png" alt="" /></i>
           <span>Portfolio Tracker</span>
         </a>
-        <a href="articleview.html" class="nav_link active-link">
+        <a href="article-view.html" class="nav_link active-link">
           <i>
             <img src="../../img/article-icon-logo.png" alt="" />
           </i>
@@ -199,7 +202,7 @@
           </i>
           <span>Crypto Suggest</span>
         </a>
-        <a href="videolessons.html" class="nav_link">
+        <a href="video-lessons.html" class="nav_link">
           <i>
             <img src="../../img/vid.png" alt="" />
           </i>
@@ -258,7 +261,7 @@
           </i>
           <span>Support</span>
         </a>
-        <a href="referafriend.html" class="nav_link nav_link_refer_a_friend">
+        <a href="refer-a-friend.html" class="nav_link nav_link_refer_a_friend">
           <i>
             <img src="../../img/profile.png" alt="" />
           </i>
@@ -276,12 +279,8 @@
 </div>
 
   <div class="seperator"></div>
-
-
-
-
   <!-- aticle main content -->
-  <div id="meri" class="article_content">
+  <div class="article_content" id="mainContainerId5">
     <div>
       <div class="new_Display">
         <div class="mobile_image">
@@ -336,7 +335,7 @@
   <script type="text/javascript" src="../../Bootstrap/bootstrap5/js/bootstrap.js"> </script>
   <script>
     document.addEventListener("DOMContentLoaded", function (event) {
-      const showNavbar = (toggleId, navId, bodyId, headerId,meri) => {
+      const showNavbar = (toggleId, navId, bodyId, headerId) => {
         const toggle = document.getElementById(toggleId),
           nav = document.getElementById(navId),
           bodypd = document.getElementById(bodyId),
@@ -350,10 +349,6 @@
             headerpd.classList.toggle("body-pd");
           });
         }
-        // document.getElementById().style.width = "250px";
-
-        document.getElementById(meri).style.marginLeft = "250px";
-
       };
       showNavbar("header-toggle", "nav-bar", "body-pd", "header");
       const linkColor = document.querySelectorAll(".nav_link");
@@ -366,7 +361,18 @@
       linkColor.forEach((l) => l.addEventListener("click", colorLink));
     });
   </script>
-  
+
+<script>
+  $('#header-toggle').click(function(){
+    var padding = $('#mainContainerId5').css('padding');
+var newPadding = (padding=='0px 40px 0px 380px')?'0px 50px 0px 175px':'0px 40px 0px 380px';
+$('#mainContainerId5').css('padding',newPadding);
+
+var margin = $('#header').css('margin-left');
+    var newMargin= (margin=='80px')?'285px':'80px';
+    $('#header').css('margin-left',newMargin);
+})
+</script>
 </body>
 
 </html>
