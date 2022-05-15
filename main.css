@@ -311,6 +311,13 @@ a {
   justify-content: space-between;
   overflow: hidden;
   padding-left: 30px !important;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.nav::-webkit-scrollbar {
+  display: none;
 }
 
 .navbar-toggler:focus {
@@ -778,7 +785,7 @@ a {
     position: fixed !important;
     right: 5px !important;
     top: 5px !important;
-    z-index: 1;
+    z-index: 1 !important;
   }
 }
 #mainContainerId4 {
@@ -4659,9 +4666,9 @@ body {
   color: inherit;
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 250;
-  font-size: calc(2rem + 0.1vw);
-  line-height: 41px;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 51px;
 }
 .main-container-wrapper .login p,
 .main-container-wrapper .resetTop .resetAccount p,
@@ -4669,11 +4676,14 @@ body {
   margin: 12px 0px;
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 200;
-  font-size: calc(1rem + 0.1vw);
+  font-weight: 400;
+  font-size: 16px;
   line-height: 28px;
   /* identical to box height */
-  color: #ffffff;
+  color: #FFFFFF;
+  opacity: 0.6;
+  /* identical to box height */
+  color: #FFFFFF;
   opacity: 0.6;
 }
 .main-container-wrapper .login .social-login-wrapper,
@@ -4742,6 +4752,13 @@ body {
 .main-container-wrapper .createAccount .separator h2 {
   padding: 0 2rem;
   font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #FFFFFF;
+  opacity: 0.4;
 }
 .main-container-wrapper .login .login-credential-top,
 .main-container-wrapper .login .resetCredentialTop,
@@ -4798,6 +4815,7 @@ body {
 .main-container-wrapper .resetTop .resetAccount .remember-forget-password ul,
 .main-container-wrapper .createAccount .remember-forget-password ul {
   list-style: none;
+  margin-left: -30px;
 }
 .main-container-wrapper .login .remember-forget-password ul .styled-checkbox,
 .main-container-wrapper .resetTop .resetAccount .remember-forget-password ul .styled-checkbox,
@@ -4808,8 +4826,15 @@ body {
 .main-container-wrapper .login .remember-forget-password ul .styled-checkbox + label,
 .main-container-wrapper .resetTop .resetAccount .remember-forget-password ul .styled-checkbox + label,
 .main-container-wrapper .createAccount .remember-forget-password ul .styled-checkbox + label {
-  font-size: calc(1rem + 0.1vw);
-  font-weight: 200;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+  font-family: "Poppins";
+  font-style: normal;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  opacity: 0.5;
   position: relative;
   cursor: pointer;
   padding: 0;
@@ -4859,8 +4884,13 @@ body {
 .main-container-wrapper .createAccount .remember-forget-password a {
   text-decoration: none;
   color: #ffbb54;
-  font-size: calc(1rem + 0.1vw);
-  font-weight: 200;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+  font-family: "Poppins";
+  font-style: normal;
+  letter-spacing: 0.01em;
 }
 .main-container-wrapper .login .login-to-account,
 .main-container-wrapper .login .createToAccount,
@@ -4875,7 +4905,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #ffbb54;
-  border-radius: 20px;
+  border-radius: 9px;
   border: none;
   outline: none;
   margin-top: 30px;
@@ -4922,15 +4952,31 @@ body {
   margin-top: 20px;
   display: flex;
   align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+.main-container-wrapper .login .not-yet-member p,
+.main-container-wrapper .resetTop .resetAccount .not-yet-member p,
+.main-container-wrapper .createAccount .not-yet-member p {
   font-family: "Poppins";
-  font-size: calc(1rem + 0.1vw);
-  font-weight: 200;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #FFFFFF;
+  opacity: 0.4;
 }
 .main-container-wrapper .login .not-yet-member a,
 .main-container-wrapper .resetTop .resetAccount .not-yet-member a,
 .main-container-wrapper .createAccount .not-yet-member a {
   color: #ffbb54;
+  font-weight: 400;
   font-family: "Poppins";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
   margin-left: 10px;
   text-decoration: none;
 }
@@ -4946,13 +4992,19 @@ body {
 .main-container-wrapper .resetTop .resetAccount .privacy-copyright a,
 .main-container-wrapper .createAccount .privacy-copyright a {
   text-decoration: none;
-  color: #ffbb54;
+  color: #ffffff;
+  opacity: 0.6;
+  font-weight: 400;
   font-family: "Poppins";
-  font-size: calc(1rem + 0.1vw);
-  font-weight: 200;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 @media screen and (max-width: 992px) {
+  .main-container-wrapper {
+    padding: 0px 20px;
+  }
   .main-container-wrapper .main-container-header .main-auth-container {
     display: none !important;
   }
@@ -4961,6 +5013,33 @@ body {
   }
 }
 @media screen and (max-width: 669px) {
+  .createAccount {
+    width: 96%;
+    max-width: 500px;
+    margin: 80px auto 20px auto;
+    color: #fff;
+  }
+  .createAccount h1 {
+    font-weight: 600 !important;
+    font-size: 19.6878px !important;
+    line-height: 30px !important;
+  }
+  .createAccount p {
+    font-weight: 400 !important;
+    font-size: 11.002px !important;
+    line-height: 17px !important;
+  }
+  .createAccount .socialCreate {
+    flex-direction: column;
+  }
+  .createAccount .socialCreate button {
+    width: 100% !important;
+    border-radius: 9px !important;
+  }
+  .createAccount .socialCreate .apple-button {
+    margin-top: -14px !important;
+  }
+
   .main-container-wrapper .topLeftImg {
     top: -120px;
     left: -120px;
@@ -4973,6 +5052,7 @@ body {
   .main-container-wrapper .login .social-login-wrapper button {
     width: 100%;
     margin: 10px 0px;
+    border-radius: 9px;
     height: calc(2 * 20px);
   }
   .main-container-wrapper .login .privacy-copyright {
@@ -5137,6 +5217,10 @@ body {
 
 .mobile-view-image-right {
   display: none;
+}
+
+.main-container-one-cryto {
+  margin-top: 20px !important;
 }
 
 .crypto-transaction-container {
@@ -5508,6 +5592,15 @@ body {
   height: auto;
   width: 100%;
 }
+.footer .sub-main-footer-container .sub-footer-container .logo-menu-container .footer-logo-header {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 54px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
 .footer .sub-main-footer-container .sub-footer-container .content .menu {
   margin-top: 38px;
   margin-left: -16px;
@@ -5539,7 +5632,7 @@ body {
 }
 .footer .sub-main-footer-container .sub-footer-container .footer-copyright-text {
   margin-top: 40px;
-  font-family: "DM Sans";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 2px !important;
@@ -5686,7 +5779,7 @@ body {
   }
   .footer .sub-main-footer-container .sub-footer-container .footer-copyright-text {
     margin-top: 55px;
-    font-family: "DM Sans";
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 2px !important;
@@ -5733,7 +5826,7 @@ body {
     position: relative;
   }
   .footer .sub-main-footer-container .footer-social-icons-container .termpolicies-text .term {
-    font-family: "DM Sans";
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     width: 110px;
@@ -5804,6 +5897,10 @@ body {
 @media screen and (max-width: 910px) {
   .main-container-image-right {
     display: none;
+  }
+
+  .main-container-one-cryto {
+    margin-top: -10px !important;
   }
 
   .crypto-opportunity-main-wrapper .crypto-opportunity-main-container-image {
@@ -5890,6 +5987,48 @@ body {
   .footer-sub-container-wrapper .main-footer-sub-container {
     width: 90%;
   }
+  .footer-sub-container-wrapper .main-footer-sub-container .footer-logo-header-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 23.35px;
+    line-height: 35px;
+    margin-bottom: 25px;
+    color: #FFFFFF;
+  }
+  .footer-sub-container-wrapper .main-footer-sub-container .footer-mobile-text {
+    margin-top: 20px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.13267px;
+  }
+  .footer-sub-container-wrapper .main-term-policies-container .termpolicies-text {
+    padding-top: 5px;
+  }
+  .footer-sub-container-wrapper .main-term-policies-container .termpolicies-text .term {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: -0.13267px;
+    color: #FFFFFF;
+  }
+  .footer-sub-container-wrapper .mobile-copyright-text p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.72917px;
+    line-height: 13px;
+    letter-spacing: -0.13267px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    padding-top: 20px;
+    opacity: 0.5;
+  }
   .footer-sub-container-wrapper .mobile-social-icons {
     margin-top: 50px;
     margin-bottom: 15px;
@@ -5899,6 +6038,15 @@ body {
   }
   .footer-sub-container-wrapper .mobile-social-icons a {
     color: #fff;
+  }
+  .footer-sub-container-wrapper .mobile-social-icons a .icons {
+    font-size: 14px !important;
+  }
+  .footer-sub-container-wrapper .mobile-social-icons a .icon-twitter {
+    margin-left: -25px;
+  }
+  .footer-sub-container-wrapper .mobile-social-icons a .icon-insta {
+    margin-left: -40px;
   }
   .footer-sub-container-wrapper .mobile-social-icons .footer-logo-header-text {
     font-family: "Poppins";
@@ -6004,22 +6152,26 @@ body {
 }
 @media screen and (max-width: 674px) {
   .register-users-container-text {
-    margin-left: 55px;
+    margin-left: 60px;
     margin-top: 0px !important;
   }
 
+  .price-header-second {
+    margin-left: 68px !important;
+  }
+
   .price-header-first {
-    margin-left: 58px;
+    margin-left: 62px;
   }
 
   .price-header-last {
-    margin-left: 50px;
+    margin-left: 60px;
   }
 
   .crypto-transaction-container {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 80px;
   }
 
   .second-container-home {
@@ -6044,12 +6196,35 @@ body {
     margin-top: 40px !important;
   }
 
+  .second-container-tokens {
+    margin-top: -60px;
+  }
+
+  .crypto-transaction-container .second-button-container-three {
+    margin-top: -100px;
+  }
+  .crypto-transaction-container .main-container-first-heading {
+    width: 158px;
+    height: 19.76px;
+    border-radius: 4.18732px;
+    background: rgba(255, 187, 84, 0.2117647059);
+    font-weight: 400;
+    padding: 13px 10px 10px 10px;
+    font-size: 7.9px;
+    line-height: 12px;
+  }
+
+  .auto-trading-container-wrpaper {
+    margin-top: -69px;
+    margin-bottom: -60px;
+  }
+
   .content-wrapper {
     display: flex;
     justify-content: center;
   }
   .content-wrapper .third-sub-header-text {
-    width: 297px;
+    width: 300px;
     height: 47px;
     left: 59px;
     top: 249px;
@@ -6106,20 +6281,34 @@ body {
   .learn-more-container {
     display: flex;
     justify-content: center;
+    margin-left: 20px;
   }
   .learn-more-container .learn-more-button-text {
-    margin-top: 50px;
+    margin-top: 40px;
+    width: 83px;
+    height: 28px;
     background: #ffbb54;
-    border-radius: 14px;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 8.37464px;
+    line-height: 13px;
     border: none;
-    padding: 15px 34px;
+    padding: 0px 0px;
     outline: none;
   }
 
   .crypto-opportunity-main-wrapper .crypto-opportunity-main-container-image {
     padding-left: 20px;
-    margin-top: -140px;
+    margin-top: -163px;
     width: 90%;
+  }
+
+  .crypto-oppurtunity-container .second-button-container {
+    margin-top: 100px;
+  }
+  .crypto-oppurtunity-container .second-button-container .sub-header {
+    width: auto;
+    font-size: 7.9px !important;
   }
 
   .crypto-opportunity-main-container {
@@ -6294,6 +6483,152 @@ body {
 
   .navbar-menu {
     display: none !important;
+  }
+}
+.main-navbar-logo-home {
+  position: relative;
+  top: -70px !important;
+}
+
+.main-navbar-wrapper-home {
+  position: relative;
+  top: -25px !important;
+}
+
+.main-navbar-logo h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 54px;
+  position: relative;
+  left: 100px;
+  top: 50px;
+  color: #FFFFFF;
+}
+
+.main-navabr-wrapper {
+  position: relative;
+  top: 45px;
+}
+.main-navabr-wrapper .main-navabr-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+.main-navabr-wrapper .main-navabr-container .sub-navbar-container-one {
+  display: flex;
+}
+.main-navabr-wrapper .main-navabr-container .sub-navbar-container-one a {
+  text-decoration: none !important;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+.main-navabr-wrapper .main-navabr-container .social-icons-container {
+  display: flex;
+  align-items: center;
+}
+.main-navabr-wrapper .main-navabr-container .social-icons-container a {
+  text-decoration: none;
+  color: #ffbb54;
+  text-decoration: none;
+}
+.main-navabr-wrapper .main-navabr-container .social-icons-container a .icons-container {
+  border: 1px solid #ffbb54;
+  border-radius: 15px;
+  margin: 0px 10px;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffbb54;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.main-navabr-wrapper .main-navabr-container .social-icons-container a .icons-container:hover {
+  cursor: pointer;
+  background-color: #ffbb54;
+  color: #000;
+}
+
+@media screen and (max-width: 991px) {
+  .main-navbar-logo h1 {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 54px;
+    left: -10px;
+    top: 5px;
+  }
+
+  .main-navbar-logo-home {
+    top: -55px !important;
+    left: 10px;
+  }
+
+  .main-navbar-button {
+    position: relative;
+    top: 10px;
+    right: -20px;
+  }
+
+  .main-navbar-button-home {
+    position: relative;
+    top: -51px;
+    right: -9px;
+  }
+
+  .main-navabr-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 45px;
+  }
+  .main-navabr-wrapper .main-navabr-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-navabr-wrapper .main-navabr-container .sub-navbar-container-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+  }
+  .main-navabr-wrapper .main-navabr-container .sub-navbar-container-one a {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .main-navabr-wrapper .main-navabr-container .social-icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .main-navbar-button-home {
+    position: unset;
+    top: unset;
+    right: unset;
+  }
+
+  .main-navbar-button {
+    position: unset;
+    top: unset;
+    right: unset;
   }
 }
 

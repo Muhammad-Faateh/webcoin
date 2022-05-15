@@ -11,6 +11,8 @@
 
   <!-- css style link ============================ -->
   <link rel="stylesheet" href="./main.css" />
+  <link rel="stylesheet" href="../../Bootstrap/bootstrap5/css/bootstrap.css">
+  <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.css">
 </head>
 
 <body>
@@ -19,43 +21,49 @@
     <img class="topLeftImg" src="../../img/Group 26601.png" alt="" />
     <img class="ellipse" src="../../img/Ellipse 9.png" alt="" />
     <!-- header section start here ======================================= -->
-    <div class="main-container-header">
-      <!-- log section ==================== -->
-      <div class="logoMenu">
+    <nav class="navbar navbar-expand-lg ">
+      <a href="#" class="navbar-brand main-navbar-logo"> <div class="logoMenu">
         <h1>LOGO</h1>
+      </div></a>
+      <button class="navbar-toggler" data-target="#navbarCollapse" type="button" data-toggle="collapse"
+      data-target="#navbarNavAltMarkup">
+      <div class="main-navbar-button">
+        <img src="../../img/Group45.png" id="navbar-open-icon" alt="">
+        <img src="./img/Navbarcross.png" alt=""  id="navbar-close-icon">
       </div>
-      <!-- menu with social icons =============== -->
-      <div class="main-auth-container">
-        <div class="menu">
-          <a class="feature" href="#">Feature</a>
-          <a href="#">Pricing</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact Us</a>
-        </div>
-        <div class="socialIcons">
-          <a href="#">
-            <div class="icons">
-              <i class="fa fa-facebook-f"></i>
-            </div>
-          </a>
-          <a href="#">
-            <div class="icons">
-              <i class="fa fa-twitter"></i>
-            </div>
-          </a>
-          <a href="#">
-            <div class="icons">
-              <i class="fa fa-instagram"></i>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="openMobileMenu">
-        <img src="../../img/menu.png" alt="" />
-      </div>
-    </div>
+      </button>
+      <div class="collapse navbar-collapse main-navabr-wrapper" id="navbarCollapse">
+        <div class="main-navabr-container">
+          <div class="sub-navbar-container-one">
+              <a href="#" class="nav-link">Feature</a>
+                <a href="#" class="nav-link">Pricing</a>
+                  <a href="#" class="nav-link">Blog</a>
+                    <a href="#" class="nav-link">Contact Us</a>
+                  </div>
 
-    <div class="resetTop">
+                  <div class="social-icons-container">
+                    <a href="#">
+                      <div class="icons-container">
+                        <i class="fa fa-facebook-f"></i>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="icons-container">
+                        <i class="fa fa-twitter"></i>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="icons-container">
+                        <i class="fa fa-instagram"></i>
+                      </div>
+                    </a>
+                  </div> 
+                </div>
+              </div>
+    </nav>
+    
+
+    <div class="resetTop ">
       <div class="resetAccount">
         <h1>Forget Password</h1>
         <p>Enter your Email and we'll send link reset to your email</p>
@@ -76,6 +84,30 @@
     </div>
     <img class="mask-group" src="../../img/Mask Group.png" alt="" />
   </div>
+  <script src="./Bootstrap/js/bootstrap.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+  
+      <script>
+        const openButton = document.getElementById("navbar-open-icon")
+          const closeButton = document.getElementById("navbar-close-icon")
+        document.addEventListener("DOMContentLoaded", function (event) {
+          openButton.style.display = "block"
+          closeButton.style.display = "none"
+          openButton.addEventListener("click",()=>{
+            openButton.style.display = "none"
+            closeButton.style.display = "block"
+          })
+          closeButton.addEventListener("click",()=>{
+            openButton.style.display = "block"
+            closeButton.style.display = "none"
+    })
+        })
+      </script>
 </body>
 
 </html>
