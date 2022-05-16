@@ -4602,7 +4602,7 @@ body {
 .main-container-wrapper .main-container-header .main-auth-container .menu a {
   padding: 0px 20px;
   text-decoration: none;
-  font-family: "Poppins";
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
   font-size: calc(0.2rem + 1vw);
@@ -5156,7 +5156,7 @@ body {
 .main-container-wrapper-home .main-header-container-home .navbar-menu-container .menu a {
   padding: 0px 20px;
   text-decoration: none;
-  font-family: "Poppins";
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
   font-size: calc(0.2rem + 1vw);
@@ -5607,16 +5607,16 @@ body {
   width: 100%;
 }
 .footer .sub-main-footer-container .sub-footer-container .content .menu .benefits-footer-text {
-  margin-left: 48px;
+  margin-left: 40px;
 }
 .footer .sub-main-footer-container .sub-footer-container .content .menu .team-footer-text {
-  margin-left: 30px;
+  margin-left: 22px;
 }
 .footer .sub-main-footer-container .sub-footer-container .content .menu .careers-footer-text {
-  margin-left: 25px;
+  margin-left: 22px;
 }
 .footer .sub-main-footer-container .sub-footer-container .content .menu a {
-  font-family: "Poppins";
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -5632,7 +5632,7 @@ body {
 }
 .footer .sub-main-footer-container .sub-footer-container .footer-copyright-text {
   margin-top: 40px;
-  font-family: "Poppins";
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 2px !important;
@@ -5679,7 +5679,7 @@ body {
   position: relative;
 }
 .footer .sub-main-footer-container .footer-social-icons-container .termpolicies-text .term {
-  font-family: "Poppins";
+  font-family: "DM Sans";
   font-style: normal;
   width: 130px;
   font-weight: 400;
@@ -5763,7 +5763,7 @@ body {
   .footer .sub-main-footer-container .sub-footer-container .content .menu a {
     padding: 0px 20px;
     text-decoration: none;
-    font-family: "Poppins";
+    font-family: "DM Sans";
     font-style: normal;
     font-weight: 400;
     font-size: calc(0.2rem + 1vw);
@@ -5779,7 +5779,7 @@ body {
   }
   .footer .sub-main-footer-container .sub-footer-container .footer-copyright-text {
     margin-top: 55px;
-    font-family: "Poppins";
+    font-family: "DM Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 2px !important;
