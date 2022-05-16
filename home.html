@@ -38,10 +38,12 @@
         class="main-container-image-left"
         src="../../img/Group 26601.png"
         alt="error"
+        id="main-container-image-left"
       />
       <img
         class="main-container-image-right"
         src="../../img/Ellipse20.png"
+        id="main-container-image-right"
         alt="error"
       />
       <!-- Main header container -->
@@ -104,6 +106,7 @@
     <img
       src="../../img/MaskGroup1.png"
       alt="error"
+      id="mobile-view-image-left"
       class="mobile-view-image-left"
     />
     <img
@@ -502,16 +505,27 @@
       <script>
         const openButton = document.getElementById("navbar-open-icon")
           const closeButton = document.getElementById("navbar-close-icon")
+          const image1 = document.getElementById("main-container-image-left")
+          const image2 = document.getElementById("main-container-image-right")
+          // const image3 = document.getElementById("mobile-view-image-left")
+
+    
         document.addEventListener("DOMContentLoaded", function (event) {
           openButton.style.display = "block"
           closeButton.style.display = "none"
           openButton.addEventListener("click",()=>{
             openButton.style.display = "none"
             closeButton.style.display = "block"
+            image1.style.display="none"
+            image2.style.display="none"
+            // image3.style.display="none"
           })
           closeButton.addEventListener("click",()=>{
             openButton.style.display = "block"
             closeButton.style.display = "none"
+            image1.style.display="block"
+            image2.style.display="block"
+            // image3.style.display="block"
     })
         })
       </script>
