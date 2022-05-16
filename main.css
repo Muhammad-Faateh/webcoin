@@ -83,6 +83,10 @@ a {
   }
 }
 
+.fa-gear {
+  color: rgba(255, 255, 255, 0.452) !important;
+}
+
 .search-container {
   width: 100%;
   display: -webkit-box;
@@ -366,7 +370,6 @@ a {
   width: 320px;
   height: 100%;
   background-color: #161616;
-  padding: 0.5rem 1rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: var(--z-fixed);
@@ -509,7 +512,7 @@ a {
 .accordion-item:first-of-type .accorbd .sub-accordion span {
   font-size: 14px;
   margin-left: 20px;
-  color: white;
+  color: rgba(255, 255, 255, 0.452);
 }
 
 .nav-list .nav-link {
@@ -560,8 +563,16 @@ a {
 .nav-list .nav-link-three {
   position: relative;
   top: 8px;
-  margin-left: -28px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 991px) {
+  .nav-list .nav-link-three {
+    position: relative;
+    top: 8px;
+    margin-left: -28px;
+    text-decoration: none;
+  }
 }
 
 .nav-list .nav-link-refer-a-friend {
@@ -610,7 +621,6 @@ a {
 
 .nav-logo {
   margin-bottom: 2rem;
-  margin-top: -10px;
   font-family: "Poppins";
   font-style: normal;
   font-size: 36px;
@@ -5525,8 +5535,12 @@ input:checked
   left: 270px;
   margin-top: 10px;
   padding: 20px 8px 20px 8px;
-  margin-left: 65px;
+  margin-left: 16px;
   border-radius: 14px 0px 0px 14px;
+}
+
+.fa-angle-down {
+  color: white;
 }
 
 #header {
@@ -5534,7 +5548,7 @@ input:checked
 }
 
 .checkToggle {
-  margin-left: -145px;
+  margin-left: -142px;
   border-radius: 10px 0px 0px 10px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -5702,10 +5716,9 @@ input:checked
   }
   .left-navbar {
     left: 0;
-    padding: 1rem 1rem 0 0;
   }
   .show-navbar {
-    width: calc(var(--nav-width) + 3px);
+    width: calc(var(--nav-width) + -4px);
   }
 }
 
@@ -8064,6 +8077,9 @@ HOME and AUTH Pages NAVBAR CSS
   .navbar {
     margin-top: -50px;
   }
+  .main-navbar-brand-two h1 {
+    top: 50px !important;
+  }
   .main-navbar-logo h1 {
     font-family: "Poppins";
     font-style: normal;
@@ -8087,6 +8103,11 @@ HOME and AUTH Pages NAVBAR CSS
   .main-navbar-button-home {
     position: relative;
     top: 35px;
+    right: 0px;
+  }
+  .main-navbar-button-two {
+    position: relative;
+    top: 14px;
     right: 0px;
   }
   .main-navabr-wrapper {
