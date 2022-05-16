@@ -197,24 +197,24 @@
           <span class="nav-logo-name">LOGO</span>
         </a>
         <div class="nav-list">
-          <a href="portfolio.html" class="nav-link">
-            <i><img src="../../img/frame.png" alt="" /></i>
+          <a href="portfolio.html" class="nav-link ">
+            <i id="side-bar-icon-1"><img src="../../img/frame.png" alt="" /></i>
             <span>Portfolio Tracker</span>
           </a>
           <a href="article-view.html" class="nav-link">
-            <i>
+            <i id="side-bar-icon-2">
               <img src="../../img/article-icon-logo.png" alt="" />
             </i>
             <span>Article</span>
           </a>
           <a href="support.html" class="nav-link">
-            <i>
+            <i id="side-bar-icon-3">
               <img src="../../img/crypto-suggest-icon.png" alt="" />
             </i>
             <span>Crypto Suggest</span>
           </a>
           <a href="video-lessons.html" class="nav-link">
-            <i>
+            <i id="side-bar-icon-4">
               <img src="../../img/vid.png" alt="" />
             </i>
             <span>Video Lessons</span>
@@ -227,7 +227,7 @@
                 <button class="accordion-button accord-button" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseOne">
                   <a href="#">
-                    <i>
+                    <i id="side-bar-icon-5">
                       <img src="../../img/pres.png" alt="" />
                     </i>
                   </a>
@@ -238,7 +238,7 @@
                   <div class="accordion-body accorbd">
                     <div class="sub-accordion nav-link">
                       <a href="transaction.html">
-                        <i>
+                        <i >
                           <img src="../../img/settingicon.png" alt="" />
                         </i>
                         <span>Transactions</span>
@@ -261,25 +261,25 @@
 
 
           <a href="settings.html" class="nav-link nav-link-three">
-            <i>
+            <i id="side-bar-icon-6">
               <img src="../../img/Vector1.png" alt="" />
             </i>
             <span>Setting</span>
           </a>
           <a href="support.html" class="nav-link nav-link-support">
-            <i>
+            <i id="side-bar-icon-7">
               <img src="../../img/Vector2.png" alt="" />
             </i>
             <span>Support</span>
           </a>
           <a href="refer-a-friend.html" class="nav-link nav-link-refer-a-friend">
-            <i>
+            <i id="side-bar-icon-8">
               <img src="../../img/profile.png" alt="" />
             </i>
             <span>Refer a friend</span>
           </a>
-          <a href="become-vip.html" class="nav-link nav-link-three active-link">
-            <i>
+          <a href="become-vip.html" class="nav-link nav-link-three active-link" >
+            <i id="side-bar-icon-9">
               <img src="../../img/vipicon.png" alt="" />
             </i>
             <span>Become VIP</span>
@@ -288,9 +288,8 @@
       </div>
     </nav>
   </div>
-
-  <!-- divider -->
   <div class="seperator"></div>
+  
 
   <!-- Become-Vip Content heading -->
   <div class="main-container-text" id="mainContainerId4">
@@ -439,13 +438,73 @@
   <script type="text/javascript" src="../../Bootstrap/bootstrap5/js/bootstrap.js"> </script>
   <script>
     document.addEventListener("DOMContentLoaded", function (event) {
+      let isClose = false;
       const showNavbar = (toggleId, navId, bodyId, headerId) => {
-        const toggle = document.getElementById(toggleId),
+        const toggle = document.getElementById(toggleId)
+        const logoTag = document.querySelector('.nav-logo-name')
+        let sidebarIcon1 = document.getElementById('side-bar-icon-1')
+        let sidebarIcon2 = document.getElementById('side-bar-icon-2')
+        let sidebarIcon3 = document.getElementById('side-bar-icon-3')
+        let sidebarIcon4 = document.getElementById('side-bar-icon-4')
+        let sidebarIcon5 = document.getElementById('side-bar-icon-5')
+        let sidebarIcon6 = document.getElementById('side-bar-icon-6')
+        let sidebarIcon7 = document.getElementById('side-bar-icon-7')
+        let sidebarIcon8 = document.getElementById('side-bar-icon-8')
+        let sidebarIcon9 = document.getElementById('side-bar-icon-9')
           nav = document.getElementById(navId),
           bodypd = document.getElementById(bodyId),
           headerpd = document.getElementById(headerId);
         if (toggle && nav && bodypd && headerpd) {
           toggle.addEventListener("click", () => {
+            isClose = !isClose;
+            if(isClose){
+              logoTag.innerHTML = "LO"
+              logoTag.style.marginLeft = "-50px"
+        
+              sidebarIcon1.style.position = "relative"
+              sidebarIcon1.style.left = "-20px"
+              sidebarIcon2.style.position = "relative"
+              sidebarIcon2.style.left = "-20px"
+              sidebarIcon3.style.position = "relative"
+              sidebarIcon3.style.left = "-20px"
+              sidebarIcon4.style.position = "relative"
+              sidebarIcon4.style.left = "-20px"
+              sidebarIcon5.style.position = "relative"
+              sidebarIcon5.style.left = "-20px"
+              sidebarIcon6.style.position = "relative"
+              sidebarIcon6.style.left = "-20px"
+              sidebarIcon7.style.position = "relative"
+              sidebarIcon7.style.left = "-20px"
+              sidebarIcon8.style.position = "relative"
+              sidebarIcon8.style.left = "-20px"
+              sidebarIcon9.style.position = "relative"
+              sidebarIcon9.style.left = "-20px"
+       
+
+            }else{
+              logoTag.innerHTML = "LOGO"
+              logoTag.style.marginLeft = "-19px"
+              sidebarIcon1.style.position = "unset"
+              sidebarIcon1.style.left = "0px"
+              sidebarIcon2.style.position = "unset"
+              sidebarIcon2.style.left = "0px"
+              sidebarIcon3.style.position = "unset"
+              sidebarIcon3.style.left = "0px"
+              sidebarIcon4.style.position = "unset"
+              sidebarIcon4.style.left = "0px"
+              sidebarIcon5.style.position = "unset"
+              sidebarIcon5.style.left = "0px"
+              sidebarIcon6.style.position = "unset"
+              sidebarIcon6.style.left = "0px"
+              sidebarIcon7.style.position = "unset"
+              sidebarIcon7.style.left = "0px"
+              sidebarIcon8.style.position = "unset"
+              sidebarIcon8.style.left = "0px"
+              sidebarIcon9.style.position = "unset"
+              sidebarIcon9.style.left = "0px"
+  
+
+            }
             toggle.classList.toggle("checkToggle");
             nav.classList.toggle("show-navbar");
             toggle.classList.toggle("bx-x");
@@ -456,13 +515,17 @@
       };
       showNavbar("header-toggle", "nav-bar", "body-pd", "header");
       const linkColor = document.querySelectorAll(".nav-link");
+
       function colorLink() {
+       
+        logoTag.style.marginLeft = '-27px'
         if (linkColor) {
           linkColor.forEach((l) => l.classList.remove("active"));
           this.classList.add("active");
         }
       }
       linkColor.forEach((l) => l.addEventListener("click", colorLink));
+
     });
   </script>
 
