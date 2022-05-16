@@ -6980,6 +6980,29 @@ body {
 
 .token-recommendation-image-two {
   margin-top: 50px;
+  padding-top: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 35%;
+  height: 35%;
+  background: #252525;
+}
+
+.token-recommendation-image-two img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .token-recommendation-image-two {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .token-recommendation-image-two {
+    width: 70%;
+  }
 }
 
 .token-recommendation-image-three {
@@ -7464,10 +7487,6 @@ body {
   }
   .footer-copyright-text > h1 {
     font-size: 20px;
-  }
-  .token-recommendation-image-two {
-    width: 80%;
-    height: 80%;
   }
   .price-header-first {
     position: absolute;
