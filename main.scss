@@ -42,6 +42,48 @@ body {
   background-color: rgba(20, 20, 20, 1) !important;
 }
 
+
+.collpased-article-navbar{
+  .back-icon{
+    margin-left: 12px;
+  }
+  h1{
+  display: none;
+  }
+}
+
+
+@media screen and (max-width:991px){
+  .collpased-article-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .back-icon{
+      width:24px;
+          height: 24px;
+          position: relative;
+          left: 4px;
+          margin-left: 0px;
+    }
+    h1{
+      display: block;
+      position: relative;
+      font-family: 'Poppins';
+  font-style: normal;
+  left: 140px;
+  top: 16px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+  
+    }
+  }
+  
+}
+
+
+
 a {
   text-decoration: none;
 }
@@ -51,12 +93,10 @@ a {
   align-items: center;
 }
 
-// .main-navbar-wrapper{
-//   background: #141414;
-//    @media screen and (max-width: 991px){
-//       background: #161616;
-//    }
-// }
+
+
+
+
 
 .bell-icon-button {
   display: none !important;
@@ -349,7 +389,7 @@ a {
   position: fixed;
   top: 0;
   left: -30%;
-  width: 320px;
+  width: 340px;
   height: 100%;
   background-color: #161616;
   // padding: 0.5rem 1rem;
@@ -652,6 +692,7 @@ img{
   }
 }
 
+
 .bell-Icon {
   @media screen and (max-width: 600px) {
     display: none;
@@ -691,6 +732,8 @@ img{
     @media screen and (max-width: 600px) {
       display: flex;
       justify-content: center;
+
+      padding-bottom: 10px;
     }
   }
 
@@ -723,8 +766,7 @@ img{
       opacity: 0.6;
 
       @media screen and (max-width: 600px) {
-        margin-top: -13px;
-        line-height: 20px;
+        display: none;
       }
     }
 
@@ -738,13 +780,13 @@ img{
       color: #ffffff;
 
       @media screen and (max-width: 600px) {
-        font-size: 24px;
+        font-weight: 600;
+font-size: 24px;
+line-height: 36px;
         padding-right: 72px;
       }
 
-      @media screen and (max-width: 420px) {
-        line-height: 28px;
-      }
+      
     }
 
     .date-heading {
@@ -754,11 +796,14 @@ img{
       font-size: 16px;
       line-height: 24px;
       color: #ffffff;
-      opacity: 0.3;
+      opacity: 0.6;
       margin-block-start: auto;
 
       @media screen and (max-width: 600px) {
         margin-top: 40px;
+        font-weight: 400;
+font-size: 12px;
+line-height: 18px;
       }
     }
   }
@@ -769,6 +814,7 @@ img{
 
     @media screen and (max-width: 600px) {
       display: flex;
+    
       flex-direction: column-reverse;
     }
   }
@@ -784,9 +830,9 @@ img{
     color: #7f7f7f;
 
     @media screen and (max-width: 600px) {
+      font-weight: 400;
       font-size: 12px;
-      font-weight: 300;
-      line-height: 20px;
+      line-height: 24px;
       padding-right: 0px;
       word-spacing: 0.25px;
       margin-top: 10px;
@@ -849,6 +895,9 @@ img{
     position: absolute;
     right: 20px;
   }
+
+
+
 
   .avatar {
     width: 44px;
@@ -971,6 +1020,12 @@ img{
       }
     }
 
+
+
+.basic-header-wrapper{
+
+  
+  
     .basic-header-container {
       padding: 30px 0px 0px 30px;
 
@@ -999,7 +1054,7 @@ img{
       padding: 0px 0px 0px 30px;
       display: flex;
       align-items: center;
-
+      
       h1 {
         font-family: "Poppins";
         font-style: normal;
@@ -1021,6 +1076,7 @@ img{
         opacity: 0.2;
       }
     }
+  }
 
     .subscriber-main-container {
       padding: 10px 0px 0px 30px;
@@ -1266,7 +1322,6 @@ img{
 
     p {
       padding-left: 20px;
-
       font-weight: 400;
       font-size: 14px;
       line-height: 26px;
@@ -1293,72 +1348,61 @@ img{
         padding-top: 30px;
 
         button {
-          width: auto;
-          height: 21px;
-          font-family: "Poppins";
-          font-style: normal;
+          position: relative;
+          width: 62px;
+          height: 22.44px;
+
           font-weight: 400;
-          font-size: 14px;
-          background: #6c532d;
-          border: none;
-          border-radius: 10.1667px;
-          text-transform: uppercase;
-          line-height: 21px;
-          padding: 10px 15px 30px 15px;
-          letter-spacing: 0.1em;
-          color: #ffbb54;
+          font-size: 8.26667px;
+          line-height: 12px;
+          border: 1px solid #000000;
+          border-radius: 6.00317px;
+          padding: 0px 0px 0px 0px;
+          background: #ffbb5421;
+          position: relative;
+          left: -118px;
         }
       }
 
-      .basic-header-container {
-        padding: 30px 0px 0px 5px;
+      .basic-header-wrapper{
+      display: flex;
+      justify-content: space-between;
+        
+        .basic-header-container {
+        padding: 10px 0px 0px 5px;
 
         h1 {
-          font-family: "Poppins";
-          font-style: normal;
           font-weight: 600;
-          font-size: 38.125px;
-          line-height: 57px;
-          color: #ffffff;
+          font-size: 28px;
+          line-height: 42px;
         }
 
         p {
-          font-family: "Poppins";
-          font-style: normal;
           font-weight: 400;
-          font-size: 17.7917px;
-          line-height: 27px;
-          color: #ffffff;
-          opacity: 0.6;
+          font-size: 10px;
+          line-height: 15px;
         }
       }
 
       .price-text-container {
-        padding: 10px 0px 0px 5px;
+        padding: 10px 20px 20px 5px;
         display: flex;
         align-items: center;
 
         h1 {
-          font-family: "Poppins";
-          font-style: normal;
           font-weight: 600;
-          font-size: 42px;
-          line-height: 63px;
-          color: #ffffff;
+          font-size: 25.9412px;
+          line-height: 39px;
         }
-
+        
         p {
-          padding: 12px 0px 0px 5px;
-          font-family: "Poppins";
-          font-style: normal;
           font-weight: 500;
-          font-size: 24px;
-          line-height: 36px;
-          color: #ffffff;
-          opacity: 0.2;
+          font-size: 15.4286px;
+          line-height: 23px;
         }
       }
-
+      
+    }
       .subscriber-main-container {
         display: none;
       }
@@ -1372,13 +1416,13 @@ img{
           width: 299px;
           height: 42px;
           font-weight: 600;
-          font-size: 14px;
-          line-height: 21px;
+font-size: 14px;
+line-height: 21px;
         }
       }
 
       .list-text-main-container {
-        padding: 30px 0px 30px 10px;
+        padding: 20px 0px 30px 10px;
 
         ul {
           display: grid;
@@ -3652,7 +3696,7 @@ img{
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   .friend-container {
     .sub-container-wrapper {
       width: 100%;
@@ -3667,7 +3711,8 @@ img{
         margin-top: 20px;
         margin-right: 20px;
         margin-left: 20px;
-        width: 300px;
+        width: 352px;
+height: 104px;
         background: #0e0e0e;
         border: 0.869448px solid rgba(14, 14, 14, 0.3);
         border-radius: 17.389px;
@@ -3677,19 +3722,20 @@ img{
 
         .main-image-container {
           position: relative;
-          top: 12px;
+          top: 4px;
+          left: -30px;
 
           .sub-image-one {
             position: relative;
-            width: 118px;
-            height: 106px;
+            width: 85px;
+            height: 85.72px;
             background: #ffbb54;
             border-radius: 12px;
           }
 
           .image-one {
-            left: 18px;
-            top: 10px;
+            left: 2px;
+            top: 2px;
             position: absolute;
           }
         }
@@ -3697,31 +3743,36 @@ img{
 
       .sub-content-container {
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        flex-direction: row;
 
         .sub-container-number {
-          font-family: "Poppins";
-          font-style: normal;
           font-weight: 600;
-          font-size: 54px;
-          line-height: 81px;
-          color: #ffbb54;
+font-size: 44px;
+line-height: 66px;
+position: relative;
+left: -88px;
+top: 6px;
+        }
+
+        .sub-container-number-two{
+          position: relative ;
+left: -104px !important;
+top: 6px;
         }
 
         .sub-container-text {
-          font-family: "Poppins";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 24px;
-          color: #ffffff;
-          opacity: 0.6;
+          font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+        position: relative;
+        right: -30px;
+        top: 8px;
         }
       }
 
       .sub-container-dots {
-        color: #ffffff;
-        padding-top: 20px;
+        display: none;
       }
     }
 
@@ -3739,29 +3790,19 @@ img{
       flex-direction: column;
 
       .crypto-transaction-header {
-        z-index: 1;
-        font-family: "Poppins";
-        font-style: normal;
         font-weight: 700;
-        font-size: 36px;
+        font-size: 32px;
+        line-height: 40px;
         width: 90%;
-        line-height: 47px;
-        text-align: center;
-        color: #ffffff;
+      
       }
 
       .crypto-transaction-container-text {
-        z-index: 1;
-        padding-top: 20px;
-        font-family: "Poppins";
-        font-style: normal;
+      
         width: 90%;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: #ffffff;
+font-size: 12px;
+line-height: 20px;
       }
 
       .sub-image-one {
@@ -3787,7 +3828,7 @@ img{
       background: #141326;
       border-radius: 12px;
       cursor: pointer;
-      width: 260.63px;
+      width: 319px;
       height: 50px;
       z-index: 1;
       border: none;
@@ -3812,12 +3853,9 @@ img{
       border-radius: 17.389px;
 
       .referus-header-text {
-        font-family: "Poppins";
-        font-style: normal;
         font-weight: 600;
-        font-size: 24px;
+        font-size: 16px;
         line-height: 48px;
-        color: #ffffff;
       }
 
       .input-field-container-refer {
@@ -3828,30 +3866,24 @@ img{
         .linkimage {
           position: absolute;
           left: 10px;
-          top: 14px;
+          top: 12px;
         }
 
         .inputfield {
-          background: #161616;
-          padding: 13px 100px 13px 40px;
-          width: 100%;
-          border: 0.869448px solid rgba(0, 0, 0, 0.3);
-          border-radius: 14px;
-          color: white;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
         }
       }
 
       .copy-link-text {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 700;
-        cursor: pointer;
-        font-size: 14px;
-        line-height: 21px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 15px;
         position: absolute;
         right: 20px;
-        top: 14px;
-        color: #ffbb54;
+        top: 18px;
+        
       }
     }
   }
@@ -3879,6 +3911,14 @@ img{
     font-size: 38px;
     line-height: 57px;
     color: #ffffff;
+    @media screen  and (max-width: 600px){
+      font-weight: 600;
+font-size: 26px;
+line-height: 39px;
+margin-top: 100px;
+padding-left: 18px;
+      
+    }
   }
 
   .refer-friend-sub-text {
@@ -3889,6 +3929,12 @@ img{
     line-height: 30px;
     color: #ffffff;
     opacity: 0.6;
+    @media screen and (max-width: 600px){
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 26px;
+      padding: 0px 10px 0px 18px;
+    }
   }
 }
 
@@ -4469,7 +4515,9 @@ img{
       }
 
       @media screen and (max-width: 600px) {
-        font-size: 25px;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 39px;
         padding-left: 25px;
       }
     }
@@ -4484,7 +4532,10 @@ img{
       opacity: 0.6;
 
       @media screen and (max-width: 600px) {
-        font-size: 12px;
+        font-weight: 400;
+font-size: 14px;
+margin-top: -2px;
+line-height: 26px;
       }
     }
 
@@ -4508,7 +4559,8 @@ img{
         margin-right: 20px;
         overflow: hidden;
         position: relative;
-
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 0.55);
         &::before {
           content: "";
           position: absolute;
@@ -4532,16 +4584,14 @@ img{
           }
         }
 
-        @media screen and (max-width: 800px) {
-          width: 116px !important;
-          font-size: 12px !important;
-          height: 40px;
-        }
-
-        @media screen and (max-width: 430px) {
-          width: 80px !important;
+        @media screen and (max-width: 600px) {
+          width: 117px;
+          height: 42px;
           margin-right: 15px;
-          font-size: 10px !important;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 21px;
+       
         }
       }
 
@@ -4581,15 +4631,12 @@ img{
           }
         }
 
-        @media screen and (max-width: 800px) {
-          width: 150px !important;
-          height: 40px;
-          font-size: 12px !important;
-        }
-
-        @media screen and (max-width: 430px) {
-          width: 120px !important;
-          font-size: 10px !important;
+        @media screen and (max-width: 600px) {
+          width: 185px;
+          height: 42px;
+          font-weight: 500;
+font-size: 14px;
+line-height: 21px;
         }
       }
     }
@@ -4605,8 +4652,10 @@ img{
       }
 
       @media screen and (max-width: 600px) {
-        line-height: 10px;
-        font-size: 20px !important;
+        font-weight: 600;
+font-size: 16px;
+padding-left: 4px;
+line-height: 24px;
       }
     }
 
@@ -4622,9 +4671,9 @@ img{
       width: 335px;
 
       @media screen and (max-width: 600px) {
-        width: 100%;
-        font-size: 12px;
-        padding-right: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
       }
     }
 
@@ -4652,10 +4701,7 @@ img{
           .subject-Input {
             @media screen and (max-width: 900px) {
               height: 48px !important;
-            }
-
-            @media screen and (max-width: 500px) {
-              height: 35px !important;
+              
             }
           }
 
@@ -4712,26 +4758,19 @@ img{
                 }
               }
 
-              @media screen and (max-width: 800px) {
-                width: 116px !important;
-                font-size: 12px !important;
-                height: 40px;
+           
+
+              @media screen and (max-width: 600px) {
+                width: 160.89px;
+                height: 50px;
+                font-weight: 600;
+               
+font-size: 14px;
+line-height: 21px;
               }
-
-              @media screen and (max-width: 430px) {
-                width: 80px !important;
-                margin-right: 15px;
-                font-size: 10px !important;
-              }
             }
 
-            @media screen and (max-width: 800px) {
-              height: 40px;
-            }
-
-            @media screen and (max-width: 600px) {
-              font-size: small !important;
-            }
+          
           }
         }
       }
@@ -4750,6 +4789,47 @@ img{
     padding: 30px 10px 0px 10px !important;
   }
 }
+
+.collapsed-navbar-container-two{
+
+  .line-class-two{
+       display: none;
+  }}
+  @media screen and (max-width:991px){
+    .collapsed-navbar-container-two{
+      display: flex;
+      align-items: center;
+      margin-left: -10px;
+      .line-class-two{
+        display: block;
+            color: white;
+            font-size: 10px;
+            padding: 40px 0px 0px 10px;
+        .user-profile-heading{
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 24px;
+          margin-top: 5px;
+          color: #FFFFFF;
+        }
+        .verified-heading{
+          margin-top: -7px;
+          color:#ffffff70;
+        }
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  .bell-icon-transaction{
+    display: none !important;
+  }
+   
 
 .transaction-Content {
   padding-left: 140px;
@@ -4816,7 +4896,7 @@ img{
 
 .transaction-Content {
   @media screen and (max-width: 767px) {
-    margin: 10px 10px;
+    // margin: 10px 80px;
     padding-left: 0px !important;
   }
 
@@ -4832,7 +4912,7 @@ img{
     color: #ffffff;
 
     @media screen and (max-width: 600px) {
-      margin-left: 14px;
+      margin-left: 65px;
     }
   }
 
@@ -4844,7 +4924,7 @@ img{
 
     @media screen and (max-width: 600px) {
       width: 288px;
-      margin-left: 14px;
+      margin-left: 65px;
     }
   }
 
@@ -4898,6 +4978,77 @@ img{
   }
 }
 
+@media screen and (max-width: 450px){
+
+
+
+  .mobview-main{
+    width: auto!important;
+  .mobile-card{
+    .card-top{
+      width: 0% !important;
+      .div-img{
+        width: 200px;
+        display: none;
+        border-radius: 2%;
+        height: 60px !important;
+        padding: 35px 10px 35px 10px;
+        // margin:30px 40px 40px 15px;
+        img{
+          width: 50.23px !important;
+          height: 50.23px !important;
+        }
+      }
+      .card-top-left{
+        .coin-name{
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 21px;
+        }
+      .right-Para{
+        font-weight: 400;
+font-size: 8.94194px;
+line-height: 13px;
+
+      }
+      }
+      .card-top-right{
+        display: flex;
+        flex-wrap: wrap;
+            width: 0%;
+        padding: 22px 0px;
+    
+        span{
+          font-weight: 600;
+font-size: 12.7742px;
+line-height: 19px;
+        }
+        .right-Para{
+          font-weight: 400;
+font-size: 10px !important;
+line-height: 15px;
+width: 80px !important;
+margin-left: 25px;
+        }
+      }
+
+    
+      
+    }
+    .card-bottom{
+      .cardPara{
+        font-weight: 400;
+font-size: 10px;
+line-height: 18px;
+/* or 180% */
+}
+    }
+  }
+}
+}
+
+
+
 .mobview-main {
   @media screen and (min-width: 601px) {
     display: none;
@@ -4909,7 +5060,7 @@ img{
   border-radius: 11px;
 
   @media screen and (max-width: 420px) {
-    width: 420px;
+    width: 100%;
   }
 
   .mobile-card {
@@ -4918,7 +5069,7 @@ img{
       display: flex;
 
       .div-img {
-        width: 200px !important;
+        width: 200px ;
         display: none;
         border-radius: 16%;
 
@@ -5021,10 +5172,15 @@ img{
 
 @media screen and (max-width: 991px) {
   .transaction-Content {
-    padding-left: 40px;
-    margin-top: -90px !important;
+    padding-left: 0px !important;
+    margin-left:0px !important ;
+    margin-top: -50px !important;
   }
-
+  #mainContainerId0{
+    padding: 0px 0px 0px 0px !important;
+    margin-left: -40px !important; 
+  }
+ 
   .formcontentDiv {
     padding: 20px 20px 20px 20px;
   }
@@ -5046,7 +5202,7 @@ img{
   left: 270px;
   margin-top: 10px;
   padding: 20px 8px 20px 8px;
-  margin-left: 16px;
+  margin-left: 37px;
   border-radius: 14px 0px 0px 14px;
 }
 
@@ -5065,7 +5221,7 @@ img{
 }
 
 #mainContainerId {
-  padding: 0px 100px 0px 380px;
+  padding: 0px 100px 0px 389px;
 }
 
 @media screen and (max-width: 991px) {
@@ -5073,6 +5229,20 @@ img{
     padding: 30px 5px 0px 10px !important;
   }
 }
+
+
+
+#mainContainerIdvideo {
+  padding: 0px 100px 0px 389px;
+}
+
+@media screen and (max-width: 991px) {
+  #mainContainerIdvideo {
+    padding: 30px 5px 0px 10px !important;
+  }
+}
+
+
 
 #mainContainerId2 {
   padding: 0px 20px 0px 350px;
@@ -5282,20 +5452,53 @@ img{
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding-left: 20px;
+    padding-left: 10px;
   }
 
   .maincard {
     display: flex;
 
     .videoclass {
-      width: 200px;
-      border-radius: 20px;
+     width: 300px;
+      border-radius: 10px;
     }
 
     .sub-main-container {
       padding: 0px 0px;
       padding-left: 20px;
+      .sub-header-text{
+        font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+      }
+      .sub-main-header-container{
+             width: 100%;
+        .secondary-header-text{
+          font-weight: 600;
+        font-size: 15px;
+        line-height: 22px;
+      }
+      .final-sub-header-text{
+        font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+position: relative;
+top: 15px
+}
+}
+    }
+  }
+}
+
+
+
+@media screen and (max-width:500px){
+  .maincard {
+    display: flex;
+    .videoclass {
+     width: 180px;
+      border-radius: 10px;
     }
   }
 }
