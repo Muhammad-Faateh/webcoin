@@ -329,6 +329,7 @@ a {
     left: 52px;
     width: 21.16px;
     height: 21.16px;
+    filter: brightness(60%); 
   }
 
 
@@ -343,8 +344,9 @@ a {
     line-height: 24px;
     width: 571px;
     height: 60px;
-
+   color: white;
     padding-left: 66px;
+    outline: none;
   }
 
   .bellIcon {
@@ -532,7 +534,7 @@ a {
     text-decoration: none !important;
     font-size: 16px;
     line-height: 27px;
-    color: #ffffff;
+    color: #FFFFFF;
     a {
       text-decoration: none;
     }
@@ -4481,12 +4483,12 @@ padding-left: 18px;
 
 // Support Page Css  =============================
 
-#mainContainerId {
-  padding: 0px 100px 0px 380px;
+#mainContainerIdsupport {
+  padding: 0px 100px 0px 360px;
 }
 
 @media screen and (max-width: 991px) {
-  #mainContainerId {
+  #mainContainerIdsupport {
     padding: 30px 10px 0px 10px !important;
   }
 }

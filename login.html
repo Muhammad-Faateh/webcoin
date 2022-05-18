@@ -22,9 +22,10 @@
     src="./img/Ellipse 9.png"
     alt="error"
     class="glow-background-image"
+    id="background-glow"
   />
-    <img class="topLeftImg" src="../../img/Group 26601.png" alt="" />
-    <img class="ellipse" src="../../img/Ellipse 9.png" alt=""/>
+    <img class="topLeftImg" src="../../img/Group 26601.png" alt=""  id="background-pattern" />
+    <img class="ellipse" src="../../img/Ellipse 9.png" alt=""  />
    
     <nav class="navbar navbar-expand-lg navbar-main-container-second">
       <a href="#" class="navbar-brand main-navbar-logo main-navbar-logo-home navbar-logo-second ">
@@ -143,16 +144,22 @@
       <script>
         const openButton = document.getElementById("navbar-open-icon")
           const closeButton = document.getElementById("navbar-close-icon")
+          const backgroundpattern = document.getElementById("background-pattern")
+          const backgroundglow = document.getElementById("background-glow")
         document.addEventListener("DOMContentLoaded", function (event) {
           openButton.style.display = "block"
           closeButton.style.display = "none"
           openButton.addEventListener("click",()=>{
             openButton.style.display = "none"
             closeButton.style.display = "block"
+            backgroundpattern.style.display = "none"
+            backgroundglow.style.display = "none"
           })
           closeButton.addEventListener("click",()=>{
             openButton.style.display = "block"
             closeButton.style.display = "none"
+            backgroundpattern.style.display = "block"
+            backgroundglow.style.display = "block"
     })
         })
       </script>
