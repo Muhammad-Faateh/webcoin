@@ -65,14 +65,14 @@ body {
   .collpased-article-navbar h1 {
     display: block;
     position: relative;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     left: 140px;
     top: 16px;
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
@@ -568,7 +568,7 @@ a {
   text-decoration: none !important;
   font-size: 16px;
   line-height: 27px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .nav-list .nav-link a {
@@ -918,9 +918,6 @@ a {
 }
 
 @media screen and (max-width: 991px) {
-  .accordion-item:first-of-type .accordion-button {
-    width: 100% !important;
-  }
   .section2 {
     padding-left: 20px;
     padding-right: 20px;
@@ -4756,6 +4753,14 @@ input:checked
   color: #ffffff;
 }
 
+@media screen and (max-width: 600px) {
+  .sub-setting-container-wrapper .setting-text {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+  }
+}
+
 .sub-setting-container-wrapper .sub-header-text {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -4764,6 +4769,15 @@ input:checked
   line-height: 30px;
   color: #ffffff;
   opacity: 0.6;
+}
+
+@media screen and (max-width: 600px) {
+  .sub-setting-container-wrapper .sub-header-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    padding-bottom: 30px;
+  }
 }
 
 .sub-setting-container-wrapper .personal-info-button {
@@ -4781,6 +4795,16 @@ input:checked
   background: rgba(255, 187, 84, 0.1);
 }
 
+@media screen and (max-width: 600px) {
+  .sub-setting-container-wrapper .personal-info-button {
+    width: 185px;
+    height: 42px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
 .sub-setting-container-wrapper .password-button {
   width: 126px;
   height: 42px;
@@ -4796,6 +4820,16 @@ input:checked
   border: 1px solid #656565;
 }
 
+@media screen and (max-width: 600px) {
+  .sub-setting-container-wrapper .password-button {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    width: 117px;
+    height: 42px;
+  }
+}
+
 .change-password-content-container {
   margin-top: 70px;
 }
@@ -4809,6 +4843,15 @@ input:checked
   color: #ffffff;
 }
 
+@media screen and (max-width: 600px) {
+  .change-password-content-container .change-password-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: -35px;
+  }
+}
+
 .change-password-content-container .sub-header-text {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -4817,6 +4860,15 @@ input:checked
   line-height: 30px;
   color: #ffffff;
   opacity: 0.6;
+}
+
+@media screen and (max-width: 600px) {
+  .change-password-content-container .sub-header-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: -4px;
+  }
 }
 
 .form-container {
@@ -4833,12 +4885,26 @@ input:checked
   color: #4f4f4f;
 }
 
+@media screen and (max-width: 600px) {
+  .form-container form label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
 .form-container form input {
   width: 90%;
   background-color: #202020;
   border: none;
   height: 60px;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .form-container form input {
+    height: 45px;
+  }
 }
 
 .form-container form .old-password-container {
@@ -4893,23 +4959,6 @@ input:checked
   color: #ffffff;
   padding-left: 20px;
   width: 100%;
-}
-
-@media screen and (max-width: 420px) {
-  .sub-setting-container-wrapper .personal-info-button {
-    width: 185px;
-    height: 42px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .sub-setting-container-wrapper .password-button {
-    width: 126px;
-    height: 42px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-  }
 }
 
 #mainContainerIdsupport {
@@ -5082,6 +5131,12 @@ input:checked
   }
 }
 
+@media screen and (max-width: 389px) {
+  .main-form-container .sub-form-container .form-buttons .open-new {
+    margin-top: 10px;
+  }
+}
+
 .main-form-container .sub-form-container .form-Heading2 {
   color: #ffffff;
   margin-left: 22px;
@@ -5121,6 +5176,7 @@ input:checked
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+    width: unset;
   }
 }
 
@@ -5247,13 +5303,13 @@ input:checked
     padding: 40px 0px 0px 10px;
   }
   .collapsed-navbar-container-two .line-class-two .user-profile-heading {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
     margin-top: 5px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .collapsed-navbar-container-two .line-class-two .verified-heading {
     margin-top: -7px;
@@ -5964,7 +6020,7 @@ body {
   height: 348px;
   left: -200px;
   top: 118px;
-  background: #FFBB54;
+  background: #ffbb54;
   opacity: 0.1;
   -webkit-filter: blur(114.526px);
           filter: blur(114.526px);
@@ -5976,7 +6032,7 @@ body {
     height: 348px;
     left: -259px;
     top: -24px;
-    background: #FFBB54;
+    background: #ffbb54;
     opacity: 0.1;
     -webkit-filter: blur(114.526px);
             filter: blur(114.526px);
@@ -7570,7 +7626,6 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
-  /* identical to box height */
   letter-spacing: -0.204545px;
   color: #ffffff;
   mix-blend-mode: normal;
@@ -7589,7 +7644,6 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
-  /* identical to box height */
   letter-spacing: -0.204545px;
   color: #ffffff;
 }
@@ -8299,7 +8353,6 @@ HOME and AUTH Pages NAVBAR CSS
     font-weight: 800;
     font-size: 14.8235px;
     line-height: 22px;
-    /* identical to box height */
     color: #ffffff;
     left: 10px;
     top: 88px;
@@ -8375,7 +8428,6 @@ HOME and AUTH Pages NAVBAR CSS
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    /* identical to box height */
     color: #ffffff;
     opacity: 0.6;
     margin: 20px 0px;
