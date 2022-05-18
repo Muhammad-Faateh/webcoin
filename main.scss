@@ -4307,10 +4307,10 @@ a {
     font-size: 38px;
     line-height: 57px;
     color: $white;
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 600px) {
       font-weight: 600;
-font-size: 26px;
-line-height: 39px;
+      font-size: 26px;
+      line-height: 39px;
     }
   }
 
@@ -4322,7 +4322,7 @@ line-height: 39px;
     line-height: 30px;
     color: $white;
     opacity: 0.6;
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 600px) {
       font-weight: 400;
       font-size: 14px;
       line-height: 26px;
@@ -4343,9 +4343,9 @@ line-height: 39px;
     line-height: 24px;
     color: #ffbb54;
     background: rgba(255, 187, 84, 0.1);
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 600px) {
       width: 185px;
-height: 42px;
+      height: 42px;
       font-weight: 500;
       font-size: 14px;
       line-height: 21px;
@@ -4365,7 +4365,7 @@ height: 42px;
     background: #141414;
     border-radius: 13px;
     border: 1px solid rgb(101, 101, 101);
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 600px) {
       font-weight: 500;
       font-size: 14px;
       line-height: 21px;
@@ -4385,7 +4385,7 @@ height: 42px;
     font-weight: 600;
     line-height: 30px;
     color: $white;
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 600px) {
       font-weight: 600;
       font-size: 16px;
       line-height: 24px;
@@ -4401,7 +4401,7 @@ height: 42px;
     line-height: 30px;
     color: $white;
     opacity: 0.6;
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 600px) {
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
@@ -4421,7 +4421,7 @@ height: 42px;
 
     label {
       color: #4f4f4f;
-      @media screen and (max-width: 600px){
+      @media screen and (max-width: 600px) {
         font-weight: 400;
         font-size: 14px;
         line-height: 21px;
@@ -4434,8 +4434,8 @@ height: 42px;
       border: none;
       height: 60px;
       border-radius: 10px;
-      @media screen and (max-width: 600px){
-        height:45px;
+      @media screen and (max-width: 600px) {
+        height: 45px;
       }
     }
 
@@ -4476,7 +4476,6 @@ height: 42px;
     }
   }
 }
-
 
 // Support Page Css  =============================
 
@@ -4637,7 +4636,7 @@ height: 42px;
           line-height: 21px;
         }
 
-        @media screen and (max-width: 389px){
+        @media screen and (max-width: 389px) {
           margin-top: 10px;
         }
       }
