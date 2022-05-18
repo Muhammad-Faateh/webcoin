@@ -7398,8 +7398,8 @@ body {
   overflow: hidden;
   -o-object-fit: contain;
      object-fit: contain;
-  width: 35%;
-  height: 35%;
+  width: 520px;
+  height: 500px;
   background: #252525;
   margin-top: 60px;
 }
@@ -7413,20 +7413,23 @@ body {
 
 @media screen and (max-width: 1440px) {
   .auto-trading-main-two {
-    width: 45%;
+    width: 400px;
+    height: 400px;
   }
 }
 
 @media screen and (max-width: 674px) {
   .auto-trading-main-two {
-    width: 70%;
+    width: 350px;
+    height: 350px;
     margin-top: 120px;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 420px) {
   .auto-trading-main-two {
-    width: 80%;
+    width: 220px;
+    height: 220px;
     margin-top: 70px;
   }
 }
